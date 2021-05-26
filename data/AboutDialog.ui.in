@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.0 -->
+<interface domain="lollypop">
+  <requires lib="gtk+" version="3.12"/>
+  <object class="GtkAboutDialog" id="about_dialog">
+    <property name="can_focus">False</property>
+    <property name="modal">True</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="type_hint">normal</property>
+    <property name="program_name">Lollypop</property>
+    <property name="version">@REVISION@</property>
+    <property name="copyright">Copyright © 2014-2020 Cédric Bellegarde</property>
+    <property name="comments" translatable="yes">A music player for GNOME.</property>
+    <property name="website">@PACKAGE_URL@</property>
+    <property name="website_label" translatable="yes">Visit Lollypop website</property>
+    <property name="authors">Cédric Bellegarde &lt;cedric.bellegarde@adishatz.org&gt;
+Jean-Philippe Braun
+Philipp Wolfer
+Jason Gray
+Rodrigo Lourenço
+Yosef Or Boczko
+Manuel Kehl
+Bilal Elmoussaoui
+Jordi Romera
+David Mandelberg
+Frederick Schenk
+</property>
+    <property name="translator-credits" translatable="yes" context="Add your names here, do not remove previous names!" comments="Replace me with your names">translator1, translator2, ...</property>
+    <property name="artists" translatable="yes">
+Reda Lazri:
+    Lollypop icon
+Geary Development Team:
+    tag-list-symbolic icon
+GNOME Project:
+    unplayed-albums-symbolic
+    artists-list-symbolic icons
+Martins D. Okoi:
+    Description in appdata
+    </property>
+    <property name="logo_icon_name">org.gnome.Lollypop</property>
+    <property name="license_type">gpl-3-0</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="aboutdialog-vbox1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="halign">center</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="aboutdialog-action_area1">
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="grid1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">center</property>
+            <property name="column_spacing">5</property>
+            <child>
+              <object class="GtkLabel" id="donation">
+                <property name="label" translatable="yes">Donations:</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLinkButton" id="liberapat">
+                <property name="label" translatable="yes">Liberapay</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <property name="uri">https://liberapay.com/cedric.bellegarde</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLinkButton" id="patreon">
+                <property name="label" translatable="yes">Patreon</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <property name="uri">https://www.patreon.com/gnumdk</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLinkButton" id="paypal">
+                <property name="label" translatable="yes">PayPal</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <property name="uri">https://www.paypal.me/lollypopgnome</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

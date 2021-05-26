@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <enum id="org.gnome.Lollypop.PowerManagement">
+       <value nick="none" value="0"/>
+       <value nick="idle" value="1"/>
+       <value nick="suspend" value="2"/>
+       <value nick="both" value="3"/>
+    </enum>
+    <enum id="org.gnome.Lollypop.ReplayGain">
+       <value nick="none" value="0"/>
+       <value nick="track" value="1"/>
+       <value nick="album" value="2"/>
+    </enum>
+    <enum id="org.gnome.Lollypop.Notifications">
+       <value nick="none" value="0"/>
+       <value nick="all" value="1"/>
+       <value nick="mpris" value="2"/>
+    </enum>
+    <enum id="org.gnome.Lollypop.Repeat">
+       <value nick="none" value="0"/>
+       <value nick="auto_similar" value="1"/>
+       <value nick="auto_random" value="2"/>
+       <value nick="track" value="3"/>
+       <value nick="all" value="4"/>
+    </enum>
+    <enum id="org.gnome.Lollypop.OrderBy">
+       <value nick="artist_year" value="0"/>
+       <value nick="artist_title" value="1"/>
+       <value nick="title" value="2"/>
+       <value nick="year" value="3"/>
+       <value nick="popularity" value="4"/>
+    </enum>
+    <schema path="/org/gnome/Lollypop/" id="org.gnome.Lollypop" gettext-domain="lollypop">
+        <key type="ai" name="window-size">
+            <default>[851, 600]</default>
+            <summary>Window size</summary>
+            <description>Window size (width and height).</description>
+        </key>
+        <key type="ai" name="window-position">
+            <default>[]</default>
+            <summary>Window position</summary>
+            <description>Window position (x and y).</description>
+        </key>
+        <key type="ai" name="shown-album-lists">
+            <default>[-2, -3, -4, -5, -8, -9, -10, -11, -13, -16, -101, -102, -103]</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="ai" name="shown-playlists">
+            <default>[-2, -3]</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="i" name="notification-flag">
+            <default>0</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="b" name="allow-per-track-cover">
+            <default>false</default>
+            <summary>Allow using a cover per track</summary>
+            <description></description>
+        </key>
+        <key type="b" name="network-access">
+            <default>true</default>
+            <summary>Access network</summary>
+            <description></description>
+        </key>
+        <key type="i" name="network-access-acl">
+            <default>1048572</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="i" name="previous-threshold">
+            <default>4000</default>
+            <summary>Threshold used to decide if the previous track should be played or the currently running one should be restarted</summary>
+            <description></description>
+        </key>
+        <key type="b" name="save-to-tags">
+            <default>false</default>
+            <summary>Save artwork/popularity in tags</summary>
+            <description></description>
+        </key>
+        <key type="b" name="window-maximized">
+            <default>true</default>
+            <summary>Window maximized</summary>
+            <description>Window maximized state.</description>
+        </key>
+  	    <key type="ai" name="party-ids">
+            <default>[]</default>
+            <summary>Enabled genres in party mode</summary>
+            <description>ID for genres.</description>
+        </key>
+        <key type="s" name="web-search">
+            <default>"NONE"</default>
+            <summary>Search on the Web</summary>
+            <description></description>
+        </key>
+        <key type="i" name="suggestions-mask">
+            <default>0</default>
+            <summary>Shown suggestions</summary>
+            <description></description>
+        </key>
+        <key type="b" name="play-featured">
+            <default>false</default>
+            <summary>Play featured tracks</summary>
+            <description></description>
+        </key>
+        <key type="b" name="sync-usb-disks">
+            <default>false</default>
+            <summary>Allow syncing to USB disks</summary>
+            <description></description>
+        </key>
+        <key type="s" name="sync-internal-ids">
+            <default>""</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="s" name="invidious-server">
+            <default>""</default>
+            <summary>If set, Lollypop will use this server instead of YouTube. See https://github.com/omarroth/invidious </summary>
+            <description></description>
+        </key>
+        <key type="b" name="recent-youtube-dl">
+            <default>false</default>
+            <summary>If true, Lollypop will not use system youtube-dl</summary>
+            <description></description>
+        </key>
+        <key type="b" name="ignore-original-date">
+            <default>false</default>
+            <summary>Do not use original date if set</summary>
+            <description></description>
+        </key>
+        <key type="b" name="import-playlists">
+            <default>false</default>
+            <summary>Import playlists from collections</summary>
+            <description></description>
+        </key>
+        <key type="as" name="music-uris">
+            <default>[]</default>
+            <summary>Music URI</summary>
+            <description>When empty, use XDG_MUSIC_DIR</description>
+        </key>
+        <key type="b" name="use-librefm">
+            <default>false</default>
+            <summary>Use Libre.fm instead of Last.fm</summary>
+            <description></description>
+        </key>
+        <key type="s" name="listenbrainz-user-token">
+            <default>""</default>
+            <summary>ListenBrainz user token</summary>
+            <description></description>
+        </key>
+        <key type="s" name="cs-api-key">
+            <default>"AIzaSyBiaYluG8pVYxgKRGcc4uEbtgE9q8la0dw"</default>
+            <summary>Google Custom Search API key</summary>
+            <description></description>
+        </key>
+        <key type="s" name="tag-editor">
+            <default>""</default>
+            <summary>Favorite tag editor</summary>
+            <description></description>
+        </key>
+        <key type="s" name="favorite-cover">
+            <default>"cover"</default>
+            <summary>Favorite cover filename without extension</summary>
+            <description>Restart needed</description>
+        </key>
+        <key type="i" name="db-version">
+            <default>-1</default>
+            <summary>Database version</summary>
+            <description>Resetting this value will reset the database, popular albums will be restored</description>
+        </key>
+        <key type="i" name="cover-size">
+            <default>200</default>
+            <summary>Albums cover size</summary>
+            <description></description>
+        </key>
+        <key type="i" name="convert-bitrate">
+            <default>192</default>
+            <summary>Encoding quality</summary>
+            <description></description>
+        </key>
+         <key type="b" name="auto-update">
+            <default>true</default>
+            <summary>Auto update music</summary>
+            <description></description>
+        </key>
+        <key type="b" name="show-artist-tracks">
+            <default>false</default>
+            <summary>Show tracks in artist view</summary>
+            <description></description>
+        </key>
+        <key type="b" name="artist-artwork">
+            <default>true</default>
+            <summary>Show artist artwork</summary>
+            <description></description>
+        </key>
+        <key type="b" name="dark-ui">
+            <default>false</default>
+            <summary>Use dark GTK theme</summary>
+            <description></description>
+        </key>
+         <key type="b" name="disable-scrobbling">
+            <default>false</default>
+            <summary>Disable scrobbling usage</summary>
+            <description></description>
+        </key>
+        <key type="b" name="show-compilations">
+            <default>true</default>
+            <summary>Handle compilations</summary>
+            <description></description>
+        </key>
+        <key type="b" name="import-advanced-artist-tags">
+            <default>false</default>
+            <summary>Handle performers, compositors, ...</summary>
+            <description></description>
+        </key>
+        <key type="b" name="show-compilations-in-album-view">
+            <default>false</default>
+            <summary>Show compilations in albums view</summary>
+            <description></description>
+        </key>
+        <key type="b" name="background-mode">
+            <default>false</default>
+            <summary>Continue playback when closed</summary>
+            <description></description>
+        </key>
+        <key type="b" name="append-albums">
+            <default>true</default>
+            <summary>Append albums by default</summary>
+            <description></description>
+        </key>
+        <key type="b" name="smart-artist-sort">
+            <default>true</default>
+            <summary>Smart sort for artist</summary>
+            <description>Ex: The Beatles sorted as Beatles. Reset of database required</description>
+        </key>
+        <key type="b" name="show-artist-sort">
+            <default>false</default>
+            <summary>Show sort tag as artist. Reset of database may be required</summary>
+            <description>Ex: Beatles, The</description>
+        </key>
+        <key type="b" name="save-state">
+            <default>false</default>
+            <summary>Restore previous state</summary>
+            <description></description>
+        </key>
+        <key type="b" name="disable-mpris">
+            <default>false</default>
+            <summary>Disable MPRIS</summary>
+            <description>Restart needed</description>
+        </key>
+        <key enum="org.gnome.Lollypop.Notifications" name="notifications">
+            <default>'all'</default>
+            <summary>Notifications behaviour</summary>
+            <description></description>
+        </key>
+        <key type="i" name="fullscreen-type">
+            <default>1</default>
+            <summary>INTERNAL</summary>
+        </key>
+        <key type="i" name="view-limit">
+            <default>100</default>
+            <summary>Items count in views</summary>
+        </key>
+        <key type="b" name="show-tag-tracknumber">
+            <default>false</default>
+            <summary>Show track number from tags</summary>
+            <description></description>
+        </key>
+        <key type="as" name="devices">
+            <default>[]</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="b" name="hd-artwork">
+            <default>false</default>
+            <summary>Enable PNG artwork cache</summary>
+            <description></description>
+        </key>
+        <key type="b" name="flatpak-access-migration">
+            <default>false</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="b" name="force-single-column">
+            <default>false</default>
+            <summary>Force single column mode</summary>
+            <description></description>
+        </key>
+        <key type="d" name="volume-rate">
+            <default>1.0</default>
+            <summary>Volume rate</summary>
+            <description>0.0-1.0</description>
+        </key>
+        <key type="b" name="equalizer-enabled">
+            <default>false</default>
+            <summary>Equalizer enabled</summary>
+            <description></description>
+        </key>
+        <key type="ad" name="equalizer">
+            <default>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="ad" name="equalizer-custom">
+            <default>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="i" name="startup-id">
+            <default>-1</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key type="b" name="show-sidebar-labels">
+            <default>true</default>
+            <summary>Show labels in sidebar</summary>
+            <description></description>
+        </key>
+        <key type="b" name="transitions">
+            <default>true</default>
+            <summary>Smooth track transitions</summary>
+            <description></description>
+        </key>
+        <key type="b" name="transitions-party-only">
+            <default>true</default>
+            <summary>Smooth track transitions only in party mode</summary>
+            <description></description>
+        </key>
+        <key type="i" name="transitions-duration">
+            <default>3000</default>
+            <summary>Transition duration in ms</summary>
+            <description></description>
+        </key>
+        <key type="b" name="fade">
+            <default>true</default>
+            <summary>Fade effect on playback status change</summary>
+            <description></description>
+        </key>
+        <key type="i" name="fade-duration">
+            <default>250</default>
+            <summary>Fade duration in ms</summary>
+            <description></description>
+        </key>
+        <key type="b" name="fade-party-only">
+            <default>true</default>
+            <summary>Fade effect only in party mode</summary>
+            <description></description>
+        </key>
+        <key type="b" name="shuffle">
+            <default>false</default>
+            <summary>Shuffle tracks</summary>
+            <description></description>
+        </key>
+        <key type="b" name="ignore-symlinks">
+            <default>false</default>
+            <summary>Ignore internal symlinks</summary>
+            <description></description>
+        </key>
+        <key type="s" name="open-with">
+            <default>""</default>
+            <summary>INTERNAL</summary>
+            <description></description>
+        </key>
+        <key enum="org.gnome.Lollypop.ReplayGain" name="replay-gain">
+            <default>'none'</default>
+            <summary>ReplayGain state</summary>
+            <description></description>
+        </key>
+        <key type="d" name="replay-gain-db">
+            <default>0</default>
+            <summary>ReplayGain value in dB</summary>
+            <description>Between -15 and 15</description>
+        </key>
+        <key type="b" name="replay-gain-limiter">
+            <default>false</default>
+            <summary>Applies signal compression/limiting to raw audio data</summary>
+            <description>It performs strict hard limiting with soft-knee characteristics, using a threshold of -6 dB</description>
+        </key>
+        <key enum="org.gnome.Lollypop.PowerManagement" name="power-management">
+            <default>'suspend'</default>
+            <summary>Possibilities for powermanagement options</summary>
+            <description>This option inhibits screensaver and suspend during Lollypop playback.</description>
+        </key>
+        <key enum="org.gnome.Lollypop.Repeat" name="repeat">
+            <default>'none'</default>
+            <summary>Repeat</summary>
+            <description></description>
+        </key>
+        <key enum="org.gnome.Lollypop.OrderBy" name="orderby">
+            <default>'artist_year'</default>
+            <summary>Order albums by</summary>
+            <description></description>
+        </key>
+    </schema>
+</schemalist>

@@ -1,0 +1,3041 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Svitozar Cherepii <razotivs@gmail.com>, 2015-2017
+# Vasiliy Gorbach <qwerty.android1998@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: lollypop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-06 14:55+0100\n"
+"PO-Revision-Date: 2021-01-26 21:32+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/gnumdk/"
+"lollypop/uk/>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.5-dev\n"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:36
+msgid "Window size"
+msgstr "Розмір вікна"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:37
+msgid "Window size (width and height)."
+msgstr "Розмір вікна (ширина та висота)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:41
+msgid "Window position"
+msgstr "Розміщення вікна"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:42
+msgid "Window position (x and y)."
+msgstr "Розміщення вікна (x та y)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:46
+#: ../data/org.gnome.Lollypop.gschema.xml:51
+#: ../data/org.gnome.Lollypop.gschema.xml:56
+#: ../data/org.gnome.Lollypop.gschema.xml:71
+#: ../data/org.gnome.Lollypop.gschema.xml:116
+#: ../data/org.gnome.Lollypop.gschema.xml:261
+#: ../data/org.gnome.Lollypop.gschema.xml:274
+#: ../data/org.gnome.Lollypop.gschema.xml:284
+#: ../data/org.gnome.Lollypop.gschema.xml:304
+#: ../data/org.gnome.Lollypop.gschema.xml:309
+#: ../data/org.gnome.Lollypop.gschema.xml:314
+#: ../data/org.gnome.Lollypop.gschema.xml:364
+msgid "INTERNAL"
+msgstr "ВНУТРІШНЬО"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:61
+msgid "Allow using a cover per track"
+msgstr "Дозволити використання обкладинки доріжок"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:66
+msgid "Access network"
+msgstr "Доступ до мережі"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:76
+msgid ""
+"Threshold used to decide if the previous track should be played or the "
+"currently running one should be restarted"
+msgstr ""
+"Поріг, який використовується, щоб вирішити, чи слід відтворювати попередню "
+"доріжку чи перезапускати поточну"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:81
+msgid "Save artwork/popularity in tags"
+msgstr "Зберігати обкладинку/популярність в мітках"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:86
+msgid "Window maximized"
+msgstr "Розгорнуте вікно"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:87
+msgid "Window maximized state."
+msgstr "Стан розгорнутого вікна."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:91
+msgid "Enabled genres in party mode"
+msgstr "Увімкнені жанри в режимі вечірки"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:92
+msgid "ID for genres."
+msgstr "ID жанрів."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:96 ../lollypop/menu_search.py:40
+msgid "Search on the Web"
+msgstr "Шукати в мережі"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:101
+msgid "Shown suggestions"
+msgstr "Показані пропозиції"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:106
+msgid "Play featured tracks"
+msgstr "Відтворення вибраних доріжок"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:111
+msgid "Allow syncing to USB disks"
+msgstr "Дозволити синхронізувати з носіями USB"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:121
+msgid ""
+"If set, Lollypop will use this server instead of YouTube. See https://github."
+"com/omarroth/invidious"
+msgstr ""
+"Якщо позначено, Lollypop використовуватиме цей сервер замість YouTube. "
+"Докладніше https://github.com/omarroth/invidious"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:126
+msgid "If true, Lollypop will not use system youtube-dl"
+msgstr "Якщо увімкнено, Lollypop не використовуватиме youtube-dl з системи"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:131
+msgid "Do not use original date if set"
+msgstr "Не використовувати початкову дату якщо позначено"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:136
+msgid "Import playlists from collections"
+msgstr "Імпортувати списки відтворення зі збірок"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:141
+msgid "Music URI"
+msgstr "URI музики"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:142
+msgid "When empty, use XDG_MUSIC_DIR"
+msgstr "Коли порожньо, береться з XDG_MUSIC_DIR"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:146
+msgid "Use Libre.fm instead of Last.fm"
+msgstr "Використати Libre.fm замість Last.fm"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:151
+msgid "ListenBrainz user token"
+msgstr "Маркер користувача ListenBrainz"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:156
+msgid "Google Custom Search API key"
+msgstr "Ключ Google Custom Search API"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:161
+msgid "Favorite tag editor"
+msgstr "Улюблений редактор міток"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:166
+msgid "Favorite cover filename without extension"
+msgstr "Назва файлу улюбленої обкладинки без розширення"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:167
+#: ../data/org.gnome.Lollypop.gschema.xml:252
+msgid "Restart needed"
+msgstr "Потрібен перезапуск"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:171
+msgid "Database version"
+msgstr "Версія бази даних"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:172
+msgid ""
+"Resetting this value will reset the database, popular albums will be restored"
+msgstr ""
+"Скидання цього значення перезавантажить базу даних, популярні альбоми буде "
+"відновлено"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:176
+msgid "Albums cover size"
+msgstr "Розмір обкладинки альбому"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:181
+msgid "Encoding quality"
+msgstr "Якість кодування"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:186 ../data/SettingsDialog.ui:375
+msgid "Auto update music"
+msgstr "Автоматично оновлювати музику"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:191
+msgid "Show tracks in artist view"
+msgstr "Показувати доріжки в поданні за виконавцем"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:196 ../data/SettingsDialog.ui:88
+msgid "Show artist artwork"
+msgstr "Показувати зображення виконавця"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:201
+msgid "Use dark GTK theme"
+msgstr "Темна тема GTK"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:206
+msgid "Disable scrobbling usage"
+msgstr "Вимкнути скробблінг"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:211
+msgid "Handle compilations"
+msgstr "Обробляти добірки"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:216
+msgid "Handle performers, compositors, ..."
+msgstr "Обробляти виконавців, композиторів, ..."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:221
+msgid "Show compilations in albums view"
+msgstr "Показувати добірки в поданні за альбомами"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:226 ../data/SettingsDialog.ui:158
+msgid "Continue playback when closed"
+msgstr "Продовжувати відтворення після закриття"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:231
+msgid "Append albums by default"
+msgstr "Типово долучати альбоми"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:236
+msgid "Smart sort for artist"
+msgstr "Розумне впорядкування за виконавцем"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:237
+msgid "Ex: The Beatles sorted as Beatles. Reset of database required"
+msgstr ""
+"Напр: The Beatles впорядковувати як Beatles. Потребує скидання бази даних"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:241
+msgid "Show sort tag as artist. Reset of database may be required"
+msgstr ""
+"Показувати мітку впорядкування в якості виконавця. Може потребувати скидання "
+"бази даних"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:242
+msgid "Ex: Beatles, The"
+msgstr "Напр: Beatles, The"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:246
+msgid "Restore previous state"
+msgstr "Відновлювати попередній стан"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:251
+msgid "Disable MPRIS"
+msgstr "Вимкнути MPRIS"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:256
+msgid "Notifications behaviour"
+msgstr "Поведінка сповіщень"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:265
+msgid "Items count in views"
+msgstr "Кількість елементів у поданнях"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:269
+msgid "Show track number from tags"
+msgstr "Показувати номер доріжки з міток"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:279
+msgid "Enable PNG artwork cache"
+msgstr "Увімкнути кешування обкладинок формату PNG"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:289
+msgid "Force single column mode"
+msgstr "Примусовий режим одного стовпчика"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:294
+msgid "Volume rate"
+msgstr "Рівень гучності"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:295
+msgid "0.0-1.0"
+msgstr "0.0-1.0"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:299
+msgid "Equalizer enabled"
+msgstr "Еквалайзер увімкнено"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:319
+msgid "Show labels in sidebar"
+msgstr "Показувати ярлики у бічній панелі"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:324
+msgid "Smooth track transitions"
+msgstr "Плавні переходи між доріжками"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:329
+msgid "Smooth track transitions only in party mode"
+msgstr "Плавні переходи між доріжками лише в режимі вечірки"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:334
+msgid "Transition duration in ms"
+msgstr "Тривалість переходу у мс"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:339
+msgid "Fade effect on playback status change"
+msgstr "Ефект заникання за зміни стану відтворення"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:344
+msgid "Fade duration in ms"
+msgstr "Тривалість затухання в мс"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:349
+msgid "Fade effect only in party mode"
+msgstr "Ефект затухання лише в режимі вечірки"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:354 ../data/ToolbarEnd.ui:19
+msgid "Shuffle tracks"
+msgstr "Випадкова послідовність доріжок"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:359
+msgid "Ignore internal symlinks"
+msgstr "Ігнорувати внутрішні символьні посилання"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:369
+msgid "ReplayGain state"
+msgstr "Стан ReplayGain"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:374
+msgid "ReplayGain value in dB"
+msgstr "Величина ReplayGain у dB"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:375
+msgid "Between -15 and 15"
+msgstr "Між -15 та 15"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:379
+msgid "Applies signal compression/limiting to raw audio data"
+msgstr "Застосовує стиснення/обмеження сигналу до необроблених аудіоданих"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:380
+msgid ""
+"It performs strict hard limiting with soft-knee characteristics, using a "
+"threshold of -6 dB"
+msgstr ""
+"Виконує суворе жорстке обмеження з характеристиками soft-knee, "
+"використовуючи поріг -6 дБ"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:384
+msgid "Possibilities for powermanagement options"
+msgstr "Можливості для параметрів керування енергоспоживанням"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:385
+msgid "This option inhibits screensaver and suspend during Lollypop playback."
+msgstr ""
+"Цей параметр вимикає заставку та призупиняє роботу під час відтворення "
+"Lollypop."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:389
+msgid "Repeat"
+msgstr "Повторення"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:394 ../data/SettingsDialog.ui:212
+msgid "Order albums by"
+msgstr "Впорядковувати альбоми за"
+
+#: ../data/AboutDialog.ui.in:13
+msgid "A music player for GNOME."
+msgstr "Програвач музики для GNOME."
+
+#: ../data/AboutDialog.ui.in:15
+msgid "Visit Lollypop website"
+msgstr "Відвідати сторінку Lollypop"
+
+#. Replace me with your names
+#: ../data/AboutDialog.ui.in:28
+msgctxt "Add your names here, do not remove previous names!"
+msgid "translator1, translator2, ..."
+msgstr ""
+"Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"strixaluco"
+
+#: ../data/AboutDialog.ui.in:29
+msgid ""
+"\n"
+"Reda Lazri:\n"
+"    Lollypop icon\n"
+"Geary Development Team:\n"
+"    tag-list-symbolic icon\n"
+"GNOME Project:\n"
+"    unplayed-albums-symbolic\n"
+"    artists-list-symbolic icons\n"
+"Martins D. Okoi:\n"
+"    Description in appdata\n"
+"    "
+msgstr ""
+"\n"
+"Reda Lazri:\n"
+"    Піктограма Lollypop\n"
+"Geary Development Team:\n"
+"    Піктограма tag-list-symbolic\n"
+"GNOME Project:\n"
+"    unplayed-albums-symbolic\n"
+"    Піктограми artists-list-symbolic\n"
+"Martins D. Okoi:\n"
+"    Опис у appdata\n"
+"    "
+
+#: ../data/AboutDialog.ui.in:67
+msgid "Donations:"
+msgstr "Внески:"
+
+#: ../data/AboutDialog.ui.in:74
+msgid "Liberapay"
+msgstr "Liberapay"
+
+#: ../data/AboutDialog.ui.in:84 ../lollypop/container_notification.py:107
+msgid "Patreon"
+msgstr "Patreon"
+
+#: ../data/AboutDialog.ui.in:94 ../lollypop/container_notification.py:107
+msgid "PayPal"
+msgstr "PayPal"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:8
+#: ../data/org.gnome.Lollypop.desktop.in:3
+msgid "Lollypop"
+msgstr "Lollypop"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:9
+#: ../data/org.gnome.Lollypop.desktop.in:5
+msgid "Play and organize your music collection"
+msgstr "Відтворення та впорядкування вашої музичної збірки"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:11
+msgid ""
+"Lollypop is a lightweight modern music player designed to work excellently "
+"on the GNOME desktop environment. It also features a party mode which will "
+"auto-select party-related playlists; allows access the player from your "
+"couch thanks to it fullscreen mode; fetches lyrics, artwork and biography "
+"online; and provides native support for ReplayGain."
+msgstr ""
+"Lollypop — це легкий, сучасний музичний програвач, спроєктований для "
+"відмінної роботи зі стільничним середовищем GNOME. Він також пропонує режим "
+"вечірки, що автоматично обиратиме підхожі до вечірки списки відтворення; "
+"дозволяє керування з вашого дивану завдяки його повноекранному режиму; "
+"знаходить тексти, обкладинки та біографії в мережі та надає вбудовану "
+"підтримку ReplayGain."
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:13
+msgid "Multiple Audio Formats –"
+msgstr "Численні формати аудіо –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:14
+msgid "Metadata –"
+msgstr "Метадані –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:15
+msgid "Synchronization –"
+msgstr "Синхронізація –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:16
+msgid "Audio Scrobbling –"
+msgstr "Аудіо-скробблінг –"
+
+#: ../data/org.gnome.Lollypop.desktop.in:4
+msgid "Music Player"
+msgstr "Музичний програвач"
+
+#: ../data/org.gnome.Lollypop.desktop.in:13
+msgid "Music;Player;Lollipop;"
+msgstr "Музика;Програвач;Плеєр;Music;Player;Lollipop;"
+
+#: ../data/org.gnome.Lollypop.desktop.in:23
+msgid "Play/Pause"
+msgstr "Відтворити/Призупинити"
+
+#: ../data/org.gnome.Lollypop.desktop.in:27 ../lollypop/assistant_flatpak.py:40
+#: ../lollypop/assistant_google.py:42 ../lollypop/assistant_google.py:54
+#: ../lollypop/assistant_google.py:71 ../lollypop/assistant_lastfm.py:45
+#: ../lollypop/assistant_lastfm.py:58 ../lollypop/assistant_musicbrainz.py:38
+#: ../lollypop/assistant_musicbrainz.py:50 ../lollypop/notification.py:37
+msgid "Next"
+msgstr "Наступна"
+
+#: ../data/org.gnome.Lollypop.desktop.in:31 ../lollypop/notification.py:33
+msgid "Previous"
+msgstr "Попередня"
+
+#: ../data/Appmenu.ui:45
+msgid "Update music"
+msgstr "Оновити музику"
+
+#: ../data/Appmenu.ui:63
+msgid "Mini player"
+msgstr "Міні-програвач"
+
+#: ../data/Appmenu.ui:81
+msgid "Fullscreen"
+msgstr "Повноекранний"
+
+#: ../data/Appmenu.ui:108
+msgid "_Preferences"
+msgstr "_Параметри"
+
+#: ../data/Appmenu.ui:122
+msgid "_Keyboard Shortcuts"
+msgstr "_Комбінації клавіш"
+
+#: ../data/Appmenu.ui:136
+msgid "_About Lollypop"
+msgstr "_Про Lollypop"
+
+#: ../data/Appmenu.ui:149
+msgid "Quit"
+msgstr "Вийти"
+
+#: ../data/Appmenu.ui:219
+msgid "Equalizer"
+msgstr "Еквалайзер"
+
+#: ../data/ArtistBannerWidget.ui:92
+msgid "Play albums"
+msgstr "Відтворити альбоми"
+
+#: ../data/ArtistBannerWidget.ui:110
+msgctxt "artist context"
+msgid "Add to current playlist"
+msgstr "Додати до поточного списку відтворення"
+
+#: ../data/ArtworkSearch.ui:69
+msgid "Select a local file"
+msgstr "Виберіть локальний файл"
+
+#: ../data/DeviceWidget.ui:67
+msgid "Convert to:"
+msgstr "Перетворити у:"
+
+#: ../data/DeviceWidget.ui:79
+msgid "Normalize"
+msgstr "Нормалізувати"
+
+#: ../data/DeviceWidget.ui:100
+msgid "Do not convert"
+msgstr "Не перетворювати"
+
+#: ../data/DeviceWidget.ui:117
+msgid "MP3"
+msgstr "MP3"
+
+#: ../data/DeviceWidget.ui:134
+msgid "Ogg Vorbis"
+msgstr "Ogg Vorbis"
+
+#: ../data/DeviceWidget.ui:151
+msgid "AAC"
+msgstr "AAC"
+
+#: ../data/DeviceWidget.ui:168
+msgid "FLAC"
+msgstr "FLAC"
+
+#: ../data/DeviceWidget.ui:204
+msgid "Synchronized:"
+msgstr "Синхронізовано:"
+
+#: ../data/DeviceWidget.ui:217 ../lollypop/shown.py:36
+#: ../lollypop/view_albums_line.py:279
+msgid "Albums"
+msgstr "Альбоми"
+
+#: ../data/DeviceWidget.ui:233 ../lollypop/menu_artist.py:67
+#: ../lollypop/menu_objects.py:51 ../lollypop/menu_objects.py:117
+#: ../lollypop/menu_selectionlist.py:93 ../lollypop/shown.py:30
+#: ../lollypop/widgets_banner_playlists.py:42
+msgid "Playlists"
+msgstr "Списки відтворення"
+
+#: ../data/DeviceWidget.ui:284 ../lollypop/widgets_device.py:137
+#: ../lollypop/widgets_device.py:338
+msgid "Synchronize"
+msgstr "Синхронізувати"
+
+#: ../data/PlaylistBannerWidget.ui:71 ../lollypop/view_tracks_album.py:312
+#: ../lollypop/widgets_player_buttons.py:188
+msgid "Play"
+msgstr "Відтворити"
+
+#: ../data/PlaylistBannerWidget.ui:89
+msgid "Play playlist randomized"
+msgstr "Відтворити список у випадковому порядку"
+
+#: ../data/PlaylistPopover.ui:23 ../data/RadioMenu.ui:50
+msgid "Name:"
+msgstr "Назва:"
+
+#: ../data/PlaylistPopover.ui:59 ../data/RadioMenu.ui:106
+#: ../data/SmartPlaylistView.ui:153 ../lollypop/menu_playlist.py:116
+msgid "Save"
+msgstr "Зберегти"
+
+#: ../data/RadioMenu.ui:61
+msgid "Address:"
+msgstr "Адреса:"
+
+#: ../data/SettingsDialog.ui:41
+msgid "General"
+msgstr "Загальні"
+
+#: ../data/SettingsDialog.ui:46
+msgid "Appearance"
+msgstr "Зовнішній вигляд"
+
+#: ../data/SettingsDialog.ui:51 ../data/SettingsDialog.ui:54
+msgid "Whether the application should use a dark theme"
+msgstr "Чи повинна програма застосовувати темну тему"
+
+#: ../data/SettingsDialog.ui:52
+msgid "Dark Mode"
+msgstr "Темний режим"
+
+#: ../data/SettingsDialog.ui:70
+msgid "Single column mode"
+msgstr "Режим одного стовпчика"
+
+#: ../data/SettingsDialog.ui:72
+msgid "Only show a single column for tracks"
+msgstr "Показувати лише один стовпчик для доріжок"
+
+#: ../data/SettingsDialog.ui:105
+msgid "High quality artwork"
+msgstr "Обкладинки високої якости"
+
+#: ../data/SettingsDialog.ui:122
+msgid "Artwork size"
+msgstr "Розмір обкладинки"
+
+#: ../data/SettingsDialog.ui:139 ../lollypop/menu_actions.py:77
+msgid "Clean cache"
+msgstr "Очистити кеш"
+
+#: ../data/SettingsDialog.ui:153
+msgid "Behaviour"
+msgstr "Поведінка"
+
+#: ../data/SettingsDialog.ui:160
+msgid "Play music in background"
+msgstr "Відтворення музики у фоновому режимі"
+
+#: ../data/SettingsDialog.ui:176
+msgid "Restore state on startup"
+msgstr "Відновлювати стан під час запуску"
+
+#: ../data/SettingsDialog.ui:178
+msgid "Restore current playback and view"
+msgstr "Відновлення поточного відтворення та подання"
+
+#: ../data/SettingsDialog.ui:194
+msgid "Save changes to file"
+msgstr "Зберігати зміни до файлу"
+
+#: ../data/SettingsDialog.ui:196
+msgid "Save artwork and rating to files"
+msgstr "Зберігати обкладинки та оцінки до файлів"
+
+#: ../data/SettingsDialog.ui:213
+msgid "Albums will be sorted by this field"
+msgstr "Альбоми буде впорядковано за цим полем"
+
+#: ../data/SettingsDialog.ui:222
+msgid "Artist - year"
+msgstr "Виконавець-рік"
+
+#: ../data/SettingsDialog.ui:223
+msgid "Artist - title"
+msgstr "Виконавець-назва"
+
+#: ../data/SettingsDialog.ui:224
+msgid "Title"
+msgstr "Назва"
+
+#: ../data/SettingsDialog.ui:225 ../data/SmartPlaylistWidget.ui:33
+msgid "Year"
+msgstr "Рік"
+
+#: ../data/SettingsDialog.ui:226 ../data/SmartPlaylistWidget.ui:32
+msgid "Popularity"
+msgstr "Популярність"
+
+#: ../data/SettingsDialog.ui:242 ../lollypop/menu_artist.py:59
+#: ../lollypop/menu_decade.py:39 ../lollypop/menu_genre.py:41
+#: ../lollypop/menu_objects.py:43 ../lollypop/menu_objects.py:109
+msgid "Playback"
+msgstr "Відтворення"
+
+#: ../data/SettingsDialog.ui:247
+msgid "Enable transitions"
+msgstr "Увімкнути плавні переходи"
+
+#: ../data/SettingsDialog.ui:249
+msgid "Add a transition on track change"
+msgstr "Додавати плавний перехід між доріжками"
+
+#: ../data/SettingsDialog.ui:265
+msgid "Duration"
+msgstr "Тривалість"
+
+#: ../data/SettingsDialog.ui:267
+msgid "Transition duration in milliseconds"
+msgstr "Тривалість переходу в мілісекундах"
+
+#: ../data/SettingsDialog.ui:283
+msgid "ReplayGain"
+msgstr "ReplayGain"
+
+#: ../data/SettingsDialog.ui:285
+msgid "Apply audio correction on the fly"
+msgstr "Зрівнювати гучність звуку"
+
+#: ../data/SettingsDialog.ui:294 ../lollypop/menu_search.py:41
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: ../data/SettingsDialog.ui:295
+msgid "Track"
+msgstr "Доріжка"
+
+#: ../data/SettingsDialog.ui:296 ../data/SmartPlaylistWidget.ui:30
+msgid "Album"
+msgstr "Альбом"
+
+#: ../data/SettingsDialog.ui:315
+msgid "Music"
+msgstr "Музика"
+
+#: ../data/SettingsDialog.ui:320
+msgid "Collection"
+msgstr "Збірка"
+
+#: ../data/SettingsDialog.ui:331 ../lollypop/dialog_settings.py:245
+msgid "Reset collection"
+msgstr "Скинути збірку"
+
+#: ../data/SettingsDialog.ui:370
+msgid "Import settings"
+msgstr "Налаштування імпорту"
+
+#: ../data/SettingsDialog.ui:377
+msgid "Update music if files added to collection"
+msgstr "Оновлювати музику, якщо до збірки було додано файли"
+
+#: ../data/SettingsDialog.ui:393 ../data/SettingsDialog.ui:431
+msgid "You need to reset collection"
+msgstr "Створіть збірку заново"
+
+#: ../data/SettingsDialog.ui:394
+msgid "Show compilations"
+msgstr "Показувати добірки"
+
+#: ../data/SettingsDialog.ui:396
+msgid ""
+"A compilation is an album without any \"Album artist tag\"\n"
+"and with different artists"
+msgstr ""
+"Добірка — це альбом з різними виконавцями\n"
+" та без жодної мітки \"Виконавець альбому\""
+
+#: ../data/SettingsDialog.ui:413
+msgid "Import playlists"
+msgstr "Імпортувати списки відтворення"
+
+#: ../data/SettingsDialog.ui:415
+msgid "Search for playlists in your collection"
+msgstr "Шукати списки відтворення у вашій збірці"
+
+#: ../data/SettingsDialog.ui:432
+msgid "Import advanced tags"
+msgstr "Імпортувати розширені мітки"
+
+#: ../data/SettingsDialog.ui:434
+msgid "Performers, composers, …"
+msgstr "Виконавці, композитори, …"
+
+#: ../data/SettingsDialog.ui:452
+msgid "Statistics"
+msgstr "Статистика"
+
+#: ../data/SettingsDialog.ui:483
+msgid "Remove devices managed by Lollypop"
+msgstr "Вилучити пристрої керовані Lollypop"
+
+#: ../data/SettingsDialog.ui:484 ../lollypop/menu_artist.py:66
+#: ../lollypop/menu_genre.py:53 ../lollypop/menu_objects.py:53
+#: ../lollypop/menu_objects.py:90 ../lollypop/menu_playlist.py:68
+msgid "Devices"
+msgstr "Пристрої"
+
+#: ../data/SettingsDialog.ui:497 ../lollypop/shown.py:34
+#: ../lollypop/toolbar_end.py:249
+msgid "Web"
+msgstr "Мережа"
+
+#: ../data/SettingsDialog.ui:502
+msgid "Status"
+msgstr "Стан"
+
+#: ../data/SettingsDialog.ui:507
+msgid "Allow network access"
+msgstr "Дозволити мережний доступ"
+
+#: ../data/SettingsDialog.ui:524
+msgid "Background data"
+msgstr "Фонові дані"
+
+#: ../data/SettingsDialog.ui:526
+msgid "Search artwork in background"
+msgstr "Шукати обкладинки в фоновому режимі"
+
+#: ../data/SettingsDialog.ui:547
+msgid "Song playback"
+msgstr "Відтворення композиції"
+
+#: ../data/SettingsDialog.ui:558 ../data/SettingsDialog.ui:746
+#: ../data/SettingsDialog.ui:828 ../data/SettingsDialog.ui:910
+msgid "Enabled"
+msgstr "Увімкнено"
+
+#: ../data/SettingsDialog.ui:575
+msgid "Use a recent version of youtube-dl"
+msgstr "Використовувати останню версію youtube-dl"
+
+#: ../data/SettingsDialog.ui:591
+msgid "Google API-key"
+msgstr "Ключ API Google"
+
+#: ../data/SettingsDialog.ui:616 ../data/SettingsDialog.ui:773
+#: ../data/SettingsDialog.ui:855 ../data/SettingsDialog.ui:952
+#: ../lollypop/dialog_settings.py:189
+msgid "Connect"
+msgstr "Під'єднати"
+
+#: ../data/SettingsDialog.ui:660
+msgid "Use an Invidious server"
+msgstr "Використовувати сервер Invidious"
+
+#: ../data/SettingsDialog.ui:676
+msgid "No server set"
+msgstr "Сервер не зазначено"
+
+#: ../data/SettingsDialog.ui:686
+msgid "What is Invidious ?"
+msgstr "Що таке Invidious?"
+
+#: ../data/SettingsDialog.ui:735
+msgid "Search (artwork, songs, ...)"
+msgstr "Пошук (обкладинки, пісні, ...)"
+
+#: ../data/SettingsDialog.ui:926
+msgid "ListenBrainz API-Key"
+msgstr "Ключ API ListenBrainz"
+
+#: ../data/SettingsDialog.ui:998 ../lollypop/menu_playback.py:144
+#: ../lollypop/menu_search.py:56
+msgid "Deezer"
+msgstr "Deezer"
+
+#: ../data/SettingsDialog.ui:1015 ../lollypop/menu_search.py:72
+msgid "Jamendo"
+msgstr "Jamendo"
+
+#: ../data/SettingsDialog.ui:1031
+msgid "AudioDB"
+msgstr "AudioDB"
+
+#: ../data/SettingsDialog.ui:1048 ../lollypop/menu_playback.py:164
+#: ../lollypop/menu_search.py:68
+msgid "Spotify"
+msgstr "Spotify"
+
+#: ../data/SettingsDialog.ui:1065
+msgid "FANART.TV"
+msgstr "FANART.TV"
+
+#: ../data/SettingsDialog.ui:1082
+msgid "iTunes"
+msgstr "iTunes"
+
+#: ../data/SettingsDialog.ui:1099
+msgid "Google"
+msgstr "Google"
+
+#: ../data/SettingsDialog.ui:1116
+msgid "Startpage"
+msgstr "Startpage"
+
+#: ../data/SettingsDialog.ui:1133
+msgid "DuckDuckGo"
+msgstr "DuckDuckGo"
+
+#: ../data/SettingsDialog.ui:1150
+msgid "Wikipedia"
+msgstr "Вікіпедія"
+
+#: ../data/SettingsDialog.ui:1172 ../lollypop/shown.py:35
+msgid "Lyrics"
+msgstr "Тексти пісень"
+
+#: ../data/SettingsDialog.ui:1177
+msgid "Wikia"
+msgstr "Вікія"
+
+#: ../data/SettingsDialog.ui:1194
+msgid "Genius"
+msgstr "Genius"
+
+#: ../data/SettingsDialog.ui:1211
+msgid "Metro Lyrics"
+msgstr "Metro Lyrics"
+
+#: ../data/SettingsDialog.ui:1228
+msgid "Bing"
+msgstr "Bing"
+
+#: ../data/Shortcuts.ui:13
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Загальне"
+
+#: ../data/Shortcuts.ui:17
+msgctxt "shortcut window"
+msgid "Settings"
+msgstr "Налаштування"
+
+#: ../data/Shortcuts.ui:24
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Пошук"
+
+#: ../data/Shortcuts.ui:31
+msgctxt "shortcut window"
+msgid "Party mode"
+msgstr "Режим вечірки"
+
+#: ../data/Shortcuts.ui:38
+msgctxt "shortcut window"
+msgid "Show/Hide filter"
+msgstr "Показати/сховати фільтр"
+
+#: ../data/Shortcuts.ui:45
+msgctxt "shortcut window"
+msgid "Lock playback"
+msgstr "Заблокувати відтворення"
+
+#: ../data/Shortcuts.ui:52
+msgctxt "shortcut window"
+msgid "Show equalizer"
+msgstr "Показувати еквалайзер"
+
+#: ../data/Shortcuts.ui:59
+msgctxt "shortcut window"
+msgid "Show lyrics"
+msgstr "Показати тексти пісень"
+
+#: ../data/Shortcuts.ui:66
+msgctxt "shortcut window"
+msgid "Volume up"
+msgstr "Збільшити гучність"
+
+#: ../data/Shortcuts.ui:73
+msgctxt "shortcut window"
+msgid "Volume down"
+msgstr "Зменшити гучність"
+
+#: ../data/Shortcuts.ui:80
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr "На весь екран"
+
+#: ../data/Shortcuts.ui:87
+msgctxt "shortcut window"
+msgid "Mini player"
+msgstr "Міні-програвач"
+
+#: ../data/Shortcuts.ui:96
+msgctxt "shortcut window"
+msgid "Playback"
+msgstr "Відтворення"
+
+#: ../data/Shortcuts.ui:100
+msgctxt "shortcut window"
+msgid "Play"
+msgstr "Відтворити"
+
+#: ../data/Shortcuts.ui:107
+msgctxt "shortcut window"
+msgid "Pause"
+msgstr "Призупинити"
+
+#: ../data/Shortcuts.ui:114
+msgctxt "shortcut window"
+msgid "Stop"
+msgstr "Зупинити"
+
+#: ../data/Shortcuts.ui:121
+msgctxt "shortcut window"
+msgid "Next track"
+msgstr "Наступна доріжка"
+
+#: ../data/Shortcuts.ui:128
+msgctxt "shortcut window"
+msgid "Previous track"
+msgstr "Попередня доріжка"
+
+#: ../data/Shortcuts.ui:135
+msgctxt "shortcut window"
+msgid "Skip current album"
+msgstr "Пропустити поточний альбом"
+
+#: ../data/Shortcuts.ui:142
+msgctxt "shortcut window"
+msgid "Love current track"
+msgstr "Вподобати доріжку"
+
+#: ../data/Shortcuts.ui:149
+msgctxt "shortcut window"
+msgid "Repeat track"
+msgstr "Повторювати доріжку"
+
+#: ../data/Shortcuts.ui:156
+msgctxt "shortcut window"
+msgid "Skip backward in track"
+msgstr "Перемотати назад"
+
+#: ../data/Shortcuts.ui:163
+msgctxt "shortcut window"
+msgid "Skip forward in track"
+msgstr "Перемотати вперед"
+
+#: ../data/Shortcuts.ui:170
+msgctxt "shortcut window"
+msgid "Enable/disable scrobbling"
+msgstr "Увімкнути/вимкнути скробблінг"
+
+#: ../data/SmartPlaylistView.ui:94
+msgid "Limit to"
+msgstr "Обмежити до"
+
+#: ../data/SmartPlaylistView.ui:121
+msgid "tracks selected by"
+msgstr "доріжок, обраних"
+
+#: ../data/SmartPlaylistView.ui:136
+msgid "random"
+msgstr "випадково"
+
+#: ../data/SmartPlaylistView.ui:137
+msgid "album"
+msgstr "за альбомом"
+
+#: ../data/SmartPlaylistView.ui:138
+msgid "artist"
+msgstr "за виконавцем"
+
+#: ../data/SmartPlaylistView.ui:139
+msgid "year DESC"
+msgstr "за роком ЗМЕНШ"
+
+#: ../data/SmartPlaylistView.ui:140
+msgid "year ASC"
+msgstr "за роком ЗБІЛЬШ"
+
+#: ../data/SmartPlaylistView.ui:141
+msgid "duration DESC"
+msgstr "за тривалістю ЗМЕНШ"
+
+#: ../data/SmartPlaylistView.ui:142
+msgid "duration ASC"
+msgstr "за тривалістю ЗБІЛЬШ"
+
+#: ../data/SmartPlaylistView.ui:184
+msgid "Match music for "
+msgstr "Добирати музику за "
+
+#: ../data/SmartPlaylistView.ui:210
+msgid "all"
+msgstr "всіма"
+
+#: ../data/SmartPlaylistView.ui:211
+msgid "one"
+msgstr "однією"
+
+#: ../data/SmartPlaylistView.ui:226
+msgid "of the following rules :"
+msgstr "з таких умов:"
+
+#: ../data/SmartPlaylistWidget.ui:28
+msgid "Genre"
+msgstr "Жанр"
+
+#: ../data/SmartPlaylistWidget.ui:29 ../lollypop/menu_objects.py:48
+#: ../lollypop/menu_objects.py:114
+msgid "Artist"
+msgstr "Виконавець"
+
+#: ../data/SmartPlaylistWidget.ui:31
+msgid "Rating"
+msgstr "Оцінка"
+
+#: ../data/SmartPlaylistWidget.ui:34
+msgid "BPM"
+msgstr "BPM"
+
+#: ../data/ToolbarEnd.ui:7
+msgid "Party mode"
+msgstr "Режим вечірки"
+
+#: ../data/ToolbarEnd.ui:9
+msgid "Enable party mode"
+msgstr "Увімкнути режим вечірки"
+
+#: ../data/ToolbarEnd.ui:13
+msgid "Configure"
+msgstr "Налаштувати"
+
+#: ../data/ToolbarEnd.ui:17
+msgid "Shuffle"
+msgstr "Випадкова послідовність"
+
+#: ../data/ToolbarEnd.ui:24
+msgid "Repetition"
+msgstr "Повторення"
+
+#: ../data/ToolbarEnd.ui:26
+msgid "Continuous playback"
+msgstr "Безперервне відтворення"
+
+#: ../data/ToolbarEnd.ui:31
+msgid "Automatic playback (similar)"
+msgstr "Автоматичне відтворення (схожих)"
+
+#: ../data/ToolbarEnd.ui:36
+msgid "Automatic playback (random)"
+msgstr "Автоматичне відтворення (випадкове)"
+
+#: ../data/ToolbarEnd.ui:41
+msgid "Repeat track"
+msgstr "Повторювати доріжку"
+
+#: ../data/ToolbarEnd.ui:46
+msgid "Do not repeat"
+msgstr "Не повторювати"
+
+#: ../data/ToolbarEnd.ui:52
+msgid "Scrobbling"
+msgstr "Скробблінг"
+
+#: ../data/ToolbarEnd.ui:54
+msgid "Enable scrobbling"
+msgstr "Увімкнути скробблінг"
+
+#: ../data/ToolbarEnd.ui:96
+msgid "Playback options"
+msgstr "Параметри відтворення"
+
+#: ../data/TuneinPopover.ui:26
+msgid "Go back"
+msgstr "Назад"
+
+#: ../data/TuneinPopover.ui:58
+msgid "Go home"
+msgstr "Додому"
+
+#: ../lollypop/artwork_album.py:515 ../lollypop/widgets_rating.py:211
+msgid "You need to install kid3-cli"
+msgstr "Необхідно встановити kid3-cli"
+
+#: ../lollypop/assistant_flatpak.py:31
+msgid "Authorization needed"
+msgstr "Потрібна авторизація"
+
+#: ../lollypop/assistant_flatpak.py:33
+msgid ""
+"\n"
+"In order to be able to access your collection,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+"\n"
+"Щоб мати змогу отримати доступ до вашої збірки,\n"
+"вам потрібно дозволити <b>Lollypop</b>."
+
+#: ../lollypop/assistant_flatpak.py:44
+msgid "Update folders"
+msgstr "Оновити теки"
+
+#: ../lollypop/assistant_flatpak.py:46
+msgid ""
+"\n"
+"- <b>Open</b> Lollypop <b>preferences</b>\n"
+"- Go to the <b>Music</b> tab\n"
+"- <b>Remove</b> all folders from collection\n"
+"- Then, <b>add</b> them again"
+msgstr ""
+"\n"
+"- <b>Відкрийте</b> <b>параметри</b> Lollypop\n"
+"- Перейдіть на вкладку <b>Музика</b>\n"
+"- <b>Видаліть</b> всі теки зі збірки\n"
+"- Потім <b>додайте</b> їх знову"
+
+#: ../lollypop/assistant_flatpak.py:53 ../lollypop/assistant_google.py:52
+#: ../lollypop/assistant_google.py:69 ../lollypop/assistant_google.py:84
+#: ../lollypop/assistant_lastfm.py:56 ../lollypop/assistant_lastfm.py:68
+#: ../lollypop/assistant_musicbrainz.py:48
+#: ../lollypop/assistant_musicbrainz.py:60
+msgid "Back"
+msgstr "Назад"
+
+#: ../lollypop/assistant_flatpak.py:55
+msgid "Preferences"
+msgstr "Параметри"
+
+#: ../lollypop/assistant_google.py:29
+msgid "What is Google API-key?"
+msgstr "Що таке ключ API Google?"
+
+#: ../lollypop/assistant_google.py:31
+msgid ""
+"\n"
+"In order to use the YoutTube playback,\n"
+"you need to create an API-Key for the\n"
+"\n"
+"<b>\"YouTube Data API v3\"</b>\n"
+"\n"
+"which is used to play songs."
+msgstr ""
+"\n"
+"Для відтворення композицій з YoutTube,\n"
+"вам потрібно створити API-ключ для\n"
+"\n"
+"<b>\"YouTube Data API v3\"</b>\n"
+"\n"
+"який потрібен для відтворення пісень."
+
+#: ../lollypop/assistant_google.py:40 ../lollypop/assistant_lastfm.py:43
+#: ../lollypop/assistant_musicbrainz.py:36 ../lollypop/dialog_apps.py:70
+#: ../lollypop/menu_playlist.py:117 ../lollypop/widgets_device.py:144
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: ../lollypop/assistant_google.py:46
+msgid "Connect to the console"
+msgstr "З'єднання з консоллю"
+
+#: ../lollypop/assistant_google.py:48
+msgid ""
+"\n"
+"<b>Open and log</b> in to the <b>Google Developer Console</b>"
+msgstr ""
+"\n"
+"<b>Відкрийте та увійдіть</b> у <b>Google Developer Console</b>"
+
+#: ../lollypop/assistant_google.py:50
+msgid "Access Google Developer Console"
+msgstr "Доступ до консолі розробника Google"
+
+#: ../lollypop/assistant_google.py:58
+msgid "Activate the API"
+msgstr "Увімкнути API"
+
+#: ../lollypop/assistant_google.py:60
+msgid ""
+"\n"
+"<b>Add a new project</b> in the console.\n"
+"\n"
+"After that, <b>add a new API</b> and search\n"
+"for the <b>\"YouTube Data API v3\"</b>.\n"
+"\n"
+"<b>Activate that API</b> for your project"
+msgstr ""
+"\n"
+"<b>Додайте новий проєкт</b> у консоль.\n"
+"\n"
+"Після цього <b>додайте новий API</b> та\n"
+"знайдіть <b>\"YouTube Data API v3\"</b>.\n"
+"\n"
+"<b>Увімкніть цей API</b> для свого проєкту"
+
+#: ../lollypop/assistant_google.py:75
+msgid "Copy the key"
+msgstr "Копіювати ключ"
+
+#: ../lollypop/assistant_google.py:77
+msgid ""
+"\n"
+"Open <b>\"Credentials\"</b> in the sidebar and\n"
+"<b>Create Credentials</b> for an<b>API-Key</b>.\n"
+"\n"
+"<b>Copy the API-Key to Lollypop</b>"
+msgstr ""
+"\n"
+"Відкрийте <b>\"Повноваження\"</b> на бічній панелі та\n"
+"<b>Створіть облікові дані</b> для <b>ключа API</b>.\n"
+"\n"
+"<b>Копіюйте ключ API до Lollypop</b>"
+
+#: ../lollypop/assistant_google.py:86 ../lollypop/assistant_lastfm.py:70
+#: ../lollypop/assistant_musicbrainz.py:62 ../lollypop/assistant.py:151
+msgid "Finish"
+msgstr "Готово"
+
+#: ../lollypop/assistant_lastfm.py:36
+#, python-format
+msgid "Scrobbling to %s"
+msgstr "Скроблінг для %s"
+
+#: ../lollypop/assistant_lastfm.py:38
+#, python-format
+msgid ""
+"\n"
+"In order to send your activity to <b>%s</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+"\n"
+"Щоб надіслати свою діяльність до <b>%s</b>,\n"
+"вам потрібно дозволити <b>Lollypop</b>."
+
+#: ../lollypop/assistant_lastfm.py:49
+#, python-format
+msgid "Connect to %s"
+msgstr "Під'єднатися до %s"
+
+#: ../lollypop/assistant_lastfm.py:51
+#, python-format
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>%s</b>.\n"
+"Then, allow Lollypop."
+msgstr ""
+"\n"
+"<b>Відкрийте та увійдіть</b> до <b>%s</b>.\n"
+"Потім дозвольте Lollypop."
+
+#: ../lollypop/assistant_lastfm.py:54
+#, python-format
+msgid "Access %s"
+msgstr "Доступ %s"
+
+#: ../lollypop/assistant_lastfm.py:62
+msgid "Just play a track"
+msgstr "Просто відтворіть доріжку"
+
+#: ../lollypop/assistant_lastfm.py:64
+msgid ""
+"\n"
+"<b>Click \"Finish\"</b> once Lollypop has been allowed."
+msgstr ""
+"\n"
+"<b>Натисніть \"Готово\"</b> після того, як Lollypop дозволено."
+
+#: ../lollypop/assistant_musicbrainz.py:29
+msgid "Scrobbling to ListenBrainz"
+msgstr "Скроблінг до ListenBrainz"
+
+#: ../lollypop/assistant_musicbrainz.py:31
+msgid ""
+"\n"
+"In order to send your activity to <b>ListenBrainz</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+"\n"
+"Щоб надіслати свою діяльність до <b>ListenBrainz</b>,\n"
+"вам потрібно дозволити <b>Lollypop</b>."
+
+#: ../lollypop/assistant_musicbrainz.py:42
+msgid "Connect to ListenBrainz"
+msgstr "Під'єднання до ListenBrainz"
+
+#: ../lollypop/assistant_musicbrainz.py:44
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>ListenBrainz</b>."
+msgstr ""
+"\n"
+"<b>Відкрийте та увійдіть</b> до <b>ListenBrainz</b>."
+
+#: ../lollypop/assistant_musicbrainz.py:46
+msgid "Access ListenBrainz"
+msgstr "Доступ до ListenBrainz"
+
+#: ../lollypop/assistant_musicbrainz.py:54
+msgid "Copy key"
+msgstr "Копіювати ключ"
+
+#: ../lollypop/assistant_musicbrainz.py:56
+msgid ""
+"\n"
+"<b>Finish</b> the activation by copying <b>API-Key</b> in Lollypop."
+msgstr ""
+"\n"
+"<b>Завершіть</b> увімкнення, копіювавши <b>ключ API</b> до Lollypop."
+
+#: ../lollypop/assistant.py:149
+msgid "Can't contact this service"
+msgstr "Не вдалося з'єднатися з цією службою"
+
+#: ../lollypop/collection_scanner.py:334
+msgid "Resetting database"
+msgstr "Скидання бази даних"
+
+#: ../lollypop/collection_scanner.py:505
+msgid "Scan disabled, missing collection"
+msgstr "Сканування вимкнено, бракує збірки"
+
+#: ../lollypop/collection_scanner.py:800 ../lollypop/database_tracks.py:356
+#: ../lollypop/tagreader.py:87 ../lollypop/tagreader.py:103
+#: ../lollypop/tagreader.py:119 ../lollypop/tagreader.py:190
+#: ../lollypop/tagreader.py:238 ../lollypop/tagreader.py:260
+#: ../lollypop/tagreader.py:276 ../lollypop/tagreader.py:280
+#: ../lollypop/tagreader.py:290 ../lollypop/tagreader.py:298
+msgid "Unknown"
+msgstr "Невідомий"
+
+#: ../lollypop/container_notification.py:96
+msgid "Automatically download albums and artists artwork?"
+msgstr "Звантажувати обкладинки альбомів та світлини виконавців автоматично?"
+
+#: ../lollypop/container_notification.py:97
+msgid "Yes"
+msgstr "Так"
+
+#: ../lollypop/container_notification.py:106
+msgid "Please consider a donation to the project"
+msgstr "Підтримайте проєкт"
+
+#: ../lollypop/database_artists.py:122
+msgid "Many artists"
+msgstr "Багато виконавців"
+
+#: ../lollypop/database_upgrade.py:775
+msgid "Please wait while Lollypop is updating albums"
+msgstr "Зачекайте, поки Lollypop оновлює альбоми"
+
+#: ../lollypop/database_upgrade.py:794
+msgid "Please wait while Lollypop is updating tracks"
+msgstr "Зачекайте, поки Lollypop оновлює доріжки"
+
+#: ../lollypop/dialog_apps.py:73
+msgid "Select"
+msgstr "Вибрати"
+
+#: ../lollypop/dialog_apps.py:81
+msgid "Select an application"
+msgstr "Вибрати програму"
+
+#: ../lollypop/dialog_settings.py:85
+#, python-format
+msgid "Artists count: %s"
+msgstr "Кількість виконавців: %s"
+
+#: ../lollypop/dialog_settings.py:87
+#, python-format
+msgid "Albums count: %s"
+msgstr "Кількість альбомів: %s"
+
+#: ../lollypop/dialog_settings.py:89
+#, python-format
+msgid "Tracks count: %s"
+msgstr "Кількість доріжок: %s"
+
+#: ../lollypop/dialog_settings.py:206 ../lollypop/dialog_settings.py:341
+msgid "Disconnect"
+msgstr "Від'єднати"
+
+#: ../lollypop/dialog_settings.py:251
+msgid "Are you sure?"
+msgstr "Ви впевнені?"
+
+#: ../lollypop/fullscreen.py:355
+msgid "You are using a broken cursor theme!"
+msgstr "Ви користуєтесь пошкодженою темою курсора!"
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "band"
+msgstr "гурт"
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "singer"
+msgstr "співак(-чка)"
+
+#: ../lollypop/inhibitor.py:101
+msgid "Playing music"
+msgstr "Відтворюється"
+
+#: ../lollypop/menu_actions.py:58
+msgid "Save in collection"
+msgstr "Зберегти до збірки"
+
+#: ../lollypop/menu_actions.py:68
+msgid "Remove from collection"
+msgstr "Вилучити зі збірки"
+
+#: ../lollypop/menu_actions.py:87
+msgid "Buy this album"
+msgstr "Придбати цей альбом"
+
+#: ../lollypop/menu_actions.py:99
+msgid "Open with…"
+msgstr "Відкрити за допомогою…"
+
+#: ../lollypop/menu_artist.py:48
+msgid "Show tracks"
+msgstr "Показати доріжки"
+
+#: ../lollypop/menu_artist.py:56
+msgid "Play featured"
+msgstr "Відтворити пропоноване"
+
+#: ../lollypop/menu_artist.py:62 ../lollypop/menu_genre.py:44
+#: ../lollypop/menu_objects.py:55 ../lollypop/menu_objects.py:118
+#: ../lollypop/menu_playlist.py:66
+msgid "Add to"
+msgstr "Додати до"
+
+#: ../lollypop/menu_artist.py:111
+msgid "Available albums"
+msgstr "Доступні альбоми"
+
+#: ../lollypop/menu_artwork.py:67 ../lollypop/menu_artwork.py:114
+msgid "Change Artwork"
+msgstr "Змінити обкладинку"
+
+#: ../lollypop/menu_current_albums.py:34 ../lollypop/menu_current_albums.py:43
+#: ../lollypop/shown.py:40 ../lollypop/widgets_banner_current_albums.py:65
+msgid "Playing albums"
+msgstr "Відтворення альбомів"
+
+#: ../lollypop/menu_current_albums.py:42
+msgid "Create a new playlist"
+msgstr "Створити новий список відтворення"
+
+#: ../lollypop/menu_objects.py:66
+msgid "Show album"
+msgstr "Показати альбом"
+
+#: ../lollypop/menu_objects.py:70 ../lollypop/menu_objects.py:119
+#: ../lollypop/menu_similars.py:167
+msgid "Others"
+msgstr "Інше"
+
+#: ../lollypop/menu_objects.py:141
+msgid "%Y-%m-%d"
+msgstr "%Y-%m-%d"
+
+#: ../lollypop/menu_objects.py:171
+msgid "YouTube page address"
+msgstr "Адреса сторінки YouTube"
+
+#: ../lollypop/menu_playback.py:57 ../lollypop/menu_playback.py:290
+#: ../lollypop/menu_playback.py:534
+msgid "Play a radio"
+msgstr "Відтворити радіо"
+
+#: ../lollypop/menu_playback.py:72
+msgid "Add to playback"
+msgstr "Додати до відтворення"
+
+#: ../lollypop/menu_playback.py:79 ../lollypop/widgets_row_album.py:110
+msgid "Remove from playback"
+msgstr "Вилучити з відтворення"
+
+#: ../lollypop/menu_playback.py:114
+msgid "Related tracks"
+msgstr "Пов'язані доріжки"
+
+#: ../lollypop/menu_playback.py:123 ../lollypop/playlists.py:107
+#: ../lollypop/playlists.py:371 ../lollypop/shown.py:70
+msgid "Loved tracks"
+msgstr "Вподобані доріжки"
+
+#: ../lollypop/menu_playback.py:132 ../lollypop/shown.py:68
+msgid "Popular tracks"
+msgstr "Популярні доріжки"
+
+#: ../lollypop/menu_playback.py:136
+msgid "From collection"
+msgstr "Зі збірки"
+
+#: ../lollypop/menu_playback.py:154 ../lollypop/menu_search.py:60
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../lollypop/menu_playback.py:168 ../lollypop/menu_suggestions.py:74
+msgid "From the Web"
+msgstr "З мережі"
+
+#: ../lollypop/menu_playback.py:210
+msgid "Play this playlist"
+msgstr "Відтворити цей список"
+
+#: ../lollypop/menu_playback.py:217
+msgid "Add this playlist"
+msgstr "Додати до цього списку"
+
+#: ../lollypop/menu_playback.py:281
+msgid "Play this artist"
+msgstr "Відтворити цього виконавця"
+
+#: ../lollypop/menu_playback.py:353
+msgid "Play this genre"
+msgstr "Відтворити цей жанр"
+
+#: ../lollypop/menu_playback.py:434
+msgid "Play this decade"
+msgstr "Відтворити це десятиліття"
+
+#: ../lollypop/menu_playback.py:517 ../lollypop/widgets_row_album.py:118
+msgid "Play this album"
+msgstr "Відтворити цей альбом"
+
+#: ../lollypop/menu_playback.py:529 ../lollypop/menu_playback.py:615
+msgid "Ignored"
+msgstr "Ігнороване"
+
+#: ../lollypop/menu_playback.py:672
+msgid "Add to queue"
+msgstr "Додати до черги"
+
+#: ../lollypop/menu_playback.py:678
+msgid "Remove from queue"
+msgstr "Вилучити з черги"
+
+#: ../lollypop/menu_playback.py:689
+msgid "Do not stop after"
+msgstr "Не зупиняти після"
+
+#: ../lollypop/menu_playback.py:694
+msgid "Stop after"
+msgstr "Зупинити після"
+
+#: ../lollypop/menu_playlist.py:43 ../lollypop/menu_playlist.py:113
+msgid "Save playlist"
+msgstr "Зберегти список відтворення"
+
+#: ../lollypop/menu_playlist.py:50
+msgid "Sync from Last.FM"
+msgstr "Синхронізація з Last.FM"
+
+#: ../lollypop/menu_playlist.py:57
+msgid "Manage smart playlist"
+msgstr "Керувати розумним списком відтворення"
+
+#: ../lollypop/menu_playlist.py:61
+msgid "Remove playlist"
+msgstr "Вилучити список відтворення"
+
+#: ../lollypop/menu_playlist.py:64
+msgid "Playlist"
+msgstr "Список відтворення"
+
+#: ../lollypop/menu_playlist.py:70
+msgid "Edit"
+msgstr "Змінити"
+
+#: ../lollypop/menu_playlist.py:100
+msgid "Remove this playlist?"
+msgstr "Вилучити цей список відтворення?"
+
+#: ../lollypop/menu_playlist.py:101
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#: ../lollypop/menu_playlists.py:47
+msgid "New playlist"
+msgstr "Новий список відтворення"
+
+#: ../lollypop/menu_search.py:33 ../lollypop/shown.py:39
+msgid "Search"
+msgstr "Пошук"
+
+#: ../lollypop/menu_search.py:64
+msgid "MusicBrainz"
+msgstr "MusicBrainz"
+
+#: ../lollypop/menu_selectionlist.py:50
+msgid "Default on startup"
+msgstr "Типово під час запуску"
+
+#: ../lollypop/menu_selectionlist.py:53
+msgid "Startup"
+msgstr "Запуск"
+
+#: ../lollypop/menu_selectionlist.py:96
+msgid "Sidebar"
+msgstr "Бокова панель"
+
+#: ../lollypop/menu_selectionlist.py:111
+msgid "Show text"
+msgstr "Показувати підписи"
+
+#: ../lollypop/menu_selectionlist.py:112
+msgid "Options"
+msgstr "Параметри"
+
+#: ../lollypop/menu_selectionlist.py:137
+msgid "Sections"
+msgstr "Розділи"
+
+#: ../lollypop/menu_similars.py:140 ../lollypop/view_lyrics.py:132
+msgid "Loading…"
+msgstr "Завантаження…"
+
+#: ../lollypop/menu_similars.py:175
+msgid "Similar artists"
+msgstr "Подібні виконавці"
+
+#: ../lollypop/menu_similars.py:279
+msgid "No results"
+msgstr "Без результатів"
+
+#: ../lollypop/menu_suggestions.py:35 ../lollypop/shown.py:24
+msgid "Suggestions"
+msgstr "Пропозиції"
+
+#: ../lollypop/menu_suggestions.py:47 ../lollypop/view_suggestions.py:129
+msgid "New releases on Spotify"
+msgstr "Нові випуски на Spotify"
+
+#: ../lollypop/menu_suggestions.py:59 ../lollypop/view_suggestions.py:127
+msgid "Suggestions from Spotify"
+msgstr "Пропозиції від Spotify"
+
+#: ../lollypop/menu_suggestions.py:71 ../lollypop/view_suggestions.py:131
+msgid "Top albums on Deezer"
+msgstr "Найкращі альбоми на Deezer"
+
+#: ../lollypop/menu_sync.py:33
+msgid "All devices"
+msgstr "Всі пристрої"
+
+#: ../lollypop/player_albums.py:58 ../lollypop/player_albums.py:142
+#: ../lollypop/player_albums.py:169 ../lollypop/player_albums.py:185
+msgid "No album available"
+msgstr "Альбоми недоступні"
+
+#: ../lollypop/player_bin.py:426
+msgid "Can't find this track on YouTube"
+msgstr "Не вдалось знайти цю доріжку на YouTube"
+
+#: ../lollypop/playlists.py:94 ../lollypop/playlists.py:97
+msgid "New playlist "
+msgstr "Новий список відтворення "
+
+#: ../lollypop/shown.py:25
+msgid "Popular albums"
+msgstr "Популярні альбоми"
+
+#: ../lollypop/shown.py:26
+msgid "Random albums"
+msgstr "Випадкові альбоми"
+
+#: ../lollypop/shown.py:27
+msgid "Loved albums"
+msgstr "Вподобані альбоми"
+
+#: ../lollypop/shown.py:28
+msgid "Recently added albums"
+msgstr "Нещодавно додані"
+
+#: ../lollypop/shown.py:29
+msgid "Seldomly played albums"
+msgstr "Зрідка відтворювані альбоми"
+
+#: ../lollypop/shown.py:31
+msgid "Years"
+msgstr "Роки"
+
+#: ../lollypop/shown.py:32
+msgid "Genres"
+msgstr "Жанри"
+
+#: ../lollypop/shown.py:33
+msgid "Genres (list)"
+msgstr "Жанри (перелік)"
+
+#: ../lollypop/shown.py:37 ../lollypop/view_artists_line.py:165
+msgid "Artists"
+msgstr "Виконавці"
+
+#: ../lollypop/shown.py:38
+msgid "Artists (list)"
+msgstr "Виконавці (перелік)"
+
+#: ../lollypop/shown.py:41
+msgid "Information"
+msgstr "Подробиці"
+
+#: ../lollypop/shown.py:42
+msgid "Compilations"
+msgstr "Добірки"
+
+#: ../lollypop/shown.py:69
+msgid "Random tracks"
+msgstr "Випадкові доріжки"
+
+#: ../lollypop/shown.py:71
+msgid "Recently played tracks"
+msgstr "Нещодавно відтворені доріжки"
+
+#: ../lollypop/shown.py:72
+msgid "Seldomly played tracks"
+msgstr "Зрідка відтворювані доріжки"
+
+#: ../lollypop/shown.py:73
+msgid "Skipped tracks"
+msgstr "Пропущені доріжки"
+
+#: ../lollypop/shown.py:74
+msgid "All tracks"
+msgstr "Усі доріжки"
+
+#: ../lollypop/toolbar_end.py:246
+msgid "All genres"
+msgstr "Усі жанри"
+
+#: ../lollypop/utils.py:77
+#, python-format
+msgid "%s h  %s m"
+msgstr "%s г %s хв"
+
+#: ../lollypop/utils.py:79
+#, python-format
+msgid "%s h"
+msgstr "%s г"
+
+#: ../lollypop/utils.py:81
+#, python-format
+msgid "%s m"
+msgstr "%s хв"
+
+#: ../lollypop/utils.py:309
+msgid "The the"
+msgstr "The the"
+
+#: ../lollypop/view_albums_box.py:55
+msgid "Missing youtube-dl command"
+msgstr "Бракує команди youtube-dl"
+
+#: ../lollypop/view_albums_box.py:60 ../lollypop/view_lyrics.py:169
+msgid "Network unavailable or disabled in settings"
+msgstr "Мережа недоступна або вимкнена в налаштуваннях"
+
+#: ../lollypop/view_albums_box.py:193
+msgid "New albums available"
+msgstr "Доступні нові альбоми"
+
+#: ../lollypop/view_albums_box.py:194 ../lollypop/view_artists_rounded.py:155
+msgid "Refresh"
+msgstr "Оновити"
+
+#: ../lollypop/view_albums_line.py:164
+msgid "Others compilations"
+msgstr "Інші добірки"
+
+#: ../lollypop/view_albums_line.py:199
+msgid "Appears on"
+msgstr "З'являється на"
+
+#: ../lollypop/view_albums_line.py:230
+msgid "Popular albums at the moment"
+msgstr "Популярні станом на зараз альбоми"
+
+#: ../lollypop/view_artists_line.py:133
+msgid "Why not listen to?"
+msgstr "Чом би не послухати?"
+
+#: ../lollypop/view_artists_rounded.py:154
+msgid "New artists available"
+msgstr "Доступні нові виконавці"
+
+#: ../lollypop/view_information.py:152
+msgid "Loading information"
+msgstr "Завантаження відомостей"
+
+#: ../lollypop/view_information.py:262 ../lollypop/view_information.py:294
+#, python-format
+msgid "No information for %s"
+msgstr "Відомості для %s відсутні"
+
+#: ../lollypop/view_lyrics.py:105 ../lollypop/widgets_banner_lyrics.py:136
+msgid "No track playing"
+msgstr "Жодна доріжка не відтворюється"
+
+#: ../lollypop/view_lyrics.py:269
+msgid "You need to install python3-textblob module"
+msgstr "Необхідно встановити модуль python3-textblob"
+
+#: ../lollypop/view_lyrics.py:274
+msgid "Can't translate this lyrics"
+msgstr "Не вдалось перекласти ці тексти пісень"
+
+#: ../lollypop/view_lyrics.py:304
+msgid "Disabled in network settings"
+msgstr "Вимкнено у налаштуваннях мережі"
+
+#: ../lollypop/view_lyrics.py:307
+msgid "No lyrics found "
+msgstr "Не знайдено тексти пісень "
+
+#: ../lollypop/view.py:48
+msgid "No items to show"
+msgstr "Порожньо"
+
+#: ../lollypop/view_search.py:151 ../lollypop/view_search.py:161
+#: ../lollypop/view_search.py:185
+msgid "Search for artists, albums and tracks"
+msgstr "Шукайте виконавців, альбоми та доріжки"
+
+#: ../lollypop/view_search.py:305
+msgid "No results for this search"
+msgstr "За цим запитом нічого не знайдено"
+
+#: ../lollypop/view_suggestions.py:145
+msgid "Welcome to Lollypop"
+msgstr "Вітаємо в Lollypop"
+
+#: ../lollypop/view_tracks_album.py:69
+msgid "All tracks skipped"
+msgstr "Усі доріжки пропущено"
+
+#: ../lollypop/view_tracks_album.py:327
+#, python-format
+msgid "Disc %s"
+msgstr "Диск %s"
+
+#: ../lollypop/view_tracks_queue.py:36
+msgid "Currently in queue"
+msgstr "Наразі в черзі"
+
+#: ../lollypop/view_tracks_search.py:103
+msgid "Tracks"
+msgstr "Доріжки"
+
+#: ../lollypop/widgets_artwork_album.py:64
+msgid "Local"
+msgstr "Локальний файл"
+
+#: ../lollypop/widgets_artwork.py:139
+msgid "Select artwork"
+msgstr "Виберіть обкладинку"
+
+#: ../lollypop/widgets_artwork.py:179
+msgid "Remove"
+msgstr "Вилучити"
+
+#: ../lollypop/widgets_banner_album.py:245
+#, python-format
+msgid "Released on %s"
+msgstr "Випущено %s"
+
+#: ../lollypop/widgets_banner_artist.py:298
+msgid "Add to current playlist"
+msgstr "Додати до поточного списку відтворення"
+
+#: ../lollypop/widgets_banner_artist.py:305
+msgid "Remove from current playlist"
+msgstr "Вилучити з поточного списку відтворення"
+
+#: ../lollypop/widgets_banner_current_albums.py:42
+msgid "Clear albums"
+msgstr "Очистити альбоми"
+
+#: ../lollypop/widgets_banner_current_albums.py:60
+msgid "Go to current track"
+msgstr "Перейти до поточної доріжки"
+
+#: ../lollypop/widgets_banner_today.py:71
+msgid "<b>Album of the day</b>\n"
+msgstr "<b>Альбом дня</b>\n"
+
+#: ../lollypop/widgets_device.py:119
+msgid "No synchronized albums"
+msgstr "Синхронізовані альбоми відсутні"
+
+#: ../lollypop/widgets_device.py:130
+msgid "No synchronized playlists"
+msgstr "Синхронізовані списки відтворення відсутні"
+
+#: ../lollypop/widgets_equalizer.py:23
+msgid "Default"
+msgstr "Типово"
+
+#: ../lollypop/widgets_equalizer.py:25 ../lollypop/widgets_equalizer.py:162
+#: ../lollypop/widgets_equalizer.py:194
+msgid "Custom"
+msgstr "Власна"
+
+#: ../lollypop/widgets_equalizer.py:28
+msgid "Acoustic"
+msgstr "Акустична"
+
+#: ../lollypop/widgets_equalizer.py:30
+msgid "Bass"
+msgstr "Низькі частоти"
+
+#: ../lollypop/widgets_equalizer.py:33
+msgid "Bass and Treble"
+msgstr "Низькі і високі частоти"
+
+#: ../lollypop/widgets_equalizer.py:35
+msgid "Classical"
+msgstr "Класична"
+
+#: ../lollypop/widgets_equalizer.py:37
+msgid "Club"
+msgstr "Клубна"
+
+#: ../lollypop/widgets_equalizer.py:39
+msgid "Dance"
+msgstr "Танцювальна"
+
+#: ../lollypop/widgets_equalizer.py:41
+msgid "Disco"
+msgstr "Диско"
+
+#: ../lollypop/widgets_equalizer.py:43
+msgid "Drum'n'Bass"
+msgstr "Drum'n'Bass"
+
+#: ../lollypop/widgets_equalizer.py:45
+msgid "Heavy Metal"
+msgstr "Важкий метал"
+
+#: ../lollypop/widgets_equalizer.py:47
+msgid "Jazz"
+msgstr "Джаз"
+
+#: ../lollypop/widgets_equalizer.py:49
+msgid "Latin"
+msgstr "Латинська"
+
+#: ../lollypop/widgets_equalizer.py:51
+msgid "Metal"
+msgstr "Метал"
+
+#: ../lollypop/widgets_equalizer.py:53
+msgid "New Age"
+msgstr "Новий вік"
+
+#: ../lollypop/widgets_equalizer.py:55
+msgid "Party"
+msgstr "Вечірка"
+
+#: ../lollypop/widgets_equalizer.py:57
+msgid "Pop"
+msgstr "Поп"
+
+#: ../lollypop/widgets_equalizer.py:59
+msgid "Reggae"
+msgstr "Реггі"
+
+#: ../lollypop/widgets_equalizer.py:61
+msgid "Rock"
+msgstr "Рок"
+
+#: ../lollypop/widgets_equalizer.py:63
+msgid "Techno"
+msgstr "Техно"
+
+#: ../lollypop/widgets_equalizer.py:65
+msgid "Vocal"
+msgstr "Вокал"
+
+#: ../lollypop/widgets_loved.py:108
+msgid "Like"
+msgstr "Вподобати"
+
+#: ../lollypop/widgets_loved.py:113
+msgid "Allow playback"
+msgstr "Дозволити відтворення"
+
+#: ../lollypop/widgets_player_buttons.py:184
+msgid "Pause"
+msgstr "Призупинити"
+
+#: ../lollypop/widgets_playlist_smart.py:165
+msgid "is equal to"
+msgstr "дорівнює"
+
+#: ../lollypop/widgets_playlist_smart.py:166
+msgid "is not equal to"
+msgstr "не дорівнює"
+
+#: ../lollypop/widgets_playlist_smart.py:168
+msgid "contains "
+msgstr "містить "
+
+#: ../lollypop/widgets_playlist_smart.py:169
+msgid "does not contain"
+msgstr "не містить"
+
+#: ../lollypop/widgets_playlist_smart.py:171
+msgid "is greater than"
+msgstr "більше за"
+
+#: ../lollypop/widgets_playlist_smart.py:172
+msgid "is less than"
+msgstr "менше за"
+
+#: ../lollypop/widgets_rating.py:51
+#, python-format
+msgid "Song played %s times"
+msgstr "Кількість відтворень: %s"
+
+#: ../lollypop/widgets_row_album.py:96
+msgid "Compilation"
+msgstr "Добірка"
+
+#: ../lollypop/widgets_row_album.py:112 ../lollypop/widgets_row_track.py:107
+msgid "Remove from playlist"
+msgstr "Вилучити зі списку відтворення"
+
+#~ msgid "Disallow playback"
+#~ msgstr "Заборонити відтворення"
+
+#~ msgid "Show year below album name"
+#~ msgstr "Показувати рік під назвою альбому"
+
+#~ msgid "Show year"
+#~ msgstr "Показати рік"
+
+#~ msgid "Favorite cover file"
+#~ msgstr "Улюблений файл обкладинки"
+
+#~ msgid "JPG cover quality"
+#~ msgstr "Якість JPG обкладинки"
+
+#~ msgid "0-100"
+#~ msgstr "0-100"
+
+#~ msgid "Music;Player;"
+#~ msgstr "Музика;програвач;Music;Player;"
+
+#~ msgid "Go to artist view"
+#~ msgstr "Перейти до подання за виконавцем"
+
+#~ msgid "Current artist"
+#~ msgstr "Поточний виконавець"
+
+#~ msgid "Disable use of client side window decorations (headerbar)"
+#~ msgstr "Вимкнути декорації на стороні клієнта (заголовок)"
+
+#~ msgid "ITunes"
+#~ msgstr "ITunes"
+
+#~ msgid "Name"
+#~ msgstr "Назва"
+
+#~ msgid "Radios"
+#~ msgstr "Радіо"
+
+#~ msgid "Use dark theme variant"
+#~ msgstr "Темний варіант теми"
+
+#~ msgid ""
+#~ "A compilation is an album without any \"Album artist tag\"\n"
+#~ "and with different artists."
+#~ msgstr ""
+#~ "Збірка це альбом без жодної позначки \"Виконавець альбому\"\n"
+#~ "та з різними виконавцями."
+
+#~ msgid "You need to reset database [Music]"
+#~ msgstr "Необхідне скидання бази даних [Music]"
+
+#~ msgid "Import playlists files present in collections"
+#~ msgstr "Імпортувати списки відтворення, наявні у збірках"
+
+#~ msgid "Save changes to files"
+#~ msgstr "Зберігати зміни до файлів"
+
+#~ msgid "Transitions between tracks"
+#~ msgstr "Переходи між доріжками"
+
+#~ msgid "Smooth transitions"
+#~ msgstr "Плавні переходи"
+
+#~ msgid "Only in party mode"
+#~ msgstr "Тільки в режимі вечірки"
+
+#~ msgid "Transitions duration in milliseconds"
+#~ msgstr "Тривалість переходу у мілісекундах"
+
+#~ msgid "Reset database"
+#~ msgstr "Скинути базу даних"
+
+#~ msgid "Remove devices managed by Lollypop:"
+#~ msgstr "Вилучити пристрої керовані Lollypop:"
+
+#~ msgid "Control your privacy by selecting allowed services"
+#~ msgstr "Керуйте вашою приватністю, обираючи дозволені служби"
+
+#~ msgid ""
+#~ "Background data\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search artwork in background</span>"
+#~ msgstr ""
+#~ "Background data\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Шукати обкладинку на тлі</span>"
+
+#~ msgid ""
+#~ "Last.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, artwork, …</span>"
+#~ msgstr ""
+#~ "Last.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Скробблер, обкладинка, …</span>"
+
+#~ msgid ""
+#~ "Spotify\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search songs , artwork, …</span>"
+#~ msgstr ""
+#~ "Spotify\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук композицій, обкладинок …</span>"
+
+#~ msgid ""
+#~ "YouTube\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Songs playback</span>"
+#~ msgstr ""
+#~ "YouTube\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Відтворення композицій</span>"
+
+#~ msgid ""
+#~ "Google\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Google\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук обкладинок</span>"
+
+#~ msgid ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search songs , artwork, …</span>"
+#~ msgstr ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук композицій, обкладинок, …</"
+#~ "span>"
+
+#~ msgid ""
+#~ "Wikia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search lyrics</span>"
+#~ msgstr ""
+#~ "Wikia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук текстів</span>"
+
+#~ msgid ""
+#~ "Wikipedia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artist biography</span>"
+#~ msgstr ""
+#~ "Wikipedia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Біографії виконавців</span>"
+
+#~ msgid ""
+#~ "MusicBrainz\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, information, …</span>"
+#~ msgstr ""
+#~ "MusicBrainz\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Скробблер, інформація, …</span>"
+
+#~ msgid ""
+#~ "Genius\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search lyrics</span>"
+#~ msgstr ""
+#~ "Genius\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук текстів</span>"
+
+#~ msgid ""
+#~ "ITunes\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "ITunes\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук обкладинок</span>"
+
+#~ msgid ""
+#~ "AudioDB\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artist biography, artwork search, …</"
+#~ "span>"
+#~ msgstr ""
+#~ "AudioDB\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Біографії виконавців, пошук "
+#~ "обкладинок, …</span>"
+
+#~ msgid ""
+#~ "FANART.TV\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "FANART.TV\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук обкладинок</span>"
+
+#~ msgid ""
+#~ "DuckDuckGo\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search songs , artwork, …</span>"
+#~ msgstr ""
+#~ "DuckDuckGo\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук композицій, обкладинок, …</"
+#~ "span>"
+
+#~ msgid ""
+#~ "Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler</span>"
+#~ msgstr ""
+#~ "Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Скробблер</span>"
+
+#~ msgid "Privacy"
+#~ msgstr "Приватність"
+
+#~ msgid "Last.fm:"
+#~ msgstr "Last.fm:"
+
+#~ msgid "Libre.fm:"
+#~ msgstr "Libre.fm:"
+
+#~ msgid ""
+#~ "<b>ListenBrainz user token</b>\n"
+#~ "<small>To submit your listens to ListenBrainz, enter your ListenBrainz "
+#~ "user token below. You can see your user token in your <a href=\"https://"
+#~ "listenbrainz.org/profile/\">user profile</a>.</small>"
+#~ msgstr ""
+#~ "<b>Маркер користувача ListenBrainz</b>\n"
+#~ "<small>Щоб надіслати ваші прослуховування ListenBrainz, введіть ваш "
+#~ "маркер внизу. Ви можете переглянути ваш маркер відвідавши ваш <a href="
+#~ "\"https://listenbrainz.org/profile/\">профілі користувача</a>.</small>"
+
+#~ msgid "User token"
+#~ msgstr "Маркер користувача"
+
+#~ msgid "ListenBrainz"
+#~ msgstr "ListenBrainz"
+
+#~ msgid ""
+#~ "<b>Google Web Services require an API key.</b>\n"
+#~ "<small>Otherwise you will soon reach the default quota…\n"
+#~ "Lollypop needs this to search for artwork.</small>"
+#~ msgstr ""
+#~ "<b>Google Web Services вимагають користувацький ключ API.</b>\n"
+#~ "<small>Без нього, ви скоро досягнете стандартної квоти…\n"
+#~ "Lollypop потребує цього для пошуку обкладинок.</small>"
+
+#~ msgid ""
+#~ "<small>You need to enable \"Custom Search API\" and \"YouTube API v3\" "
+#~ "for your project.</small>"
+#~ msgstr ""
+#~ "<small>Ви маєте увімкнути \"Custom Search API\" та \"YouTube API v3\" для "
+#~ "вашого проєкту.</small>"
+
+#~ msgid "?"
+#~ msgstr "?"
+
+#~ msgid "API key"
+#~ msgstr "Ключ API"
+
+#~ msgid ""
+#~ "Use a recent version of youtube-dl\n"
+#~ "<span size=\"small\" alpha='40000'>Activate this if Web playback does not "
+#~ "work</span>"
+#~ msgstr ""
+#~ "Використовувати останню версію youtube-dl\n"
+#~ "<span size=\"small\" alpha='40000'>Увімкніть це якщо не працює мережеве "
+#~ "відтворення</span>"
+
+#~ msgid "Configure Lollypop appearance"
+#~ msgstr "Налаштувати вигляд Lollypop"
+
+#~ msgid "Configure Lollypop behaviour"
+#~ msgstr "Налаштувати поведінку Lollypop"
+
+#~ msgid "Select music folders"
+#~ msgstr "Вибрати теки з музикою"
+
+#~ msgid "Configure Web services"
+#~ msgstr "Налаштувати мережеві служби"
+
+#~ msgid "Manage devices"
+#~ msgstr "Керувати пристроями"
+
+#~ msgid "Show tracks number"
+#~ msgstr "Показувати номери доріжок"
+
+#~ msgid "Dubstep"
+#~ msgstr "Дабстеп"
+
+#~ msgid "Full Bass"
+#~ msgstr "Низи на всю силу"
+
+#~ msgid "Full Treble"
+#~ msgstr "Верхи на всю силу"
+
+#~ msgid "Full Bass + Treble"
+#~ msgstr "Низи + Верхи на всю силу"
+
+#~ msgid "Hip Hop"
+#~ msgstr "Хіп Хоп"
+
+#~ msgid "Kuduro"
+#~ msgstr "Кудуро"
+
+#~ msgid "Laptop/Headphones"
+#~ msgstr "Ноутбук/навушники"
+
+#~ msgid "Large Hall"
+#~ msgstr "Велика зала"
+
+#~ msgid "Live"
+#~ msgstr "Жива"
+
+#~ msgid "Psychedelic"
+#~ msgstr "Психоделіка"
+
+#~ msgid "Soft"
+#~ msgstr "М'яка"
+
+#~ msgid "Ska"
+#~ msgstr "Ска"
+
+#~ msgid "Soft Rock"
+#~ msgstr "Софт Рок"
+
+#, python-format
+#~ msgid "%d artist"
+#~ msgid_plural "%d artists"
+#~ msgstr[0] "%d виконавець"
+#~ msgstr[1] "%d виконавці"
+#~ msgstr[2] "%d виконавців"
+
+#, python-format
+#~ msgid "%d album"
+#~ msgid_plural "%d albums"
+#~ msgstr[0] "%d альбом"
+#~ msgstr[1] "%d альбоми"
+#~ msgstr[2] "%d альбомів"
+
+#, python-format
+#~ msgid "%d track"
+#~ msgid_plural "%d tracks"
+#~ msgstr[0] "%d доріжка"
+#~ msgstr[1] "%d доріжки"
+#~ msgstr[2] "%d доріжок"
+
+#~ msgid "Using \"GNOME Online Accounts\" settings"
+#~ msgstr "Використовуючи параметри \"Облікові записи в інтернеті\""
+
+#~ msgctxt "Translation credits here, put your name here!"
+#~ msgid "Cédric Bellegarde <cedric.bellegarde@adishatz.org>"
+#~ msgstr "Svitozar Cherepii <razotivs@gmail.com>"
+
+#~ msgid ""
+#~ "Tunein\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Radios search</span>"
+#~ msgstr ""
+#~ "Tunein\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук радіо</span>"
+
+#~ msgid "New radio"
+#~ msgstr "Нове радіо"
+
+#~ msgid "Radio"
+#~ msgstr "Радіо"
+
+#~ msgid "Can't connect to TuneIn…"
+#~ msgstr "Не вдалось приєднатись до TuneIn…"
+
+#~ msgid "Please wait…"
+#~ msgstr "Будь ласка зачекайте…"
+
+#~ msgid "Add"
+#~ msgstr "Додати"
+
+#~ msgid "No result…"
+#~ msgstr "Безрезультатно…"
+
+#~ msgid "Network not available"
+#~ msgstr "Мережа недоступна"
+
+#~ msgid "You need to enable YouTube in network settings"
+#~ msgstr "Ви маєте увімкнути YouTube у параметрах тенет"
+
+#~ msgid "From Last.fm"
+#~ msgstr "З Last.fm"
+
+#~ msgid "From Spotify"
+#~ msgstr "Зі Spotify"
+
+#~ msgid "org.gnome.Lollypop"
+#~ msgstr "org.gnome.Lollypop"
+
+#~ msgid ""
+#~ "Deezer\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Deezer\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук обкладинок</span>"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show albums from artist"
+#~ msgstr "Показувати альбоми виконавця"
+
+#~ msgid "You might like this"
+#~ msgstr "Вам мають сподобатись"
+
+#~ msgid "New albums from Spotify"
+#~ msgstr "Нові альбоми зі Spotify"
+
+#~ msgid ""
+#~ "This album has no track. Check tags, all 'album artist' tags should be in "
+#~ "'artist' tags"
+#~ msgstr ""
+#~ "Цей альбом не має жодної доріжки. Перевірте позначки — усі значення з "
+#~ "позначок 'Виконавець альбому' мають також бути й у позначках 'Виконавець'"
+
+#, fuzzy
+#~ msgid ""
+#~ "Last.fm and Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, artwork, …</span>"
+#~ msgstr ""
+#~ "Last.fm та Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Скробблер, обкладинки, …</span>"
+
+#~ msgid "Last.fm authentication disabled"
+#~ msgstr "Автентифікація Last.fm вимкнена"
+
+#~ msgid "Search on Spotify"
+#~ msgstr "Шукати на Spotify"
+
+#~ msgid "Login:"
+#~ msgstr "Логін:"
+
+#~ msgid "Password:"
+#~ msgstr "Пароль:"
+
+#~ msgid "Libre.fm"
+#~ msgstr "Libre.fm"
+
+#~ msgid "You need to install pylast and gi secret"
+#~ msgstr "Необхідно встановити pylast та gi secret"
+
+#, fuzzy
+#~ msgid ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Пошук обкладинок</span>"
+
+#~ msgid "You need to enable Spotify "
+#~ msgstr "Ви маєте увімкнути Spotify "
+
+#~ msgid "and YouTube in network settings"
+#~ msgstr "та YouTube у параметрах мережі"
+
+#~ msgid "Show performers"
+#~ msgstr "Показати виконавців"
+
+#~ msgid "Playback fade"
+#~ msgstr "Заникaння відтворення"
+
+#~ msgid "Fade duration in milliseconds"
+#~ msgstr "Тривалість заникання у мілісекундах"
+
+#~ msgid "100"
+#~ msgstr "100"
+
+#~ msgid "Modify information"
+#~ msgstr "Змінити інформацію"
+
+#~ msgid "Only mix songs in party mode"
+#~ msgstr "Змішувати композиції тільки в режимі вечірки"
+
+#~ msgid "Transition duration in seconds"
+#~ msgstr "Тривалість переходу в секундах"
+
+#~ msgid "Replay gain value in dB"
+#~ msgstr "Збільшення гучності в дБ"
+
+#~ msgid "Clear queue"
+#~ msgstr "Очистити чергу"
+
+#~ msgid "Queue"
+#~ msgstr "Черга"
+
+#~ msgid "Reset artwork?"
+#~ msgstr "Скинути обкладинку?"
+
+#, python-format
+#~ msgid "by %s"
+#~ msgstr "у виконанні %s"
+
+#, python-format
+#~ msgid "by %s, from %s"
+#~ msgstr "у виконанні %s, з %s"
+
+#~ msgid "Search in TuneIn"
+#~ msgstr "Пошук в TuneIn"
+
+#~ msgid "Shuffle mode"
+#~ msgstr "Режим тасування"
+
+#~ msgid "No shuffle"
+#~ msgstr "Без тасування"
+
+#~ msgid "Shuffle albums"
+#~ msgstr "Тасувати альбоми"
+
+#~ msgid "Recently played"
+#~ msgstr "Нещодавно відтворене"
+
+#~ msgid "Lollypop is a modern music player for GNOME."
+#~ msgstr "Lollypop - сучасний музичний відтворювач GNOME."
+
+#~ msgid "Features:"
+#~ msgstr "Особливості:"
+
+#~ msgid "Play many audio formats: MP3, MP4, OGG, and FLAC"
+#~ msgstr "Відтворення багатьох аудіо форматів: MP3, MP4, OGG та FLAC"
+
+#~ msgid "Search in your collection by artist, album and title"
+#~ msgstr "Пошук в вашій колекції за виконавцем, альбомом та назвою композиції"
+
+#~ msgid "Radios support"
+#~ msgstr "Підтримка радіостанцій"
+
+#~ msgid "Last.fm, Libre.fm and ListenBrainz support"
+#~ msgstr "Підтримка Last.fm, Libre.fm та ListenBrainz"
+
+#~ msgid "Auto install codecs"
+#~ msgstr "Автоматичне встановлення кодеків"
+
+#~ msgid "HiDPI support"
+#~ msgstr "Підтримка HiDPI"
+
+#~ msgid "TuneIn support"
+#~ msgstr "Підтримка TuneIn"
+
+#~ msgid "Never played"
+#~ msgstr "Ніколи не відтворене"
+
+#~ msgid "_About"
+#~ msgstr "_Про програму"
+
+#~ msgid "Disable all notifications"
+#~ msgstr "Вимкнути всі сповіщення"
+
+#~ msgid "Disable notifications upon change of song"
+#~ msgstr "Вимкнути сповіщення при зміні треку"
+
+#~ msgid "Show lyrics"
+#~ msgstr "Показати текст пісні"
+
+#~ msgid "Add to others"
+#~ msgstr "Додати до інших"
+
+#~ msgid "Remove from \"%s\""
+#~ msgstr "Вилучити з \"%s\""
+
+#~ msgid "Add to \"%s\""
+#~ msgstr "Додати до \"%s\""
+
+#~ msgid "Modify radio"
+#~ msgstr "Змінити радіо"
+
+#~ msgid "Change artwork"
+#~ msgstr "Змінити обкладинку"
+
+#~ msgid "Split playlists view"
+#~ msgstr "Вигляд розділених списків відтворення"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide navigation list"
+#~ msgstr "Показати/сховати список навігації"
+
+#~ msgid "All artists"
+#~ msgstr "Всі виконавці"
+
+#~ msgid "All albums"
+#~ msgstr "Всі альбоми"
+
+#~ msgid "Playing playlists"
+#~ msgstr "Відтворення списків"
+
+#~ msgid ""
+#~ "<b>Lollypop uses the Google Custom Search API to search for images on the "
+#~ "web.</b>\n"
+#~ "<small>This API is limited, so it may not work with the default API key.</"
+#~ "small>"
+#~ msgstr ""
+#~ "<b>Lollypop використовує \"Google Custom Search API\" для пошуку "
+#~ "зображень в тенетах.</b>\n"
+#~ "<small>Це API обмежено тому воно може не працювати з ключем API за "
+#~ "замовчуванням.</small>"
+
+#~ msgid "<b>Please create a \"Custom Search Engine\" here</b>:"
+#~ msgstr "<b>Створіть \"Custom Search Engine\" тут</b>:"
+
+#~ msgid "No logo found…"
+#~ msgstr "Не знайдено логотип…"
+
+#~ msgid "Select a logo  for this radio"
+#~ msgstr "Виберіть логотип для цього радіо"
+
+#~ msgid "Next track"
+#~ msgstr "Наступний трек"
+
+#~ msgid "Synchronize to your device"
+#~ msgstr "Синхронізувати до вашого пристрою"
+
+#~ msgid "Please unlock your device"
+#~ msgstr "Будь ласка розблокуйте ваш пристрій"
+
+#~ msgid "This will remove some files on your device!"
+#~ msgstr "Це видалить деякі файли на вашому пристрої!"
+
+#~ msgid "Cancel synchronization"
+#~ msgstr "Скасувати синхронізацію"
+
+#~ msgid "Synced albums"
+#~ msgstr "Синхронізовані альбоми"
+
+#~ msgid "Unknown error while syncing, try to reboot your device"
+#~ msgstr ""
+#~ "Невідома помилка при синхронізації, спробуйте перезавантажити ваш пристрій"
+
+#~ msgid "Playback behaviour"
+#~ msgstr "Поведінка відтворення"
+
+#~ msgid "Show albums from artist"
+#~ msgstr "Відобразити альбоми від виконавця"
+
+#~ msgid "Preserve the cover’s aspect ratio"
+#~ msgstr "Зберігати співвідношення сторін обкладинки"
+
+#~ msgid "_Update music"
+#~ msgstr "_Оновити музику"
+
+#~ msgid "_Fullscreen"
+#~ msgstr "_На весь екран"
+
+#~ msgid "Volume"
+#~ msgstr "Гучність"
+
+#~ msgid "Last.fm login"
+#~ msgstr "Логін Last.fm"
+
+#~ msgid ""
+#~ "<small>You need to enable \"Custom Search API\"  for your project.</small>"
+#~ msgstr ""
+#~ "<small>Необхідно ввімкнути \"Custom Search API\" для вашого проекту.</"
+#~ "small>"
+
+#~ msgid "Show list of genres"
+#~ msgstr "Показувати список жанрів"
+
+#~ msgid "Photo"
+#~ msgstr "Фото"
+
+#~ msgid ""
+#~ "    - Scrobbler disabled\n"
+#~ "    - Auto cover download disabled\n"
+#~ "    - Artist information disabled"
+#~ msgstr ""
+#~ "    - Зтягувач вимкнено\n"
+#~ "    - Автоматичне завантаження обкладинок вимкнено\n"
+#~ "    - Інформацію про виконавця вимкнено"
+
+#~ msgid "Network access disabled"
+#~ msgstr "Доступ до мережі вимкнено"
+
+#~ msgid "Synchronize %s"
+#~ msgstr "Синхронізувати %s"
+
+#~ msgid "No favorite radios"
+#~ msgstr "Немає улюблених радіо"
+
+#~ msgid "REMOVE ME LATER"
+#~ msgstr "ЗАБЕРІТЬ МЕНЕ ПОТІМ"
+
+#~ msgid "Audio output preview on track hover"
+#~ msgstr "Вихід аудіо попереднього прослуховування при наведенні"
+
+#~ msgid ""
+#~ "PulseAudio only. Example: alsa_output.pci-0000_00_14.2.analog-stereo. "
+#~ "Command to get outputs: $ pacmd list-sinks|grep 'name:'"
+#~ msgstr ""
+#~ "Тільки PulseAudio. Приклад: alsa_output.pci-0000_00_14.2.analog-stereo. "
+#~ "Команда щоб отримати виходи: $ pacmd list-sinks|grep 'name:'"
+
+#~ msgid "Preview tracks on"
+#~ msgstr "Попереднє прослуховування треків на"
+
+#~ msgid "No audio device"
+#~ msgstr "Немає аудіо пристрою"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show genres"
+#~ msgstr "Показати жанри"
+
+#~ msgid "_Quit"
+#~ msgstr "_Вийти"
+
+#~ msgid "Unsplit view"
+#~ msgstr "Приєднати вигляд"
+
+#~ msgid "Show genres"
+#~ msgstr "Показати жанри"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide volume control"
+#~ msgstr "Показати/сховати контроль гучності"
+
+#~ msgid "Shown"
+#~ msgstr "Показано"
+
+#~ msgid "Add to playlist"
+#~ msgstr "Додати до списку відтворення"
+
+#~ msgid "No information on this artist"
+#~ msgstr "Немає даних на цього виконавця"
+
+#~ msgid "Ex: The Beatles sorted as Beatles. Reset of database required."
+#~ msgstr ""
+#~ "Наприклад: The Beatles сортовані як Beatles. Необхідне скидання бази "
+#~ "даних."
+
+#~ msgid "Restart current track on previous"
+#~ msgstr "Перезапустити поточний трек переходячи на попередній"
+
+#~ msgid "Low quality, missing API key…"
+#~ msgstr "Низька якість, не вистачає ключа API…"
+
+#~ msgid "Remove from \"Not in party\""
+#~ msgstr "Вилучити з \"Не для вечірки\""
+
+#~ msgid "Add to \"Not in party\""
+#~ msgstr "Додати до \"Не для вечірки\""
+
+#~ msgid "Not in party"
+#~ msgstr "Не для вечірки"
+
+#~ msgid "No free space available on device"
+#~ msgstr "Недостатньо вільного місця на пристрої"
+
+#~ msgid "Mini player size"
+#~ msgstr "Розмір міні-програвача"
+
+#~ msgid "Mini player position"
+#~ msgstr "Розташування міні-програвача"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Mini Player"
+#~ msgstr "Міні-програвач"
+
+#~ msgid "You can select tracks with mouse or Ctrl key"
+#~ msgstr "Виберіть треки вказівником або натиснувши Ctrl"
+
+#~ msgid "Delete"
+#~ msgstr "Вилучити"
+
+#~ msgid "Remove \"%s\"?"
+#~ msgstr "Вилучити \"%s\"?"
+
+#~ msgid "Remove these tracks?"
+#~ msgstr "Вилучити ці треки?"
+
+#~ msgid "Flattr"
+#~ msgstr "Flattr"
+
+#~ msgid "Settings"
+#~ msgstr "Налаштування"
+
+#~ msgid ""
+#~ "Party mode\n"
+#~ "Right click to filter"
+#~ msgstr ""
+#~ "Режим вечірки\n"
+#~ "Права клавіша миші щоб фільтрувати"
+
+#~ msgid "Populars"
+#~ msgstr "Популярні"
+
+#~ msgid "Recently added"
+#~ msgstr "Нещодавно додані"
+
+#~ msgid "Create a new playlist based on search"
+#~ msgstr "Створити новий список відтворення за пошуком"
+
+#~ msgid "Smooth transitions between tracks"
+#~ msgstr "Плавний перехід між композиціями"
+
+#~ msgid "Smooth transition duration"
+#~ msgstr "Тривалість плавного переходу"
+
+#~ msgid ""
+#~ "Intuitive browsing: walk through your collection by genres/artists and "
+#~ "through albums artwork"
+#~ msgstr ""
+#~ "Інтуїтивний перегляд: прогуляйтеся вашою колекцією за жанром/виконавцем "
+#~ "та альбомними обкладинками"
+
+#~ msgid "Artist bio, lyrics: get artists and tracks information from the web"
+#~ msgstr "Біографія виконавця, тексти пісень: інформація одержана з тенет"
+
+#~ msgid "Party mode: no awkward silences, let Lollypop choose music for you"
+#~ msgstr ""
+#~ "Режим вечірки: ніяких незручних мовчанок, дозвольте Lollypop вибрати "
+#~ "музику для вас"
+
+#~ msgid "ReplayGain (RG): automatically select the best audio level"
+#~ msgstr "ReplayGain (RG): автоматично обрати найкращий рівень аудіо"
+
+#~ msgid ""
+#~ "Cover art downloader: automatic artwork downloader from Last.fm, Itunes "
+#~ "and Spotify"
+#~ msgstr ""
+#~ "Завантажувач обкладинок: автоматичне отримання обкладинок з Last.fm, "
+#~ "Itunes та Spotify"
+
+#~ msgid "MTP devices: sync your music with Android phones and any MTP devices"
+#~ msgstr ""
+#~ "MTP-пристрої: синхронізуйте музику з телефонами Android та будь-якими MTP-"
+#~ "пристроями"
+
+#~ msgid "Fullscreen view: visual access from your couch"
+#~ msgstr "Повноекранний перегляд: візуальний доступ прямо із дивана"
+
+#~ msgid "Sync all albums(MTP)"
+#~ msgstr "Синхронізувати всі альбоми(MTP)"
+
+#~ msgid "Enable network access"
+#~ msgstr "Увімкнути доступ до мережі"
+
+#~ msgid "Encode to MP3(MTP)"
+#~ msgstr "Кодувати в MP3(MTP)"
+
+#~ msgid "Quality of MP3 encoding"
+#~ msgstr "Якість MP3 кодування"
+
+#~ msgid "Normalize MP3(MTP)"
+#~ msgstr "Нормалізувати MP3(MTP)"
+
+#~ msgid "Convert to MP3"
+#~ msgstr "Конвертувати в MP3"
+
+#~ msgid "Normalize MP3"
+#~ msgstr "Нормалізувати MP3"
+
+#~ msgid "You need to install gstreamer-plugins-ugly"
+#~ msgstr "Необхідно встановити gstreamer-plugins-ugly"
+
+#~ msgid "Long press to show options"
+#~ msgstr "Довге натискання відображає опції"
+
+#~ msgid "Show navigation list"
+#~ msgstr "Показати список навігації"
+
+#~ msgid "Lollypop is detecting an empty folder."
+#~ msgstr "Lollypop розпізнав порожню директорію."
+
+#~ msgid "Check your music settings."
+#~ msgstr "Перевірте ваші налаштування музики."
+
+#~ msgid "Modify"
+#~ msgstr "Змінити"
+
+#~ msgid "External tracks"
+#~ msgstr "Зовнішні треки"
+
+#~ msgid "Never played albums"
+#~ msgstr "Ще не відтворені"
+
+#~ msgid "Allow MTP syncing to USB disks"
+#~ msgstr "Дозволити синхронізацію MTP до USB-накопичувачів"
+
+#~ msgid "Lollypop is running"
+#~ msgstr "Lollypop працює"
+
+#~ msgid "Click to close"
+#~ msgstr "Натисніть щоб закрити"
+
+#~ msgid ""
+#~ "Reload information\n"
+#~ "Long press to activate auto reload"
+#~ msgstr ""
+#~ "Перезавантажити інформацію\n"
+#~ "Довгий натиск щоб перезавантажити радіо"
+
+#~ msgid "Advanced artist information disabled"
+#~ msgstr "Додаткову інформацію про виконавців вимкнено"
+
+#~ msgid "WebKit support disabled"
+#~ msgstr "Підтримку WebKit вимкнено"
+
+#~ msgid "No lyrics found, please install gir1.2-webkit2-4.0"
+#~ msgstr "Не знайдено тексту пісні, будь ласка встановіть gir1.2-webkit2-4.0"
+
+#~ msgid "No information for this artist"
+#~ msgstr "Немає інформації про цього виконавця"
+
+#~ msgid "musician;band"
+#~ msgstr "музикант;гурт"
+
+#~ msgid "Mix songs"
+#~ msgstr "Змішувати композиції"
+
+#~ msgid "Mix duration"
+#~ msgstr "Тривалість змішування"
+
+#~ msgid "Mix duration in seconds"
+#~ msgstr "Тривалість змішування в секундах"
+
+#~ msgid "Mix tracks"
+#~ msgstr "Змішати треки"
+
+#~ msgctxt "artist context"
+#~ msgid "Add albums"
+#~ msgstr "Додати альбоми"
+
+#~ msgid "Save into collection"
+#~ msgstr "Зберегти в колекцію"
+
+#~ msgid "Next tracks"
+#~ msgstr "Наступні треки"
+
+#~ msgid "Append"
+#~ msgstr "Докласти"
+
+#~ msgid ""
+#~ "<b>Welcome to Lollypop!</b>\n"
+#~ "Here you can enable network access, allowing Lollypop to fetch music "
+#~ "information from the Web."
+#~ msgstr ""
+#~ "<b>Вітаємо в Lollypop!</b>\n"
+#~ "Тут ви можете увімкнути доступ до мережі, дозволивши Lollypop отримувати "
+#~ "музичну інформацію з Тенет."
+
+#~ msgid "Enable network access:"
+#~ msgstr "Увімкнути доступ до мережі:"
+
+#~ msgid "<span size='xx-large'><b>Import music</b></span>"
+#~ msgstr "<span size='xx-large'><b>Імпортувати музику</b></span>"
+
+#~ msgid "_Network access"
+#~ msgstr "_Доступ до мережі"
+
+#~ msgid "Lollypop: You need to install yelp."
+#~ msgstr "Lollypop: Необхідно встановити yelp."
+
+#~ msgid "_Help"
+#~ msgstr "_Довідка"

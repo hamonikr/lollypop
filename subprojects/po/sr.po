@@ -1,0 +1,2608 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Марко М. Костић (Marko M. Kostić) <marko.m.kostic@gmail.com>, 2015-2017
+msgid ""
+msgstr ""
+"Project-Id-Version: lollypop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-06 14:55+0100\n"
+"PO-Revision-Date: 2018-05-13 20:41+0000\n"
+"Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
+"Language-Team: Serbian <https://hosted.weblate.org/projects/gnumdk/lollypop/"
+"sr/>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0-dev\n"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:36
+msgid "Window size"
+msgstr "Величина прозора"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:37
+msgid "Window size (width and height)."
+msgstr "Величина прозора (ширина и висина)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:41
+msgid "Window position"
+msgstr "Положај прозора"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:42
+msgid "Window position (x and y)."
+msgstr "Положај прозора (X и Y положај)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:46
+#: ../data/org.gnome.Lollypop.gschema.xml:51
+#: ../data/org.gnome.Lollypop.gschema.xml:56
+#: ../data/org.gnome.Lollypop.gschema.xml:71
+#: ../data/org.gnome.Lollypop.gschema.xml:116
+#: ../data/org.gnome.Lollypop.gschema.xml:261
+#: ../data/org.gnome.Lollypop.gschema.xml:274
+#: ../data/org.gnome.Lollypop.gschema.xml:284
+#: ../data/org.gnome.Lollypop.gschema.xml:304
+#: ../data/org.gnome.Lollypop.gschema.xml:309
+#: ../data/org.gnome.Lollypop.gschema.xml:314
+#: ../data/org.gnome.Lollypop.gschema.xml:364
+msgid "INTERNAL"
+msgstr "ИНТЕРНО"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:61
+msgid "Allow using a cover per track"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:66
+msgid "Access network"
+msgstr "Приступи мрежи"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:76
+msgid ""
+"Threshold used to decide if the previous track should be played or the "
+"currently running one should be restarted"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:81
+msgid "Save artwork/popularity in tags"
+msgstr "Чувај цртеж/популарност унутар ознака"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:86
+msgid "Window maximized"
+msgstr "Увећан прозор"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:87
+msgid "Window maximized state."
+msgstr "Стање прозора када је увећан."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:91
+msgid "Enabled genres in party mode"
+msgstr "Омогућени жанрови песама у режиму рада за журке"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:92
+msgid "ID for genres."
+msgstr "ИБ за жанрове."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:96 ../lollypop/menu_search.py:40
+msgid "Search on the Web"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:101
+msgid "Shown suggestions"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:106
+msgid "Play featured tracks"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:111
+msgid "Allow syncing to USB disks"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:121
+msgid ""
+"If set, Lollypop will use this server instead of YouTube. See https://github."
+"com/omarroth/invidious"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:126
+msgid "If true, Lollypop will not use system youtube-dl"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:131
+msgid "Do not use original date if set"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:136
+msgid "Import playlists from collections"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:141
+msgid "Music URI"
+msgstr "Музички УРИ"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:142
+msgid "When empty, use XDG_MUSIC_DIR"
+msgstr "Када је празна, користи XDG_MUSIC_DIR променљиву"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:146
+msgid "Use Libre.fm instead of Last.fm"
+msgstr "Користи Либре.фм уместо Last.fm-a"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:151
+msgid "ListenBrainz user token"
+msgstr "ListenBrainz кориснички жетон"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:156
+msgid "Google Custom Search API key"
+msgstr "АПИ кључ Гуглове прилагођене претраге"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:161
+msgid "Favorite tag editor"
+msgstr "Омиљени уређивач ознака на песмама"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:166
+msgid "Favorite cover filename without extension"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:167
+#: ../data/org.gnome.Lollypop.gschema.xml:252
+msgid "Restart needed"
+msgstr "Потребно је поново покренути програм"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:171
+msgid "Database version"
+msgstr "Издање базе података"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:172
+msgid ""
+"Resetting this value will reset the database, popular albums will be restored"
+msgstr ""
+"Ресетовање ове вредности ће ресетовати базу, популарни албуми ће бити враћени"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:176
+msgid "Albums cover size"
+msgstr "Величина омота албума"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:181
+msgid "Encoding quality"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:186 ../data/SettingsDialog.ui:375
+msgid "Auto update music"
+msgstr "Аутоматски ажурирај музику"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:191
+msgid "Show tracks in artist view"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:196 ../data/SettingsDialog.ui:88
+msgid "Show artist artwork"
+msgstr "Прикажи портрет извођача"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:201
+msgid "Use dark GTK theme"
+msgstr "Користи тамну ГТК тему"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:206
+msgid "Disable scrobbling usage"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:211
+msgid "Handle compilations"
+msgstr "Баратај са компилацијама"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:216
+msgid "Handle performers, compositors, ..."
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:221
+msgid "Show compilations in albums view"
+msgstr "Прикажи компилације у делу са албумима"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:226 ../data/SettingsDialog.ui:158
+msgid "Continue playback when closed"
+msgstr "Настави са пуштањем песама након затварања програма"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:231
+msgid "Append albums by default"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:236
+msgid "Smart sort for artist"
+msgstr "Паметно ређање по извођачу"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:237
+msgid "Ex: The Beatles sorted as Beatles. Reset of database required"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:241
+msgid "Show sort tag as artist. Reset of database may be required"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:242
+msgid "Ex: Beatles, The"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:246
+msgid "Restore previous state"
+msgstr "Поврати претходно стање програма"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:251
+msgid "Disable MPRIS"
+msgstr "Искључи МПРИС контроле"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:256
+msgid "Notifications behaviour"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:265
+msgid "Items count in views"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:269
+msgid "Show track number from tags"
+msgstr "Као број песме користи број из ознаке песме"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:279
+msgid "Enable PNG artwork cache"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:289
+msgid "Force single column mode"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:294
+msgid "Volume rate"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:295
+msgid "0.0-1.0"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:299
+msgid "Equalizer enabled"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:319
+msgid "Show labels in sidebar"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:324
+msgid "Smooth track transitions"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:329
+msgid "Smooth track transitions only in party mode"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:334
+msgid "Transition duration in ms"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:339
+msgid "Fade effect on playback status change"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:344
+msgid "Fade duration in ms"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:349
+msgid "Fade effect only in party mode"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:354 ../data/ToolbarEnd.ui:19
+msgid "Shuffle tracks"
+msgstr "Мешај песме"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:359
+msgid "Ignore internal symlinks"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:369
+msgid "ReplayGain state"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:374
+msgid "ReplayGain value in dB"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:375
+msgid "Between -15 and 15"
+msgstr "Између -15 и 15"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:379
+msgid "Applies signal compression/limiting to raw audio data"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:380
+msgid ""
+"It performs strict hard limiting with soft-knee characteristics, using a "
+"threshold of -6 dB"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:384
+msgid "Possibilities for powermanagement options"
+msgstr "Могућности за опције управљања напајањем"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:385
+msgid "This option inhibits screensaver and suspend during Lollypop playback."
+msgstr ""
+"Ова опција спречава чувара екрана и спавање приликом пуштања песама у "
+"Лолипопу."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:389
+msgid "Repeat"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:394 ../data/SettingsDialog.ui:212
+msgid "Order albums by"
+msgstr "Поређај албуме по"
+
+#: ../data/AboutDialog.ui.in:13
+msgid "A music player for GNOME."
+msgstr "Пуштач музике за Гном."
+
+#: ../data/AboutDialog.ui.in:15
+msgid "Visit Lollypop website"
+msgstr "Матична веб страница Лолипопа"
+
+#. Replace me with your names
+#: ../data/AboutDialog.ui.in:28
+msgctxt "Add your names here, do not remove previous names!"
+msgid "translator1, translator2, ..."
+msgstr ""
+
+#: ../data/AboutDialog.ui.in:29
+msgid ""
+"\n"
+"Reda Lazri:\n"
+"    Lollypop icon\n"
+"Geary Development Team:\n"
+"    tag-list-symbolic icon\n"
+"GNOME Project:\n"
+"    unplayed-albums-symbolic\n"
+"    artists-list-symbolic icons\n"
+"Martins D. Okoi:\n"
+"    Description in appdata\n"
+"    "
+msgstr ""
+
+#: ../data/AboutDialog.ui.in:67
+msgid "Donations:"
+msgstr "Донације:"
+
+#: ../data/AboutDialog.ui.in:74
+msgid "Liberapay"
+msgstr "Liberapay"
+
+#: ../data/AboutDialog.ui.in:84 ../lollypop/container_notification.py:107
+msgid "Patreon"
+msgstr ""
+
+#: ../data/AboutDialog.ui.in:94 ../lollypop/container_notification.py:107
+msgid "PayPal"
+msgstr "Пејпал"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:8
+#: ../data/org.gnome.Lollypop.desktop.in:3
+msgid "Lollypop"
+msgstr "Лолипоп"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:9
+#: ../data/org.gnome.Lollypop.desktop.in:5
+msgid "Play and organize your music collection"
+msgstr "Пуштајте и организујте вашу музичку збирку"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:11
+msgid ""
+"Lollypop is a lightweight modern music player designed to work excellently "
+"on the GNOME desktop environment. It also features a party mode which will "
+"auto-select party-related playlists; allows access the player from your "
+"couch thanks to it fullscreen mode; fetches lyrics, artwork and biography "
+"online; and provides native support for ReplayGain."
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:13
+msgid "Multiple Audio Formats –"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:14
+msgid "Metadata –"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:15
+msgid "Synchronization –"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:16
+msgid "Audio Scrobbling –"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.desktop.in:4
+msgid "Music Player"
+msgstr "Пуштач музике"
+
+#: ../data/org.gnome.Lollypop.desktop.in:13
+msgid "Music;Player;Lollipop;"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.desktop.in:23
+msgid "Play/Pause"
+msgstr "Пусти/заустави"
+
+#: ../data/org.gnome.Lollypop.desktop.in:27 ../lollypop/assistant_flatpak.py:40
+#: ../lollypop/assistant_google.py:42 ../lollypop/assistant_google.py:54
+#: ../lollypop/assistant_google.py:71 ../lollypop/assistant_lastfm.py:45
+#: ../lollypop/assistant_lastfm.py:58 ../lollypop/assistant_musicbrainz.py:38
+#: ../lollypop/assistant_musicbrainz.py:50 ../lollypop/notification.py:37
+msgid "Next"
+msgstr "Следећа"
+
+#: ../data/org.gnome.Lollypop.desktop.in:31 ../lollypop/notification.py:33
+msgid "Previous"
+msgstr "Претходна"
+
+#: ../data/Appmenu.ui:45
+msgid "Update music"
+msgstr ""
+
+#: ../data/Appmenu.ui:63
+msgid "Mini player"
+msgstr ""
+
+#: ../data/Appmenu.ui:81
+msgid "Fullscreen"
+msgstr ""
+
+#: ../data/Appmenu.ui:108
+msgid "_Preferences"
+msgstr "П_оставке"
+
+#: ../data/Appmenu.ui:122
+msgid "_Keyboard Shortcuts"
+msgstr "_Пречице на тастатури"
+
+#: ../data/Appmenu.ui:136
+msgid "_About Lollypop"
+msgstr ""
+
+#: ../data/Appmenu.ui:149
+msgid "Quit"
+msgstr ""
+
+#: ../data/Appmenu.ui:219
+msgid "Equalizer"
+msgstr ""
+
+#: ../data/ArtistBannerWidget.ui:92
+msgid "Play albums"
+msgstr "Пусти албуме"
+
+#: ../data/ArtistBannerWidget.ui:110
+msgctxt "artist context"
+msgid "Add to current playlist"
+msgstr "Додај на тренутни списак песама"
+
+#: ../data/ArtworkSearch.ui:69
+msgid "Select a local file"
+msgstr "Изабери локалну датотеку"
+
+#: ../data/DeviceWidget.ui:67
+msgid "Convert to:"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:79
+msgid "Normalize"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:100
+msgid "Do not convert"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:117
+msgid "MP3"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:134
+msgid "Ogg Vorbis"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:151
+msgid "AAC"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:168
+msgid "FLAC"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:204
+msgid "Synchronized:"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:217 ../lollypop/shown.py:36
+#: ../lollypop/view_albums_line.py:279
+msgid "Albums"
+msgstr "Албуми"
+
+#: ../data/DeviceWidget.ui:233 ../lollypop/menu_artist.py:67
+#: ../lollypop/menu_objects.py:51 ../lollypop/menu_objects.py:117
+#: ../lollypop/menu_selectionlist.py:93 ../lollypop/shown.py:30
+#: ../lollypop/widgets_banner_playlists.py:42
+msgid "Playlists"
+msgstr "Листе песама"
+
+#: ../data/DeviceWidget.ui:284 ../lollypop/widgets_device.py:137
+#: ../lollypop/widgets_device.py:338
+msgid "Synchronize"
+msgstr ""
+
+#: ../data/PlaylistBannerWidget.ui:71 ../lollypop/view_tracks_album.py:312
+#: ../lollypop/widgets_player_buttons.py:188
+msgid "Play"
+msgstr "Пусти"
+
+#: ../data/PlaylistBannerWidget.ui:89
+msgid "Play playlist randomized"
+msgstr ""
+
+#: ../data/PlaylistPopover.ui:23 ../data/RadioMenu.ui:50
+msgid "Name:"
+msgstr "Назив:"
+
+#: ../data/PlaylistPopover.ui:59 ../data/RadioMenu.ui:106
+#: ../data/SmartPlaylistView.ui:153 ../lollypop/menu_playlist.py:116
+msgid "Save"
+msgstr "Сачувај"
+
+#: ../data/RadioMenu.ui:61
+msgid "Address:"
+msgstr "Адреса:"
+
+#: ../data/SettingsDialog.ui:41
+msgid "General"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:46
+msgid "Appearance"
+msgstr "Изглед"
+
+#: ../data/SettingsDialog.ui:51 ../data/SettingsDialog.ui:54
+msgid "Whether the application should use a dark theme"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:52
+msgid "Dark Mode"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:70
+msgid "Single column mode"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:72
+msgid "Only show a single column for tracks"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:105
+msgid "High quality artwork"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:122
+msgid "Artwork size"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:139 ../lollypop/menu_actions.py:77
+msgid "Clean cache"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:153
+msgid "Behaviour"
+msgstr "Понашање програма"
+
+#: ../data/SettingsDialog.ui:160
+msgid "Play music in background"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:176
+msgid "Restore state on startup"
+msgstr "Поврати претходно стање програма приликом покретања програма"
+
+#: ../data/SettingsDialog.ui:178
+msgid "Restore current playback and view"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:194
+msgid "Save changes to file"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:196
+msgid "Save artwork and rating to files"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:213
+msgid "Albums will be sorted by this field"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:222
+msgid "Artist - year"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:223
+msgid "Artist - title"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:224
+msgid "Title"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:225 ../data/SmartPlaylistWidget.ui:33
+msgid "Year"
+msgstr "години"
+
+#: ../data/SettingsDialog.ui:226 ../data/SmartPlaylistWidget.ui:32
+msgid "Popularity"
+msgstr "популарности"
+
+#: ../data/SettingsDialog.ui:242 ../lollypop/menu_artist.py:59
+#: ../lollypop/menu_decade.py:39 ../lollypop/menu_genre.py:41
+#: ../lollypop/menu_objects.py:43 ../lollypop/menu_objects.py:109
+msgid "Playback"
+msgstr "Пуштање"
+
+#: ../data/SettingsDialog.ui:247
+msgid "Enable transitions"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:249
+msgid "Add a transition on track change"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:265
+msgid "Duration"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:267
+msgid "Transition duration in milliseconds"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:283
+msgid "ReplayGain"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:285
+msgid "Apply audio correction on the fly"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:294 ../lollypop/menu_search.py:41
+msgid "Disabled"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:295
+msgid "Track"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:296 ../data/SmartPlaylistWidget.ui:30
+msgid "Album"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:315
+msgid "Music"
+msgstr "Музика"
+
+#: ../data/SettingsDialog.ui:320
+msgid "Collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:331 ../lollypop/dialog_settings.py:245
+msgid "Reset collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:370
+msgid "Import settings"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:377
+msgid "Update music if files added to collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:393 ../data/SettingsDialog.ui:431
+msgid "You need to reset collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:394
+msgid "Show compilations"
+msgstr "Прикажи компилације"
+
+#: ../data/SettingsDialog.ui:396
+msgid ""
+"A compilation is an album without any \"Album artist tag\"\n"
+"and with different artists"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:413
+msgid "Import playlists"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:415
+msgid "Search for playlists in your collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:432
+msgid "Import advanced tags"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:434
+msgid "Performers, composers, …"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:452
+msgid "Statistics"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:483
+msgid "Remove devices managed by Lollypop"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:484 ../lollypop/menu_artist.py:66
+#: ../lollypop/menu_genre.py:53 ../lollypop/menu_objects.py:53
+#: ../lollypop/menu_objects.py:90 ../lollypop/menu_playlist.py:68
+msgid "Devices"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:497 ../lollypop/shown.py:34
+#: ../lollypop/toolbar_end.py:249
+msgid "Web"
+msgstr "Веб"
+
+#: ../data/SettingsDialog.ui:502
+msgid "Status"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:507
+msgid "Allow network access"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:524
+msgid "Background data"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:526
+msgid "Search artwork in background"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:547
+msgid "Song playback"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:558 ../data/SettingsDialog.ui:746
+#: ../data/SettingsDialog.ui:828 ../data/SettingsDialog.ui:910
+msgid "Enabled"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:575
+msgid "Use a recent version of youtube-dl"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:591
+msgid "Google API-key"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:616 ../data/SettingsDialog.ui:773
+#: ../data/SettingsDialog.ui:855 ../data/SettingsDialog.ui:952
+#: ../lollypop/dialog_settings.py:189
+msgid "Connect"
+msgstr "Повежи се"
+
+#: ../data/SettingsDialog.ui:660
+msgid "Use an Invidious server"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:676
+msgid "No server set"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:686
+msgid "What is Invidious ?"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:735
+msgid "Search (artwork, songs, ...)"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:926
+msgid "ListenBrainz API-Key"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:998 ../lollypop/menu_playback.py:144
+#: ../lollypop/menu_search.py:56
+msgid "Deezer"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1015 ../lollypop/menu_search.py:72
+msgid "Jamendo"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1031
+msgid "AudioDB"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1048 ../lollypop/menu_playback.py:164
+#: ../lollypop/menu_search.py:68
+msgid "Spotify"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1065
+msgid "FANART.TV"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1082
+msgid "iTunes"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1099
+msgid "Google"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1116
+msgid "Startpage"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1133
+msgid "DuckDuckGo"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1150
+msgid "Wikipedia"
+msgstr "Википедија"
+
+#: ../data/SettingsDialog.ui:1172 ../lollypop/shown.py:35
+msgid "Lyrics"
+msgstr "Текст песме"
+
+#: ../data/SettingsDialog.ui:1177
+msgid "Wikia"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1194
+msgid "Genius"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1211
+msgid "Metro Lyrics"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1228
+msgid "Bing"
+msgstr ""
+
+#: ../data/Shortcuts.ui:13
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Опште"
+
+#: ../data/Shortcuts.ui:17
+msgctxt "shortcut window"
+msgid "Settings"
+msgstr "Подешавања"
+
+#: ../data/Shortcuts.ui:24
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Претрага"
+
+#: ../data/Shortcuts.ui:31
+msgctxt "shortcut window"
+msgid "Party mode"
+msgstr "Режим рада за журке"
+
+#: ../data/Shortcuts.ui:38
+msgctxt "shortcut window"
+msgid "Show/Hide filter"
+msgstr "Прикажи или сакриј филтер"
+
+#: ../data/Shortcuts.ui:45
+msgctxt "shortcut window"
+msgid "Lock playback"
+msgstr "Закључај пуштање песама"
+
+#: ../data/Shortcuts.ui:52
+msgctxt "shortcut window"
+msgid "Show equalizer"
+msgstr ""
+
+#: ../data/Shortcuts.ui:59
+msgctxt "shortcut window"
+msgid "Show lyrics"
+msgstr "Прикажи текст песме"
+
+#: ../data/Shortcuts.ui:66
+msgctxt "shortcut window"
+msgid "Volume up"
+msgstr ""
+
+#: ../data/Shortcuts.ui:73
+msgctxt "shortcut window"
+msgid "Volume down"
+msgstr ""
+
+#: ../data/Shortcuts.ui:80
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr "Преко целог екрана"
+
+#: ../data/Shortcuts.ui:87
+msgctxt "shortcut window"
+msgid "Mini player"
+msgstr ""
+
+#: ../data/Shortcuts.ui:96
+msgctxt "shortcut window"
+msgid "Playback"
+msgstr "Пуштање музике"
+
+#: ../data/Shortcuts.ui:100
+msgctxt "shortcut window"
+msgid "Play"
+msgstr "Пусти"
+
+#: ../data/Shortcuts.ui:107
+msgctxt "shortcut window"
+msgid "Pause"
+msgstr "Паузирај"
+
+#: ../data/Shortcuts.ui:114
+msgctxt "shortcut window"
+msgid "Stop"
+msgstr "Заустави"
+
+#: ../data/Shortcuts.ui:121
+msgctxt "shortcut window"
+msgid "Next track"
+msgstr "Следећа песма"
+
+#: ../data/Shortcuts.ui:128
+msgctxt "shortcut window"
+msgid "Previous track"
+msgstr "Претходна песма"
+
+#: ../data/Shortcuts.ui:135
+msgctxt "shortcut window"
+msgid "Skip current album"
+msgstr "Прескочи тренутни албум"
+
+#: ../data/Shortcuts.ui:142
+msgctxt "shortcut window"
+msgid "Love current track"
+msgstr "Заволи тренутну песму"
+
+#: ../data/Shortcuts.ui:149
+msgctxt "shortcut window"
+msgid "Repeat track"
+msgstr "Понови песму"
+
+#: ../data/Shortcuts.ui:156
+msgctxt "shortcut window"
+msgid "Skip backward in track"
+msgstr "Премотај назад песму"
+
+#: ../data/Shortcuts.ui:163
+msgctxt "shortcut window"
+msgid "Skip forward in track"
+msgstr "Премотај напред песму"
+
+#: ../data/Shortcuts.ui:170
+msgctxt "shortcut window"
+msgid "Enable/disable scrobbling"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:94
+msgid "Limit to"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:121
+msgid "tracks selected by"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:136
+msgid "random"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:137
+msgid "album"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:138
+msgid "artist"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:139
+msgid "year DESC"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:140
+msgid "year ASC"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:141
+msgid "duration DESC"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:142
+msgid "duration ASC"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:184
+msgid "Match music for "
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:210
+msgid "all"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:211
+msgid "one"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:226
+msgid "of the following rules :"
+msgstr ""
+
+#: ../data/SmartPlaylistWidget.ui:28
+msgid "Genre"
+msgstr ""
+
+#: ../data/SmartPlaylistWidget.ui:29 ../lollypop/menu_objects.py:48
+#: ../lollypop/menu_objects.py:114
+msgid "Artist"
+msgstr "Извођач"
+
+#: ../data/SmartPlaylistWidget.ui:31
+msgid "Rating"
+msgstr ""
+
+#: ../data/SmartPlaylistWidget.ui:34
+msgid "BPM"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:7
+msgid "Party mode"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:9
+msgid "Enable party mode"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:13
+msgid "Configure"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:17
+msgid "Shuffle"
+msgstr "Мешање песама"
+
+#: ../data/ToolbarEnd.ui:24
+msgid "Repetition"
+msgstr "Понављање"
+
+#: ../data/ToolbarEnd.ui:26
+msgid "Continuous playback"
+msgstr "Стално пуштање песама"
+
+#: ../data/ToolbarEnd.ui:31
+msgid "Automatic playback (similar)"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:36
+msgid "Automatic playback (random)"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:41
+msgid "Repeat track"
+msgstr "Понови песму"
+
+#: ../data/ToolbarEnd.ui:46
+msgid "Do not repeat"
+msgstr "Не понављај"
+
+#: ../data/ToolbarEnd.ui:52
+msgid "Scrobbling"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:54
+msgid "Enable scrobbling"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:96
+msgid "Playback options"
+msgstr ""
+
+#: ../data/TuneinPopover.ui:26
+msgid "Go back"
+msgstr "Иди назад"
+
+#: ../data/TuneinPopover.ui:58
+msgid "Go home"
+msgstr "Иди на почетну"
+
+#: ../lollypop/artwork_album.py:515 ../lollypop/widgets_rating.py:211
+msgid "You need to install kid3-cli"
+msgstr "Потребно је да инсталирате kid3-cli"
+
+#: ../lollypop/assistant_flatpak.py:31
+msgid "Authorization needed"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:33
+msgid ""
+"\n"
+"In order to be able to access your collection,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:44
+msgid "Update folders"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:46
+msgid ""
+"\n"
+"- <b>Open</b> Lollypop <b>preferences</b>\n"
+"- Go to the <b>Music</b> tab\n"
+"- <b>Remove</b> all folders from collection\n"
+"- Then, <b>add</b> them again"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:53 ../lollypop/assistant_google.py:52
+#: ../lollypop/assistant_google.py:69 ../lollypop/assistant_google.py:84
+#: ../lollypop/assistant_lastfm.py:56 ../lollypop/assistant_lastfm.py:68
+#: ../lollypop/assistant_musicbrainz.py:48
+#: ../lollypop/assistant_musicbrainz.py:60
+msgid "Back"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:55
+msgid "Preferences"
+msgstr "Поставке"
+
+#: ../lollypop/assistant_google.py:29
+msgid "What is Google API-key?"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:31
+msgid ""
+"\n"
+"In order to use the YoutTube playback,\n"
+"you need to create an API-Key for the\n"
+"\n"
+"<b>\"YouTube Data API v3\"</b>\n"
+"\n"
+"which is used to play songs."
+msgstr ""
+
+#: ../lollypop/assistant_google.py:40 ../lollypop/assistant_lastfm.py:43
+#: ../lollypop/assistant_musicbrainz.py:36 ../lollypop/dialog_apps.py:70
+#: ../lollypop/menu_playlist.py:117 ../lollypop/widgets_device.py:144
+msgid "Cancel"
+msgstr "Откажи"
+
+#: ../lollypop/assistant_google.py:46
+msgid "Connect to the console"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:48
+msgid ""
+"\n"
+"<b>Open and log</b> in to the <b>Google Developer Console</b>"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:50
+msgid "Access Google Developer Console"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:58
+msgid "Activate the API"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:60
+msgid ""
+"\n"
+"<b>Add a new project</b> in the console.\n"
+"\n"
+"After that, <b>add a new API</b> and search\n"
+"for the <b>\"YouTube Data API v3\"</b>.\n"
+"\n"
+"<b>Activate that API</b> for your project"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:75
+msgid "Copy the key"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:77
+msgid ""
+"\n"
+"Open <b>\"Credentials\"</b> in the sidebar and\n"
+"<b>Create Credentials</b> for an<b>API-Key</b>.\n"
+"\n"
+"<b>Copy the API-Key to Lollypop</b>"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:86 ../lollypop/assistant_lastfm.py:70
+#: ../lollypop/assistant_musicbrainz.py:62 ../lollypop/assistant.py:151
+msgid "Finish"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:36
+#, python-format
+msgid "Scrobbling to %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:38
+#, python-format
+msgid ""
+"\n"
+"In order to send your activity to <b>%s</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:49
+#, python-format
+msgid "Connect to %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:51
+#, python-format
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>%s</b>.\n"
+"Then, allow Lollypop."
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:54
+#, python-format
+msgid "Access %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:62
+msgid "Just play a track"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:64
+msgid ""
+"\n"
+"<b>Click \"Finish\"</b> once Lollypop has been allowed."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:29
+msgid "Scrobbling to ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:31
+msgid ""
+"\n"
+"In order to send your activity to <b>ListenBrainz</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:42
+msgid "Connect to ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:44
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>ListenBrainz</b>."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:46
+msgid "Access ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:54
+msgid "Copy key"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:56
+msgid ""
+"\n"
+"<b>Finish</b> the activation by copying <b>API-Key</b> in Lollypop."
+msgstr ""
+
+#: ../lollypop/assistant.py:149
+msgid "Can't contact this service"
+msgstr ""
+
+#: ../lollypop/collection_scanner.py:334
+msgid "Resetting database"
+msgstr ""
+
+#: ../lollypop/collection_scanner.py:505
+msgid "Scan disabled, missing collection"
+msgstr ""
+
+#: ../lollypop/collection_scanner.py:800 ../lollypop/database_tracks.py:356
+#: ../lollypop/tagreader.py:87 ../lollypop/tagreader.py:103
+#: ../lollypop/tagreader.py:119 ../lollypop/tagreader.py:190
+#: ../lollypop/tagreader.py:238 ../lollypop/tagreader.py:260
+#: ../lollypop/tagreader.py:276 ../lollypop/tagreader.py:280
+#: ../lollypop/tagreader.py:290 ../lollypop/tagreader.py:298
+msgid "Unknown"
+msgstr "Непознато"
+
+#: ../lollypop/container_notification.py:96
+msgid "Automatically download albums and artists artwork?"
+msgstr ""
+
+#: ../lollypop/container_notification.py:97
+msgid "Yes"
+msgstr ""
+
+#: ../lollypop/container_notification.py:106
+msgid "Please consider a donation to the project"
+msgstr "Размислите о донацирању пројекту"
+
+#: ../lollypop/database_artists.py:122
+msgid "Many artists"
+msgstr "Многи извођачи"
+
+#: ../lollypop/database_upgrade.py:775
+msgid "Please wait while Lollypop is updating albums"
+msgstr ""
+
+#: ../lollypop/database_upgrade.py:794
+msgid "Please wait while Lollypop is updating tracks"
+msgstr ""
+
+#: ../lollypop/dialog_apps.py:73
+msgid "Select"
+msgstr ""
+
+#: ../lollypop/dialog_apps.py:81
+msgid "Select an application"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:85
+#, python-format
+msgid "Artists count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:87
+#, python-format
+msgid "Albums count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:89
+#, python-format
+msgid "Tracks count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:206 ../lollypop/dialog_settings.py:341
+msgid "Disconnect"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:251
+msgid "Are you sure?"
+msgstr ""
+
+#: ../lollypop/fullscreen.py:355
+msgid "You are using a broken cursor theme!"
+msgstr ""
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "band"
+msgstr ""
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "singer"
+msgstr ""
+
+#: ../lollypop/inhibitor.py:101
+msgid "Playing music"
+msgstr ""
+
+#: ../lollypop/menu_actions.py:58
+msgid "Save in collection"
+msgstr ""
+
+#: ../lollypop/menu_actions.py:68
+msgid "Remove from collection"
+msgstr ""
+
+#: ../lollypop/menu_actions.py:87
+msgid "Buy this album"
+msgstr ""
+
+#: ../lollypop/menu_actions.py:99
+msgid "Open with…"
+msgstr ""
+
+#: ../lollypop/menu_artist.py:48
+msgid "Show tracks"
+msgstr ""
+
+#: ../lollypop/menu_artist.py:56
+msgid "Play featured"
+msgstr ""
+
+#: ../lollypop/menu_artist.py:62 ../lollypop/menu_genre.py:44
+#: ../lollypop/menu_objects.py:55 ../lollypop/menu_objects.py:118
+#: ../lollypop/menu_playlist.py:66
+msgid "Add to"
+msgstr ""
+
+#: ../lollypop/menu_artist.py:111
+msgid "Available albums"
+msgstr ""
+
+#: ../lollypop/menu_artwork.py:67 ../lollypop/menu_artwork.py:114
+msgid "Change Artwork"
+msgstr ""
+
+#: ../lollypop/menu_current_albums.py:34 ../lollypop/menu_current_albums.py:43
+#: ../lollypop/shown.py:40 ../lollypop/widgets_banner_current_albums.py:65
+msgid "Playing albums"
+msgstr "Пуштени албуми"
+
+#: ../lollypop/menu_current_albums.py:42
+msgid "Create a new playlist"
+msgstr ""
+
+#: ../lollypop/menu_objects.py:66
+msgid "Show album"
+msgstr ""
+
+#: ../lollypop/menu_objects.py:70 ../lollypop/menu_objects.py:119
+#: ../lollypop/menu_similars.py:167
+msgid "Others"
+msgstr ""
+
+#: ../lollypop/menu_objects.py:141
+msgid "%Y-%m-%d"
+msgstr ""
+
+#: ../lollypop/menu_objects.py:171
+msgid "YouTube page address"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:57 ../lollypop/menu_playback.py:290
+#: ../lollypop/menu_playback.py:534
+msgid "Play a radio"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:72
+msgid "Add to playback"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:79 ../lollypop/widgets_row_album.py:110
+msgid "Remove from playback"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:114
+msgid "Related tracks"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:123 ../lollypop/playlists.py:107
+#: ../lollypop/playlists.py:371 ../lollypop/shown.py:70
+msgid "Loved tracks"
+msgstr "Омиљене песме"
+
+#: ../lollypop/menu_playback.py:132 ../lollypop/shown.py:68
+msgid "Popular tracks"
+msgstr "Популарне песме"
+
+#: ../lollypop/menu_playback.py:136
+msgid "From collection"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:154 ../lollypop/menu_search.py:60
+msgid "Last.fm"
+msgstr "Ласт.фм"
+
+#: ../lollypop/menu_playback.py:168 ../lollypop/menu_suggestions.py:74
+msgid "From the Web"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:210
+msgid "Play this playlist"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:217
+msgid "Add this playlist"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:281
+msgid "Play this artist"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:353
+msgid "Play this genre"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:434
+msgid "Play this decade"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:517 ../lollypop/widgets_row_album.py:118
+msgid "Play this album"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:529 ../lollypop/menu_playback.py:615
+msgid "Ignored"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:672
+msgid "Add to queue"
+msgstr "Додај у редослед"
+
+#: ../lollypop/menu_playback.py:678
+msgid "Remove from queue"
+msgstr "Избаци из редоследа"
+
+#: ../lollypop/menu_playback.py:689
+msgid "Do not stop after"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:694
+msgid "Stop after"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:43 ../lollypop/menu_playlist.py:113
+msgid "Save playlist"
+msgstr "Сачувај списак песама"
+
+#: ../lollypop/menu_playlist.py:50
+msgid "Sync from Last.FM"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:57
+msgid "Manage smart playlist"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:61
+msgid "Remove playlist"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:64
+msgid "Playlist"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:70
+msgid "Edit"
+msgstr "Уреди"
+
+#: ../lollypop/menu_playlist.py:100
+msgid "Remove this playlist?"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:101
+msgid "Confirm"
+msgstr "Потврди"
+
+#: ../lollypop/menu_playlists.py:47
+msgid "New playlist"
+msgstr "Нова листа песама"
+
+#: ../lollypop/menu_search.py:33 ../lollypop/shown.py:39
+msgid "Search"
+msgstr "Претрага"
+
+#: ../lollypop/menu_search.py:64
+msgid "MusicBrainz"
+msgstr ""
+
+#: ../lollypop/menu_selectionlist.py:50
+msgid "Default on startup"
+msgstr "Подразумевано при покретању"
+
+#: ../lollypop/menu_selectionlist.py:53
+msgid "Startup"
+msgstr "Покретање"
+
+#: ../lollypop/menu_selectionlist.py:96
+msgid "Sidebar"
+msgstr ""
+
+#: ../lollypop/menu_selectionlist.py:111
+msgid "Show text"
+msgstr ""
+
+#: ../lollypop/menu_selectionlist.py:112
+msgid "Options"
+msgstr ""
+
+#: ../lollypop/menu_selectionlist.py:137
+msgid "Sections"
+msgstr ""
+
+#: ../lollypop/menu_similars.py:140 ../lollypop/view_lyrics.py:132
+msgid "Loading…"
+msgstr "Учитавам…"
+
+#: ../lollypop/menu_similars.py:175
+msgid "Similar artists"
+msgstr "Слични извођачи"
+
+#: ../lollypop/menu_similars.py:279
+msgid "No results"
+msgstr ""
+
+#: ../lollypop/menu_suggestions.py:35 ../lollypop/shown.py:24
+msgid "Suggestions"
+msgstr ""
+
+#: ../lollypop/menu_suggestions.py:47 ../lollypop/view_suggestions.py:129
+msgid "New releases on Spotify"
+msgstr ""
+
+#: ../lollypop/menu_suggestions.py:59 ../lollypop/view_suggestions.py:127
+msgid "Suggestions from Spotify"
+msgstr ""
+
+#: ../lollypop/menu_suggestions.py:71 ../lollypop/view_suggestions.py:131
+msgid "Top albums on Deezer"
+msgstr ""
+
+#: ../lollypop/menu_sync.py:33
+msgid "All devices"
+msgstr ""
+
+#: ../lollypop/player_albums.py:58 ../lollypop/player_albums.py:142
+#: ../lollypop/player_albums.py:169 ../lollypop/player_albums.py:185
+msgid "No album available"
+msgstr ""
+
+#: ../lollypop/player_bin.py:426
+msgid "Can't find this track on YouTube"
+msgstr ""
+
+#: ../lollypop/playlists.py:94 ../lollypop/playlists.py:97
+msgid "New playlist "
+msgstr "Нова листа песама"
+
+#: ../lollypop/shown.py:25
+msgid "Popular albums"
+msgstr "Популарни албуми"
+
+#: ../lollypop/shown.py:26
+msgid "Random albums"
+msgstr "Насумични албуми"
+
+#: ../lollypop/shown.py:27
+msgid "Loved albums"
+msgstr "Вољени албуми"
+
+#: ../lollypop/shown.py:28
+msgid "Recently added albums"
+msgstr "Скоро додати албуми"
+
+#: ../lollypop/shown.py:29
+msgid "Seldomly played albums"
+msgstr ""
+
+#: ../lollypop/shown.py:31
+msgid "Years"
+msgstr ""
+
+#: ../lollypop/shown.py:32
+msgid "Genres"
+msgstr ""
+
+#: ../lollypop/shown.py:33
+msgid "Genres (list)"
+msgstr ""
+
+#: ../lollypop/shown.py:37 ../lollypop/view_artists_line.py:165
+msgid "Artists"
+msgstr ""
+
+#: ../lollypop/shown.py:38
+msgid "Artists (list)"
+msgstr ""
+
+#: ../lollypop/shown.py:41
+msgid "Information"
+msgstr ""
+
+#: ../lollypop/shown.py:42
+msgid "Compilations"
+msgstr "Компилације"
+
+#: ../lollypop/shown.py:69
+msgid "Random tracks"
+msgstr "Насумичне песме"
+
+#: ../lollypop/shown.py:71
+msgid "Recently played tracks"
+msgstr ""
+
+#: ../lollypop/shown.py:72
+msgid "Seldomly played tracks"
+msgstr ""
+
+#: ../lollypop/shown.py:73
+msgid "Skipped tracks"
+msgstr ""
+
+#: ../lollypop/shown.py:74
+msgid "All tracks"
+msgstr ""
+
+#: ../lollypop/toolbar_end.py:246
+msgid "All genres"
+msgstr ""
+
+#: ../lollypop/utils.py:77
+#, python-format
+msgid "%s h  %s m"
+msgstr "%s ч %s м"
+
+#: ../lollypop/utils.py:79
+#, python-format
+msgid "%s h"
+msgstr "%s ч"
+
+#: ../lollypop/utils.py:81
+#, python-format
+msgid "%s m"
+msgstr "%s м"
+
+#: ../lollypop/utils.py:309
+msgid "The the"
+msgstr "Члан члан"
+
+#: ../lollypop/view_albums_box.py:55
+msgid "Missing youtube-dl command"
+msgstr ""
+
+#: ../lollypop/view_albums_box.py:60 ../lollypop/view_lyrics.py:169
+msgid "Network unavailable or disabled in settings"
+msgstr ""
+
+#: ../lollypop/view_albums_box.py:193
+msgid "New albums available"
+msgstr ""
+
+#: ../lollypop/view_albums_box.py:194 ../lollypop/view_artists_rounded.py:155
+msgid "Refresh"
+msgstr "Освежи"
+
+#: ../lollypop/view_albums_line.py:164
+msgid "Others compilations"
+msgstr ""
+
+#: ../lollypop/view_albums_line.py:199
+msgid "Appears on"
+msgstr ""
+
+#: ../lollypop/view_albums_line.py:230
+msgid "Popular albums at the moment"
+msgstr ""
+
+#: ../lollypop/view_artists_line.py:133
+msgid "Why not listen to?"
+msgstr ""
+
+#: ../lollypop/view_artists_rounded.py:154
+msgid "New artists available"
+msgstr ""
+
+#: ../lollypop/view_information.py:152
+msgid "Loading information"
+msgstr "Учитавам податке"
+
+#: ../lollypop/view_information.py:262 ../lollypop/view_information.py:294
+#, python-format
+msgid "No information for %s"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:105 ../lollypop/widgets_banner_lyrics.py:136
+msgid "No track playing"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:269
+msgid "You need to install python3-textblob module"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:274
+msgid "Can't translate this lyrics"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:304
+msgid "Disabled in network settings"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:307
+msgid "No lyrics found "
+msgstr "Нисам нашао текст песме "
+
+#: ../lollypop/view.py:48
+msgid "No items to show"
+msgstr ""
+
+#: ../lollypop/view_search.py:151 ../lollypop/view_search.py:161
+#: ../lollypop/view_search.py:185
+msgid "Search for artists, albums and tracks"
+msgstr ""
+
+#: ../lollypop/view_search.py:305
+msgid "No results for this search"
+msgstr ""
+
+#: ../lollypop/view_suggestions.py:145
+msgid "Welcome to Lollypop"
+msgstr ""
+
+#: ../lollypop/view_tracks_album.py:69
+msgid "All tracks skipped"
+msgstr ""
+
+#: ../lollypop/view_tracks_album.py:327
+#, python-format
+msgid "Disc %s"
+msgstr "Диск %s"
+
+#: ../lollypop/view_tracks_queue.py:36
+msgid "Currently in queue"
+msgstr ""
+
+#: ../lollypop/view_tracks_search.py:103
+msgid "Tracks"
+msgstr ""
+
+#: ../lollypop/widgets_artwork_album.py:64
+msgid "Local"
+msgstr ""
+
+#: ../lollypop/widgets_artwork.py:139
+msgid "Select artwork"
+msgstr "Изабери портрет"
+
+#: ../lollypop/widgets_artwork.py:179
+msgid "Remove"
+msgstr "Уклони"
+
+#: ../lollypop/widgets_banner_album.py:245
+#, python-format
+msgid "Released on %s"
+msgstr ""
+
+#: ../lollypop/widgets_banner_artist.py:298
+msgid "Add to current playlist"
+msgstr "Додај на тренутни списак песама"
+
+#: ../lollypop/widgets_banner_artist.py:305
+msgid "Remove from current playlist"
+msgstr "Уклони са тренутног списка песама"
+
+#: ../lollypop/widgets_banner_current_albums.py:42
+msgid "Clear albums"
+msgstr "Очисти албуме"
+
+#: ../lollypop/widgets_banner_current_albums.py:60
+msgid "Go to current track"
+msgstr "Иди на тренутну нумеру"
+
+#: ../lollypop/widgets_banner_today.py:71
+msgid "<b>Album of the day</b>\n"
+msgstr ""
+
+#: ../lollypop/widgets_device.py:119
+msgid "No synchronized albums"
+msgstr ""
+
+#: ../lollypop/widgets_device.py:130
+msgid "No synchronized playlists"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:23
+msgid "Default"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:25 ../lollypop/widgets_equalizer.py:162
+#: ../lollypop/widgets_equalizer.py:194
+msgid "Custom"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:28
+msgid "Acoustic"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:30
+msgid "Bass"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:33
+msgid "Bass and Treble"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:35
+msgid "Classical"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:37
+msgid "Club"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:39
+msgid "Dance"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:41
+msgid "Disco"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:43
+msgid "Drum'n'Bass"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:45
+msgid "Heavy Metal"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:47
+msgid "Jazz"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:49
+msgid "Latin"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:51
+msgid "Metal"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:53
+msgid "New Age"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:55
+msgid "Party"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:57
+msgid "Pop"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:59
+msgid "Reggae"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:61
+msgid "Rock"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:63
+msgid "Techno"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:65
+msgid "Vocal"
+msgstr ""
+
+#: ../lollypop/widgets_loved.py:108
+msgid "Like"
+msgstr ""
+
+#: ../lollypop/widgets_loved.py:113
+msgid "Allow playback"
+msgstr ""
+
+#: ../lollypop/widgets_player_buttons.py:184
+msgid "Pause"
+msgstr "Паузирај"
+
+#: ../lollypop/widgets_playlist_smart.py:165
+msgid "is equal to"
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:166
+msgid "is not equal to"
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:168
+msgid "contains "
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:169
+msgid "does not contain"
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:171
+msgid "is greater than"
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:172
+msgid "is less than"
+msgstr ""
+
+#: ../lollypop/widgets_rating.py:51
+#, python-format
+msgid "Song played %s times"
+msgstr "Песма је пуштена %s пута"
+
+#: ../lollypop/widgets_row_album.py:96
+msgid "Compilation"
+msgstr "Компилација"
+
+#: ../lollypop/widgets_row_album.py:112 ../lollypop/widgets_row_track.py:107
+msgid "Remove from playlist"
+msgstr ""
+
+#~ msgid "Favorite cover file"
+#~ msgstr "Датотека са омиљеним омотом албума"
+
+#~ msgid "JPG cover quality"
+#~ msgstr "Квалитет ЈПГ омота"
+
+#~ msgid "0-100"
+#~ msgstr "0-100"
+
+#~ msgid "Disable use of client side window decorations (headerbar)"
+#~ msgstr ""
+#~ "Онемогући коришћење клијентских прозорских декорација (заглавље програма)"
+
+#~ msgid "Name"
+#~ msgstr "називу"
+
+#~ msgid "Radios"
+#~ msgstr "Радио станице"
+
+#~ msgid "Use dark theme variant"
+#~ msgstr "Користи тамну тему"
+
+#~ msgid "You need to reset database [Music]"
+#~ msgstr "Морате ресетовати базу [Музика]"
+
+#~ msgid "Save changes to files"
+#~ msgstr "Сачувај измене у датотекама"
+
+#~ msgid "Smooth transitions"
+#~ msgstr "Глатки прелази"
+
+#~ msgid "Only in party mode"
+#~ msgstr "Само у режиму за журке"
+
+#~ msgid "Reset database"
+#~ msgstr "Ресетуј базу података"
+
+#~ msgid "User token"
+#~ msgstr "Кориснички жетон"
+
+#~ msgid "API key"
+#~ msgstr "АПИ кључ"
+
+#~ msgid "Configure Lollypop appearance"
+#~ msgstr "Подеси изглед Лолипопа"
+
+#~ msgid "Configure Lollypop behaviour"
+#~ msgstr "Подеси понашање Лолипопа"
+
+#~ msgid "Select music folders"
+#~ msgstr "Изабери директоријуме са музиком"
+
+#, python-format
+#~ msgid "%d artist"
+#~ msgid_plural "%d artists"
+#~ msgstr[0] "%d извођач"
+#~ msgstr[1] "%d извођача"
+#~ msgstr[2] "%d извођача"
+
+#, python-format
+#~ msgid "%d album"
+#~ msgid_plural "%d albums"
+#~ msgstr[0] "%d албум"
+#~ msgstr[1] "%d албума"
+#~ msgstr[2] "%d албума"
+
+#, python-format
+#~ msgid "%d track"
+#~ msgid_plural "%d tracks"
+#~ msgstr[0] "%d нумера"
+#~ msgstr[1] "%d нумере"
+#~ msgstr[2] "%d нумера"
+
+#~ msgctxt "Translation credits here, put your name here!"
+#~ msgid "Cédric Bellegarde <cedric.bellegarde@adishatz.org>"
+#~ msgstr "Марко М. Костић <marko.m.kostic@gmail.com>"
+
+#~ msgid "New radio"
+#~ msgstr "Нова радио станица"
+
+#~ msgid "Can't connect to TuneIn…"
+#~ msgstr "Не могу да се повежем на TuneIn…"
+
+#~ msgid "Please wait…"
+#~ msgstr "Сачекајте…"
+
+#~ msgid "Add"
+#~ msgstr "Додај"
+
+#~ msgid "No result…"
+#~ msgstr "Нема резултата…"
+
+#~ msgid "org.gnome.Lollypop"
+#~ msgstr "org.gnome.Lollypop"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show albums from artist"
+#~ msgstr "Прикажи албуме извођача"
+
+#~ msgid "Last.fm authentication disabled"
+#~ msgstr "Пријава на Last.fm је онемогућена"
+
+#~ msgid "Login:"
+#~ msgstr "Корисничко име:"
+
+#~ msgid "Password:"
+#~ msgstr "Лозинка:"
+
+#~ msgid "Libre.fm"
+#~ msgstr "Libre.fm"
+
+#~ msgid "You need to install pylast and gi secret"
+#~ msgstr ""
+#~ "Потребно је да инсталирате пакете који садрже „pylast“ и „gi secret“"
+
+#~ msgid "Modify information"
+#~ msgstr "Измени податке"
+
+#~ msgid "Only mix songs in party mode"
+#~ msgstr "Преклапај песме само у режиму за журке"
+
+#~ msgid "Transition duration in seconds"
+#~ msgstr "Трајање прелаза у секундама"
+
+#~ msgid "Replay gain value in dB"
+#~ msgstr "Вредност појачања у децибелима"
+
+#~ msgid "New tracks available"
+#~ msgstr "Доступне су нове нумере"
+
+#~ msgid "Unplayed albums"
+#~ msgstr "Неслушани албуми"
+
+#~ msgid "Clear queue"
+#~ msgstr "Очисти редослед"
+
+#~ msgid "Queue"
+#~ msgstr "Редослед"
+
+#~ msgid "Reset artwork?"
+#~ msgstr "Ресетуј омот?"
+
+#, python-format
+#~ msgid "by %s"
+#~ msgstr "изводи %s"
+
+#, python-format
+#~ msgid "by %s, from %s"
+#~ msgstr "изводи %s, са албума %s"
+
+#~ msgid "Search in TuneIn"
+#~ msgstr "Претражи TuneIn"
+
+#~ msgid "Shuffle mode"
+#~ msgstr "Режим мешања песама"
+
+#~ msgid "No shuffle"
+#~ msgstr "Без мешања песама"
+
+#~ msgid "Shuffle albums"
+#~ msgstr "Мешај албуме"
+
+#~ msgid "Recently played"
+#~ msgstr "Скоро слушано"
+
+#~ msgid "Unplayed"
+#~ msgstr "Неслушано"
+
+#~ msgid "Lollypop is a modern music player for GNOME."
+#~ msgstr "Лолипоп је савремен пуштач музике за Гном."
+
+#~ msgid "Features:"
+#~ msgstr "Могућности:"
+
+#~ msgid "Play many audio formats: MP3, MP4, OGG, and FLAC"
+#~ msgstr "Пушта многе звучне формате: MP3, MP4, OGG и FLAC"
+
+#~ msgid "Search in your collection by artist, album and title"
+#~ msgstr "Претражите вашу збирку по извођачу, албуму и наслову"
+
+#~ msgid "Never played"
+#~ msgstr "Никада слушано"
+
+#~ msgid "_About"
+#~ msgstr "О п_рограму"
+
+#~ msgid "Disable all notifications"
+#~ msgstr "Онемогући сва обавештења"
+
+#~ msgid "Disable notifications upon change of song"
+#~ msgstr "Онемогући обавештење при промени песме"
+
+#~ msgid "Show lyrics"
+#~ msgstr "Прикажи текст песме"
+
+#~ msgid "Add to others"
+#~ msgstr "Додај у друго"
+
+#~ msgid "Remove from \"%s\""
+#~ msgstr "Избаци из/са \"%s\""
+
+#~ msgid "Add to \"%s\""
+#~ msgstr "Додај у/на \"%s\""
+
+#~ msgid "Modify radio"
+#~ msgstr "Измени станицу"
+
+#~ msgid "Change artwork"
+#~ msgstr "Промени омот"
+
+#~ msgid "Split playlists view"
+#~ msgstr "Подељени преглед спискова"
+
+#~ msgid "Show sidebar"
+#~ msgstr "Прикажи страничник"
+
+#~ msgid "_Sidebar"
+#~ msgstr "_Страничник"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide navigation list"
+#~ msgstr "Прикажи или сакриј навигациони списак"
+
+#~ msgid "All artists"
+#~ msgstr "Сви извођачи"
+
+#~ msgid "All albums"
+#~ msgstr "Сви албуми"
+
+#~ msgid "Playing playlists"
+#~ msgstr "Пуштени спискови песама"
+
+#~ msgid ""
+#~ "<b>Lollypop uses the Google Custom Search API to search for images on the "
+#~ "web.</b>\n"
+#~ "<small>This API is limited, so it may not work with the default API key.</"
+#~ "small>"
+#~ msgstr ""
+#~ "<b>Лолипоп користи АПИ Гуглове прилагођене претраге да би тражио слике на "
+#~ "вебу.</b>\n"
+#~ "<small>Овај АПИ је ограничен те можда неће радити са подразумеваним АПИ "
+#~ "кључем.</small>"
+
+#~ msgid "<b>Please create a \"Custom Search Engine\" here</b>:"
+#~ msgstr "<b>Унесите „Прилагођеног претраживача“ овде</b>:"
+
+#~ msgid "No logo found…"
+#~ msgstr "Нисам нашао лого…"
+
+#~ msgid "Select a logo  for this radio"
+#~ msgstr "Изабери логотип за ову станицу"
+
+#~ msgid "Next track"
+#~ msgstr "Следећа песма"
+
+#~ msgid "Synchronize to your device"
+#~ msgstr "Усклади на мој уређај"
+
+#~ msgid "USB disks"
+#~ msgstr "USB дискови"
+
+#~ msgid "Please unlock your device"
+#~ msgstr "Откључајте ваш уређај"
+
+#~ msgid "This will remove some files on your device!"
+#~ msgstr "Ово ће уклонити неке датотеке на вашем уређају!"
+
+#~ msgid "Cancel synchronization"
+#~ msgstr "Откажи усклађивање"
+
+#~ msgid "Synced albums"
+#~ msgstr "Усклађени албуми"
+
+#~ msgid "Unknown error while syncing, try to reboot your device"
+#~ msgstr ""
+#~ "Догодила се непозната грешка приликом усклађивања песама са уређајем. "
+#~ "Пробајте да угасите и упалите уређај па онда да ускладите песме."
+
+#~ msgid "Playback behaviour"
+#~ msgstr "Понашање пуштања"
+
+#~ msgid "Show albums from artist"
+#~ msgstr "Прикажи албуме извођача"
+
+#~ msgid "Preserve the cover’s aspect ratio"
+#~ msgstr "Задржи однос слике омота"
+
+#~ msgid "_Update music"
+#~ msgstr "Аж_урирај музику"
+
+#~ msgid "_Fullscreen"
+#~ msgstr "Пре_ко целог екрана"
+
+#~ msgid "Volume"
+#~ msgstr "Гласноћа"
+
+#~ msgid "Last.fm login"
+#~ msgstr "Last.fm пријава"
+
+#~ msgid "Show list of genres"
+#~ msgstr "Прикажи списак жанрова"
+
+#~ msgid "Photo"
+#~ msgstr "Слика"
+
+#~ msgid "Network access disabled"
+#~ msgstr "Приступ мрежи онемогућен"
+
+#~ msgid "Synchronize %s"
+#~ msgstr "Усклади %s"
+
+#~ msgid "No favorite radios"
+#~ msgstr "Нема омиљених станица за приказ"
+
+#~ msgid "REMOVE ME LATER"
+#~ msgstr "УКЛОНИ МЕ КАСНИЈЕ"
+
+#~ msgid "Audio output preview on track hover"
+#~ msgstr "Пусти звук када се лебди мишем над песмом"
+
+#~ msgid ""
+#~ "PulseAudio only. Example: alsa_output.pci-0000_00_14.2.analog-stereo. "
+#~ "Command to get outputs: $ pacmd list-sinks|grep 'name:'"
+#~ msgstr ""
+#~ "Само за Пулс-аудио. На пример: alsa_output.pci-0000_00_14.2.analog-"
+#~ "stereo. Наредба за приказ излаза: $ pacmd list-sinks|grep 'name:'"
+
+#~ msgid "Preview tracks on"
+#~ msgstr "Претпреглед нумера на уређају"
+
+#~ msgid "No audio device"
+#~ msgstr "Нема звучног уређаја"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show genres"
+#~ msgstr "Прикажи жанрове"
+
+#~ msgid "_Quit"
+#~ msgstr "_Излаз"
+
+#~ msgid "Unsplit view"
+#~ msgstr "Неподељени преглед"
+
+#~ msgid "Show genres"
+#~ msgstr "Прикажи жанрове"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide volume control"
+#~ msgstr "Прикажи или сакриј управљање гласноћом"
+
+#~ msgid "Shown"
+#~ msgstr "Приказано"
+
+#~ msgid "Add to playlist"
+#~ msgstr "Додај у листу песама"
+
+#~ msgid "No information on this artist"
+#~ msgstr "Нема података о овом извођачу"
+
+#~ msgid "Ex: The Beatles sorted as Beatles. Reset of database required."
+#~ msgstr "Нпр.: The Beatles поређано као Beatles. Захтева ресетовање базе."
+
+#~ msgid "Allow user to donate to the project"
+#~ msgstr "Дозволи кориснику донирање пројекту"
+
+#~ msgid "Restart current track on previous"
+#~ msgstr "Поново пусти тренутну нумеру кликом на назад"
+
+#~ msgid "Low quality, missing API key…"
+#~ msgstr "Низак квалитет, недостаје АПИ кључ..."
+
+#~ msgid "Remove from \"Not in party\""
+#~ msgstr "Уклони из „није у журци“"
+
+#~ msgid "Add to \"Not in party\""
+#~ msgstr "Додај у „није у журци“"
+
+#~ msgid "Not in party"
+#~ msgstr "Није у журци"
+
+#~ msgid "No free space available on device"
+#~ msgstr "Нема довољно слободног простора на уређају"
+
+#~ msgid "Mini player size"
+#~ msgstr "Величина мини пуштача"
+
+#~ msgid "Mini player position"
+#~ msgstr "Положај мини пуштача"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Mini Player"
+#~ msgstr "Мини пуштач"
+
+#~ msgid "You can select tracks with mouse or Ctrl key"
+#~ msgstr "Можете изабрати нумере са мишем и тастером Ctrl"
+
+#~ msgid "Edit playlist"
+#~ msgstr "Уреди списак песама"
+
+#~ msgid "Delete"
+#~ msgstr "Уклони"
+
+#~ msgid "Image"
+#~ msgstr "Слика"
+
+#~ msgid "Remove \"%s\"?"
+#~ msgstr "Уклонити \"%s\"?"
+
+#~ msgid "Remove these tracks?"
+#~ msgstr "Уклонити ове песме?"
+
+#~ msgid "Flattr"
+#~ msgstr "Флатер"
+
+#~ msgid "Settings"
+#~ msgstr "Подешавања"
+
+#~ msgid ""
+#~ "Party mode\n"
+#~ "Right click to filter"
+#~ msgstr ""
+#~ "Режим за журке\n"
+#~ "Десни клик за филтрирање"
+
+#~ msgid "Populars"
+#~ msgstr "Популарно"
+
+#~ msgid "Recently added"
+#~ msgstr "Скоро додато"
+
+#~ msgid "Create a new playlist based on search"
+#~ msgstr "Направи нову листу песама на основу резултата из претраге"
+
+#~ msgid "Smooth transitions between tracks"
+#~ msgstr "Глатки прелази између нумера"
+
+#~ msgid "Smooth transition duration"
+#~ msgstr "Трајање глатког прелаза"
+
+#~ msgid ""
+#~ "Intuitive browsing: walk through your collection by genres/artists and "
+#~ "through albums artwork"
+#~ msgstr ""
+#~ "Интуитивно прегледање: погледајте вашу збирку по жанровима, извођачима и "
+#~ "преко омота албума"
+
+#~ msgid "Artist bio, lyrics: get artists and tracks information from the web"
+#~ msgstr ""
+#~ "Биографија извођача, текстови песама: преузмите податке о нумерама и "
+#~ "извођачима са веба"
+
+#~ msgid "Party mode: no awkward silences, let Lollypop choose music for you"
+#~ msgstr ""
+#~ "Режим забаве: нема неугодне тишине, дозволите Лолипопу да бира музику за "
+#~ "вас"
+
+#~ msgid "ReplayGain (RG): automatically select the best audio level"
+#~ msgstr "ReplayGain (RG): самостално бирање најбоље јачине звука"
+
+#~ msgid "Sync all albums(MTP)"
+#~ msgstr "Усклади све албуме (МТП)"
+
+#~ msgid "Enable network access"
+#~ msgstr "Омогући мрежни приступ"
+
+#~ msgid "Encode to MP3(MTP)"
+#~ msgstr "Кодирај у MP3 (MTP)"
+
+#~ msgid "Quality of MP3 encoding"
+#~ msgstr "Квалитет MP3 кодирања"
+
+#~ msgid "Normalize MP3(MTP)"
+#~ msgstr "Унормали МП3(МТП)"
+
+#~ msgid "Convert to MP3"
+#~ msgstr "Претвори у МП3"
+
+#~ msgid "Normalize MP3"
+#~ msgstr "Унормали МП3"
+
+#~ msgid "You need to install gstreamer-plugins-ugly"
+#~ msgstr "Потребно је да инсталирате пакет „gstreamer-plugins-ugly“"
+
+#~ msgid "Long press to show options"
+#~ msgstr "Стисни за више опција"
+
+#~ msgid "Show navigation list"
+#~ msgstr "Прикажи навигациони списак"
+
+#~ msgid "Lollypop is detecting an empty folder."
+#~ msgstr "Лолипоп је пронашао празну фасциклу."
+
+#~ msgid "Check your music settings."
+#~ msgstr "Проверите ваша подешавања за музику."
+
+#~ msgid "Modify"
+#~ msgstr "Измени"
+
+#~ msgid "External tracks"
+#~ msgstr "Спољне нумере"
+
+#~ msgid "Never played albums"
+#~ msgstr "Никада пуштани албуми"
+
+#~ msgid ""
+#~ "Reload information\n"
+#~ "Long press to activate auto reload"
+#~ msgstr ""
+#~ "Поново учитај податке\n"
+#~ "Дуже притисните да бисте покренули аутоматско поновно учитавање"
+
+#~ msgid "Advanced artist information disabled"
+#~ msgstr "Напредни подаци о извођачу су онемогућени"
+
+#~ msgid "WebKit support disabled"
+#~ msgstr "Вебкит подршка онемогућена"
+
+#~ msgid "No lyrics found, please install gir1.2-webkit2-4.0"
+#~ msgstr "Текстови песама нису пронађени, инсталирајте gir1.2-webkit2-4.0"
+
+#~ msgid "No information for this artist"
+#~ msgstr "Нема података о овом извођачу"
+
+#~ msgid "musician;band"
+#~ msgstr "извођач;бенд"
+
+#~ msgid "Mix songs"
+#~ msgstr "Преклапај песме"
+
+#~ msgid "Mix duration"
+#~ msgstr "Трајање преклапања"
+
+#~ msgid "Mix duration in seconds"
+#~ msgstr "Трајање преклапања у секундама"
+
+#~ msgid "Mix tracks"
+#~ msgstr "Mешај нумере"
+
+#~ msgctxt "artist context"
+#~ msgid "Add albums"
+#~ msgstr "Додај албуме"
+
+#~ msgid "Save into collection"
+#~ msgstr "Сачувај у колекцију"
+
+#~ msgid "Next tracks"
+#~ msgstr "Следеће песме"
+
+#~ msgid "Append"
+#~ msgstr "Додај"
+
+#~ msgid ""
+#~ "<b>Welcome to Lollypop!</b>\n"
+#~ "Here you can enable network access, allowing Lollypop to fetch music "
+#~ "information from the Web."
+#~ msgstr ""
+#~ "<b>Добродошли у Лолипоп!</b>\n"
+#~ "Овде можете омогућити мрежни приступ и тиме дозволити Лолипопу да добавља "
+#~ "податке о музици са веба.."
+
+#~ msgid "Enable network access:"
+#~ msgstr "Омогући мрежни приступ:"
+
+#~ msgid "<span size='xx-large'><b>Import music</b></span>"
+#~ msgstr "<span size='xx-large'><b>Увези музику</b></span>"
+
+#~ msgid "_Network access"
+#~ msgstr "Мреж_ни приступ"
+
+#~ msgid "Lollypop: You need to install yelp."
+#~ msgstr "Лолипоп: потребно је да инсталирате „Помоћ“ (yelp пакет)."
+
+#~ msgid "_Help"
+#~ msgstr "По_моћ"

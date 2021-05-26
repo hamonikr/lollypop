@@ -1,0 +1,143 @@
+diff --git a/data/SettingsDialog.ui b/data/SettingsDialog.ui
+index 677e0b0..8ca6d78 100644
+--- a/data/SettingsDialog.ui
++++ b/data/SettingsDialog.ui
+@@ -357,33 +357,7 @@
+                 <property name="top_attach">3</property>
+               </packing>
+             </child>
+-            <child>
+-              <object class="GtkLabel" id="mpd">
+-                <property name="visible">True</property>
+-                <property name="can_focus">False</property>
+-                <property name="tooltip_text" translatable="yes">Control Lollypop with any MPD client</property>
+-                <property name="halign">start</property>
+-                <property name="label" translatable="yes">Network control</property>
+-                <property name="ellipsize">start</property>
+-              </object>
+-              <packing>
+-                <property name="left_attach">0</property>
+-                <property name="top_attach">4</property>
+-              </packing>
+-            </child>
+-            <child>
+-              <object class="GtkSwitch" id="switch_mpd">
+-                <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="halign">end</property>
+-                <signal name="state-set" handler="_update_mpd_setting" swapped="no"/>
+-              </object>
+-              <packing>
+-                <property name="left_attach">1</property>
+-                <property name="top_attach">4</property>
+-              </packing>
+-            </child>
+-            <child>
++           <child>
+               <object class="GtkLabel" id="mix">
+                 <property name="visible">True</property>
+                 <property name="can_focus">False</property>
+diff --git a/src/Makefile.am b/src/Makefile.am
+index adfc9e9..3dba79b 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -16,7 +16,6 @@ app_PYTHON = \
+     database_albums.py\
+     database_artists.py\
+     database_genres.py\
+-    database_mpd.py\
+     database_tracks.py\
+     database_upgrade.py\
+     define.py\
+@@ -25,7 +24,6 @@ app_PYTHON = \
+     lastfm.py\
+     list.py\
+     miniplayer.py\
+-    mpd.py\
+     mpris.py\
+     notification.py\
+     player_base.py\
+diff --git a/src/application.py b/src/application.py
+index 8b37afd..1baea49 100644
+--- a/src/application.py
++++ b/src/application.py
+@@ -52,7 +52,6 @@ from lollypop.playlists import Playlists
+ from lollypop.radios import Radios
+ from lollypop.collectionscanner import CollectionScanner
+ from lollypop.fullscreen import FullScreen
+-from lollypop.mpd import MpdServerDaemon
+ 
+ 
+ class Application(Gtk.Application):
+@@ -74,7 +73,6 @@ class Application(Gtk.Application):
+         self.cursors = {}
+         self.window = None
+         self.notify = None
+-        self.mpd = None
+         self.lastfm = None
+         self.debug = False
+         self._externals_count = 0
+@@ -136,10 +134,6 @@ class Application(Gtk.Application):
+         self.art = Art()
+         if not self.settings.get_value('disable-mpris'):
+             MPRIS(self)
+-        if not self.settings.get_value('disable-mpd'):
+-            self.mpd = MpdServerDaemon(
+-                               self.settings.get_value('mpd-eth').get_string(),
+-                               self.settings.get_value('mpd-port').get_int32())
+         if not self.settings.get_value('disable-notifications'):
+             self.notify = NotificationManager()
+ 
+@@ -216,8 +210,6 @@ class Application(Gtk.Application):
+         """
+             Quit lollypop
+         """
+-        if self.mpd is not None:
+-            self.mpd.quit()
+         if self.scanner.is_locked():
+             self.scanner.stop()
+             GLib.idle_add(self.quit)
+diff --git a/src/settings.py b/src/settings.py
+index db186dc..69681e5 100644
+--- a/src/settings.py
++++ b/src/settings.py
+@@ -21,7 +21,6 @@ from gettext import gettext as _
+ from threading import Thread
+ 
+ from lollypop.define import Lp, Type, SecretSchema, SecretAttributes, ArtSize
+-from lollypop.mpd import MpdServerDaemon
+ 
+ 
+ class Settings(Gio.Settings):
+@@ -101,9 +100,6 @@ class SettingsDialog:
+         switch_autoplay = builder.get_object('switch_autoplay')
+         switch_autoplay.set_state(Lp().settings.get_value('auto-play'))
+ 
+-        switch_mpd = builder.get_object('switch_mpd')
+-        switch_mpd.set_state(not Lp().settings.get_value('disable-mpd'))
+-
+         switch_mix = builder.get_object('switch_mix')
+         switch_mix.set_state(Lp().settings.get_value('mix'))
+ 
+@@ -300,21 +296,6 @@ class SettingsDialog:
+                                 GLib.Variant('b', state))
+         Lp().window.update_view()
+ 
+-    def _update_mpd_setting(self, widget, state):
+-        """
+-            Update mpd setting
+-            @param widget as unused, state as widget state
+-        """
+-        Lp().settings.set_value('disable-mpd',
+-                                GLib.Variant('b', not state))
+-        if Lp().mpd is None:
+-            Lp().mpd = MpdServerDaemon(
+-                               Lp().settings.get_value('mpd-eth').get_string(),
+-                               Lp().settings.get_value('mpd-port').get_int32())
+-        else:
+-            Lp().mpd.quit()
+-            Lp().mpd = None
+-
+     def _update_mix_setting(self, widget, state):
+         """
+             Update mix setting

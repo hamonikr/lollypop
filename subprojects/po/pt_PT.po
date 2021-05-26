@@ -1,0 +1,2962 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Alberto Almeida <albertocalmeida@sapo.pt>, 2017
+# Alberto Almeida <albertocalmeida@sapo.pt>, 2017
+# Sérgio Marques <smarquespt@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: lollypop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-06 14:55+0100\n"
+"PO-Revision-Date: 2020-08-27 14:40+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
+"Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
+"gnumdk/lollypop/pt_PT/>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2.1-dev\n"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:36
+msgid "Window size"
+msgstr "Tamanho da janela"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:37
+msgid "Window size (width and height)."
+msgstr "O tamanho da janela (largura e altura)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:41
+msgid "Window position"
+msgstr "Posição da janela"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:42
+msgid "Window position (x and y)."
+msgstr "A posição da janela (x e y)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:46
+#: ../data/org.gnome.Lollypop.gschema.xml:51
+#: ../data/org.gnome.Lollypop.gschema.xml:56
+#: ../data/org.gnome.Lollypop.gschema.xml:71
+#: ../data/org.gnome.Lollypop.gschema.xml:116
+#: ../data/org.gnome.Lollypop.gschema.xml:261
+#: ../data/org.gnome.Lollypop.gschema.xml:274
+#: ../data/org.gnome.Lollypop.gschema.xml:284
+#: ../data/org.gnome.Lollypop.gschema.xml:304
+#: ../data/org.gnome.Lollypop.gschema.xml:309
+#: ../data/org.gnome.Lollypop.gschema.xml:314
+#: ../data/org.gnome.Lollypop.gschema.xml:364
+msgid "INTERNAL"
+msgstr "INTERNO"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:61
+msgid "Allow using a cover per track"
+msgstr "Permitir usar uma capa por faixa"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:66
+msgid "Access network"
+msgstr "Aceder à rede"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:76
+msgid ""
+"Threshold used to decide if the previous track should be played or the "
+"currently running one should be restarted"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:81
+msgid "Save artwork/popularity in tags"
+msgstr "Guardar capas de álbuns/popularidade nas etiquetas"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:86
+msgid "Window maximized"
+msgstr "Janela maximizada"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:87
+msgid "Window maximized state."
+msgstr "O estado da janela maximizada."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:91
+msgid "Enabled genres in party mode"
+msgstr "Ativar géneros no modo de festa"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:92
+msgid "ID for genres."
+msgstr "O ID para géneros."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:96 ../lollypop/menu_search.py:40
+msgid "Search on the Web"
+msgstr "Procurar na web"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:101
+msgid "Shown suggestions"
+msgstr "Sugestões mostradas"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:106
+msgid "Play featured tracks"
+msgstr "Reproduzir faixas destacadas"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:111
+msgid "Allow syncing to USB disks"
+msgstr "Permitir sincronização com discos USB"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:121
+msgid ""
+"If set, Lollypop will use this server instead of YouTube. See https://github."
+"com/omarroth/invidious"
+msgstr ""
+"Se definido, o Lollypop irá usar este servidor em vez do YouTube. Ver "
+"https://github.com/omarroth/invidious"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:126
+msgid "If true, Lollypop will not use system youtube-dl"
+msgstr "Se verdadeiro, o Lollypop não usará o pacote youtube-dl do sistema"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:131
+msgid "Do not use original date if set"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:136
+msgid "Import playlists from collections"
+msgstr "Importar listas de reprodução das coleções"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:141
+msgid "Music URI"
+msgstr "URI da música"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:142
+msgid "When empty, use XDG_MUSIC_DIR"
+msgstr "Quando vazio, usar XDG_MUSIC_DIR"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:146
+msgid "Use Libre.fm instead of Last.fm"
+msgstr "Usar Libre.fm em vez de Last.fm"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:151
+msgid "ListenBrainz user token"
+msgstr "Token de utilizador ListenBrainz"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:156
+msgid "Google Custom Search API key"
+msgstr "Chave de API de Pesquisa Personalizada Google"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:161
+msgid "Favorite tag editor"
+msgstr "Editor de etiquetas favorito"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:166
+msgid "Favorite cover filename without extension"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:167
+#: ../data/org.gnome.Lollypop.gschema.xml:252
+msgid "Restart needed"
+msgstr "Reinício necessário"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:171
+msgid "Database version"
+msgstr "Versão da base de dados"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:172
+msgid ""
+"Resetting this value will reset the database, popular albums will be restored"
+msgstr ""
+"Repor este valor irá repor a base de dados. Os álbuns populares serão "
+"restaurados"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:176
+msgid "Albums cover size"
+msgstr "Tamanho das capas de álbuns"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:181
+msgid "Encoding quality"
+msgstr "Qualidade da codificação"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:186 ../data/SettingsDialog.ui:375
+msgid "Auto update music"
+msgstr "Atualizar música automaticamente"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:191
+msgid "Show tracks in artist view"
+msgstr "Mostrar faixas na vista do artista"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:196 ../data/SettingsDialog.ui:88
+msgid "Show artist artwork"
+msgstr "Mostrar grafismo do artista"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:201
+msgid "Use dark GTK theme"
+msgstr "Usar tema GTK escuro"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:206
+msgid "Disable scrobbling usage"
+msgstr "Desativar scrobbling"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:211
+msgid "Handle compilations"
+msgstr "Gerir compilações"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:216
+msgid "Handle performers, compositors, ..."
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:221
+msgid "Show compilations in albums view"
+msgstr "Mostrar compilações na vista de álbuns"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:226 ../data/SettingsDialog.ui:158
+msgid "Continue playback when closed"
+msgstr "Continuar reprodução quando fechado"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:231
+msgid "Append albums by default"
+msgstr "Acrescentar álbuns por defeito"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:236
+msgid "Smart sort for artist"
+msgstr "Ordenação inteligente para nome de artista"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:237
+msgid "Ex: The Beatles sorted as Beatles. Reset of database required"
+msgstr ""
+"Ex: The Beatles são classificados como Beatles. É necessário limpar a base "
+"de dados"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:241
+msgid "Show sort tag as artist. Reset of database may be required"
+msgstr ""
+"Mostrar a etiqueta de ordenação como nome do artista. Poderá necessitar de "
+"uma reposição da base de dados"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:242
+msgid "Ex: Beatles, The"
+msgstr "Ex.: Beatles, The"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:246
+msgid "Restore previous state"
+msgstr "Restaurar estado anterior"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:251
+msgid "Disable MPRIS"
+msgstr "Desativar MPRIS"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:256
+msgid "Notifications behaviour"
+msgstr "Comportamento das notificações"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:265
+msgid "Items count in views"
+msgstr "Itens incluem em vistas"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:269
+msgid "Show track number from tags"
+msgstr "Mostrar número de faixa a partir de etiquetas"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:279
+msgid "Enable PNG artwork cache"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:289
+msgid "Force single column mode"
+msgstr "Forçar o modo de coluna única"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:294
+msgid "Volume rate"
+msgstr "Taxa de volume"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:295
+msgid "0.0-1.0"
+msgstr "0.0-1.0"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:299
+msgid "Equalizer enabled"
+msgstr "Equalizador ativo"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:319
+msgid "Show labels in sidebar"
+msgstr "Mostrar etiquetas na barra lateral"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:324
+msgid "Smooth track transitions"
+msgstr "Transições suaves entre faixas"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:329
+msgid "Smooth track transitions only in party mode"
+msgstr "Transições suaves apenas no modo festa"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:334
+msgid "Transition duration in ms"
+msgstr "Duração das transições em ms"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:339
+msgid "Fade effect on playback status change"
+msgstr "Efeito de fade na alteração do estado da reprodução"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:344
+msgid "Fade duration in ms"
+msgstr "Duração do desvanecer em ms"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:349
+msgid "Fade effect only in party mode"
+msgstr "Efeito de desvanecer apenas no modo festa"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:354 ../data/ToolbarEnd.ui:19
+msgid "Shuffle tracks"
+msgstr "Faixa aleatória"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:359
+msgid "Ignore internal symlinks"
+msgstr "Ignorar ligações simbólicas internas"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:369
+msgid "ReplayGain state"
+msgstr "Estado do ReplayGain"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:374
+msgid "ReplayGain value in dB"
+msgstr "Valor do ReplayGain em dB"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:375
+msgid "Between -15 and 15"
+msgstr "Entre -15 e 15"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:379
+msgid "Applies signal compression/limiting to raw audio data"
+msgstr "Aplica compressão/limitação de sinal em dados de áudio bruto"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:380
+#, fuzzy
+msgid ""
+"It performs strict hard limiting with soft-knee characteristics, using a "
+"threshold of -6 dB"
+msgstr ""
+"Executa uma limitação rigorosa dura com características de quebra suave,, "
+"utilizando um limiar de -6 dB"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:384
+msgid "Possibilities for powermanagement options"
+msgstr "Possibilidades para opções de gestão de energia"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:385
+msgid "This option inhibits screensaver and suspend during Lollypop playback."
+msgstr ""
+"Esta opção evita proteção de ecrã e suspensão durante a reprodução do "
+"Lollypop."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:389
+msgid "Repeat"
+msgstr "Repetir"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:394 ../data/SettingsDialog.ui:212
+msgid "Order albums by"
+msgstr "Ordenar álbuns por"
+
+#: ../data/AboutDialog.ui.in:13
+msgid "A music player for GNOME."
+msgstr "Um leitor de música para GNOME."
+
+#: ../data/AboutDialog.ui.in:15
+msgid "Visit Lollypop website"
+msgstr "Visite o website do Lollypop"
+
+#. Replace me with your names
+#: ../data/AboutDialog.ui.in:28
+msgctxt "Add your names here, do not remove previous names!"
+msgid "translator1, translator2, ..."
+msgstr "Silvério Santos, Carlos Henrique de Freitas F."
+
+#: ../data/AboutDialog.ui.in:29
+msgid ""
+"\n"
+"Reda Lazri:\n"
+"    Lollypop icon\n"
+"Geary Development Team:\n"
+"    tag-list-symbolic icon\n"
+"GNOME Project:\n"
+"    unplayed-albums-symbolic\n"
+"    artists-list-symbolic icons\n"
+"Martins D. Okoi:\n"
+"    Description in appdata\n"
+"    "
+msgstr ""
+"\n"
+"Reda Lazri:\n"
+"    Ícone Lollypop\n"
+"Equipa de Programação Geary:\n"
+"    tag-list-symbolic icon\n"
+"Projeto Gnome:\n"
+"    unplayed-albums-symbolic\n"
+"    ícones artists-list-symbolic \n"
+"Martins D. Okoi:\n"
+"    Descrição no appdata\n"
+"    "
+
+#: ../data/AboutDialog.ui.in:67
+msgid "Donations:"
+msgstr "Doações:"
+
+#: ../data/AboutDialog.ui.in:74
+msgid "Liberapay"
+msgstr "Liberapay"
+
+#: ../data/AboutDialog.ui.in:84 ../lollypop/container_notification.py:107
+msgid "Patreon"
+msgstr "Patreon"
+
+#: ../data/AboutDialog.ui.in:94 ../lollypop/container_notification.py:107
+msgid "PayPal"
+msgstr "Paypal"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:8
+#: ../data/org.gnome.Lollypop.desktop.in:3
+msgid "Lollypop"
+msgstr "Lollypop"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:9
+#: ../data/org.gnome.Lollypop.desktop.in:5
+msgid "Play and organize your music collection"
+msgstr "Reproduza e organize a sua coleção de música"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:11
+msgid ""
+"Lollypop is a lightweight modern music player designed to work excellently "
+"on the GNOME desktop environment. It also features a party mode which will "
+"auto-select party-related playlists; allows access the player from your "
+"couch thanks to it fullscreen mode; fetches lyrics, artwork and biography "
+"online; and provides native support for ReplayGain."
+msgstr ""
+"O Lollypop é um reprodutor de música moderno e leve, projetado para "
+"funcionar excelentemente no ambiente de área de trabalho do GNOME. Também "
+"possui um modo de festa que seleciona listas de reprodução relacionadas a "
+"festas automaticamente; permite acessar o reprodutor do seu sofá, graças ao "
+"modo de ecrã cheio; busca letras, obras de arte e biografia on-line; e "
+"fornece apoio nativo para ReplayGain."
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:13
+msgid "Multiple Audio Formats –"
+msgstr "Múltiplos Formatos de Áudio –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:14
+msgid "Metadata –"
+msgstr "Metadados –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:15
+msgid "Synchronization –"
+msgstr "Sincronização –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:16
+msgid "Audio Scrobbling –"
+msgstr "Scrobbling de Áudio –"
+
+#: ../data/org.gnome.Lollypop.desktop.in:4
+msgid "Music Player"
+msgstr "Leitor de Música"
+
+#: ../data/org.gnome.Lollypop.desktop.in:13
+msgid "Music;Player;Lollipop;"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.desktop.in:23
+msgid "Play/Pause"
+msgstr "Reproduzir/Pausar"
+
+#: ../data/org.gnome.Lollypop.desktop.in:27 ../lollypop/assistant_flatpak.py:40
+#: ../lollypop/assistant_google.py:42 ../lollypop/assistant_google.py:54
+#: ../lollypop/assistant_google.py:71 ../lollypop/assistant_lastfm.py:45
+#: ../lollypop/assistant_lastfm.py:58 ../lollypop/assistant_musicbrainz.py:38
+#: ../lollypop/assistant_musicbrainz.py:50 ../lollypop/notification.py:37
+msgid "Next"
+msgstr "Seguinte"
+
+#: ../data/org.gnome.Lollypop.desktop.in:31 ../lollypop/notification.py:33
+msgid "Previous"
+msgstr "Anterior"
+
+#: ../data/Appmenu.ui:45
+msgid "Update music"
+msgstr "Atualizar a música"
+
+#: ../data/Appmenu.ui:63
+msgid "Mini player"
+msgstr "Mini reprodutor"
+
+#: ../data/Appmenu.ui:81
+msgid "Fullscreen"
+msgstr "Ecrã Inteiro"
+
+#: ../data/Appmenu.ui:108
+msgid "_Preferences"
+msgstr "_Preferências"
+
+#: ../data/Appmenu.ui:122
+msgid "_Keyboard Shortcuts"
+msgstr "Atalhos de _teclado"
+
+#: ../data/Appmenu.ui:136
+msgid "_About Lollypop"
+msgstr "_Acerca do Lollypop"
+
+#: ../data/Appmenu.ui:149
+msgid "Quit"
+msgstr "Sair"
+
+#: ../data/Appmenu.ui:219
+msgid "Equalizer"
+msgstr "Equalizador"
+
+#: ../data/ArtistBannerWidget.ui:92
+msgid "Play albums"
+msgstr "Reproduzir álbuns"
+
+#: ../data/ArtistBannerWidget.ui:110
+msgctxt "artist context"
+msgid "Add to current playlist"
+msgstr "Adicionar à lista de reprodução atual"
+
+#: ../data/ArtworkSearch.ui:69
+msgid "Select a local file"
+msgstr "Selecione um ficheiro local"
+
+#: ../data/DeviceWidget.ui:67
+msgid "Convert to:"
+msgstr "Converter para:"
+
+#: ../data/DeviceWidget.ui:79
+msgid "Normalize"
+msgstr "Normalizar"
+
+#: ../data/DeviceWidget.ui:100
+msgid "Do not convert"
+msgstr "Não converter"
+
+#: ../data/DeviceWidget.ui:117
+msgid "MP3"
+msgstr "MP3"
+
+#: ../data/DeviceWidget.ui:134
+msgid "Ogg Vorbis"
+msgstr "Ogg Vorbis"
+
+#: ../data/DeviceWidget.ui:151
+msgid "AAC"
+msgstr "AAC"
+
+#: ../data/DeviceWidget.ui:168
+msgid "FLAC"
+msgstr "FLAC"
+
+#: ../data/DeviceWidget.ui:204
+msgid "Synchronized:"
+msgstr "Sincronizado:"
+
+#: ../data/DeviceWidget.ui:217 ../lollypop/shown.py:36
+#: ../lollypop/view_albums_line.py:279
+msgid "Albums"
+msgstr "Álbuns"
+
+#: ../data/DeviceWidget.ui:233 ../lollypop/menu_artist.py:67
+#: ../lollypop/menu_objects.py:51 ../lollypop/menu_objects.py:117
+#: ../lollypop/menu_selectionlist.py:93 ../lollypop/shown.py:30
+#: ../lollypop/widgets_banner_playlists.py:42
+msgid "Playlists"
+msgstr "Listas de reprodução"
+
+#: ../data/DeviceWidget.ui:284 ../lollypop/widgets_device.py:137
+#: ../lollypop/widgets_device.py:338
+msgid "Synchronize"
+msgstr "Sincronizar"
+
+#: ../data/PlaylistBannerWidget.ui:71 ../lollypop/view_tracks_album.py:312
+#: ../lollypop/widgets_player_buttons.py:188
+msgid "Play"
+msgstr "Reproduzir"
+
+#: ../data/PlaylistBannerWidget.ui:89
+msgid "Play playlist randomized"
+msgstr "Tocar aleatoriamente a partir desta lista"
+
+#: ../data/PlaylistPopover.ui:23 ../data/RadioMenu.ui:50
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../data/PlaylistPopover.ui:59 ../data/RadioMenu.ui:106
+#: ../data/SmartPlaylistView.ui:153 ../lollypop/menu_playlist.py:116
+msgid "Save"
+msgstr "Guardar"
+
+#: ../data/RadioMenu.ui:61
+msgid "Address:"
+msgstr "Endereço:"
+
+#: ../data/SettingsDialog.ui:41
+msgid "General"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:46
+msgid "Appearance"
+msgstr "Aparência"
+
+#: ../data/SettingsDialog.ui:51 ../data/SettingsDialog.ui:54
+msgid "Whether the application should use a dark theme"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:52
+msgid "Dark Mode"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:70
+msgid "Single column mode"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:72
+msgid "Only show a single column for tracks"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:105
+msgid "High quality artwork"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:122
+msgid "Artwork size"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:139 ../lollypop/menu_actions.py:77
+msgid "Clean cache"
+msgstr "Limpar a cache"
+
+#: ../data/SettingsDialog.ui:153
+msgid "Behaviour"
+msgstr "Comportamento"
+
+#: ../data/SettingsDialog.ui:160
+msgid "Play music in background"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:176
+msgid "Restore state on startup"
+msgstr "Restaurar estado ao iniciar"
+
+#: ../data/SettingsDialog.ui:178
+msgid "Restore current playback and view"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:194
+msgid "Save changes to file"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:196
+msgid "Save artwork and rating to files"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:213
+msgid "Albums will be sorted by this field"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:222
+msgid "Artist - year"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:223
+msgid "Artist - title"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:224
+msgid "Title"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:225 ../data/SmartPlaylistWidget.ui:33
+msgid "Year"
+msgstr "Ano"
+
+#: ../data/SettingsDialog.ui:226 ../data/SmartPlaylistWidget.ui:32
+msgid "Popularity"
+msgstr "Popularidade"
+
+#: ../data/SettingsDialog.ui:242 ../lollypop/menu_artist.py:59
+#: ../lollypop/menu_decade.py:39 ../lollypop/menu_genre.py:41
+#: ../lollypop/menu_objects.py:43 ../lollypop/menu_objects.py:109
+msgid "Playback"
+msgstr "Reprodução"
+
+#: ../data/SettingsDialog.ui:247
+msgid "Enable transitions"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:249
+msgid "Add a transition on track change"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:265
+msgid "Duration"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:267
+msgid "Transition duration in milliseconds"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:283
+msgid "ReplayGain"
+msgstr "ReplayGain"
+
+#: ../data/SettingsDialog.ui:285
+msgid "Apply audio correction on the fly"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:294 ../lollypop/menu_search.py:41
+msgid "Disabled"
+msgstr "Desativado"
+
+#: ../data/SettingsDialog.ui:295
+msgid "Track"
+msgstr "Faixa"
+
+#: ../data/SettingsDialog.ui:296 ../data/SmartPlaylistWidget.ui:30
+msgid "Album"
+msgstr "Álbum"
+
+#: ../data/SettingsDialog.ui:315
+msgid "Music"
+msgstr "Música"
+
+#: ../data/SettingsDialog.ui:320
+msgid "Collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:331 ../lollypop/dialog_settings.py:245
+msgid "Reset collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:370
+msgid "Import settings"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:377
+msgid "Update music if files added to collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:393 ../data/SettingsDialog.ui:431
+msgid "You need to reset collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:394
+msgid "Show compilations"
+msgstr "Mostrar compilações"
+
+#: ../data/SettingsDialog.ui:396
+msgid ""
+"A compilation is an album without any \"Album artist tag\"\n"
+"and with different artists"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:413
+msgid "Import playlists"
+msgstr "Importar listas de reprodução"
+
+#: ../data/SettingsDialog.ui:415
+msgid "Search for playlists in your collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:432
+msgid "Import advanced tags"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:434
+msgid "Performers, composers, …"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:452
+msgid "Statistics"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:483
+msgid "Remove devices managed by Lollypop"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:484 ../lollypop/menu_artist.py:66
+#: ../lollypop/menu_genre.py:53 ../lollypop/menu_objects.py:53
+#: ../lollypop/menu_objects.py:90 ../lollypop/menu_playlist.py:68
+msgid "Devices"
+msgstr "Dispositivos"
+
+#: ../data/SettingsDialog.ui:497 ../lollypop/shown.py:34
+#: ../lollypop/toolbar_end.py:249
+msgid "Web"
+msgstr "Internet"
+
+#: ../data/SettingsDialog.ui:502
+msgid "Status"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:507
+msgid "Allow network access"
+msgstr "Permitir acesso à rede"
+
+#: ../data/SettingsDialog.ui:524
+msgid "Background data"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:526
+msgid "Search artwork in background"
+msgstr "Procurar grafismos em segundo plano"
+
+#: ../data/SettingsDialog.ui:547
+msgid "Song playback"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:558 ../data/SettingsDialog.ui:746
+#: ../data/SettingsDialog.ui:828 ../data/SettingsDialog.ui:910
+msgid "Enabled"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:575
+msgid "Use a recent version of youtube-dl"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:591
+msgid "Google API-key"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:616 ../data/SettingsDialog.ui:773
+#: ../data/SettingsDialog.ui:855 ../data/SettingsDialog.ui:952
+#: ../lollypop/dialog_settings.py:189
+msgid "Connect"
+msgstr "Ligar"
+
+#: ../data/SettingsDialog.ui:660
+msgid "Use an Invidious server"
+msgstr "Utilizar um servidor Invidious"
+
+#: ../data/SettingsDialog.ui:676
+msgid "No server set"
+msgstr "Nenhum servidor definido"
+
+#: ../data/SettingsDialog.ui:686
+msgid "What is Invidious ?"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:735
+msgid "Search (artwork, songs, ...)"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:926
+msgid "ListenBrainz API-Key"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:998 ../lollypop/menu_playback.py:144
+#: ../lollypop/menu_search.py:56
+msgid "Deezer"
+msgstr "Deezer"
+
+#: ../data/SettingsDialog.ui:1015 ../lollypop/menu_search.py:72
+msgid "Jamendo"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1031
+msgid "AudioDB"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1048 ../lollypop/menu_playback.py:164
+#: ../lollypop/menu_search.py:68
+msgid "Spotify"
+msgstr "Spotify"
+
+#: ../data/SettingsDialog.ui:1065
+msgid "FANART.TV"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1082
+msgid "iTunes"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1099
+msgid "Google"
+msgstr "Google"
+
+#: ../data/SettingsDialog.ui:1116
+msgid "Startpage"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1133
+msgid "DuckDuckGo"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1150
+msgid "Wikipedia"
+msgstr "Wikipédia"
+
+#: ../data/SettingsDialog.ui:1172 ../lollypop/shown.py:35
+msgid "Lyrics"
+msgstr "Letras"
+
+#: ../data/SettingsDialog.ui:1177
+msgid "Wikia"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1194
+msgid "Genius"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1211
+msgid "Metro Lyrics"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1228
+msgid "Bing"
+msgstr ""
+
+#: ../data/Shortcuts.ui:13
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Geral"
+
+#: ../data/Shortcuts.ui:17
+msgctxt "shortcut window"
+msgid "Settings"
+msgstr "Definições"
+
+#: ../data/Shortcuts.ui:24
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Pesquisa"
+
+#: ../data/Shortcuts.ui:31
+msgctxt "shortcut window"
+msgid "Party mode"
+msgstr "Modo de festa"
+
+#: ../data/Shortcuts.ui:38
+msgctxt "shortcut window"
+msgid "Show/Hide filter"
+msgstr "Mostrar/ocultar filtro"
+
+#: ../data/Shortcuts.ui:45
+msgctxt "shortcut window"
+msgid "Lock playback"
+msgstr "Bloquear reprodução"
+
+#: ../data/Shortcuts.ui:52
+msgctxt "shortcut window"
+msgid "Show equalizer"
+msgstr "Mostrar o equalizador"
+
+#: ../data/Shortcuts.ui:59
+msgctxt "shortcut window"
+msgid "Show lyrics"
+msgstr "Mostrar letras"
+
+#: ../data/Shortcuts.ui:66
+msgctxt "shortcut window"
+msgid "Volume up"
+msgstr "Aumentar o volume"
+
+#: ../data/Shortcuts.ui:73
+msgctxt "shortcut window"
+msgid "Volume down"
+msgstr "Diminuir o volume"
+
+#: ../data/Shortcuts.ui:80
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr "Ecrã cheio"
+
+#: ../data/Shortcuts.ui:87
+msgctxt "shortcut window"
+msgid "Mini player"
+msgstr "Mini reprodutor"
+
+#: ../data/Shortcuts.ui:96
+msgctxt "shortcut window"
+msgid "Playback"
+msgstr "Reprodução"
+
+#: ../data/Shortcuts.ui:100
+msgctxt "shortcut window"
+msgid "Play"
+msgstr "Reproduzir"
+
+#: ../data/Shortcuts.ui:107
+msgctxt "shortcut window"
+msgid "Pause"
+msgstr "Pausa"
+
+#: ../data/Shortcuts.ui:114
+msgctxt "shortcut window"
+msgid "Stop"
+msgstr "Parar"
+
+#: ../data/Shortcuts.ui:121
+msgctxt "shortcut window"
+msgid "Next track"
+msgstr "Faixa seguinte"
+
+#: ../data/Shortcuts.ui:128
+msgctxt "shortcut window"
+msgid "Previous track"
+msgstr "Faixa anterior"
+
+#: ../data/Shortcuts.ui:135
+msgctxt "shortcut window"
+msgid "Skip current album"
+msgstr "Saltar álbum atual"
+
+#: ../data/Shortcuts.ui:142
+msgctxt "shortcut window"
+msgid "Love current track"
+msgstr "Gostar da faixa atual"
+
+#: ../data/Shortcuts.ui:149
+msgctxt "shortcut window"
+msgid "Repeat track"
+msgstr "Repetir faixa"
+
+#: ../data/Shortcuts.ui:156
+msgctxt "shortcut window"
+msgid "Skip backward in track"
+msgstr "Retroceder na faixa"
+
+#: ../data/Shortcuts.ui:163
+msgctxt "shortcut window"
+msgid "Skip forward in track"
+msgstr "Avançar na faixa"
+
+#: ../data/Shortcuts.ui:170
+msgctxt "shortcut window"
+msgid "Enable/disable scrobbling"
+msgstr "Ativar/desativar o scrobbling"
+
+#: ../data/SmartPlaylistView.ui:94
+msgid "Limit to"
+msgstr "Limitar a"
+
+#: ../data/SmartPlaylistView.ui:121
+msgid "tracks selected by"
+msgstr "faixas selcionadas por"
+
+#: ../data/SmartPlaylistView.ui:136
+msgid "random"
+msgstr "seleção aleatória"
+
+#: ../data/SmartPlaylistView.ui:137
+msgid "album"
+msgstr "álbum"
+
+#: ../data/SmartPlaylistView.ui:138
+msgid "artist"
+msgstr "artista"
+
+#: ../data/SmartPlaylistView.ui:139
+msgid "year DESC"
+msgstr "ano DEC"
+
+#: ../data/SmartPlaylistView.ui:140
+msgid "year ASC"
+msgstr "ano CRE"
+
+#: ../data/SmartPlaylistView.ui:141
+msgid "duration DESC"
+msgstr "duração DEC"
+
+#: ../data/SmartPlaylistView.ui:142
+msgid "duration ASC"
+msgstr "duração CRE"
+
+#: ../data/SmartPlaylistView.ui:184
+msgid "Match music for "
+msgstr "Selecionar música de acordo com "
+
+#: ../data/SmartPlaylistView.ui:210
+msgid "all"
+msgstr "todas"
+
+#: ../data/SmartPlaylistView.ui:211
+msgid "one"
+msgstr "uma entre"
+
+#: ../data/SmartPlaylistView.ui:226
+msgid "of the following rules :"
+msgstr "as seguintes regras:"
+
+#: ../data/SmartPlaylistWidget.ui:28
+msgid "Genre"
+msgstr "Género"
+
+#: ../data/SmartPlaylistWidget.ui:29 ../lollypop/menu_objects.py:48
+#: ../lollypop/menu_objects.py:114
+msgid "Artist"
+msgstr "Artista"
+
+#: ../data/SmartPlaylistWidget.ui:31
+msgid "Rating"
+msgstr "Avaliação"
+
+#: ../data/SmartPlaylistWidget.ui:34
+msgid "BPM"
+msgstr "BPM"
+
+#: ../data/ToolbarEnd.ui:7
+msgid "Party mode"
+msgstr "Modo de festa"
+
+#: ../data/ToolbarEnd.ui:9
+msgid "Enable party mode"
+msgstr "Ativar o modo de festa"
+
+#: ../data/ToolbarEnd.ui:13
+msgid "Configure"
+msgstr "Configurar"
+
+#: ../data/ToolbarEnd.ui:17
+msgid "Shuffle"
+msgstr "Aleatória"
+
+#: ../data/ToolbarEnd.ui:24
+msgid "Repetition"
+msgstr "Repetição"
+
+#: ../data/ToolbarEnd.ui:26
+msgid "Continuous playback"
+msgstr "Reprodução contínua"
+
+#: ../data/ToolbarEnd.ui:31
+msgid "Automatic playback (similar)"
+msgstr "Reprodução automática (similar)"
+
+#: ../data/ToolbarEnd.ui:36
+msgid "Automatic playback (random)"
+msgstr "Reprodução automática (aleatória)"
+
+#: ../data/ToolbarEnd.ui:41
+msgid "Repeat track"
+msgstr "Repetir faixa"
+
+#: ../data/ToolbarEnd.ui:46
+msgid "Do not repeat"
+msgstr "Não repetir"
+
+#: ../data/ToolbarEnd.ui:52
+msgid "Scrobbling"
+msgstr "Scrobbling"
+
+#: ../data/ToolbarEnd.ui:54
+msgid "Enable scrobbling"
+msgstr "Ativar o scrobbling"
+
+#: ../data/ToolbarEnd.ui:96
+msgid "Playback options"
+msgstr "Opções de reprodução"
+
+#: ../data/TuneinPopover.ui:26
+msgid "Go back"
+msgstr "Recuar"
+
+#: ../data/TuneinPopover.ui:58
+msgid "Go home"
+msgstr "Ínicio"
+
+#: ../lollypop/artwork_album.py:515 ../lollypop/widgets_rating.py:211
+msgid "You need to install kid3-cli"
+msgstr "Tem de instalar o kid3-cli"
+
+#: ../lollypop/assistant_flatpak.py:31
+msgid "Authorization needed"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:33
+msgid ""
+"\n"
+"In order to be able to access your collection,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:44
+msgid "Update folders"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:46
+msgid ""
+"\n"
+"- <b>Open</b> Lollypop <b>preferences</b>\n"
+"- Go to the <b>Music</b> tab\n"
+"- <b>Remove</b> all folders from collection\n"
+"- Then, <b>add</b> them again"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:53 ../lollypop/assistant_google.py:52
+#: ../lollypop/assistant_google.py:69 ../lollypop/assistant_google.py:84
+#: ../lollypop/assistant_lastfm.py:56 ../lollypop/assistant_lastfm.py:68
+#: ../lollypop/assistant_musicbrainz.py:48
+#: ../lollypop/assistant_musicbrainz.py:60
+msgid "Back"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:55
+msgid "Preferences"
+msgstr "Preferências"
+
+#: ../lollypop/assistant_google.py:29
+msgid "What is Google API-key?"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:31
+msgid ""
+"\n"
+"In order to use the YoutTube playback,\n"
+"you need to create an API-Key for the\n"
+"\n"
+"<b>\"YouTube Data API v3\"</b>\n"
+"\n"
+"which is used to play songs."
+msgstr ""
+
+#: ../lollypop/assistant_google.py:40 ../lollypop/assistant_lastfm.py:43
+#: ../lollypop/assistant_musicbrainz.py:36 ../lollypop/dialog_apps.py:70
+#: ../lollypop/menu_playlist.py:117 ../lollypop/widgets_device.py:144
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../lollypop/assistant_google.py:46
+msgid "Connect to the console"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:48
+msgid ""
+"\n"
+"<b>Open and log</b> in to the <b>Google Developer Console</b>"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:50
+msgid "Access Google Developer Console"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:58
+msgid "Activate the API"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:60
+msgid ""
+"\n"
+"<b>Add a new project</b> in the console.\n"
+"\n"
+"After that, <b>add a new API</b> and search\n"
+"for the <b>\"YouTube Data API v3\"</b>.\n"
+"\n"
+"<b>Activate that API</b> for your project"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:75
+msgid "Copy the key"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:77
+msgid ""
+"\n"
+"Open <b>\"Credentials\"</b> in the sidebar and\n"
+"<b>Create Credentials</b> for an<b>API-Key</b>.\n"
+"\n"
+"<b>Copy the API-Key to Lollypop</b>"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:86 ../lollypop/assistant_lastfm.py:70
+#: ../lollypop/assistant_musicbrainz.py:62 ../lollypop/assistant.py:151
+msgid "Finish"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:36
+#, python-format
+msgid "Scrobbling to %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:38
+#, python-format
+msgid ""
+"\n"
+"In order to send your activity to <b>%s</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:49
+#, python-format
+msgid "Connect to %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:51
+#, python-format
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>%s</b>.\n"
+"Then, allow Lollypop."
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:54
+#, python-format
+msgid "Access %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:62
+msgid "Just play a track"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:64
+msgid ""
+"\n"
+"<b>Click \"Finish\"</b> once Lollypop has been allowed."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:29
+msgid "Scrobbling to ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:31
+msgid ""
+"\n"
+"In order to send your activity to <b>ListenBrainz</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:42
+msgid "Connect to ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:44
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>ListenBrainz</b>."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:46
+msgid "Access ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:54
+msgid "Copy key"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:56
+msgid ""
+"\n"
+"<b>Finish</b> the activation by copying <b>API-Key</b> in Lollypop."
+msgstr ""
+
+#: ../lollypop/assistant.py:149
+msgid "Can't contact this service"
+msgstr ""
+
+#: ../lollypop/collection_scanner.py:334
+msgid "Resetting database"
+msgstr ""
+
+#: ../lollypop/collection_scanner.py:505
+msgid "Scan disabled, missing collection"
+msgstr "Pesquisa desativada, a coleção não foi encontrada"
+
+#: ../lollypop/collection_scanner.py:800 ../lollypop/database_tracks.py:356
+#: ../lollypop/tagreader.py:87 ../lollypop/tagreader.py:103
+#: ../lollypop/tagreader.py:119 ../lollypop/tagreader.py:190
+#: ../lollypop/tagreader.py:238 ../lollypop/tagreader.py:260
+#: ../lollypop/tagreader.py:276 ../lollypop/tagreader.py:280
+#: ../lollypop/tagreader.py:290 ../lollypop/tagreader.py:298
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#: ../lollypop/container_notification.py:96
+msgid "Automatically download albums and artists artwork?"
+msgstr "Descarregar automaticamente grafismos de álbums e artistas?"
+
+#: ../lollypop/container_notification.py:97
+msgid "Yes"
+msgstr "Sim"
+
+#: ../lollypop/container_notification.py:106
+msgid "Please consider a donation to the project"
+msgstr "Considere ajudar o projeto com uma doação"
+
+#: ../lollypop/database_artists.py:122
+msgid "Many artists"
+msgstr "Muitos artistas"
+
+#: ../lollypop/database_upgrade.py:775
+msgid "Please wait while Lollypop is updating albums"
+msgstr "Por favor, aguarde enquanto o Lollypop atualiza os álbuns"
+
+#: ../lollypop/database_upgrade.py:794
+msgid "Please wait while Lollypop is updating tracks"
+msgstr "Por favor, aguarde enquanto o Lollypop atualiza as faixas"
+
+#: ../lollypop/dialog_apps.py:73
+msgid "Select"
+msgstr "Selecionar"
+
+#: ../lollypop/dialog_apps.py:81
+msgid "Select an application"
+msgstr "Selecione uma aplicação"
+
+#: ../lollypop/dialog_settings.py:85
+#, python-format
+msgid "Artists count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:87
+#, python-format
+msgid "Albums count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:89
+#, python-format
+msgid "Tracks count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:206 ../lollypop/dialog_settings.py:341
+msgid "Disconnect"
+msgstr "Desconectar"
+
+#: ../lollypop/dialog_settings.py:251
+msgid "Are you sure?"
+msgstr ""
+
+#: ../lollypop/fullscreen.py:355
+msgid "You are using a broken cursor theme!"
+msgstr "Está a usar um tema de cursor avariado!"
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "band"
+msgstr "banda"
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "singer"
+msgstr "cantor"
+
+#: ../lollypop/inhibitor.py:101
+msgid "Playing music"
+msgstr "A reproduzir música"
+
+#: ../lollypop/menu_actions.py:58
+msgid "Save in collection"
+msgstr "Guardar na coleção"
+
+#: ../lollypop/menu_actions.py:68
+msgid "Remove from collection"
+msgstr "Remover da coleção"
+
+#: ../lollypop/menu_actions.py:87
+msgid "Buy this album"
+msgstr "Comprar este álbum"
+
+#: ../lollypop/menu_actions.py:99
+msgid "Open with…"
+msgstr "Abrir com…"
+
+#: ../lollypop/menu_artist.py:48
+msgid "Show tracks"
+msgstr "Mostrar faixas"
+
+#: ../lollypop/menu_artist.py:56
+msgid "Play featured"
+msgstr "Reproduzir em destaque"
+
+#: ../lollypop/menu_artist.py:62 ../lollypop/menu_genre.py:44
+#: ../lollypop/menu_objects.py:55 ../lollypop/menu_objects.py:118
+#: ../lollypop/menu_playlist.py:66
+msgid "Add to"
+msgstr "Adicionar a"
+
+#: ../lollypop/menu_artist.py:111
+msgid "Available albums"
+msgstr "Álbuns disponíveis"
+
+#: ../lollypop/menu_artwork.py:67 ../lollypop/menu_artwork.py:114
+msgid "Change Artwork"
+msgstr ""
+
+#: ../lollypop/menu_current_albums.py:34 ../lollypop/menu_current_albums.py:43
+#: ../lollypop/shown.py:40 ../lollypop/widgets_banner_current_albums.py:65
+msgid "Playing albums"
+msgstr "Álbuns em reprodução"
+
+#: ../lollypop/menu_current_albums.py:42
+msgid "Create a new playlist"
+msgstr "Criar uma nova lista de reprodução"
+
+#: ../lollypop/menu_objects.py:66
+msgid "Show album"
+msgstr ""
+
+#: ../lollypop/menu_objects.py:70 ../lollypop/menu_objects.py:119
+#: ../lollypop/menu_similars.py:167
+msgid "Others"
+msgstr "Outros"
+
+#: ../lollypop/menu_objects.py:141
+msgid "%Y-%m-%d"
+msgstr "%Y/%m/%d"
+
+#: ../lollypop/menu_objects.py:171
+msgid "YouTube page address"
+msgstr "Endereço da página do YouTube"
+
+#: ../lollypop/menu_playback.py:57 ../lollypop/menu_playback.py:290
+#: ../lollypop/menu_playback.py:534
+msgid "Play a radio"
+msgstr "Reproduzir uma rádio"
+
+#: ../lollypop/menu_playback.py:72
+msgid "Add to playback"
+msgstr "Adicionar à reprodução"
+
+#: ../lollypop/menu_playback.py:79 ../lollypop/widgets_row_album.py:110
+msgid "Remove from playback"
+msgstr "Remover da reprodução"
+
+#: ../lollypop/menu_playback.py:114
+msgid "Related tracks"
+msgstr "Faixas relacionadas"
+
+#: ../lollypop/menu_playback.py:123 ../lollypop/playlists.py:107
+#: ../lollypop/playlists.py:371 ../lollypop/shown.py:70
+msgid "Loved tracks"
+msgstr "Faixas preferidas"
+
+#: ../lollypop/menu_playback.py:132 ../lollypop/shown.py:68
+msgid "Popular tracks"
+msgstr "Faixas populares"
+
+#: ../lollypop/menu_playback.py:136
+msgid "From collection"
+msgstr "Da coleção"
+
+#: ../lollypop/menu_playback.py:154 ../lollypop/menu_search.py:60
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../lollypop/menu_playback.py:168 ../lollypop/menu_suggestions.py:74
+msgid "From the Web"
+msgstr "Da Web"
+
+#: ../lollypop/menu_playback.py:210
+msgid "Play this playlist"
+msgstr "Reproduzir esta lista de reprodução"
+
+#: ../lollypop/menu_playback.py:217
+msgid "Add this playlist"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:281
+msgid "Play this artist"
+msgstr "Reproduzir deste artista"
+
+#: ../lollypop/menu_playback.py:353
+msgid "Play this genre"
+msgstr "Reproduzir deste género"
+
+#: ../lollypop/menu_playback.py:434
+msgid "Play this decade"
+msgstr "Reproduzir desta década"
+
+#: ../lollypop/menu_playback.py:517 ../lollypop/widgets_row_album.py:118
+msgid "Play this album"
+msgstr "Reproduzir este álbum"
+
+#: ../lollypop/menu_playback.py:529 ../lollypop/menu_playback.py:615
+msgid "Ignored"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:672
+msgid "Add to queue"
+msgstr "Adicionar à fila"
+
+#: ../lollypop/menu_playback.py:678
+msgid "Remove from queue"
+msgstr "Remover da fila"
+
+#: ../lollypop/menu_playback.py:689
+msgid "Do not stop after"
+msgstr "Não parar após"
+
+#: ../lollypop/menu_playback.py:694
+msgid "Stop after"
+msgstr "Parar após"
+
+#: ../lollypop/menu_playlist.py:43 ../lollypop/menu_playlist.py:113
+msgid "Save playlist"
+msgstr "Guardar a lista de reprodução"
+
+#: ../lollypop/menu_playlist.py:50
+msgid "Sync from Last.FM"
+msgstr "Sincronizar da Last.FM"
+
+#: ../lollypop/menu_playlist.py:57
+msgid "Manage smart playlist"
+msgstr "Gerir a lista de reprodução inteligente"
+
+#: ../lollypop/menu_playlist.py:61
+msgid "Remove playlist"
+msgstr "Remover lista de reprodução"
+
+#: ../lollypop/menu_playlist.py:64
+msgid "Playlist"
+msgstr "Lista de reprodução"
+
+#: ../lollypop/menu_playlist.py:70
+msgid "Edit"
+msgstr "Editar"
+
+#: ../lollypop/menu_playlist.py:100
+msgid "Remove this playlist?"
+msgstr "Remover esta lista de reprodução?"
+
+#: ../lollypop/menu_playlist.py:101
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: ../lollypop/menu_playlists.py:47
+msgid "New playlist"
+msgstr "Nova lista de reprodução"
+
+#: ../lollypop/menu_search.py:33 ../lollypop/shown.py:39
+msgid "Search"
+msgstr "Pesquisa"
+
+#: ../lollypop/menu_search.py:64
+msgid "MusicBrainz"
+msgstr "MusicBrainz"
+
+#: ../lollypop/menu_selectionlist.py:50
+msgid "Default on startup"
+msgstr "Padrão ao iniciar"
+
+#: ../lollypop/menu_selectionlist.py:53
+msgid "Startup"
+msgstr "Início"
+
+#: ../lollypop/menu_selectionlist.py:96
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: ../lollypop/menu_selectionlist.py:111
+msgid "Show text"
+msgstr "Mostar texto"
+
+#: ../lollypop/menu_selectionlist.py:112
+msgid "Options"
+msgstr "Opções"
+
+#: ../lollypop/menu_selectionlist.py:137
+msgid "Sections"
+msgstr "Secções"
+
+#: ../lollypop/menu_similars.py:140 ../lollypop/view_lyrics.py:132
+msgid "Loading…"
+msgstr "A carregar…"
+
+#: ../lollypop/menu_similars.py:175
+msgid "Similar artists"
+msgstr "Artistas semelhantes"
+
+#: ../lollypop/menu_similars.py:279
+msgid "No results"
+msgstr "Sem resultados"
+
+#: ../lollypop/menu_suggestions.py:35 ../lollypop/shown.py:24
+msgid "Suggestions"
+msgstr "Sugestões"
+
+#: ../lollypop/menu_suggestions.py:47 ../lollypop/view_suggestions.py:129
+msgid "New releases on Spotify"
+msgstr "Novos lançamentos no Spotify"
+
+#: ../lollypop/menu_suggestions.py:59 ../lollypop/view_suggestions.py:127
+msgid "Suggestions from Spotify"
+msgstr "Sugestões do Spotify"
+
+#: ../lollypop/menu_suggestions.py:71 ../lollypop/view_suggestions.py:131
+msgid "Top albums on Deezer"
+msgstr "Álbuns principais no Deezer"
+
+#: ../lollypop/menu_sync.py:33
+msgid "All devices"
+msgstr "Todos os dispostivos"
+
+#: ../lollypop/player_albums.py:58 ../lollypop/player_albums.py:142
+#: ../lollypop/player_albums.py:169 ../lollypop/player_albums.py:185
+msgid "No album available"
+msgstr "Nenhum álbum disponível"
+
+#: ../lollypop/player_bin.py:426
+msgid "Can't find this track on YouTube"
+msgstr "Não foi possível encontrar esta faixa no YouTube"
+
+#: ../lollypop/playlists.py:94 ../lollypop/playlists.py:97
+msgid "New playlist "
+msgstr "Nova lista de reprodução "
+
+#: ../lollypop/shown.py:25
+msgid "Popular albums"
+msgstr "Álbuns populares"
+
+#: ../lollypop/shown.py:26
+msgid "Random albums"
+msgstr "Álbuns aleatórios"
+
+#: ../lollypop/shown.py:27
+msgid "Loved albums"
+msgstr "Álbuns preferidos"
+
+#: ../lollypop/shown.py:28
+msgid "Recently added albums"
+msgstr "Álbum adicionados recentemente"
+
+#: ../lollypop/shown.py:29
+msgid "Seldomly played albums"
+msgstr "Álbuns raramente reproduzidos"
+
+#: ../lollypop/shown.py:31
+msgid "Years"
+msgstr "Anos"
+
+#: ../lollypop/shown.py:32
+msgid "Genres"
+msgstr "Géneros"
+
+#: ../lollypop/shown.py:33
+msgid "Genres (list)"
+msgstr "Géneros (lista)"
+
+#: ../lollypop/shown.py:37 ../lollypop/view_artists_line.py:165
+msgid "Artists"
+msgstr "Artistas"
+
+#: ../lollypop/shown.py:38
+msgid "Artists (list)"
+msgstr "Artistas (lista)"
+
+#: ../lollypop/shown.py:41
+msgid "Information"
+msgstr ""
+
+#: ../lollypop/shown.py:42
+msgid "Compilations"
+msgstr "Compilações"
+
+#: ../lollypop/shown.py:69
+msgid "Random tracks"
+msgstr "Faixas aleatórias"
+
+#: ../lollypop/shown.py:71
+msgid "Recently played tracks"
+msgstr "Faixas reproduzidas recentemente"
+
+#: ../lollypop/shown.py:72
+msgid "Seldomly played tracks"
+msgstr "Faixas raramente reproduzidas"
+
+#: ../lollypop/shown.py:73
+msgid "Skipped tracks"
+msgstr ""
+
+#: ../lollypop/shown.py:74
+msgid "All tracks"
+msgstr "Todas as faixas"
+
+#: ../lollypop/toolbar_end.py:246
+msgid "All genres"
+msgstr "Todos os géneros"
+
+#: ../lollypop/utils.py:77
+#, python-format
+msgid "%s h  %s m"
+msgstr "%s h  %s m"
+
+#: ../lollypop/utils.py:79
+#, python-format
+msgid "%s h"
+msgstr "%s h"
+
+#: ../lollypop/utils.py:81
+#, python-format
+msgid "%s m"
+msgstr "%s m"
+
+#: ../lollypop/utils.py:309
+msgid "The the"
+msgstr "The the A a As as O o Os os"
+
+#: ../lollypop/view_albums_box.py:55
+msgid "Missing youtube-dl command"
+msgstr "O comando <i>youtube-dl</i> está em falta"
+
+#: ../lollypop/view_albums_box.py:60 ../lollypop/view_lyrics.py:169
+msgid "Network unavailable or disabled in settings"
+msgstr "Internet indisponível ou desativada nas configurações"
+
+#: ../lollypop/view_albums_box.py:193
+msgid "New albums available"
+msgstr ""
+
+#: ../lollypop/view_albums_box.py:194 ../lollypop/view_artists_rounded.py:155
+msgid "Refresh"
+msgstr "Atualizar"
+
+#: ../lollypop/view_albums_line.py:164
+msgid "Others compilations"
+msgstr "Compilações de outros"
+
+#: ../lollypop/view_albums_line.py:199
+msgid "Appears on"
+msgstr "Aparecem em"
+
+#: ../lollypop/view_albums_line.py:230
+msgid "Popular albums at the moment"
+msgstr "Álbuns populares de momento"
+
+#: ../lollypop/view_artists_line.py:133
+msgid "Why not listen to?"
+msgstr "Porque não ouvir?"
+
+#: ../lollypop/view_artists_rounded.py:154
+msgid "New artists available"
+msgstr ""
+
+#: ../lollypop/view_information.py:152
+msgid "Loading information"
+msgstr "A carregar informação"
+
+#: ../lollypop/view_information.py:262 ../lollypop/view_information.py:294
+#, python-format
+msgid "No information for %s"
+msgstr "Sem informação sobre %s"
+
+#: ../lollypop/view_lyrics.py:105 ../lollypop/widgets_banner_lyrics.py:136
+msgid "No track playing"
+msgstr "Sem faixas a serem reproduzidas"
+
+#: ../lollypop/view_lyrics.py:269
+msgid "You need to install python3-textblob module"
+msgstr "Tem de instalar o módulo <i>python3-textblob</i>"
+
+#: ../lollypop/view_lyrics.py:274
+msgid "Can't translate this lyrics"
+msgstr "Não foi possível traduzir esta letra"
+
+#: ../lollypop/view_lyrics.py:304
+msgid "Disabled in network settings"
+msgstr "Desativado nas configurações de rede"
+
+#: ../lollypop/view_lyrics.py:307
+msgid "No lyrics found "
+msgstr "Não foram encontradas letras "
+
+#: ../lollypop/view.py:48
+msgid "No items to show"
+msgstr "Sem itens para mostrar"
+
+#: ../lollypop/view_search.py:151 ../lollypop/view_search.py:161
+#: ../lollypop/view_search.py:185
+msgid "Search for artists, albums and tracks"
+msgstr "Procure artistas, álbuns e faixas"
+
+#: ../lollypop/view_search.py:305
+msgid "No results for this search"
+msgstr "Sem resultados de pesquisa"
+
+#: ../lollypop/view_suggestions.py:145
+msgid "Welcome to Lollypop"
+msgstr "Bemvindo ao Lollypop"
+
+#: ../lollypop/view_tracks_album.py:69
+msgid "All tracks skipped"
+msgstr "Ignorar todas as faixas"
+
+#: ../lollypop/view_tracks_album.py:327
+#, python-format
+msgid "Disc %s"
+msgstr "Disco %s"
+
+#: ../lollypop/view_tracks_queue.py:36
+msgid "Currently in queue"
+msgstr ""
+
+#: ../lollypop/view_tracks_search.py:103
+msgid "Tracks"
+msgstr "Faixas"
+
+#: ../lollypop/widgets_artwork_album.py:64
+msgid "Local"
+msgstr "Local"
+
+#: ../lollypop/widgets_artwork.py:139
+msgid "Select artwork"
+msgstr "Selecionar capa"
+
+#: ../lollypop/widgets_artwork.py:179
+msgid "Remove"
+msgstr "Remover"
+
+#: ../lollypop/widgets_banner_album.py:245
+#, python-format
+msgid "Released on %s"
+msgstr ""
+
+#: ../lollypop/widgets_banner_artist.py:298
+msgid "Add to current playlist"
+msgstr "Adicionar à lista de reprodução atual"
+
+#: ../lollypop/widgets_banner_artist.py:305
+msgid "Remove from current playlist"
+msgstr "Remover da lista de reprodução atual"
+
+#: ../lollypop/widgets_banner_current_albums.py:42
+msgid "Clear albums"
+msgstr "Limpar álbuns"
+
+#: ../lollypop/widgets_banner_current_albums.py:60
+msgid "Go to current track"
+msgstr "Ir para a faixa atual"
+
+#: ../lollypop/widgets_banner_today.py:71
+msgid "<b>Album of the day</b>\n"
+msgstr "<b>Álbum do dia</b>\n"
+
+#: ../lollypop/widgets_device.py:119
+msgid "No synchronized albums"
+msgstr "Sem álbuns sincronizados"
+
+#: ../lollypop/widgets_device.py:130
+msgid "No synchronized playlists"
+msgstr "Sem listas de reprodução sincronizadas"
+
+#: ../lollypop/widgets_equalizer.py:23
+msgid "Default"
+msgstr "Padrão"
+
+#: ../lollypop/widgets_equalizer.py:25 ../lollypop/widgets_equalizer.py:162
+#: ../lollypop/widgets_equalizer.py:194
+msgid "Custom"
+msgstr "Personalizada"
+
+#: ../lollypop/widgets_equalizer.py:28
+msgid "Acoustic"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:30
+msgid "Bass"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:33
+msgid "Bass and Treble"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:35
+msgid "Classical"
+msgstr "Clássica"
+
+#: ../lollypop/widgets_equalizer.py:37
+msgid "Club"
+msgstr "Clube"
+
+#: ../lollypop/widgets_equalizer.py:39
+msgid "Dance"
+msgstr "Dança"
+
+#: ../lollypop/widgets_equalizer.py:41
+msgid "Disco"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:43
+msgid "Drum'n'Bass"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:45
+msgid "Heavy Metal"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:47
+msgid "Jazz"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:49
+msgid "Latin"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:51
+msgid "Metal"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:53
+msgid "New Age"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:55
+msgid "Party"
+msgstr "Festa"
+
+#: ../lollypop/widgets_equalizer.py:57
+msgid "Pop"
+msgstr "Pop"
+
+#: ../lollypop/widgets_equalizer.py:59
+msgid "Reggae"
+msgstr "Reggae"
+
+#: ../lollypop/widgets_equalizer.py:61
+msgid "Rock"
+msgstr "Rock"
+
+#: ../lollypop/widgets_equalizer.py:63
+msgid "Techno"
+msgstr "Techno"
+
+#: ../lollypop/widgets_equalizer.py:65
+msgid "Vocal"
+msgstr ""
+
+#: ../lollypop/widgets_loved.py:108
+msgid "Like"
+msgstr "Gostar"
+
+#: ../lollypop/widgets_loved.py:113
+msgid "Allow playback"
+msgstr "Permitir reprodução"
+
+#: ../lollypop/widgets_player_buttons.py:184
+msgid "Pause"
+msgstr "Pausa"
+
+#: ../lollypop/widgets_playlist_smart.py:165
+msgid "is equal to"
+msgstr "é igual a"
+
+#: ../lollypop/widgets_playlist_smart.py:166
+msgid "is not equal to"
+msgstr "não é igual a"
+
+#: ../lollypop/widgets_playlist_smart.py:168
+msgid "contains "
+msgstr "contém "
+
+#: ../lollypop/widgets_playlist_smart.py:169
+msgid "does not contain"
+msgstr "não contém"
+
+#: ../lollypop/widgets_playlist_smart.py:171
+msgid "is greater than"
+msgstr "é maior que"
+
+#: ../lollypop/widgets_playlist_smart.py:172
+msgid "is less than"
+msgstr "é menor que"
+
+#: ../lollypop/widgets_rating.py:51
+#, python-format
+msgid "Song played %s times"
+msgstr "Faixa reproduzida %s vezes"
+
+#: ../lollypop/widgets_row_album.py:96
+msgid "Compilation"
+msgstr "Compilação"
+
+#: ../lollypop/widgets_row_album.py:112 ../lollypop/widgets_row_track.py:107
+msgid "Remove from playlist"
+msgstr "Remover da lista de reprodução"
+
+#~ msgid "Disallow playback"
+#~ msgstr "Não permitir reprodução"
+
+#~ msgid "Show year below album name"
+#~ msgstr "Mostrar o ano abaixo do nome do álbum"
+
+#~ msgid "Show year"
+#~ msgstr "Mostrar ano"
+
+#~ msgid "Favorite cover file"
+#~ msgstr "Ficheiro de capa favorito"
+
+#~ msgid "JPG cover quality"
+#~ msgstr "Qualidade de capas JPG"
+
+#~ msgid "0-100"
+#~ msgstr "0-100"
+
+#~ msgid "Go to artist view"
+#~ msgstr "Ir para a vista de artista"
+
+#~ msgid "Disable use of client side window decorations (headerbar)"
+#~ msgstr ""
+#~ "Desativar decorações de janela do lado do cliente (barra de cabeçalho)"
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "Radios"
+#~ msgstr "Rádios"
+
+#~ msgid "Use dark theme variant"
+#~ msgstr "Usar tema escuro alternativo"
+
+#~ msgid ""
+#~ "A compilation is an album without any \"Album artist tag\"\n"
+#~ "and with different artists."
+#~ msgstr ""
+#~ "Uma compilação é um álbum sem etiquetas de \"Artista \n"
+#~ "do Álbum\" e com faixas de diferentes artistas."
+
+#~ msgid "You need to reset database [Music]"
+#~ msgstr "Precisa de repor a base de dados [Music]"
+
+#~ msgid "Import playlists files present in collections"
+#~ msgstr "Importar ficheiros de lista de reprodução presentes nas coleções"
+
+#~ msgid "Save changes to files"
+#~ msgstr "Guardar alterações aos ficheiros"
+
+#~ msgid "Transitions between tracks"
+#~ msgstr "Transições entre faixas"
+
+#~ msgid "Smooth transitions"
+#~ msgstr "Transições suaves"
+
+#~ msgid "Only in party mode"
+#~ msgstr "Apenas em modo de festa"
+
+#~ msgid "Transitions duration in milliseconds"
+#~ msgstr "Duração das transições em milisegundos"
+
+#~ msgid "Reset database"
+#~ msgstr "Repor base de dados"
+
+#~ msgid "Remove devices managed by Lollypop:"
+#~ msgstr "Remover dispositivos geridos pelo Lollypop:"
+
+#~ msgid "Control your privacy by selecting allowed services"
+#~ msgstr "Controle a sua privacidade selecionando os serviços permitidos"
+
+#~ msgid ""
+#~ "Background data\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search artwork in background</span>"
+#~ msgstr ""
+#~ "Dados em segundo plano\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Procurar grafismos em segundo plano</"
+#~ "span>"
+
+#~ msgid ""
+#~ "Last.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, artwork, …</span>"
+#~ msgstr ""
+#~ "Last.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Gravar preferências, arte, …</span>"
+
+#~ msgid ""
+#~ "Spotify\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search songs , artwork, …</span>"
+#~ msgstr ""
+#~ "Spotify\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Procurar faixas, grafismos, …</span>"
+
+#~ msgid ""
+#~ "YouTube\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Songs playback</span>"
+#~ msgstr ""
+#~ "YouTube\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Reprodução de faixas</span>"
+
+#~ msgid ""
+#~ "Google\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Google\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Procura de grafismos</span>"
+
+#~ msgid ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search songs , artwork, …</span>"
+#~ msgstr ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Buscando músicas , capas, …</span>"
+
+#~ msgid ""
+#~ "Wikia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search lyrics</span>"
+#~ msgstr ""
+#~ "Wikia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Procura de letras</span>"
+
+#~ msgid ""
+#~ "Wikipedia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artist biography</span>"
+#~ msgstr ""
+#~ "Wikipedia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Biografia dos artistas</span>"
+
+#~ msgid ""
+#~ "MusicBrainz\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, information, …</span>"
+#~ msgstr ""
+#~ "MusicBrainz\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, informação, …</span>"
+
+#~ msgid ""
+#~ "Genius\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search lyrics</span>"
+#~ msgstr ""
+#~ "Genius\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Procura de letras</span>"
+
+#~ msgid ""
+#~ "ITunes\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "iTunes\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+
+#~ msgid ""
+#~ "Deezer\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search, search songs</span>"
+#~ msgstr ""
+#~ "Deezer\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Buscar capa, buscar canções</span>"
+
+#~ msgid ""
+#~ "AudioDB\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artist biography, artwork search, …</"
+#~ "span>"
+#~ msgstr ""
+#~ "AudioDB\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Biografia dos artistas, procura de "
+#~ "grafismos, …</span>"
+
+#~ msgid ""
+#~ "FANART.TV\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "FANART.TV\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Buscar arte</span>"
+
+#~ msgid ""
+#~ "DuckDuckGo\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search songs , artwork, …</span>"
+#~ msgstr ""
+#~ "DuckDuckGo\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Buscando músicas , capas, …</span>"
+
+#~ msgid ""
+#~ "Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler</span>"
+#~ msgstr ""
+#~ "Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Gravar preferências</span>"
+
+#~ msgid "Privacy"
+#~ msgstr "Privacidade"
+
+#~ msgid "Last.fm:"
+#~ msgstr "Last.fm:"
+
+#~ msgid "Libre.fm:"
+#~ msgstr "Libre.fm:"
+
+#~ msgid ""
+#~ "<b>ListenBrainz user token</b>\n"
+#~ "<small>To submit your listens to ListenBrainz, enter your ListenBrainz "
+#~ "user token below. You can see your user token in your <a href=\"https://"
+#~ "listenbrainz.org/profile/\">user profile</a>.</small>"
+#~ msgstr ""
+#~ "<b>Token de utilizador ListenBrainz</b>\n"
+#~ "<small>Para submeter os seus <i>listens</i> para o ListenBrainz, "
+#~ "introduza abaixo o seu token de utilizador ListenBrainz. Pode obter o seu "
+#~ "token no seu <a href=\"https://listenbrainz.org/profile/\">perfil de "
+#~ "utilizador</a>.</small>"
+
+#~ msgid "User token"
+#~ msgstr "Token de utilizador"
+
+#~ msgid "ListenBrainz"
+#~ msgstr "ListenBrainz"
+
+#~ msgid ""
+#~ "<b>Google Web Services require an API key.</b>\n"
+#~ "<small>Otherwise you will soon reach the default quota…\n"
+#~ "Lollypop needs this to search for artwork.</small>"
+#~ msgstr ""
+#~ "<b>Os Serviços de Rede do Google necessitam duma chave de API.</b>\n"
+#~ "<small>De outra forma rapidamente atingirá a quota padrão...\n"
+#~ "O Lollypop precisa dela para pesquisar capas.</small>"
+
+#~ msgid ""
+#~ "<small>You need to enable \"Custom Search API\" and \"YouTube API v3\" "
+#~ "for your project.</small>"
+#~ msgstr ""
+#~ "<small>Precisa de ativar \"Custom Search API\" e \"YouTube Data API v3\" "
+#~ "para o seu projeto.</small>"
+
+#~ msgid "?"
+#~ msgstr "?"
+
+#~ msgid "API key"
+#~ msgstr "Chave de API"
+
+#~ msgid ""
+#~ "Use a recent version of youtube-dl\n"
+#~ "<span size=\"small\" alpha='40000'>Activate this if Web playback does not "
+#~ "work</span>"
+#~ msgstr ""
+#~ "Utilizar uma versão recente do youtube-dl\n"
+#~ "<span size=\"small\" alpha='40000'>Ative isto se a reprodução da Internet "
+#~ "não funcionar</span>"
+
+#~ msgid "Configure Lollypop appearance"
+#~ msgstr "Configurar a aparência do Lollypop"
+
+#~ msgid "Configure Lollypop behaviour"
+#~ msgstr "Configurar o comportamento do Lollypop"
+
+#~ msgid "Select music folders"
+#~ msgstr "Selecione as pastas de música"
+
+#~ msgid "Configure Web services"
+#~ msgstr "Configure serviços da Internet"
+
+#~ msgid "Manage devices"
+#~ msgstr "Gira dispositivos"
+
+#~ msgid "Show tracks number"
+#~ msgstr "Mostrar número das faixas"
+
+#~ msgid "Dubstep"
+#~ msgstr "Dubstep"
+
+#~ msgid "Full Bass"
+#~ msgstr "Foco nos Baixos"
+
+#~ msgid "Full Treble"
+#~ msgstr "Foco nos Agudos"
+
+#~ msgid "Full Bass + Treble"
+#~ msgstr "Foco nos Baixos + Agudos"
+
+#~ msgid "Hip Hop"
+#~ msgstr "Hip Hop"
+
+#~ msgid "Kuduro"
+#~ msgstr "Kuduro"
+
+#~ msgid "Laptop/Headphones"
+#~ msgstr "Portátil/Auscultadores"
+
+#~ msgid "Large Hall"
+#~ msgstr "Grande Sala"
+
+#~ msgid "Live"
+#~ msgstr "Ao Vivo"
+
+#~ msgid "Psychedelic"
+#~ msgstr "Psicadélica"
+
+#~ msgid "Soft"
+#~ msgstr "Suave"
+
+#~ msgid "Ska"
+#~ msgstr "Ska"
+
+#~ msgid "Soft Rock"
+#~ msgstr "Soft Rock"
+
+#, python-format
+#~ msgid "%d artist"
+#~ msgid_plural "%d artists"
+#~ msgstr[0] "%d artista"
+#~ msgstr[1] "%d artistas"
+
+#, python-format
+#~ msgid "%d album"
+#~ msgid_plural "%d albums"
+#~ msgstr[0] "%d álbum"
+#~ msgstr[1] "%d álbums"
+
+#, python-format
+#~ msgid "%d track"
+#~ msgid_plural "%d tracks"
+#~ msgstr[0] "%d faixa"
+#~ msgstr[1] "%d faixas"
+
+#~ msgid "Using \"GNOME Online Accounts\" settings"
+#~ msgstr "A usar as definições \"GNOME Online Accounts\""
+
+#~ msgctxt "Translation credits here, put your name here!"
+#~ msgid "Cédric Bellegarde <cedric.bellegarde@adishatz.org>"
+#~ msgstr ""
+#~ "Cédric Bellegarde <cedric.bellegarde@adishatz.org>\n"
+#~ "João Nuno Matos <joaonmatos@gmail.com>"
+
+#~ msgid ""
+#~ "Tunein\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Radios search</span>"
+#~ msgstr ""
+#~ "Tunein\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Procura de rádios</span>"
+
+#~ msgid "New radio"
+#~ msgstr "Nova rádio"
+
+#~ msgid "Radio"
+#~ msgstr "Rádio"
+
+#~ msgid "Can't connect to TuneIn…"
+#~ msgstr "Não foi possível ligar-se ao TuneIn…"
+
+#~ msgid "Please wait…"
+#~ msgstr "Aguarde…"
+
+#~ msgid "Add"
+#~ msgstr "Adicionar"
+
+#~ msgid "No result…"
+#~ msgstr "Sem resultados…"
+
+#~ msgid "Network not available"
+#~ msgstr "Ligação à rede indisponível"
+
+#~ msgid "org.gnome.Lollypop"
+#~ msgstr "org.gnome.Lollypop"
+
+#~ msgid ""
+#~ "Deezer\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Deezer\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Procura de grafismos</span>"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show albums from artist"
+#~ msgstr "Mostrar álbuns do artista"
+
+#~ msgid "You might like this"
+#~ msgstr "Poderá gostar disto"
+
+#~ msgid "New albums from Spotify"
+#~ msgstr "Novos álbuns do Spotify"
+
+#~ msgid ""
+#~ "This album has no track. Check tags, all 'album artist' tags should be in "
+#~ "'artist' tags"
+#~ msgstr ""
+#~ "Este álbum não tem faixas. Verifique as etiquetas das faixas, todas as "
+#~ "etiquetas de 'Artista do Álbum' devem estar presentes nas etiquetas de "
+#~ "'artista'"
+
+#~ msgid ""
+#~ "Last.fm and Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, artwork, …</span>"
+#~ msgstr ""
+#~ "Last.fm e Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, grafismos, …</span>"
+
+#~ msgid "Last.fm authentication disabled"
+#~ msgstr "Autenticação em Last.fm desativada"
+
+#~ msgid "Login:"
+#~ msgstr "Login:"
+
+#~ msgid "Password:"
+#~ msgstr "Palavra-passe:"
+
+#~ msgid "Libre.fm"
+#~ msgstr "Libre.fm"
+
+#~ msgid "You need to install pylast and gi secret"
+#~ msgstr "Tem que instalar pylast e gi secret"
+
+#~ msgid ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Procura de grafismos</span>"
+
+#~ msgid "You need to enable Spotify "
+#~ msgstr "Precisa de ativar o Spotify "
+
+#~ msgid "and YouTube in network settings"
+#~ msgstr "e o YouTube nas definições de rede"
+
+#~ msgid "Show performers"
+#~ msgstr "Mostrar artistas"
+
+#~ msgid "Modify information"
+#~ msgstr "Modificar informação"
+
+#~ msgid "Only mix songs in party mode"
+#~ msgstr "Reprodução aleatória de músicas apenas em modo de festa"
+
+#~ msgid "Smoothing duration"
+#~ msgstr "Duração da suavização"
+
+#~ msgid "Transition duration in seconds"
+#~ msgstr "Duração da transição, em segundos"
+
+#~ msgid "Automatic playback"
+#~ msgstr "Reprodução automática"
+
+#~ msgid "Welcome on Lollypop"
+#~ msgstr "Bem-vindo/a ao Lollypop"
+
+#~ msgid "Replay gain value in dB"
+#~ msgstr "Valor de replay gain em dB"
+
+#~ msgid ""
+#~ "Lollypop is a lightweight modern music player designed to work "
+#~ "excellently on the GNOME desktop environment. Lollypop also features a "
+#~ "party mode which will automatically select party-related playlists to "
+#~ "play; a full-screen view which lets you visually access the player from "
+#~ "your couch thanks to its HiDPI support; and native support for replay "
+#~ "gain."
+#~ msgstr ""
+#~ "O Lollypop é um leitor de música moderno e leve, desenhado para funcionar "
+#~ "excelentemente no ambiente gráfico GNOME. O Lollypop também contém um "
+#~ "modo defesta que seleciona automaticamente listas de reprodução de festa "
+#~ "para reproduzir; uma vista de ecrã inteiro que lhe deixa aceder "
+#~ "visualmente à reprodução a partir do seu sofá, graças ao seu suporte de "
+#~ "ecrãs HiDPI; e suporte para o replay gain incluído de série."
+
+#~ msgid "You have disabled lyrics search in network settings !"
+#~ msgstr "Desativou a pesquisa de letras nas definições de rede!"
+
+#~ msgid "New tracks available"
+#~ msgstr "Novas faixas disponíveis"
+
+#~ msgid "Unplayed albums"
+#~ msgstr "Álbuns não reproduzidos"
+
+#~ msgid "Unplayed tracks"
+#~ msgstr "Faixas por reproduzir"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Search in list one"
+#~ msgstr "Procurar na primeira lista"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Search in list two"
+#~ msgstr "Procurar na segunda lista"
+
+#~ msgid "Please install <i>easytag</i> or <i>kid3-qt</i>"
+#~ msgstr "Por favor, instale o <i>easytag</i> ou o <i>kid3-qt</i>"
+
+#~ msgid "Others albums"
+#~ msgstr "Álbuns de outros"
+
+#~ msgid "Clear queue"
+#~ msgstr "Limpar fila"
+
+#~ msgid "Queue"
+#~ msgstr "Fila"
+
+#~ msgid "Other albums"
+#~ msgstr "Outros álbuns"
+
+#, fuzzy
+#~ msgid ""
+#~ "Reda Lazri (Lollypop icon)\n"
+#~ "Geary Development Team (tag-list-symbolic icon)\n"
+#~ "GNOME Project (unplayed-albums-symbolic, artists-list-symbolic icons)\n"
+#~ "Martins D. Okoi (Description in appdata)\n"
+#~ "    "
+#~ msgstr ""
+#~ "Reda Lazri (ícone do Lollypop)\n"
+#~ "Equipa de Desenvolvimento do Geary (ícone para tag-list-symbolic)\n"
+#~ "Projeto GNOME (ícones para unplayed-albums-symbolic, artists-list-"
+#~ "symbolic )\n"
+#~ "Martins D. Okoi (descrição para o Appdata)\n"
+#~ "    "
+
+#~ msgid "Default background image"
+#~ msgstr "Imagem de fundo padrão"
+
+#~ msgid "Reset"
+#~ msgstr "Repor"
+
+#~ msgid "Current playlist"
+#~ msgstr "Lista de reprodução atual"
+
+#, python-format
+#~ msgid "Some albums from %s"
+#~ msgstr "Alguns álbuns de %s"
+
+#~ msgid "Reset artwork?"
+#~ msgstr "Repor capas?"
+
+#, python-format
+#~ msgid "by %s"
+#~ msgstr "de %s"
+
+#, python-format
+#~ msgid "by %s, from %s"
+#~ msgstr "de %s, em %s"
+
+#~ msgid "Search in TuneIn"
+#~ msgstr "Pesquisar no TuneIn"
+
+#~ msgid "Shuffle mode"
+#~ msgstr "Modo aleatório"
+
+#~ msgid "No shuffle"
+#~ msgstr "Desativada"
+
+#~ msgid "Shuffle albums"
+#~ msgstr "Álbum aleatório"
+
+#~ msgid "Recently played"
+#~ msgstr "Reproduzidas recentemente"
+
+#~ msgid "Never played"
+#~ msgstr "Nunca reproduzidas"
+
+#~ msgid "_About"
+#~ msgstr "_Sobre"
+
+#~ msgid "Disable all notifications"
+#~ msgstr "Desativar todas as notificações"
+
+#~ msgid "Disable notifications upon change of song"
+#~ msgstr "Desativar notificações na mudança de faixa"
+
+#~ msgid "Add to others"
+#~ msgstr "Adicionar a outras"
+
+#~ msgid "Remove from \"%s\""
+#~ msgstr "Remover de \"%s\""
+
+#~ msgid "Add to \"%s\""
+#~ msgstr "Adicionar a \"%s\""
+
+#~ msgid "Modify radio"
+#~ msgstr "Modificar rádio"
+
+#~ msgid "Change artwork"
+#~ msgstr "Alterar capa do álbum"
+
+#~ msgid "Split playlists view"
+#~ msgstr "Dividir vista de listas de reprodução"
+
+#~ msgid "Show sidebar"
+#~ msgstr "Mostrar barra lateral"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide navigation list"
+#~ msgstr "Mostrar/ocultar lista de navegação"
+
+#~ msgid "All artists"
+#~ msgstr "Todos os artistas"
+
+#~ msgid "All albums"
+#~ msgstr "Todos os álbuns"
+
+#~ msgid "Playing playlists"
+#~ msgstr "Listas em reprodução"
+
+#~ msgid ""
+#~ "<b>Lollypop uses the Google Custom Search API to search for images on the "
+#~ "web.</b>\n"
+#~ "<small>This API is limited, so it may not work with the default API key.</"
+#~ "small>"
+#~ msgstr ""
+#~ "<b>O Lollypop utiliza a API de Pesquisa Personalizada do Google para "
+#~ "procurar imagens na internet.</b>\n"
+#~ "<small>Esta API é limitada, pelo que pode não funcionar com a chave de "
+#~ "API pré-definida.</small>"
+
+#~ msgid "<b>Please create a \"Custom Search Engine\" here</b>:"
+#~ msgstr "<b>Crie um \"Motor de Busca Personalizada\" aqui</b>:"
+
+#~ msgid "No logo found…"
+#~ msgstr "Nenhum logo encontrado..."
+
+#~ msgid "Select a logo  for this radio"
+#~ msgstr "Selecione um logo para esta rádio"
+
+#~ msgid "Next track"
+#~ msgstr "Faixa seguinte"
+
+#~ msgid "Synchronize to your device"
+#~ msgstr "Sincronize com o seu dispositivo"
+
+#~ msgid "Please unlock your device"
+#~ msgstr "Por favor, desbloqueie o seu dispositivo"
+
+#~ msgid "This will remove some files on your device!"
+#~ msgstr "Isto irá remover alguns ficheiros do seu dispositivo!"
+
+#~ msgid "Cancel synchronization"
+#~ msgstr "Cancelar sincronização"
+
+#~ msgid "Synced albums"
+#~ msgstr "Álbuns sincronizados"
+
+#~ msgid "Unknown error while syncing, try to reboot your device"
+#~ msgstr ""
+#~ "Erro desconhecido na sincronização. Tente reiniciar o seu dispositivo."
+
+#~ msgid "Playback behaviour"
+#~ msgstr "Comportamento de reprodução"
+
+#~ msgid "Show albums from artist"
+#~ msgstr "Mostrar álbuns do artista"
+
+#~ msgid "_Update music"
+#~ msgstr "At_ualizar música"
+
+#~ msgid "_Fullscreen"
+#~ msgstr "_Ecrã completo"
+
+#~ msgid "Volume"
+#~ msgstr "Volume"
+
+#~ msgid "Last.fm login"
+#~ msgstr "Autenticação para Last.fm"
+
+#~ msgid ""
+#~ "<small>You need to enable \"Custom Search API\"  for your project.</small>"
+#~ msgstr ""
+#~ "<small>Tem que ativar a \"API de Pesquisa Personalizada\" para o seu "
+#~ "projeto.</small>"
+
+#~ msgid "Show list of genres"
+#~ msgstr "Mostrar lista de géneros"
+
+#~ msgid "Photo"
+#~ msgstr "Foto"
+
+#~ msgid ""
+#~ "    - Scrobbler disabled\n"
+#~ "    - Auto cover download disabled\n"
+#~ "    - Artist information disabled"
+#~ msgstr ""
+#~ "- Scrobbler desativado\n"
+#~ "- Transferência automática de capas desativada\n"
+#~ "- Informação de artista desativada"
+
+#~ msgid "Network access disabled"
+#~ msgstr "Acesso à rede desativado"
+
+#~ msgid "Synchronize %s"
+#~ msgstr "Sincronizar %s"
+
+#~ msgid "No favorite radios"
+#~ msgstr "Sem rádios favoritas"
+
+#~ msgid "Audio output preview on track hover"
+#~ msgstr ""
+#~ "Antevisão de saída de som ao passar com o ponteiro do rato sobre a faixa"
+
+#~ msgid ""
+#~ "PulseAudio only. Example: alsa_output.pci-0000_00_14.2.analog-stereo. "
+#~ "Command to get outputs: $ pacmd list-sinks|grep 'name:'"
+#~ msgstr ""
+#~ "Apenas para PulseAudio. Exemplo: alsa_output.pci-0000_00_14.2.analog-"
+#~ "stereo. Comando para obter output: $ pacmd list-sinks|grep 'nome:'"
+
+#~ msgid "Preview tracks on"
+#~ msgstr "Antever faixas em"
+
+#~ msgid "No audio device"
+#~ msgstr "Nenhum dispositivo de áudio"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show genres"
+#~ msgstr "Mostrar géneros"
+
+#~ msgid "_Quit"
+#~ msgstr "Sa_ir"
+
+#~ msgid "Unsplit view"
+#~ msgstr "Reunir vista"
+
+#~ msgid "Show genres"
+#~ msgstr "Mostrar géneros"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide volume control"
+#~ msgstr "Mostrar/ocultar controlo de volume"
+
+#~ msgid "Add to playlist"
+#~ msgstr "Adicionar à lista de reprodução"
+
+#~ msgid "Ex: The Beatles sorted as Beatles. Reset of database required."
+#~ msgstr ""
+#~ "Ex: \"The Beatles\" ordenado como \"Beatles\". É necessário reiniciar a "
+#~ "base de dados."
+
+#~ msgid "Restart current track on previous"
+#~ msgstr "Reiniciar faixa atual na anterior"
+
+#~ msgid "Low quality, missing API key…"
+#~ msgstr "Baixa qualidade. Chave de API em falta..."
+
+#~ msgid "Remove from \"Not in party\""
+#~ msgstr "Remover de \"Não no modo de festa\""
+
+#~ msgid "Add to \"Not in party\""
+#~ msgstr "Adicionar a \"Não no modo de festa\""
+
+#~ msgid "Not in party"
+#~ msgstr "Não no modo de festa"
+
+#~ msgid "No free space available on device"
+#~ msgstr "Sem espaço livre disponível no dispositivo"
+
+#~ msgid "Mini player size"
+#~ msgstr "Tamanho do mini-leitor"
+
+#~ msgid "Mini player position"
+#~ msgstr "Posição do mini-leitor"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Mini Player"
+#~ msgstr "Leitor Mini"
+
+#~ msgid "Delete"
+#~ msgstr "Eliminar"
+
+#~ msgid "Remove \"%s\"?"
+#~ msgstr "Remover \"%s\"?"
+
+#~ msgid "Remove these tracks?"
+#~ msgstr "Remover estas faixas?"
+
+#~ msgid "Flattr"
+#~ msgstr "Flattr"
+
+#~ msgid "Settings"
+#~ msgstr "Definições"
+
+#~ msgid ""
+#~ "Party mode\n"
+#~ "Right click to filter"
+#~ msgstr ""
+#~ "Modo de festa\n"
+#~ "Clique com o botão direito para filtrar"
+
+#~ msgid "Populars"
+#~ msgstr "Populares"
+
+#~ msgid "Recently added"
+#~ msgstr "Adicionadas recentemente"
+
+#~ msgid "Create a new playlist based on search"
+#~ msgstr "Criar uma nova lista de reprodução baseada na pesquisa"
+
+#~ msgid "Sync all albums(MTP)"
+#~ msgstr "Sincronizar todos os álbuns (MTP)"
+
+#, fuzzy
+#~ msgid "Enable network access"
+#~ msgstr "Ativar acesso à rede:"
+
+#~ msgid "Encode to MP3(MTP)"
+#~ msgstr "Codificar para MP3(MTP)"
+
+#~ msgid "Quality of MP3 encoding"
+#~ msgstr "Qualidade da codificação MP3"
+
+#~ msgid "Normalize MP3(MTP)"
+#~ msgstr "Normalizar MP3 (MTP)"
+
+#~ msgid "Convert to MP3"
+#~ msgstr "Converter para MP3"
+
+#~ msgid "Normalize MP3"
+#~ msgstr "Normalizar MP3"
+
+#~ msgid "You need to install gstreamer-plugins-ugly"
+#~ msgstr "Tem que instalar gstreamer-plugins-ugly"
+
+#~ msgid "Long press to show options"
+#~ msgstr "Toque longo para mostrar opções"
+
+#~ msgid "Show navigation list"
+#~ msgstr "Mostrar lista de navegação"
+
+#~ msgid "Lollypop is detecting an empty folder."
+#~ msgstr "O Lollypop está a detetar uma pasta vazia."
+
+#~ msgid "Check your music settings."
+#~ msgstr "Verifique as suas definições de música."
+
+#~ msgid "Modify"
+#~ msgstr "Modificar"
+
+#~ msgid "External tracks"
+#~ msgstr "Faixas externas"
+
+#~ msgid "Never played albums"
+#~ msgstr "Álbuns nunca reproduzidos"
+
+#~ msgid ""
+#~ "Reload information\n"
+#~ "Long press to activate auto reload"
+#~ msgstr ""
+#~ "Recarregar informação\n"
+#~ "Toque longo para ativar o carregamento automático"
+
+#~ msgid "Advanced artist information disabled"
+#~ msgstr "Informação avançada de artista desativada"
+
+#~ msgid "WebKit support disabled"
+#~ msgstr "Suporte WebKit desativado"
+
+#~ msgid "No lyrics found, please install gir1.2-webkit2-4.0"
+#~ msgstr "Não foram encontradas letras. Instale gir1.2-webkit2-4.0"
+
+#~ msgid "No information for this artist"
+#~ msgstr "Sem informação para este artista"
+
+#~ msgid "musician;band"
+#~ msgstr "músico;banda"
+
+#~ msgid "Mix songs"
+#~ msgstr "Reprodução aleatória de músicas"
+
+#~ msgid "Mix duration"
+#~ msgstr "Duração de reprodução aleatória"
+
+#~ msgid "Mix duration in seconds"
+#~ msgstr "Duração de reprodução aleatória em segundos"
+
+#~ msgid "Mix tracks"
+#~ msgstr "Reprodução aleatória de faixas"
+
+#~ msgctxt "artist context"
+#~ msgid "Add albums"
+#~ msgstr "Adicionar álbuns"
+
+#~ msgid "Save into collection"
+#~ msgstr "Guardar na coleção"
+
+#~ msgid "Next tracks"
+#~ msgstr "Faixas seguintes"
+
+#~ msgid "Append"
+#~ msgstr "Adicionar"
+
+#~ msgid ""
+#~ "<b>Welcome to Lollypop!</b>\n"
+#~ "Here you can enable network access, allowing Lollypop to fetch music "
+#~ "information from the Web."
+#~ msgstr ""
+#~ "<b>Bem-vindo ao Lollypop</b>\n"
+#~ "Aqui pode ativar o acesso à rede, permitindo ao Lollypop buscar "
+#~ "informação musical à internet."
+
+#~ msgid "Enable network access:"
+#~ msgstr "Ativar acesso à rede:"
+
+#~ msgid "<span size='xx-large'><b>Import music</b></span>"
+#~ msgstr "<span size='xx-large'><b>Importar música</b></span>"
+
+#~ msgid "_Network access"
+#~ msgstr "_Acesso à rede"
+
+#~ msgid "Lollypop: You need to install yelp."
+#~ msgstr "Lollypop: tem que instalar o yelp."
+
+#~ msgid "_Help"
+#~ msgstr "A_juda"

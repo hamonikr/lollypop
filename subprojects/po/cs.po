@@ -1,0 +1,3309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Jan Máslo <inactive+maslic_@transifex.com>, 2015
+# fri, 2014
+# fri, 2015-2017
+# Tom Zvon <tom.zvon@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: lollypop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-06 14:55+0100\n"
+"PO-Revision-Date: 2021-03-15 09:02+0000\n"
+"Last-Translator: Pavel Fric <pavelfric@yahoo.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gnumdk/lollypop/cs/"
+">\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.5.2-dev\n"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:36
+msgid "Window size"
+msgstr "Velikost okna"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:37
+msgid "Window size (width and height)."
+msgstr "Velikost okna (šířka a výška)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:41
+msgid "Window position"
+msgstr "Poloha okna"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:42
+msgid "Window position (x and y)."
+msgstr "Poloha okna (x a y)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:46
+#: ../data/org.gnome.Lollypop.gschema.xml:51
+#: ../data/org.gnome.Lollypop.gschema.xml:56
+#: ../data/org.gnome.Lollypop.gschema.xml:71
+#: ../data/org.gnome.Lollypop.gschema.xml:116
+#: ../data/org.gnome.Lollypop.gschema.xml:261
+#: ../data/org.gnome.Lollypop.gschema.xml:274
+#: ../data/org.gnome.Lollypop.gschema.xml:284
+#: ../data/org.gnome.Lollypop.gschema.xml:304
+#: ../data/org.gnome.Lollypop.gschema.xml:309
+#: ../data/org.gnome.Lollypop.gschema.xml:314
+#: ../data/org.gnome.Lollypop.gschema.xml:364
+msgid "INTERNAL"
+msgstr "VNITŘNÍ"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:61
+msgid "Allow using a cover per track"
+msgstr "Povolit obaly pro jednotlivé skladby"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:66
+msgid "Access network"
+msgstr "Přistoupit k síti"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:76
+msgid ""
+"Threshold used to decide if the previous track should be played or the "
+"currently running one should be restarted"
+msgstr ""
+"Prahová hodnota používaná k rozhodnutí, zda má být přehrána předchozí "
+"skladba nebo zda má být znovu spuštěna právě přehrávaná skladba"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:81
+msgid "Save artwork/popularity in tags"
+msgstr "Uložit obaly/oblíbenost do značek"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:86
+msgid "Window maximized"
+msgstr "Okno zvětšeno"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:87
+msgid "Window maximized state."
+msgstr "Zvětšený stav okna."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:91
+msgid "Enabled genres in party mode"
+msgstr "Povolené žánry ve večírkovém režimu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:92
+msgid "ID for genres."
+msgstr "Identifikátor pro žánry."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:96 ../lollypop/menu_search.py:40
+msgid "Search on the Web"
+msgstr "Hledat na webu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:101
+msgid "Shown suggestions"
+msgstr "Ukázat návrhy"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:106
+msgid "Play featured tracks"
+msgstr "Přehrávat uváděné skladby"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:111
+msgid "Allow syncing to USB disks"
+msgstr "Povolit seřízení se zařízeními USB"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:121
+msgid ""
+"If set, Lollypop will use this server instead of YouTube. See https://github."
+"com/omarroth/invidious"
+msgstr ""
+"Pokud je nastaveno, Lollypop použije tento server namísto YouTube. Podívejte "
+"se na https://github.com/omarroth/invidious"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:126
+msgid "If true, Lollypop will not use system youtube-dl"
+msgstr "Pokud je povoleno, Lollypop nebude používat youtube-dl systému"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:131
+msgid "Do not use original date if set"
+msgstr "Nepoužívat původní datum, je-li nastaveno"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:136
+msgid "Import playlists from collections"
+msgstr "Zavádět seznamy skladeb ze sbírek"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:141
+msgid "Music URI"
+msgstr "Adresa hudby (URI)"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:142
+msgid "When empty, use XDG_MUSIC_DIR"
+msgstr "Když je prázdné, použít XDG_MUSIC_DIR"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:146
+msgid "Use Libre.fm instead of Last.fm"
+msgstr "Použít Libre.fm místo Last.fm"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:151
+msgid "ListenBrainz user token"
+msgstr "Uživatelské poznávací znamení pro ListenBrainz"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:156
+msgid "Google Custom Search API key"
+msgstr "Klíč API pro Vlastní hledání Google"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:161
+msgid "Favorite tag editor"
+msgstr "Oblíbený editor značek"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:166
+msgid "Favorite cover filename without extension"
+msgstr "Oblíbený název souboru obalu bez přípony"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:167
+#: ../data/org.gnome.Lollypop.gschema.xml:252
+msgid "Restart needed"
+msgstr "Je potřeba program spustit znovu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:171
+msgid "Database version"
+msgstr "Verze databáze"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:172
+msgid ""
+"Resetting this value will reset the database, popular albums will be restored"
+msgstr ""
+"Vynulování této hodnoty obnoví výchozí stav databáze, oblíbená alba budou "
+"obnovena"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:176
+msgid "Albums cover size"
+msgstr "Velikost obalu alba"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:181
+msgid "Encoding quality"
+msgstr "Jakost kódování"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:186 ../data/SettingsDialog.ui:375
+msgid "Auto update music"
+msgstr "Automatická aktualizace hudby"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:191
+msgid "Show tracks in artist view"
+msgstr "Ukázat skladby v přehledu umělců"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:196 ../data/SettingsDialog.ui:88
+msgid "Show artist artwork"
+msgstr "Ukázat obal umělce"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:201
+msgid "Use dark GTK theme"
+msgstr "Použít tmavý vzhled GTK"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:206
+msgid "Disable scrobbling usage"
+msgstr "Zakázat odesílání informací o přehrávání"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:211
+msgid "Handle compilations"
+msgstr "Zpracovat sbírková alba"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:216
+msgid "Handle performers, compositors, ..."
+msgstr "Spravovat účinkující, skladatele, ..."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:221
+msgid "Show compilations in albums view"
+msgstr "Ukázat sbírková alba v zobrazení alb"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:226 ../data/SettingsDialog.ui:158
+msgid "Continue playback when closed"
+msgstr "Pokračovat v přehrávání po zavření programu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:231
+msgid "Append albums by default"
+msgstr "Připojit alba automaticky"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:236
+msgid "Smart sort for artist"
+msgstr "Chytré řazení pro umělce"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:237
+msgid "Ex: The Beatles sorted as Beatles. Reset of database required"
+msgstr ""
+"Například: The Beatles zařazeni pod Beatles. Vyžaduje vynulování databáze"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:241
+msgid "Show sort tag as artist. Reset of database may be required"
+msgstr "Ukázat značku zařazení jako umělce. Vyžaduje vynulování databáze"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:242
+msgid "Ex: Beatles, The"
+msgstr "Například: Beatles, The"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:246
+msgid "Restore previous state"
+msgstr "Obnovit předchozí stav"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:251
+msgid "Disable MPRIS"
+msgstr "Zakázat MPRIS"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:256
+msgid "Notifications behaviour"
+msgstr "Chování oznamování"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:265
+msgid "Items count in views"
+msgstr "Počet položek v zobrazení"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:269
+msgid "Show track number from tags"
+msgstr "Ukázat číslo skladby ze značek"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:279
+msgid "Enable PNG artwork cache"
+msgstr "Povolit vyrovnávací paměť pro obaly v PNG"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:289
+msgid "Force single column mode"
+msgstr "Vynutit jednosloupcový režim"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:294
+msgid "Volume rate"
+msgstr "Hlasitost"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:295
+msgid "0.0-1.0"
+msgstr "0.0-1.0"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:299
+msgid "Equalizer enabled"
+msgstr "Ekvalizér povolen"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:319
+msgid "Show labels in sidebar"
+msgstr "Ukázat štítky v postranním panelu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:324
+msgid "Smooth track transitions"
+msgstr "Plynulé přechody skladeb"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:329
+msgid "Smooth track transitions only in party mode"
+msgstr "Plynulé přechody skladeb pouze ve večírkovém režimu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:334
+msgid "Transition duration in ms"
+msgstr "Doba trvání přechodu v ms"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:339
+msgid "Fade effect on playback status change"
+msgstr "Efekt prolínání při změně stavu přehrávání"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:344
+msgid "Fade duration in ms"
+msgstr "Doba trvání prolínání v ms"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:349
+msgid "Fade effect only in party mode"
+msgstr "Efekt prolínání jen ve večírkovém režimu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:354 ../data/ToolbarEnd.ui:19
+msgid "Shuffle tracks"
+msgstr "Zamíchat skladby"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:359
+msgid "Ignore internal symlinks"
+msgstr "Přehlížet vnitřní symbolické odkazy"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:369
+msgid "ReplayGain state"
+msgstr "Stav vyrovnání hlasitosti přehrávaných skladeb"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:374
+msgid "ReplayGain value in dB"
+msgstr "Hodnota pro vyrovnání hlasitosti v dB"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:375
+msgid "Between -15 and 15"
+msgstr "Mezi -15 a 15"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:379
+msgid "Applies signal compression/limiting to raw audio data"
+msgstr "Použije kompresi/omezení signálu na nezpracovaná zvuková data"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:380
+msgid ""
+"It performs strict hard limiting with soft-knee characteristics, using a "
+"threshold of -6 dB"
+msgstr ""
+"Provádí přísné tvrdé omezení s charakteristikami měkkých kolen, s prahovou "
+"hodnotou -6 dB"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:384
+msgid "Possibilities for powermanagement options"
+msgstr "Možnosti pro volby správy energie"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:385
+msgid "This option inhibits screensaver and suspend during Lollypop playback."
+msgstr ""
+"Tato volba zabrání vyvolání spořiče obrazovky a uspání do paměti během "
+"přehrávání."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:389
+msgid "Repeat"
+msgstr "Opakovat"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:394 ../data/SettingsDialog.ui:212
+msgid "Order albums by"
+msgstr "Řadit alba podle"
+
+#: ../data/AboutDialog.ui.in:13
+msgid "A music player for GNOME."
+msgstr "Přehrávač hudby pro GNOME."
+
+#: ../data/AboutDialog.ui.in:15
+msgid "Visit Lollypop website"
+msgstr "Navštivte stránky Lollypopu"
+
+#. Replace me with your names
+#: ../data/AboutDialog.ui.in:28
+msgctxt "Add your names here, do not remove previous names!"
+msgid "translator1, translator2, ..."
+msgstr "Pavel Fric ..."
+
+#: ../data/AboutDialog.ui.in:29
+msgid ""
+"\n"
+"Reda Lazri:\n"
+"    Lollypop icon\n"
+"Geary Development Team:\n"
+"    tag-list-symbolic icon\n"
+"GNOME Project:\n"
+"    unplayed-albums-symbolic\n"
+"    artists-list-symbolic icons\n"
+"Martins D. Okoi:\n"
+"    Description in appdata\n"
+"    "
+msgstr ""
+"\n"
+"Reda Lazri:\n"
+"    ikona Lollypopu\n"
+"Vývojářské družstvo Geary:\n"
+"    ikona pro symbolizaci seznamu značek\n"
+"Projekt GNOME:\n"
+"    symbolizace nepřehraných alb\n"
+"    ikony pro symbolizaci seznamu umělců\n"
+"Martins D. Okoi:\n"
+"    Popis v appdata\n"
+"    "
+
+#: ../data/AboutDialog.ui.in:67
+msgid "Donations:"
+msgstr "Dary:"
+
+#: ../data/AboutDialog.ui.in:74
+msgid "Liberapay"
+msgstr "Liberapay"
+
+#: ../data/AboutDialog.ui.in:84 ../lollypop/container_notification.py:107
+msgid "Patreon"
+msgstr "Patreon"
+
+#: ../data/AboutDialog.ui.in:94 ../lollypop/container_notification.py:107
+msgid "PayPal"
+msgstr "PayPal"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:8
+#: ../data/org.gnome.Lollypop.desktop.in:3
+msgid "Lollypop"
+msgstr "Lollypop"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:9
+#: ../data/org.gnome.Lollypop.desktop.in:5
+msgid "Play and organize your music collection"
+msgstr "Přehrávat a pořádat hudební sbírku"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:11
+msgid ""
+"Lollypop is a lightweight modern music player designed to work excellently "
+"on the GNOME desktop environment. It also features a party mode which will "
+"auto-select party-related playlists; allows access the player from your "
+"couch thanks to it fullscreen mode; fetches lyrics, artwork and biography "
+"online; and provides native support for ReplayGain."
+msgstr ""
+"Lollypop je lehký pokrokový přehrávač navržený tak, aby pracoval výborně v "
+"prostředí pracovní plochy GNOME. Je vybaven i večírkovým režimem, v němž "
+"jsou automaticky vybírány seznamy skladeb spojené se společenskými "
+"událostmi. Díky svému celoobrazovkovému režimu dává možnost přehrávač "
+"ovládat z pohodlí lehátka. Natahuje z internetových databází slova písní, "
+"obrázky týkající se děl a umělců a životopisy. Poskytuje vlastní podporu pro "
+"vyrovnání hlasitosti přehrávaných skladeb."
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:13
+msgid "Multiple Audio Formats –"
+msgstr "Mnoho zvukových formátů –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:14
+msgid "Metadata –"
+msgstr "Popis –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:15
+msgid "Synchronization –"
+msgstr "Synchronizace –"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:16
+msgid "Audio Scrobbling –"
+msgstr "Odesílání údajů o přehrávání –"
+
+#: ../data/org.gnome.Lollypop.desktop.in:4
+msgid "Music Player"
+msgstr "Přehrávač hudby"
+
+#: ../data/org.gnome.Lollypop.desktop.in:13
+msgid "Music;Player;Lollipop;"
+msgstr "Hudba;Přehrávač;Lollipop;"
+
+#: ../data/org.gnome.Lollypop.desktop.in:23
+msgid "Play/Pause"
+msgstr "Přehrát/Pozastavit"
+
+#: ../data/org.gnome.Lollypop.desktop.in:27 ../lollypop/assistant_flatpak.py:40
+#: ../lollypop/assistant_google.py:42 ../lollypop/assistant_google.py:54
+#: ../lollypop/assistant_google.py:71 ../lollypop/assistant_lastfm.py:45
+#: ../lollypop/assistant_lastfm.py:58 ../lollypop/assistant_musicbrainz.py:38
+#: ../lollypop/assistant_musicbrainz.py:50 ../lollypop/notification.py:37
+msgid "Next"
+msgstr "Další"
+
+#: ../data/org.gnome.Lollypop.desktop.in:31 ../lollypop/notification.py:33
+msgid "Previous"
+msgstr "Předchozí"
+
+#: ../data/Appmenu.ui:45
+msgid "Update music"
+msgstr "Aktualizovat hudbu"
+
+#: ../data/Appmenu.ui:63
+msgid "Mini player"
+msgstr "Malý přehrávač"
+
+#: ../data/Appmenu.ui:81
+msgid "Fullscreen"
+msgstr "Celá obrazovka"
+
+#: ../data/Appmenu.ui:108
+msgid "_Preferences"
+msgstr "_Nastavení"
+
+#: ../data/Appmenu.ui:122
+msgid "_Keyboard Shortcuts"
+msgstr "_Klávesové zkratky"
+
+#: ../data/Appmenu.ui:136
+msgid "_About Lollypop"
+msgstr "_O programu Lollypop"
+
+#: ../data/Appmenu.ui:149
+msgid "Quit"
+msgstr "Ukončit"
+
+#: ../data/Appmenu.ui:219
+msgid "Equalizer"
+msgstr "Ekvalizér"
+
+#: ../data/ArtistBannerWidget.ui:92
+msgid "Play albums"
+msgstr "Přehrát alba"
+
+#: ../data/ArtistBannerWidget.ui:110
+msgctxt "artist context"
+msgid "Add to current playlist"
+msgstr "Přidat do nynějšího seznamu skladeb"
+
+#: ../data/ArtworkSearch.ui:69
+msgid "Select a local file"
+msgstr "Vybrat místní soubor"
+
+#: ../data/DeviceWidget.ui:67
+msgid "Convert to:"
+msgstr "Převést do:"
+
+#: ../data/DeviceWidget.ui:79
+msgid "Normalize"
+msgstr "Normalizovat"
+
+#: ../data/DeviceWidget.ui:100
+msgid "Do not convert"
+msgstr "Nepřevádět"
+
+#: ../data/DeviceWidget.ui:117
+msgid "MP3"
+msgstr "MP3"
+
+#: ../data/DeviceWidget.ui:134
+msgid "Ogg Vorbis"
+msgstr "OGG Vorbis"
+
+#: ../data/DeviceWidget.ui:151
+msgid "AAC"
+msgstr "AAC"
+
+#: ../data/DeviceWidget.ui:168
+msgid "FLAC"
+msgstr "FLAC"
+
+#: ../data/DeviceWidget.ui:204
+msgid "Synchronized:"
+msgstr "Seřízeno:"
+
+#: ../data/DeviceWidget.ui:217 ../lollypop/shown.py:36
+#: ../lollypop/view_albums_line.py:279
+msgid "Albums"
+msgstr "Alba"
+
+#: ../data/DeviceWidget.ui:233 ../lollypop/menu_artist.py:67
+#: ../lollypop/menu_objects.py:51 ../lollypop/menu_objects.py:117
+#: ../lollypop/menu_selectionlist.py:93 ../lollypop/shown.py:30
+#: ../lollypop/widgets_banner_playlists.py:42
+msgid "Playlists"
+msgstr "Seznamy skladeb"
+
+#: ../data/DeviceWidget.ui:284 ../lollypop/widgets_device.py:137
+#: ../lollypop/widgets_device.py:338
+msgid "Synchronize"
+msgstr "Seřídit"
+
+#: ../data/PlaylistBannerWidget.ui:71 ../lollypop/view_tracks_album.py:312
+#: ../lollypop/widgets_player_buttons.py:188
+msgid "Play"
+msgstr "Přehrát"
+
+#: ../data/PlaylistBannerWidget.ui:89
+msgid "Play playlist randomized"
+msgstr "Přehrávat seznam skladeb v náhodném pořadí"
+
+#: ../data/PlaylistPopover.ui:23 ../data/RadioMenu.ui:50
+msgid "Name:"
+msgstr "Název:"
+
+#: ../data/PlaylistPopover.ui:59 ../data/RadioMenu.ui:106
+#: ../data/SmartPlaylistView.ui:153 ../lollypop/menu_playlist.py:116
+msgid "Save"
+msgstr "Uložit"
+
+#: ../data/RadioMenu.ui:61
+msgid "Address:"
+msgstr "Adresa:"
+
+#: ../data/SettingsDialog.ui:41
+msgid "General"
+msgstr "Obecné"
+
+#: ../data/SettingsDialog.ui:46
+msgid "Appearance"
+msgstr "Vzhled"
+
+#: ../data/SettingsDialog.ui:51 ../data/SettingsDialog.ui:54
+msgid "Whether the application should use a dark theme"
+msgstr "Program používá tmavý vzhled"
+
+#: ../data/SettingsDialog.ui:52
+msgid "Dark Mode"
+msgstr "Tmavý vzhled"
+
+#: ../data/SettingsDialog.ui:70
+msgid "Single column mode"
+msgstr "Jednosloupcový režim"
+
+#: ../data/SettingsDialog.ui:72
+msgid "Only show a single column for tracks"
+msgstr "U skladeb zobrazit pouze jeden sloupec"
+
+#: ../data/SettingsDialog.ui:105
+msgid "High quality artwork"
+msgstr "Vysoce kvalitní umělecká díla"
+
+#: ../data/SettingsDialog.ui:122
+msgid "Artwork size"
+msgstr "Velikost obalu"
+
+#: ../data/SettingsDialog.ui:139 ../lollypop/menu_actions.py:77
+msgid "Clean cache"
+msgstr "Vyprázdnit vyrovnávací paměť"
+
+#: ../data/SettingsDialog.ui:153
+msgid "Behaviour"
+msgstr "Chování"
+
+#: ../data/SettingsDialog.ui:160
+msgid "Play music in background"
+msgstr "Přehrávat hudbu na pozadí"
+
+#: ../data/SettingsDialog.ui:176
+msgid "Restore state on startup"
+msgstr "Obnovit stav při spuštění"
+
+#: ../data/SettingsDialog.ui:178
+msgid "Restore current playback and view"
+msgstr "Obnovit nynější přehrávání a zobrazení"
+
+#: ../data/SettingsDialog.ui:194
+msgid "Save changes to file"
+msgstr "Uložit změny do souboru"
+
+#: ../data/SettingsDialog.ui:196
+msgid "Save artwork and rating to files"
+msgstr "Uložit obal a hodnocení do souborů"
+
+#: ../data/SettingsDialog.ui:213
+msgid "Albums will be sorted by this field"
+msgstr "Alba budou řazena podle tohoto pole"
+
+#: ../data/SettingsDialog.ui:222
+msgid "Artist - year"
+msgstr "Umělec - rok"
+
+#: ../data/SettingsDialog.ui:223
+msgid "Artist - title"
+msgstr "Umělec - název"
+
+#: ../data/SettingsDialog.ui:224
+msgid "Title"
+msgstr "Název"
+
+#: ../data/SettingsDialog.ui:225 ../data/SmartPlaylistWidget.ui:33
+msgid "Year"
+msgstr "Rok"
+
+#: ../data/SettingsDialog.ui:226 ../data/SmartPlaylistWidget.ui:32
+msgid "Popularity"
+msgstr "Oblíbenost"
+
+#: ../data/SettingsDialog.ui:242 ../lollypop/menu_artist.py:59
+#: ../lollypop/menu_decade.py:39 ../lollypop/menu_genre.py:41
+#: ../lollypop/menu_objects.py:43 ../lollypop/menu_objects.py:109
+msgid "Playback"
+msgstr "Přehrávání"
+
+#: ../data/SettingsDialog.ui:247
+msgid "Enable transitions"
+msgstr "Povolit přechody"
+
+#: ../data/SettingsDialog.ui:249
+msgid "Add a transition on track change"
+msgstr "Přidat přechod při změně skladby"
+
+#: ../data/SettingsDialog.ui:265
+msgid "Duration"
+msgstr "Doba trvání"
+
+#: ../data/SettingsDialog.ui:267
+msgid "Transition duration in milliseconds"
+msgstr "Doba trvání přechodu v milisekundách"
+
+#: ../data/SettingsDialog.ui:283
+msgid "ReplayGain"
+msgstr "Vyrovnání hlasitosti"
+
+#: ../data/SettingsDialog.ui:285
+msgid "Apply audio correction on the fly"
+msgstr "Provádět zvukové opravy za běhu"
+
+#: ../data/SettingsDialog.ui:294 ../lollypop/menu_search.py:41
+msgid "Disabled"
+msgstr "Zakázáno"
+
+#: ../data/SettingsDialog.ui:295
+msgid "Track"
+msgstr "Skladba"
+
+#: ../data/SettingsDialog.ui:296 ../data/SmartPlaylistWidget.ui:30
+msgid "Album"
+msgstr "Album"
+
+#: ../data/SettingsDialog.ui:315
+msgid "Music"
+msgstr "Hudba"
+
+#: ../data/SettingsDialog.ui:320
+msgid "Collection"
+msgstr "Sbírka"
+
+#: ../data/SettingsDialog.ui:331 ../lollypop/dialog_settings.py:245
+msgid "Reset collection"
+msgstr "Obnovit výchozí sbírku"
+
+#: ../data/SettingsDialog.ui:370
+msgid "Import settings"
+msgstr "Nastavení zavedení"
+
+#: ../data/SettingsDialog.ui:377
+msgid "Update music if files added to collection"
+msgstr "Aktualizovat hudbu při přidání souborů do sbírky"
+
+#: ../data/SettingsDialog.ui:393 ../data/SettingsDialog.ui:431
+msgid "You need to reset collection"
+msgstr "Je potřeba obnovit výchozí sbírku"
+
+#: ../data/SettingsDialog.ui:394
+msgid "Show compilations"
+msgstr "Ukázat sbírková alba"
+
+#: ../data/SettingsDialog.ui:396
+msgid ""
+"A compilation is an album without any \"Album artist tag\"\n"
+"and with different artists"
+msgstr ""
+"Sbírkové album je album bez jakékoli značky pro umělce alba.\n"
+"a s různými umělci. Obsahuje nahrávky z různých zdrojů"
+
+#: ../data/SettingsDialog.ui:413
+msgid "Import playlists"
+msgstr "Zavést seznamy skladeb"
+
+#: ../data/SettingsDialog.ui:415
+msgid "Search for playlists in your collection"
+msgstr "Hledat seznamy skladeb ve sbírce"
+
+#: ../data/SettingsDialog.ui:432
+msgid "Import advanced tags"
+msgstr "Zavést pokročilé značky"
+
+#: ../data/SettingsDialog.ui:434
+msgid "Performers, composers, …"
+msgstr "Účinkující, skladatelé, …"
+
+#: ../data/SettingsDialog.ui:452
+msgid "Statistics"
+msgstr "Statistika"
+
+#: ../data/SettingsDialog.ui:483
+msgid "Remove devices managed by Lollypop"
+msgstr "Odstranit zařízení spravovaná Lollypopem"
+
+#: ../data/SettingsDialog.ui:484 ../lollypop/menu_artist.py:66
+#: ../lollypop/menu_genre.py:53 ../lollypop/menu_objects.py:53
+#: ../lollypop/menu_objects.py:90 ../lollypop/menu_playlist.py:68
+msgid "Devices"
+msgstr "Zařízení"
+
+#: ../data/SettingsDialog.ui:497 ../lollypop/shown.py:34
+#: ../lollypop/toolbar_end.py:249
+msgid "Web"
+msgstr "Internet"
+
+#: ../data/SettingsDialog.ui:502
+msgid "Status"
+msgstr "Stav"
+
+#: ../data/SettingsDialog.ui:507
+msgid "Allow network access"
+msgstr "Povolit přístup k síti"
+
+#: ../data/SettingsDialog.ui:524
+msgid "Background data"
+msgstr "Data na pozadí"
+
+#: ../data/SettingsDialog.ui:526
+msgid "Search artwork in background"
+msgstr "Hledat obrázky obalů na pozadí"
+
+#: ../data/SettingsDialog.ui:547
+msgid "Song playback"
+msgstr "Přehrávání písně"
+
+#: ../data/SettingsDialog.ui:558 ../data/SettingsDialog.ui:746
+#: ../data/SettingsDialog.ui:828 ../data/SettingsDialog.ui:910
+msgid "Enabled"
+msgstr "Povoleno"
+
+#: ../data/SettingsDialog.ui:575
+msgid "Use a recent version of youtube-dl"
+msgstr "Použít nejnovější verzi youtube-dl"
+
+#: ../data/SettingsDialog.ui:591
+msgid "Google API-key"
+msgstr "Klíč API Google"
+
+#: ../data/SettingsDialog.ui:616 ../data/SettingsDialog.ui:773
+#: ../data/SettingsDialog.ui:855 ../data/SettingsDialog.ui:952
+#: ../lollypop/dialog_settings.py:189
+msgid "Connect"
+msgstr "Připojit"
+
+#: ../data/SettingsDialog.ui:660
+msgid "Use an Invidious server"
+msgstr "Použít server Invidious"
+
+#: ../data/SettingsDialog.ui:676
+msgid "No server set"
+msgstr "Nenastaven žádný server"
+
+#: ../data/SettingsDialog.ui:686
+msgid "What is Invidious ?"
+msgstr "Co je to Invidious?"
+
+#: ../data/SettingsDialog.ui:735
+msgid "Search (artwork, songs, ...)"
+msgstr "Hledat (obal, písně, ...)"
+
+#: ../data/SettingsDialog.ui:926
+msgid "ListenBrainz API-Key"
+msgstr "Klíč API ListenBrainz"
+
+#: ../data/SettingsDialog.ui:998 ../lollypop/menu_playback.py:144
+#: ../lollypop/menu_search.py:56
+msgid "Deezer"
+msgstr "Deezer"
+
+#: ../data/SettingsDialog.ui:1015 ../lollypop/menu_search.py:72
+msgid "Jamendo"
+msgstr "Jamendo"
+
+#: ../data/SettingsDialog.ui:1031
+msgid "AudioDB"
+msgstr "AudioDB"
+
+#: ../data/SettingsDialog.ui:1048 ../lollypop/menu_playback.py:164
+#: ../lollypop/menu_search.py:68
+msgid "Spotify"
+msgstr "Spotify"
+
+#: ../data/SettingsDialog.ui:1065
+msgid "FANART.TV"
+msgstr "FANART.TV"
+
+#: ../data/SettingsDialog.ui:1082
+msgid "iTunes"
+msgstr "iTunes"
+
+#: ../data/SettingsDialog.ui:1099
+msgid "Google"
+msgstr "Google"
+
+#: ../data/SettingsDialog.ui:1116
+msgid "Startpage"
+msgstr "Startpage"
+
+#: ../data/SettingsDialog.ui:1133
+msgid "DuckDuckGo"
+msgstr "DuckDuckGo"
+
+#: ../data/SettingsDialog.ui:1150
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+#: ../data/SettingsDialog.ui:1172 ../lollypop/shown.py:35
+msgid "Lyrics"
+msgstr "Text písně"
+
+#: ../data/SettingsDialog.ui:1177
+msgid "Wikia"
+msgstr "Wikia"
+
+#: ../data/SettingsDialog.ui:1194
+msgid "Genius"
+msgstr "Genius"
+
+#: ../data/SettingsDialog.ui:1211
+msgid "Metro Lyrics"
+msgstr "Zpěvní text Metro"
+
+#: ../data/SettingsDialog.ui:1228
+msgid "Bing"
+msgstr "Bing"
+
+#: ../data/Shortcuts.ui:13
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Obecné"
+
+#: ../data/Shortcuts.ui:17
+msgctxt "shortcut window"
+msgid "Settings"
+msgstr "Nastavení"
+
+#: ../data/Shortcuts.ui:24
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Hledat"
+
+#: ../data/Shortcuts.ui:31
+msgctxt "shortcut window"
+msgid "Party mode"
+msgstr "Večírkový režim"
+
+#: ../data/Shortcuts.ui:38
+msgctxt "shortcut window"
+msgid "Show/Hide filter"
+msgstr "Ukázat/Skrýt filtr"
+
+#: ../data/Shortcuts.ui:45
+msgctxt "shortcut window"
+msgid "Lock playback"
+msgstr "Zamknout přehrávání"
+
+#: ../data/Shortcuts.ui:52
+msgctxt "shortcut window"
+msgid "Show equalizer"
+msgstr "Ukázat ekvalizér"
+
+#: ../data/Shortcuts.ui:59
+msgctxt "shortcut window"
+msgid "Show lyrics"
+msgstr "Ukázat text písně"
+
+#: ../data/Shortcuts.ui:66
+msgctxt "shortcut window"
+msgid "Volume up"
+msgstr "Zvýšit hlasitost"
+
+#: ../data/Shortcuts.ui:73
+msgctxt "shortcut window"
+msgid "Volume down"
+msgstr "Snížit hlasitost"
+
+#: ../data/Shortcuts.ui:80
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr "Celá obrazovka"
+
+#: ../data/Shortcuts.ui:87
+msgctxt "shortcut window"
+msgid "Mini player"
+msgstr "Malý přehrávač"
+
+#: ../data/Shortcuts.ui:96
+msgctxt "shortcut window"
+msgid "Playback"
+msgstr "Přehrávání"
+
+#: ../data/Shortcuts.ui:100
+msgctxt "shortcut window"
+msgid "Play"
+msgstr "Přehrát"
+
+#: ../data/Shortcuts.ui:107
+msgctxt "shortcut window"
+msgid "Pause"
+msgstr "Pozastavit"
+
+#: ../data/Shortcuts.ui:114
+msgctxt "shortcut window"
+msgid "Stop"
+msgstr "Zastavit"
+
+#: ../data/Shortcuts.ui:121
+msgctxt "shortcut window"
+msgid "Next track"
+msgstr "Další skladba"
+
+#: ../data/Shortcuts.ui:128
+msgctxt "shortcut window"
+msgid "Previous track"
+msgstr "Předchozí skladba"
+
+#: ../data/Shortcuts.ui:135
+msgctxt "shortcut window"
+msgid "Skip current album"
+msgstr "Přeskočit nynější album"
+
+#: ../data/Shortcuts.ui:142
+msgctxt "shortcut window"
+msgid "Love current track"
+msgstr "Zamilovat si nynější skladbu"
+
+#: ../data/Shortcuts.ui:149
+msgctxt "shortcut window"
+msgid "Repeat track"
+msgstr "Opakovat skladbu"
+
+#: ../data/Shortcuts.ui:156
+msgctxt "shortcut window"
+msgid "Skip backward in track"
+msgstr "Skočit ve skladbě zpět"
+
+#: ../data/Shortcuts.ui:163
+msgctxt "shortcut window"
+msgid "Skip forward in track"
+msgstr "Skočit ve skladbě vpřed"
+
+#: ../data/Shortcuts.ui:170
+msgctxt "shortcut window"
+msgid "Enable/disable scrobbling"
+msgstr "Povolit/Zakázat odesílání informací o přehrávání"
+
+#: ../data/SmartPlaylistView.ui:94
+msgid "Limit to"
+msgstr "Omezit na"
+
+#: ../data/SmartPlaylistView.ui:121
+msgid "tracks selected by"
+msgstr "skladby vybrané podle"
+
+#: ../data/SmartPlaylistView.ui:136
+msgid "random"
+msgstr "náhodně"
+
+#: ../data/SmartPlaylistView.ui:137
+msgid "album"
+msgstr "album"
+
+#: ../data/SmartPlaylistView.ui:138
+msgid "artist"
+msgstr "umělec"
+
+#: ../data/SmartPlaylistView.ui:139
+msgid "year DESC"
+msgstr "rok DESC"
+
+#: ../data/SmartPlaylistView.ui:140
+msgid "year ASC"
+msgstr "rok ASC"
+
+#: ../data/SmartPlaylistView.ui:141
+msgid "duration DESC"
+msgstr "doba trvání DESC"
+
+#: ../data/SmartPlaylistView.ui:142
+msgid "duration ASC"
+msgstr "doba trvání ASC"
+
+#: ../data/SmartPlaylistView.ui:184
+msgid "Match music for "
+msgstr "Odpovídající hudba pro "
+
+#: ../data/SmartPlaylistView.ui:210
+msgid "all"
+msgstr "vše"
+
+#: ../data/SmartPlaylistView.ui:211
+msgid "one"
+msgstr "jedno"
+
+#: ../data/SmartPlaylistView.ui:226
+msgid "of the following rules :"
+msgstr "z následujících pravidel:"
+
+#: ../data/SmartPlaylistWidget.ui:28
+msgid "Genre"
+msgstr "Žánr"
+
+#: ../data/SmartPlaylistWidget.ui:29 ../lollypop/menu_objects.py:48
+#: ../lollypop/menu_objects.py:114
+msgid "Artist"
+msgstr "Umělec"
+
+#: ../data/SmartPlaylistWidget.ui:31
+msgid "Rating"
+msgstr "Hodnocení"
+
+#: ../data/SmartPlaylistWidget.ui:34
+msgid "BPM"
+msgstr "ÚZM"
+
+#: ../data/ToolbarEnd.ui:7
+msgid "Party mode"
+msgstr "Večírkový režim"
+
+#: ../data/ToolbarEnd.ui:9
+msgid "Enable party mode"
+msgstr "Povolit večírkový režim"
+
+#: ../data/ToolbarEnd.ui:13
+msgid "Configure"
+msgstr "Nastavit"
+
+#: ../data/ToolbarEnd.ui:17
+msgid "Shuffle"
+msgstr "Zamíchání"
+
+#: ../data/ToolbarEnd.ui:24
+msgid "Repetition"
+msgstr "Opakování"
+
+#: ../data/ToolbarEnd.ui:26
+msgid "Continuous playback"
+msgstr "Nepřetržité přehrávání"
+
+#: ../data/ToolbarEnd.ui:31
+msgid "Automatic playback (similar)"
+msgstr "Automatické přehrávání (podobné)"
+
+#: ../data/ToolbarEnd.ui:36
+msgid "Automatic playback (random)"
+msgstr "Automatické přehrávání (náhodné)"
+
+#: ../data/ToolbarEnd.ui:41
+msgid "Repeat track"
+msgstr "Opakovat skladbu"
+
+#: ../data/ToolbarEnd.ui:46
+msgid "Do not repeat"
+msgstr "Neopakovat"
+
+#: ../data/ToolbarEnd.ui:52
+msgid "Scrobbling"
+msgstr "Odesílání informací o přehrávání"
+
+#: ../data/ToolbarEnd.ui:54
+msgid "Enable scrobbling"
+msgstr "Povolit odesílání informací o přehrávání"
+
+#: ../data/ToolbarEnd.ui:96
+msgid "Playback options"
+msgstr "Volby pro přehrávání"
+
+#: ../data/TuneinPopover.ui:26
+msgid "Go back"
+msgstr "Jít zpět"
+
+#: ../data/TuneinPopover.ui:58
+msgid "Go home"
+msgstr "Jít zpět"
+
+#: ../lollypop/artwork_album.py:515 ../lollypop/widgets_rating.py:211
+msgid "You need to install kid3-cli"
+msgstr "Je potřeba nainstalovat kid3-cli"
+
+#: ../lollypop/assistant_flatpak.py:31
+msgid "Authorization needed"
+msgstr "Je nutné ověření"
+
+#: ../lollypop/assistant_flatpak.py:33
+msgid ""
+"\n"
+"In order to be able to access your collection,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+"\n"
+"Pro přístup ke sbírce,\n"
+"musíte povolit <b>Lollypop</b>."
+
+#: ../lollypop/assistant_flatpak.py:44
+msgid "Update folders"
+msgstr "Aktualizovat složky"
+
+#: ../lollypop/assistant_flatpak.py:46
+msgid ""
+"\n"
+"- <b>Open</b> Lollypop <b>preferences</b>\n"
+"- Go to the <b>Music</b> tab\n"
+"- <b>Remove</b> all folders from collection\n"
+"- Then, <b>add</b> them again"
+msgstr ""
+"\n"
+"- <b>Otevřete</b> <b>nastavení</b> Lollypopu\n"
+"- Jděte na kartu <b>Hudba</b>\n"
+"- <b>Odstraňte</b> ze sbírky všechny složky\n"
+"- Potom je znovu <b>přidejte</b>"
+
+#: ../lollypop/assistant_flatpak.py:53 ../lollypop/assistant_google.py:52
+#: ../lollypop/assistant_google.py:69 ../lollypop/assistant_google.py:84
+#: ../lollypop/assistant_lastfm.py:56 ../lollypop/assistant_lastfm.py:68
+#: ../lollypop/assistant_musicbrainz.py:48
+#: ../lollypop/assistant_musicbrainz.py:60
+msgid "Back"
+msgstr "Zpět"
+
+#: ../lollypop/assistant_flatpak.py:55
+msgid "Preferences"
+msgstr "Nastavení"
+
+#: ../lollypop/assistant_google.py:29
+msgid "What is Google API-key?"
+msgstr "Co je to klíč API Google?"
+
+#: ../lollypop/assistant_google.py:31
+msgid ""
+"\n"
+"In order to use the YoutTube playback,\n"
+"you need to create an API-Key for the\n"
+"\n"
+"<b>\"YouTube Data API v3\"</b>\n"
+"\n"
+"which is used to play songs."
+msgstr ""
+"\n"
+"Chcete-li použít přehrávání Youtube,\n"
+"musíte vytvořit klíč API pro\n"
+"<b> „YouTube Data API v3“ </b>,\n"
+"\n"
+"který se používá k přehrávání skladeb."
+
+#: ../lollypop/assistant_google.py:40 ../lollypop/assistant_lastfm.py:43
+#: ../lollypop/assistant_musicbrainz.py:36 ../lollypop/dialog_apps.py:70
+#: ../lollypop/menu_playlist.py:117 ../lollypop/widgets_device.py:144
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: ../lollypop/assistant_google.py:46
+msgid "Connect to the console"
+msgstr "Připojit ke konzoli"
+
+#: ../lollypop/assistant_google.py:48
+msgid ""
+"\n"
+"<b>Open and log</b> in to the <b>Google Developer Console</b>"
+msgstr ""
+"\n"
+"<b>Otevřít a přihlásit se</b> ke <b>Google Developer Console</b>"
+
+#: ../lollypop/assistant_google.py:50
+msgid "Access Google Developer Console"
+msgstr "Přistoupit k Google Developer Console"
+
+#: ../lollypop/assistant_google.py:58
+msgid "Activate the API"
+msgstr "Zapnout API"
+
+#: ../lollypop/assistant_google.py:60
+msgid ""
+"\n"
+"<b>Add a new project</b> in the console.\n"
+"\n"
+"After that, <b>add a new API</b> and search\n"
+"for the <b>\"YouTube Data API v3\"</b>.\n"
+"\n"
+"<b>Activate that API</b> for your project"
+msgstr ""
+"\n"
+"<b> Přidejte nový projekt </b> do konzoly.\n"
+"\n"
+"Poté <b> přidejte nové API </b> a vyhledejte\n"
+"pro <b> „YouTube Data API v3“ </b>.\n"
+"\n"
+"<b> Zapněte toto API </b> pro svůj projekt"
+
+#: ../lollypop/assistant_google.py:75
+msgid "Copy the key"
+msgstr "Kopírovat klíč"
+
+#: ../lollypop/assistant_google.py:77
+msgid ""
+"\n"
+"Open <b>\"Credentials\"</b> in the sidebar and\n"
+"<b>Create Credentials</b> for an<b>API-Key</b>.\n"
+"\n"
+"<b>Copy the API-Key to Lollypop</b>"
+msgstr ""
+"\n"
+"Otevřete <b>\"Přihlašovací údaje\"</b> na postranním panelu a\n"
+"<b> Vytvořte přihlašovací údaje</b> pro <b> klíč API </b>.\n"
+"\n"
+"<b> Zkopírujte klíč API do Lollypopu </b>"
+
+#: ../lollypop/assistant_google.py:86 ../lollypop/assistant_lastfm.py:70
+#: ../lollypop/assistant_musicbrainz.py:62 ../lollypop/assistant.py:151
+msgid "Finish"
+msgstr "Dokončit"
+
+#: ../lollypop/assistant_lastfm.py:36
+#, python-format
+msgid "Scrobbling to %s"
+msgstr "Odesílání údajů %s"
+
+#: ../lollypop/assistant_lastfm.py:38
+#, python-format
+msgid ""
+"\n"
+"In order to send your activity to <b>%s</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+"\n"
+"Abyste mohli svou činnost poslat <b>%s </b>,\n"
+"musíte povolit <b> Lollypop </b>."
+
+#: ../lollypop/assistant_lastfm.py:49
+#, python-format
+msgid "Connect to %s"
+msgstr "Připojit k %s"
+
+#: ../lollypop/assistant_lastfm.py:51
+#, python-format
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>%s</b>.\n"
+"Then, allow Lollypop."
+msgstr ""
+"\n"
+"<b> Otevřete a přihlaste se </b> k <b>%s</b>.\n"
+"Poté povolte Lollypop."
+
+#: ../lollypop/assistant_lastfm.py:54
+#, python-format
+msgid "Access %s"
+msgstr "Přistoupit k %s"
+
+#: ../lollypop/assistant_lastfm.py:62
+msgid "Just play a track"
+msgstr "Pouze přehrát skladbu"
+
+#: ../lollypop/assistant_lastfm.py:64
+msgid ""
+"\n"
+"<b>Click \"Finish\"</b> once Lollypop has been allowed."
+msgstr ""
+"\n"
+"<b>Klepněte na \"Dokončit\"</b>, jakmile byl Lollypop povolen."
+
+#: ../lollypop/assistant_musicbrainz.py:29
+msgid "Scrobbling to ListenBrainz"
+msgstr "Odesílání údajů ListenBrainz"
+
+#: ../lollypop/assistant_musicbrainz.py:31
+msgid ""
+"\n"
+"In order to send your activity to <b>ListenBrainz</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+"\n"
+"Aby bylo možné vaši činnost posílat<b>ListenBrainz</b>,\n"
+"musíte povolit <b>Lollypop</b>."
+
+#: ../lollypop/assistant_musicbrainz.py:42
+msgid "Connect to ListenBrainz"
+msgstr "Připojit k ListenBrainz"
+
+#: ../lollypop/assistant_musicbrainz.py:44
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>ListenBrainz</b>."
+msgstr ""
+"\n"
+"<b>Otevřete a přihlaste se</b> ke službě <b>ListenBrainz</b>."
+
+#: ../lollypop/assistant_musicbrainz.py:46
+msgid "Access ListenBrainz"
+msgstr "Přistoupit k ListenBrainz"
+
+#: ../lollypop/assistant_musicbrainz.py:54
+msgid "Copy key"
+msgstr "Kopírovat klíč"
+
+#: ../lollypop/assistant_musicbrainz.py:56
+msgid ""
+"\n"
+"<b>Finish</b> the activation by copying <b>API-Key</b> in Lollypop."
+msgstr ""
+"\n"
+"<b> Dokončete </b> aktivaci zkopírováním <b> klíče API </b> do Lollypopu."
+
+#: ../lollypop/assistant.py:149
+msgid "Can't contact this service"
+msgstr "Nelze se spojit s touto službou"
+
+#: ../lollypop/collection_scanner.py:334
+msgid "Resetting database"
+msgstr "Obnovuje se výchozí databáze"
+
+#: ../lollypop/collection_scanner.py:505
+msgid "Scan disabled, missing collection"
+msgstr "Prohledávání zakázáno, chybí sbírka"
+
+#: ../lollypop/collection_scanner.py:800 ../lollypop/database_tracks.py:356
+#: ../lollypop/tagreader.py:87 ../lollypop/tagreader.py:103
+#: ../lollypop/tagreader.py:119 ../lollypop/tagreader.py:190
+#: ../lollypop/tagreader.py:238 ../lollypop/tagreader.py:260
+#: ../lollypop/tagreader.py:276 ../lollypop/tagreader.py:280
+#: ../lollypop/tagreader.py:290 ../lollypop/tagreader.py:298
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: ../lollypop/container_notification.py:96
+msgid "Automatically download albums and artists artwork?"
+msgstr "Automaticky stáhnout alba a obrázky obalů a umělců?"
+
+#: ../lollypop/container_notification.py:97
+msgid "Yes"
+msgstr "Ano"
+
+#: ../lollypop/container_notification.py:106
+msgid "Please consider a donation to the project"
+msgstr "Zvažte, prosím, dar pro projekt"
+
+#: ../lollypop/database_artists.py:122
+msgid "Many artists"
+msgstr "Mnoho umělců"
+
+#: ../lollypop/database_upgrade.py:775
+msgid "Please wait while Lollypop is updating albums"
+msgstr "Počkejte, prosím, než Lollypop zaktualizuje alba"
+
+#: ../lollypop/database_upgrade.py:794
+msgid "Please wait while Lollypop is updating tracks"
+msgstr "Počkejte, prosím, než Lollypop zaktualizuje skladby"
+
+#: ../lollypop/dialog_apps.py:73
+msgid "Select"
+msgstr "Vybrat"
+
+#: ../lollypop/dialog_apps.py:81
+msgid "Select an application"
+msgstr "Vyberte program"
+
+#: ../lollypop/dialog_settings.py:85
+#, python-format
+msgid "Artists count: %s"
+msgstr "Počet umělců: %s"
+
+#: ../lollypop/dialog_settings.py:87
+#, python-format
+msgid "Albums count: %s"
+msgstr "Počet alb: %s"
+
+#: ../lollypop/dialog_settings.py:89
+#, python-format
+msgid "Tracks count: %s"
+msgstr "Počet skladeb: %s"
+
+#: ../lollypop/dialog_settings.py:206 ../lollypop/dialog_settings.py:341
+msgid "Disconnect"
+msgstr "Odpojit"
+
+#: ../lollypop/dialog_settings.py:251
+msgid "Are you sure?"
+msgstr "Jste si jistý?"
+
+#: ../lollypop/fullscreen.py:355
+msgid "You are using a broken cursor theme!"
+msgstr "Používáte poškozený vzhled ukazatele!"
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "band"
+msgstr "Skupina"
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "singer"
+msgstr "Zpěvák"
+
+#: ../lollypop/inhibitor.py:101
+msgid "Playing music"
+msgstr "Přehrává se hudba"
+
+#: ../lollypop/menu_actions.py:58
+msgid "Save in collection"
+msgstr "Uložit do kolekce"
+
+#: ../lollypop/menu_actions.py:68
+msgid "Remove from collection"
+msgstr "Odstranit z kolekce"
+
+#: ../lollypop/menu_actions.py:87
+msgid "Buy this album"
+msgstr "Koupit toto album"
+
+#: ../lollypop/menu_actions.py:99
+msgid "Open with…"
+msgstr "Otevřít s…"
+
+#: ../lollypop/menu_artist.py:48
+msgid "Show tracks"
+msgstr "Ukázat skladby"
+
+#: ../lollypop/menu_artist.py:56
+msgid "Play featured"
+msgstr "Přehrávat doporučené"
+
+#: ../lollypop/menu_artist.py:62 ../lollypop/menu_genre.py:44
+#: ../lollypop/menu_objects.py:55 ../lollypop/menu_objects.py:118
+#: ../lollypop/menu_playlist.py:66
+msgid "Add to"
+msgstr "Přidání"
+
+#: ../lollypop/menu_artist.py:111
+msgid "Available albums"
+msgstr "Dostupná alba"
+
+#: ../lollypop/menu_artwork.py:67 ../lollypop/menu_artwork.py:114
+msgid "Change Artwork"
+msgstr "Změnit obal"
+
+#: ../lollypop/menu_current_albums.py:34 ../lollypop/menu_current_albums.py:43
+#: ../lollypop/shown.py:40 ../lollypop/widgets_banner_current_albums.py:65
+msgid "Playing albums"
+msgstr "Přehrávání alb"
+
+#: ../lollypop/menu_current_albums.py:42
+msgid "Create a new playlist"
+msgstr "Vytvořit nový seznam skladeb"
+
+#: ../lollypop/menu_objects.py:66
+msgid "Show album"
+msgstr "Ukázat album"
+
+#: ../lollypop/menu_objects.py:70 ../lollypop/menu_objects.py:119
+#: ../lollypop/menu_similars.py:167
+msgid "Others"
+msgstr "Jiné"
+
+#: ../lollypop/menu_objects.py:141
+msgid "%Y-%m-%d"
+msgstr "%Y-%m-%d"
+
+#: ../lollypop/menu_objects.py:171
+msgid "YouTube page address"
+msgstr "Adresa stránky YouTube"
+
+#: ../lollypop/menu_playback.py:57 ../lollypop/menu_playback.py:290
+#: ../lollypop/menu_playback.py:534
+msgid "Play a radio"
+msgstr "Přehrávat rádio"
+
+#: ../lollypop/menu_playback.py:72
+msgid "Add to playback"
+msgstr "Přidat do přehrávání"
+
+#: ../lollypop/menu_playback.py:79 ../lollypop/widgets_row_album.py:110
+msgid "Remove from playback"
+msgstr "Odstranit z řady skladeb k přehrání"
+
+#: ../lollypop/menu_playback.py:114
+msgid "Related tracks"
+msgstr "Související skladby"
+
+#: ../lollypop/menu_playback.py:123 ../lollypop/playlists.py:107
+#: ../lollypop/playlists.py:371 ../lollypop/shown.py:70
+msgid "Loved tracks"
+msgstr "Zamilované skladby"
+
+#: ../lollypop/menu_playback.py:132 ../lollypop/shown.py:68
+msgid "Popular tracks"
+msgstr "Oblíbené skladby"
+
+#: ../lollypop/menu_playback.py:136
+msgid "From collection"
+msgstr "Ze sbírky"
+
+#: ../lollypop/menu_playback.py:154 ../lollypop/menu_search.py:60
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../lollypop/menu_playback.py:168 ../lollypop/menu_suggestions.py:74
+msgid "From the Web"
+msgstr "Z internetu"
+
+#: ../lollypop/menu_playback.py:210
+msgid "Play this playlist"
+msgstr "Přehrát tento seznam skladeb"
+
+#: ../lollypop/menu_playback.py:217
+msgid "Add this playlist"
+msgstr "Přidat tento seznam skladeb"
+
+#: ../lollypop/menu_playback.py:281
+msgid "Play this artist"
+msgstr "Přehrát tohoto umělce"
+
+#: ../lollypop/menu_playback.py:353
+msgid "Play this genre"
+msgstr "Přehrát tento žánr"
+
+#: ../lollypop/menu_playback.py:434
+msgid "Play this decade"
+msgstr "Přehrát toto desetiletí"
+
+#: ../lollypop/menu_playback.py:517 ../lollypop/widgets_row_album.py:118
+msgid "Play this album"
+msgstr "Přehrát toto album"
+
+#: ../lollypop/menu_playback.py:529 ../lollypop/menu_playback.py:615
+msgid "Ignored"
+msgstr "Přehlíží se"
+
+#: ../lollypop/menu_playback.py:672
+msgid "Add to queue"
+msgstr "Přidat do řady"
+
+#: ../lollypop/menu_playback.py:678
+msgid "Remove from queue"
+msgstr "Odstranit z řady"
+
+#: ../lollypop/menu_playback.py:689
+msgid "Do not stop after"
+msgstr "Nezastavovat po"
+
+#: ../lollypop/menu_playback.py:694
+msgid "Stop after"
+msgstr "Zastavit po"
+
+#: ../lollypop/menu_playlist.py:43 ../lollypop/menu_playlist.py:113
+msgid "Save playlist"
+msgstr "Uložit seznam skladeb"
+
+#: ../lollypop/menu_playlist.py:50
+msgid "Sync from Last.FM"
+msgstr "Seřídit s Last.FM"
+
+#: ../lollypop/menu_playlist.py:57
+msgid "Manage smart playlist"
+msgstr "Spravovat chytrý seznam skladeb"
+
+#: ../lollypop/menu_playlist.py:61
+msgid "Remove playlist"
+msgstr "Odstranit seznam skladeb"
+
+#: ../lollypop/menu_playlist.py:64
+msgid "Playlist"
+msgstr "Seznam skladeb"
+
+#: ../lollypop/menu_playlist.py:70
+msgid "Edit"
+msgstr "Upravit"
+
+#: ../lollypop/menu_playlist.py:100
+msgid "Remove this playlist?"
+msgstr "Odstranit tento seznam skladeb?"
+
+#: ../lollypop/menu_playlist.py:101
+msgid "Confirm"
+msgstr "Potvrdit"
+
+#: ../lollypop/menu_playlists.py:47
+msgid "New playlist"
+msgstr "Nový seznam skladeb"
+
+#: ../lollypop/menu_search.py:33 ../lollypop/shown.py:39
+msgid "Search"
+msgstr "Hledat"
+
+#: ../lollypop/menu_search.py:64
+msgid "MusicBrainz"
+msgstr "MusicBrainz"
+
+#: ../lollypop/menu_selectionlist.py:50
+msgid "Default on startup"
+msgstr "Výchozí při spuštění"
+
+#: ../lollypop/menu_selectionlist.py:53
+msgid "Startup"
+msgstr "Spuštění programu"
+
+#: ../lollypop/menu_selectionlist.py:96
+msgid "Sidebar"
+msgstr "Postranní panel"
+
+#: ../lollypop/menu_selectionlist.py:111
+msgid "Show text"
+msgstr "Ukázat text"
+
+#: ../lollypop/menu_selectionlist.py:112
+msgid "Options"
+msgstr "Volby"
+
+#: ../lollypop/menu_selectionlist.py:137
+msgid "Sections"
+msgstr "Sekce"
+
+#: ../lollypop/menu_similars.py:140 ../lollypop/view_lyrics.py:132
+msgid "Loading…"
+msgstr "Nahrává se…"
+
+#: ../lollypop/menu_similars.py:175
+msgid "Similar artists"
+msgstr "Podobní umělci"
+
+#: ../lollypop/menu_similars.py:279
+msgid "No results"
+msgstr "Žádné výsledky"
+
+#: ../lollypop/menu_suggestions.py:35 ../lollypop/shown.py:24
+msgid "Suggestions"
+msgstr "Návrhy"
+
+#: ../lollypop/menu_suggestions.py:47 ../lollypop/view_suggestions.py:129
+msgid "New releases on Spotify"
+msgstr "Nová vydání na Spotify"
+
+#: ../lollypop/menu_suggestions.py:59 ../lollypop/view_suggestions.py:127
+msgid "Suggestions from Spotify"
+msgstr "Návrhy Spotify"
+
+#: ../lollypop/menu_suggestions.py:71 ../lollypop/view_suggestions.py:131
+msgid "Top albums on Deezer"
+msgstr "Nejlepší alba na Deezeru"
+
+#: ../lollypop/menu_sync.py:33
+msgid "All devices"
+msgstr "Všechna zařízení"
+
+#: ../lollypop/player_albums.py:58 ../lollypop/player_albums.py:142
+#: ../lollypop/player_albums.py:169 ../lollypop/player_albums.py:185
+msgid "No album available"
+msgstr "Není dostupné žádné album"
+
+#: ../lollypop/player_bin.py:426
+msgid "Can't find this track on YouTube"
+msgstr "Tuto skladbu nelze na YouTube najít"
+
+#: ../lollypop/playlists.py:94 ../lollypop/playlists.py:97
+msgid "New playlist "
+msgstr "Nový seznam skladeb "
+
+#: ../lollypop/shown.py:25
+msgid "Popular albums"
+msgstr "Oblíbená alba"
+
+#: ../lollypop/shown.py:26
+msgid "Random albums"
+msgstr "Náhodná alba"
+
+#: ../lollypop/shown.py:27
+msgid "Loved albums"
+msgstr "Zamilovaná alba"
+
+#: ../lollypop/shown.py:28
+msgid "Recently added albums"
+msgstr "Nedávno přidaná alba"
+
+#: ../lollypop/shown.py:29
+msgid "Seldomly played albums"
+msgstr "Zřídkakdy přehrávaná alba"
+
+#: ../lollypop/shown.py:31
+msgid "Years"
+msgstr "Roky"
+
+#: ../lollypop/shown.py:32
+msgid "Genres"
+msgstr "Žánry"
+
+#: ../lollypop/shown.py:33
+msgid "Genres (list)"
+msgstr "Žánry (seznam)"
+
+#: ../lollypop/shown.py:37 ../lollypop/view_artists_line.py:165
+msgid "Artists"
+msgstr "Umělci"
+
+#: ../lollypop/shown.py:38
+msgid "Artists (list)"
+msgstr "Umělci (seznam)"
+
+#: ../lollypop/shown.py:41
+msgid "Information"
+msgstr "Informace"
+
+#: ../lollypop/shown.py:42
+msgid "Compilations"
+msgstr "Sbírková alba"
+
+#: ../lollypop/shown.py:69
+msgid "Random tracks"
+msgstr "Náhodné skladby"
+
+#: ../lollypop/shown.py:71
+msgid "Recently played tracks"
+msgstr "Nedávno přehrávané skladby"
+
+#: ../lollypop/shown.py:72
+msgid "Seldomly played tracks"
+msgstr "Zřídkakdy přehrávané skladby"
+
+#: ../lollypop/shown.py:73
+msgid "Skipped tracks"
+msgstr "Přeskočené skladby"
+
+#: ../lollypop/shown.py:74
+msgid "All tracks"
+msgstr "Všechny skladby"
+
+#: ../lollypop/toolbar_end.py:246
+msgid "All genres"
+msgstr "Všechny žánry"
+
+#: ../lollypop/utils.py:77
+#, python-format
+msgid "%s h  %s m"
+msgstr "%s h  %s m"
+
+#: ../lollypop/utils.py:79
+#, python-format
+msgid "%s h"
+msgstr "%s h"
+
+#: ../lollypop/utils.py:81
+#, python-format
+msgid "%s m"
+msgstr "%s m"
+
+#: ../lollypop/utils.py:309
+msgid "The the"
+msgstr "\"The\""
+
+#: ../lollypop/view_albums_box.py:55
+msgid "Missing youtube-dl command"
+msgstr "Chybí příkaz youtube-dl"
+
+#: ../lollypop/view_albums_box.py:60 ../lollypop/view_lyrics.py:169
+msgid "Network unavailable or disabled in settings"
+msgstr "Síť není dostupná nebo je v nastavení vypnuta"
+
+#: ../lollypop/view_albums_box.py:193
+msgid "New albums available"
+msgstr "Jsou dostupná nová alba"
+
+#: ../lollypop/view_albums_box.py:194 ../lollypop/view_artists_rounded.py:155
+msgid "Refresh"
+msgstr "Obnovit"
+
+#: ../lollypop/view_albums_line.py:164
+msgid "Others compilations"
+msgstr "Jiná sbírková alba"
+
+#: ../lollypop/view_albums_line.py:199
+msgid "Appears on"
+msgstr "Objeví se na"
+
+#: ../lollypop/view_albums_line.py:230
+msgid "Popular albums at the moment"
+msgstr "V tuto chvíli oblíbená alba"
+
+#: ../lollypop/view_artists_line.py:133
+msgid "Why not listen to?"
+msgstr "Poslechnete si?"
+
+#: ../lollypop/view_artists_rounded.py:154
+msgid "New artists available"
+msgstr "Jsou dostupní noví umělci"
+
+#: ../lollypop/view_information.py:152
+msgid "Loading information"
+msgstr "Nahrávají se informace"
+
+#: ../lollypop/view_information.py:262 ../lollypop/view_information.py:294
+#, python-format
+msgid "No information for %s"
+msgstr "Žádné informace pro %s"
+
+#: ../lollypop/view_lyrics.py:105 ../lollypop/widgets_banner_lyrics.py:136
+msgid "No track playing"
+msgstr "Nehraje žádná skladba"
+
+#: ../lollypop/view_lyrics.py:269
+msgid "You need to install python3-textblob module"
+msgstr "Je potřeba nainstalovat modul python3-textblob"
+
+#: ../lollypop/view_lyrics.py:274
+msgid "Can't translate this lyrics"
+msgstr "Tento text písně nelze přeložit"
+
+#: ../lollypop/view_lyrics.py:304
+msgid "Disabled in network settings"
+msgstr "Zakázáno v nastavení sítě"
+
+#: ../lollypop/view_lyrics.py:307
+msgid "No lyrics found "
+msgstr "Nenalezen žádný text písně "
+
+#: ../lollypop/view.py:48
+msgid "No items to show"
+msgstr "Žádné položky k ukázání"
+
+#: ../lollypop/view_search.py:151 ../lollypop/view_search.py:161
+#: ../lollypop/view_search.py:185
+msgid "Search for artists, albums and tracks"
+msgstr "Hledat umělce, alba a skladby"
+
+#: ../lollypop/view_search.py:305
+msgid "No results for this search"
+msgstr "Žádné výsledky pro toto hledání"
+
+#: ../lollypop/view_suggestions.py:145
+msgid "Welcome to Lollypop"
+msgstr "Vítejte v Lollypopu"
+
+#: ../lollypop/view_tracks_album.py:69
+msgid "All tracks skipped"
+msgstr "Všechny skladby přeskočeny"
+
+#: ../lollypop/view_tracks_album.py:327
+#, python-format
+msgid "Disc %s"
+msgstr "Disk %s"
+
+#: ../lollypop/view_tracks_queue.py:36
+msgid "Currently in queue"
+msgstr "Nyní zařazeno"
+
+#: ../lollypop/view_tracks_search.py:103
+msgid "Tracks"
+msgstr "Skladby"
+
+#: ../lollypop/widgets_artwork_album.py:64
+msgid "Local"
+msgstr "Místní"
+
+#: ../lollypop/widgets_artwork.py:139
+msgid "Select artwork"
+msgstr "Vybrat obal"
+
+#: ../lollypop/widgets_artwork.py:179
+msgid "Remove"
+msgstr "Odstranit"
+
+#: ../lollypop/widgets_banner_album.py:245
+#, python-format
+msgid "Released on %s"
+msgstr "Vydáno %s"
+
+#: ../lollypop/widgets_banner_artist.py:298
+msgid "Add to current playlist"
+msgstr "Přidat do nynějšího seznamu skladeb"
+
+#: ../lollypop/widgets_banner_artist.py:305
+msgid "Remove from current playlist"
+msgstr "Odstranit z nynějšího seznamu skladeb"
+
+#: ../lollypop/widgets_banner_current_albums.py:42
+msgid "Clear albums"
+msgstr "Vyprázdnit alba"
+
+#: ../lollypop/widgets_banner_current_albums.py:60
+msgid "Go to current track"
+msgstr "Jít na nynější skladbu"
+
+#: ../lollypop/widgets_banner_today.py:71
+msgid "<b>Album of the day</b>\n"
+msgstr "<b>Album dne</b>\n"
+
+#: ../lollypop/widgets_device.py:119
+msgid "No synchronized albums"
+msgstr "Žádná seřízená alba"
+
+#: ../lollypop/widgets_device.py:130
+msgid "No synchronized playlists"
+msgstr "Žádné seřízené seznamy skladeb"
+
+#: ../lollypop/widgets_equalizer.py:23
+msgid "Default"
+msgstr "Výchozí"
+
+#: ../lollypop/widgets_equalizer.py:25 ../lollypop/widgets_equalizer.py:162
+#: ../lollypop/widgets_equalizer.py:194
+msgid "Custom"
+msgstr "Vlastní"
+
+#: ../lollypop/widgets_equalizer.py:28
+msgid "Acoustic"
+msgstr "Akustický"
+
+#: ../lollypop/widgets_equalizer.py:30
+msgid "Bass"
+msgstr "Hloubky"
+
+#: ../lollypop/widgets_equalizer.py:33
+msgid "Bass and Treble"
+msgstr "Hloubky a výšky"
+
+#: ../lollypop/widgets_equalizer.py:35
+msgid "Classical"
+msgstr "Klasická"
+
+#: ../lollypop/widgets_equalizer.py:37
+msgid "Club"
+msgstr "Klubová"
+
+#: ../lollypop/widgets_equalizer.py:39
+msgid "Dance"
+msgstr "Taneční"
+
+#: ../lollypop/widgets_equalizer.py:41
+msgid "Disco"
+msgstr "Disko"
+
+#: ../lollypop/widgets_equalizer.py:43
+msgid "Drum'n'Bass"
+msgstr "Drum'n'Bass"
+
+#: ../lollypop/widgets_equalizer.py:45
+msgid "Heavy Metal"
+msgstr "Heavy Metal"
+
+#: ../lollypop/widgets_equalizer.py:47
+msgid "Jazz"
+msgstr "Džez"
+
+#: ../lollypop/widgets_equalizer.py:49
+msgid "Latin"
+msgstr "Latina"
+
+#: ../lollypop/widgets_equalizer.py:51
+msgid "Metal"
+msgstr "Metal"
+
+#: ../lollypop/widgets_equalizer.py:53
+msgid "New Age"
+msgstr "New Age"
+
+#: ../lollypop/widgets_equalizer.py:55
+msgid "Party"
+msgstr "Večírek"
+
+#: ../lollypop/widgets_equalizer.py:57
+msgid "Pop"
+msgstr "Pop"
+
+#: ../lollypop/widgets_equalizer.py:59
+msgid "Reggae"
+msgstr "Reggae"
+
+#: ../lollypop/widgets_equalizer.py:61
+msgid "Rock"
+msgstr "Rock"
+
+#: ../lollypop/widgets_equalizer.py:63
+msgid "Techno"
+msgstr "Techno"
+
+#: ../lollypop/widgets_equalizer.py:65
+msgid "Vocal"
+msgstr "Zpěvní"
+
+#: ../lollypop/widgets_loved.py:108
+msgid "Like"
+msgstr "Líbí se"
+
+#: ../lollypop/widgets_loved.py:113
+msgid "Allow playback"
+msgstr "Povolit přehrávání"
+
+#: ../lollypop/widgets_player_buttons.py:184
+msgid "Pause"
+msgstr "Pozastavit"
+
+#: ../lollypop/widgets_playlist_smart.py:165
+msgid "is equal to"
+msgstr "odpovídá"
+
+#: ../lollypop/widgets_playlist_smart.py:166
+msgid "is not equal to"
+msgstr "neodpovídá"
+
+#: ../lollypop/widgets_playlist_smart.py:168
+msgid "contains "
+msgstr "obsahuje "
+
+#: ../lollypop/widgets_playlist_smart.py:169
+msgid "does not contain"
+msgstr "neobsahuje"
+
+#: ../lollypop/widgets_playlist_smart.py:171
+msgid "is greater than"
+msgstr "je větší než"
+
+#: ../lollypop/widgets_playlist_smart.py:172
+msgid "is less than"
+msgstr "je menší než"
+
+#: ../lollypop/widgets_rating.py:51
+#, python-format
+msgid "Song played %s times"
+msgstr "Píseň hrána %s krát"
+
+#: ../lollypop/widgets_row_album.py:96
+msgid "Compilation"
+msgstr "Sbírkové album"
+
+#: ../lollypop/widgets_row_album.py:112 ../lollypop/widgets_row_track.py:107
+msgid "Remove from playlist"
+msgstr "Odstranit ze seznamu skladeb"
+
+#~ msgid "Disallow playback"
+#~ msgstr "Zakázat přehrávání"
+
+#~ msgid "Show year below album name"
+#~ msgstr "Ukázat rok pod názvem alba"
+
+#~ msgid "Show year"
+#~ msgstr "Ukázat rok"
+
+#~ msgid "Favorite cover file"
+#~ msgstr "Zařadit soubor s obalem do oblíbených"
+
+#~ msgid "JPG cover quality"
+#~ msgstr "Kvalita obalu JPG"
+
+#~ msgid "0-100"
+#~ msgstr "0-100"
+
+#~ msgid "Music;Player;"
+#~ msgstr "Hudba;Přehrávač;"
+
+#~ msgid "Go to artist view"
+#~ msgstr "Jít na přehled umělců"
+
+#~ msgid "Disable use of client side window decorations (headerbar)"
+#~ msgstr "Zakázat používání okenních dekorací na straně klienta (hlavička)"
+
+#~ msgid "Name"
+#~ msgstr "Název"
+
+#~ msgid "Radios"
+#~ msgstr "Rádia"
+
+#~ msgid "Use dark theme variant"
+#~ msgstr "Použít variantu s tmavým vzhledem"
+
+#~ msgid ""
+#~ "A compilation is an album without any \"Album artist tag\"\n"
+#~ "and with different artists."
+#~ msgstr "Kompilace je album bez značky umělec alba a s různými umělci."
+
+#~ msgid "You need to reset database [Music]"
+#~ msgstr "Je potřeba vynulovat databázi [Music]"
+
+#~ msgid "Import playlists files present in collections"
+#~ msgstr "Zavést soubory se seznamy skladeb přítomné ve sbírkách"
+
+#~ msgid "Save changes to files"
+#~ msgstr "Uložit změny do souborů"
+
+#~ msgid "Smooth transitions"
+#~ msgstr "Plynulé přechody"
+
+#~ msgid "Only in party mode"
+#~ msgstr "Jen ve večírkovém režimu"
+
+#~ msgid "Reset database"
+#~ msgstr "Obnovit výchozí stav databáze"
+
+#~ msgid "Remove devices managed by Lollypop:"
+#~ msgstr "Odstranit zařízení spravovaná Lollypopem:"
+
+#~ msgid "Control your privacy by selecting allowed services"
+#~ msgstr "Ovládejte své soukromí tím, že vyberete povolené služby"
+
+#~ msgid ""
+#~ "Background data\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search artwork in background</span>"
+#~ msgstr ""
+#~ "Data na pozadí\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání obrázků obalů na pozadí</"
+#~ "span>"
+
+#~ msgid ""
+#~ "Spotify\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search songs , artwork, …</span>"
+#~ msgstr ""
+#~ "Spotify\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání písní, obrázků obalů, …</"
+#~ "span>"
+
+#~ msgid ""
+#~ "YouTube\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Songs playback</span>"
+#~ msgstr ""
+#~ "YouTube\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Přehrávání písní</span>"
+
+#~ msgid ""
+#~ "Google\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Google\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání obrázků obalů</span>"
+
+#~ msgid ""
+#~ "Wikia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search lyrics</span>"
+#~ msgstr ""
+#~ "Wikia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání textů písní</span>"
+
+#~ msgid ""
+#~ "Wikipedia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artist biography</span>"
+#~ msgstr ""
+#~ "Wikipedia\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Životopisy umělců</span>"
+
+#~ msgid ""
+#~ "MusicBrainz\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, information, …</span>"
+#~ msgstr ""
+#~ "MusicBrainz\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Odesílání údajů o přehrávání "
+#~ "skladeb, informace, …</span>"
+
+#~ msgid ""
+#~ "Genius\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Search lyrics</span>"
+#~ msgstr ""
+#~ "Genius\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání textů písní</span>"
+
+#~ msgid ""
+#~ "ITunes\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "ITunes\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání obrázků obalů</span>"
+
+#~ msgid ""
+#~ "AudioDB\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artist biography, artwork search, …</"
+#~ "span>"
+#~ msgstr ""
+#~ "AudioDB\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Životopisy umělců, hledání obrázků "
+#~ "obalů, …</span>"
+
+#~ msgid ""
+#~ "FANART.TV\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "FANART.TV\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání výtvarných děl</span>"
+
+#~ msgid ""
+#~ "<b>ListenBrainz user token</b>\n"
+#~ "<small>To submit your listens to ListenBrainz, enter your ListenBrainz "
+#~ "user token below. You can see your user token in your <a href=\"https://"
+#~ "listenbrainz.org/profile/\">user profile</a>.</small>"
+#~ msgstr ""
+#~ "<b>Uživatelské poznávací znamení pro ListenBrainz</b>\n"
+#~ "<small>Pro odeslání vámi poslochaných skladeb ListenBrainz, zadejte níže "
+#~ "své poznávací znamení pro ListenBrainz. Na toto poznávací znamení se "
+#~ "můžete podívat v <a href=\"https://listenbrainz.org/profile/"
+#~ "\">uživatelském profilu</a>.</small>"
+
+#~ msgid "User token"
+#~ msgstr "Uživatelské poznávací znamení"
+
+#~ msgid "ListenBrainz"
+#~ msgstr "ListenBrainz"
+
+#~ msgid ""
+#~ "<b>Google Web Services require an API key.</b>\n"
+#~ "<small>Otherwise you will soon reach the default quota…\n"
+#~ "Lollypop needs this to search for artwork.</small>"
+#~ msgstr ""
+#~ "<b>Internetové služby Google potřebují vlastní klíč API.</b>\n"
+#~ "<small>Bez jednoho takového brzy dosáhnete výchozího přídělu...Lollypop "
+#~ "jej potřebuje kvůli hledání umění k hudbě.</small>"
+
+#~ msgid ""
+#~ "<small>You need to enable \"Custom Search API\" and \"YouTube API v3\" "
+#~ "for your project.</small>"
+#~ msgstr ""
+#~ "<small>Musíte povolit  \"Custom Search API\" a \"YouTube API v3\" pro váš "
+#~ "projekt.</small>"
+
+#~ msgid "API key"
+#~ msgstr "Klíč API"
+
+#~ msgid ""
+#~ "Use a recent version of youtube-dl\n"
+#~ "<span size=\"small\" alpha='40000'>Activate this if Web playback does not "
+#~ "work</span>"
+#~ msgstr ""
+#~ "Použít poslední verzi youtube-dl\n"
+#~ "<span size=\"small\" alpha='40000'>Zapnout, pokud nepracuje přehrávání "
+#~ "internetových stránek</span>"
+
+#~ msgid "Configure Lollypop appearance"
+#~ msgstr "Nastavit vzhled Lollypopu"
+
+#~ msgid "Configure Lollypop behaviour"
+#~ msgstr "Nastavit chování Lollypopu"
+
+#~ msgid "Select music folders"
+#~ msgstr "Vybrat složky s hudbou"
+
+#~ msgid "Configure Web services"
+#~ msgstr "Nastavit internetové služby"
+
+#~ msgid "Manage devices"
+#~ msgstr "Spravovat zařízení"
+
+#~ msgid "Show tracks number"
+#~ msgstr "Ukázat čísla skladeb"
+
+#~ msgid "Dubstep"
+#~ msgstr "Dubstep"
+
+#~ msgid "Full Bass"
+#~ msgstr "Zdůrazněné hloubky"
+
+#~ msgid "Full Treble"
+#~ msgstr "Zdůrazněné výšky"
+
+#~ msgid "Full Bass + Treble"
+#~ msgstr "Zdůrazněné hloubky a výšky"
+
+#~ msgid "Hip Hop"
+#~ msgstr "Hip hop"
+
+#~ msgid "Kuduro"
+#~ msgstr "Kuduro"
+
+#~ msgid "Laptop/Headphones"
+#~ msgstr "Laptop/sluchátka"
+
+#~ msgid "Large Hall"
+#~ msgstr "Velký sál"
+
+#~ msgid "Live"
+#~ msgstr "Naživo"
+
+#~ msgid "Psychedelic"
+#~ msgstr "Psychedelická"
+
+#~ msgid "Soft"
+#~ msgstr "Měkká"
+
+#~ msgid "Ska"
+#~ msgstr "Ska"
+
+#~ msgid "Soft Rock"
+#~ msgstr "Soft Rock"
+
+#, python-format
+#~ msgid "%d artist"
+#~ msgid_plural "%d artists"
+#~ msgstr[0] "%d umělec"
+#~ msgstr[1] "%d umělci"
+#~ msgstr[2] "%d umělců"
+
+#, python-format
+#~ msgid "%d album"
+#~ msgid_plural "%d albums"
+#~ msgstr[0] "%d album"
+#~ msgstr[1] "%d alba"
+#~ msgstr[2] "%d alb"
+
+#, python-format
+#~ msgid "%d track"
+#~ msgid_plural "%d tracks"
+#~ msgstr[0] "%d skladba"
+#~ msgstr[1] "%d skladby"
+#~ msgstr[2] "%d skladeb"
+
+#~ msgid "Using \"GNOME Online Accounts\" settings"
+#~ msgstr "Převzít nastavení GNOME pro internetové účty"
+
+#~ msgctxt "Translation credits here, put your name here!"
+#~ msgid "Cédric Bellegarde <cedric.bellegarde@adishatz.org>"
+#~ msgstr "Jaroslav Svoboda <multi.flexi@seznam.cz>"
+
+#~ msgid ""
+#~ "Tunein\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Radios search</span>"
+#~ msgstr ""
+#~ "Tunein\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání rádií</span>"
+
+#~ msgid "New radio"
+#~ msgstr "Nové rádio"
+
+#~ msgid "Radio"
+#~ msgstr "Rádio"
+
+#~ msgid "Can't connect to TuneIn…"
+#~ msgstr "Nelze se připojit k TuneIn…"
+
+#~ msgid "Please wait…"
+#~ msgstr "Počkejte, prosím…"
+
+#~ msgid "Add"
+#~ msgstr "Přidat"
+
+#~ msgid "No result…"
+#~ msgstr "Žádný výsledek…"
+
+#~ msgid "Network not available"
+#~ msgstr "Síť není dostupná"
+
+#~ msgid "org.gnome.Lollypop"
+#~ msgstr "org.gnome.Lollypop"
+
+#~ msgid ""
+#~ "Deezer\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Deezer\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání obrázků obalů</span>"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show albums from artist"
+#~ msgstr "Ukázat alba od umělce"
+
+#~ msgid "You might like this"
+#~ msgstr "Může se vám líbit"
+
+#~ msgid "New albums from Spotify"
+#~ msgstr "Nová alba ze Spotify"
+
+#~ msgid ""
+#~ "This album has no track. Check tags, all 'album artist' tags should be in "
+#~ "'artist' tags"
+#~ msgstr ""
+#~ "Toto album nemá žádné značky. Prověřte značky, všechny značky Umělec alba "
+#~ "musí být ve značce Umělec"
+
+#~ msgid ""
+#~ "Last.fm and Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Scrobbler, artwork, …</span>"
+#~ msgstr ""
+#~ "Last.fm a Libre.fm\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Odesílání údajů o přehrávání "
+#~ "skladeb, obrázky obalů, …</span>"
+
+#~ msgid "Last.fm authentication disabled"
+#~ msgstr "Ověření Last.fm zakázáno"
+
+#~ msgid "Login:"
+#~ msgstr "Přihlášení:"
+
+#~ msgid "Password:"
+#~ msgstr "Heslo:"
+
+#~ msgid "Libre.fm"
+#~ msgstr "Libre.fm"
+
+#~ msgid "You need to install pylast and gi secret"
+#~ msgstr "Potřebujete nainstalovat pylast a gi secret"
+
+#~ msgid ""
+#~ "Startpage\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Artwork search</span>"
+#~ msgstr ""
+#~ "Počáteční stránka\n"
+#~ "<span size=\"x-small\" alpha=\"70%\">Hledání obrázků obalů</span>"
+
+#~ msgid "You need to enable Spotify "
+#~ msgstr "Musíte povolit Spotify "
+
+#~ msgid "and YouTube in network settings"
+#~ msgstr "a YouTube v nastavení sítě"
+
+#~ msgid "Show performers"
+#~ msgstr "Ukázat účinkující"
+
+#~ msgid "Modify information"
+#~ msgstr "Upravit údaje"
+
+#~ msgid "Please install EasyTAG or Kid3"
+#~ msgstr "Nainstalujte EasyTAG nebo Kid3"
+
+#~ msgid "Only mix songs in party mode"
+#~ msgstr "Míchat písně jen ve večírkovém režimu"
+
+#~ msgid "Smoothing duration"
+#~ msgstr "Doba trvání přechodu"
+
+#~ msgid "Transition duration in seconds"
+#~ msgstr "Doba trvání přechodu v sekundách"
+
+#~ msgid "Albums on the Web"
+#~ msgstr "Alba na internetu"
+
+#~ msgid "Automatic playback"
+#~ msgstr "Automatické přehrávání"
+
+#~ msgid "Welcome on Lollypop"
+#~ msgstr "Vítejte v Lollypopu"
+
+#~ msgid "Replay gain value in dB"
+#~ msgstr "Hodnota vyrovnání hlasitosti v dB"
+
+#~ msgid ""
+#~ "Lollypop is a lightweight modern music player designed to work "
+#~ "excellently on the GNOME desktop environment. Lollypop also features a "
+#~ "party mode which will automatically select party-related playlists to "
+#~ "play; a full-screen view which lets you visually access the player from "
+#~ "your couch thanks to its HiDPI support; and native support for replay "
+#~ "gain."
+#~ msgstr ""
+#~ "Lollypop je pokrokový nový hudební přehrávač navržený tak, aby výborně "
+#~ "spolupracoval s pracovním prostředím plochy GNOME. Lollypop také má "
+#~ "společenský režim, který automaticky zvolí seznamy skladeb se vztahem k "
+#~ "události; celoobrazovkové zobrazení, které vám díky podpoře pro HiDPI "
+#~ "dovolí zrakový přístup k přehrávači z vaší pohovky; a vlastní podporu pro "
+#~ "vyrovnání hlasitosti přehrávaných skladeb."
+
+#~ msgid "You have disabled lyrics search in network settings !"
+#~ msgstr "V nastavení sítě bylo zakázáno hledání textů písní!"
+
+#~ msgid "New tracks available"
+#~ msgstr "Nové skladby dostupné"
+
+#~ msgid "Unplayed albums"
+#~ msgstr "Nepřehraná alba"
+
+#~ msgid "Unplayed tracks"
+#~ msgstr "Nepřehrávané skladby"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Search in list one"
+#~ msgstr "Hledat v seznamu jedna"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Search in list two"
+#~ msgstr "Hledat v seznamu dvě"
+
+#~ msgid "Please install <i>easytag</i> or <i>kid3-qt</i>"
+#~ msgstr "Nainstalujte, prosím, <i>easytag</i> nebo <i>kid3-qt</i>"
+
+#, fuzzy
+#~ msgid "Do not reload views on adaptive"
+#~ msgstr "Nenahrávat zobrazení znovu na přizpůsobující se"
+
+#~ msgid "Clear queue"
+#~ msgstr "Vyprázdnit řadu"
+
+#~ msgid "Queue"
+#~ msgstr "Řada"
+
+#~ msgid "Other albums"
+#~ msgstr "Jiná alba"
+
+#~ msgid ""
+#~ "Reda Lazri (Lollypop icon)\n"
+#~ "Geary Development Team (tag-list-symbolic icon)\n"
+#~ "GNOME Project (unplayed-albums-symbolic, artists-list-symbolic icons)\n"
+#~ "Martins D. Okoi (Description in appdata)\n"
+#~ "    "
+#~ msgstr ""
+#~ "Reda Lazri (ikona pro Lollypop)\n"
+#~ "Geary Development Team (seznam značek: symbolická ikona)\n"
+#~ "GNOME Project (nepřehrávaná alba, seznam umělců: symbolické ikony)\n"
+#~ "Martins D. Okoi (popis v appdata)\n"
+#~ "    "
+
+#~ msgid "Current playlist"
+#~ msgstr "Nynější seznam skladeb"
+
+#~ msgid "Reset artwork?"
+#~ msgstr "Nastavit obal znovu?"
+
+#, python-format
+#~ msgid "by %s"
+#~ msgstr "od %s"
+
+#, python-format
+#~ msgid "by %s, from %s"
+#~ msgstr "od %s, na %s"
+
+#~ msgid "No connected devices"
+#~ msgstr "Žádná připojená zařízení"
+
+#~ msgid "Synchronization"
+#~ msgstr "Seřízení"
+
+#, python-format
+#~ msgid "Some albums from: %s"
+#~ msgstr "Některá alba z: %s"
+
+#~ msgid "<b>Album of the day: </b>\n"
+#~ msgstr "<b>Album dne: </b>\n"
+
+#~ msgid "Rename"
+#~ msgstr "Přejmenovat"
+
+#~ msgid "Search in TuneIn"
+#~ msgstr "Hledat v TuneIn"
+
+#~ msgid "Others albums from"
+#~ msgstr "Jiná alba od"
+
+#~ msgid "Translate"
+#~ msgstr "Přeložit"
+
+#~ msgid "Shuffle mode"
+#~ msgstr "Režim náhodného zamíchání"
+
+#~ msgid "Search in your collection"
+#~ msgstr "Hledat ve vaší kolekci"
+
+#~ msgid "No shuffle"
+#~ msgstr "Žádné náhodné míchání"
+
+#~ msgid "Shuffle albums"
+#~ msgstr "Zamíchat alba"
+
+#~ msgid "Recently played"
+#~ msgstr "Nedávno hráno"
+
+#~ msgid "Unplayed"
+#~ msgstr "Nepřehráváno"
+
+#~ msgid "Lollypop is a modern music player for GNOME."
+#~ msgstr "Lollypop je současný přehrávač hudby pro GNOME."
+
+#~ msgid "Features:"
+#~ msgstr "Vlastnosti:"
+
+#~ msgid "Play many audio formats: MP3, MP4, OGG, and FLAC"
+#~ msgstr "Přehrávat mnoho zvukových formátů: MP3, MP4, OGG a FLAC"
+
+#~ msgid ""
+#~ "Intuitive browsing: Walk through your collection by genre/artist and "
+#~ "album artwork"
+#~ msgstr ""
+#~ "Procházení: Procházejte svoji hudební sbírku podle žánru/umělce a alba"
+
+#~ msgid "Search in your collection by artist, album and title"
+#~ msgstr "Hledejte ve své hudební sbírce podle umělce, alba a názvu"
+
+#~ msgid "Artist bio, lyrics: Get artist and track information from the web"
+#~ msgstr ""
+#~ "Životopisné údaje o umělci, text písně: Získejte údaje o umělci a skladbě "
+#~ "z internetu"
+
+#~ msgid "Party mode: No awkward silences, let Lollypop choose music for you"
+#~ msgstr ""
+#~ "Večírkový režim: Žádné divné ticho, nechte na Lollypopu, aby pro vás "
+#~ "vybíral hudbu"
+
+#~ msgid "ReplayGain (RG): Automatically select the best audio level"
+#~ msgstr "Vyrovnání hlasitosti: Automatické nastavení nejlepší zvukové úrovně"
+
+#~ msgid "MTP devices: Sync your music with Android phones and any MTP devices"
+#~ msgstr ""
+#~ "Zařízení MTP: Seřizujte svoji hudbu s androidími telefony a se všemi "
+#~ "zařízeními MTP"
+
+#~ msgid "Fullscreen view: Visual access from your couch"
+#~ msgstr ""
+#~ "Zobrazení na celou obrazovku: Přístup k ovládání přehrávače v dosahu "
+#~ "vašeho gauče"
+
+#~ msgid "Radios support"
+#~ msgstr "Podpora pro rádia"
+
+#~ msgid "Last.fm, Libre.fm and ListenBrainz support"
+#~ msgstr "Podpora pro Last.fm, Libre.fm a ListenBrainz"
+
+#~ msgid "Auto install codecs"
+#~ msgstr "Automatická instalace kodeků"
+
+#~ msgid "HiDPI support"
+#~ msgstr "Podpora pro HiDPI"
+
+#~ msgid "TuneIn support"
+#~ msgstr "Podpora pro TuneIn"
+
+#~ msgid "Never played"
+#~ msgstr "Nikdy nehráno"
+
+#~ msgid ""
+#~ "Cover art downloader: Automatic artwork downloader from Last.fm, Itunes "
+#~ "and Spotify"
+#~ msgstr ""
+#~ "Stahovač obalů: Automatický stahovač obalů z  Last.fm, Itunes a Spotify"
+
+#~ msgid "Bug fixes"
+#~ msgstr "Opravy chyb"
+
+#~ msgid "_About"
+#~ msgstr "O _programu"
+
+#~ msgid "Disable all notifications"
+#~ msgstr "Zakázat všechna oznámení"
+
+#~ msgid "Disable notifications upon change of song"
+#~ msgstr "Zakázat oznámení po změně písně"
+
+#~ msgid "Spotify charts locale"
+#~ msgstr "Lokalizace žebříčků Spotify"
+
+#~ msgid "Show lyrics"
+#~ msgstr "Ukázat text písně"
+
+#~ msgid "Spotify charts"
+#~ msgstr "Žebříčky Spotify"
+
+#~ msgid "Global"
+#~ msgstr "Globální"
+
+#~ msgid "United States"
+#~ msgstr "Spojené státy"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Spojené království"
+
+#~ msgid "Andorra"
+#~ msgstr "Andorra"
+
+#~ msgid "Argentina"
+#~ msgstr "Argentina"
+
+#~ msgid "Austria"
+#~ msgstr "Rakousko"
+
+#~ msgid "Australia"
+#~ msgstr "Austrálie"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgie"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bulharsko"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolívie"
+
+#~ msgid "Brazil"
+#~ msgstr "Brazílie"
+
+#~ msgid "Canada"
+#~ msgstr "Kanada"
+
+#~ msgid "Switzerland"
+#~ msgstr "Švýcarsko"
+
+#~ msgid "Chile"
+#~ msgstr "Chile"
+
+#~ msgid "Colombia"
+#~ msgstr "Kolumbie"
+
+#~ msgid "Costa Rica"
+#~ msgstr "Kostarika"
+
+#~ msgid "Cyprus"
+#~ msgstr "Kypr"
+
+#~ msgid "Czechia"
+#~ msgstr "Česká republika"
+
+#~ msgid "Germany"
+#~ msgstr "Německo"
+
+#~ msgid "Denmark"
+#~ msgstr "Dánsko"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Dominikánská republika"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ekvádor"
+
+#~ msgid "Estonia"
+#~ msgstr "Estonsko"
+
+#~ msgid "Spain"
+#~ msgstr "Španělsko"
+
+#~ msgid "Finland"
+#~ msgstr "Finsko"
+
+#~ msgid "France"
+#~ msgstr "Francie"
+
+#~ msgid "Greece"
+#~ msgstr "Řecko"
+
+#~ msgid "Guatemala"
+#~ msgstr "Guatemala"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Hongkong"
+
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#~ msgid "Hungary"
+#~ msgstr "Maďarsko"
+
+#~ msgid "Indonesia"
+#~ msgstr "Indonésie"
+
+#~ msgid "Ireland"
+#~ msgstr "Irsko"
+
+#~ msgid "Israel"
+#~ msgstr "Izrael"
+
+#~ msgid "Iceland"
+#~ msgstr "Island"
+
+#~ msgid "Italy"
+#~ msgstr "Itálie"
+
+#~ msgid "Japan"
+#~ msgstr "Japonsko"
+
+#~ msgid "Lithuania"
+#~ msgstr "Litva"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Lucembursko"
+
+#~ msgid "Latvia"
+#~ msgstr "Lotyšsko"
+
+#~ msgid "Monaco"
+#~ msgstr "Monako"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Mexico"
+#~ msgstr "Mexiko"
+
+#~ msgid "Malaysia"
+#~ msgstr "Malajsie"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nikaragua"
+
+#~ msgid "Netherlands"
+#~ msgstr "Nizozemsko"
+
+#~ msgid "Norway"
+#~ msgstr "Norsko"
+
+#~ msgid "New Zealand"
+#~ msgstr "Nový Zéland"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#~ msgid "Philippines"
+#~ msgstr "Filipíny"
+
+#~ msgid "Poland"
+#~ msgstr "Polsko"
+
+#~ msgid "Portugal"
+#~ msgstr "Portugalsko"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paraguay"
+
+#~ msgid "Romania"
+#~ msgstr "Rumunsko"
+
+#~ msgid "Sweden"
+#~ msgstr "Švédsko"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapur"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slovensko"
+
+#~ msgid "El Salvador"
+#~ msgstr "Salvador"
+
+#~ msgid "Thailand"
+#~ msgstr "Thajsko"
+
+#~ msgid "Turkey"
+#~ msgstr "Turecko"
+
+#~ msgid "Taiwan"
+#~ msgstr "Čínská republika"
+
+#~ msgid "Uruguay"
+#~ msgstr "Uruguay"
+
+#~ msgid "Viet Nam"
+#~ msgstr "Vietnam"
+
+#~ msgid "South Africa"
+#~ msgstr "Jižní Afrika"
+
+#~ msgid "Add to others"
+#~ msgstr "Přidat do ostatních"
+
+#~ msgid "Remove from \"%s\""
+#~ msgstr "Odstranit z \"%s\""
+
+#~ msgid "Add to \"%s\""
+#~ msgstr "Přidat do \"%s\""
+
+#~ msgid "Remove track"
+#~ msgstr "Odstranit skladbu"
+
+#~ msgid "Remove tracks"
+#~ msgstr "Odstranit skladby"
+
+#~ msgid "Modify playlist"
+#~ msgstr "Upravit seznam skladeb"
+
+#~ msgid "Modify radio"
+#~ msgstr "Upravit rádio"
+
+#~ msgid "Change artwork"
+#~ msgstr "Změnit obal"
+
+#~ msgid "<big>No results for this search</big>"
+#~ msgstr "<big>Žádné výsledky pro toto hledání</big>"
+
+#~ msgid "<big>Search for artists, albums and tracks</big>"
+#~ msgstr "<big>Hledat umělce, alba a skladby</big>"
+
+#~ msgid "Split playlists view"
+#~ msgstr "Rozdělit pohled na seznam skladeb"
+
+#~ msgid "Show sidebar"
+#~ msgstr "Ukázat postranní pruh"
+
+#~ msgid "Sidebar content"
+#~ msgstr "Obsah postranního pruhu"
+
+#~ msgid "_Sidebar"
+#~ msgstr "_Postranní pruh"
+
+#~ msgid "Items in sidebar"
+#~ msgstr "Položky v postranním pruhu"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide navigation list"
+#~ msgstr "Ukázat/Skrýt polohový pruh"
+
+#~ msgid "All artists"
+#~ msgstr "Všichni umělci"
+
+#~ msgid "Split view"
+#~ msgstr "Rozdělit pohled"
+
+#~ msgid "All albums"
+#~ msgstr "Všechna alba"
+
+#~ msgid "Playing playlists"
+#~ msgstr "Přehrávání seznamů skladeb"
+
+#~ msgid ""
+#~ "<b>Lollypop uses the Google Custom Search API to search for images on the "
+#~ "web.</b>\n"
+#~ "<small>This API is limited, so it may not work with the default API key.</"
+#~ "small>"
+#~ msgstr ""
+#~ "<b>Lollypop používá při hledání obrázků na internetu \"Vlastní hledání "
+#~ "Google (Google Custom Search API)\".</b>\n"
+#~ "<small>Toto API je omezeno, takže nemusí pracovat s výchozím klíčem API.</"
+#~ "small>"
+
+#~ msgid "<b>Please create a \"Custom Search Engine\" here</b>:"
+#~ msgstr "<b>Vytvořte, prosím, vyhledávač pro vlastní hledání zde:</b>:"
+
+#~ msgid "No logo found…"
+#~ msgstr "Nenalezen žádný obrázek…"
+
+#~ msgid "Select a logo  for this radio"
+#~ msgstr "Vybrat obrázek pro toto rádio"
+
+#~ msgid "Fullscreen album rotates"
+#~ msgstr "Album na celou obrazovku se otáčí"
+
+#~ msgid "Turn on background data"
+#~ msgstr "Zapnout data na pozadí"
+
+#~ msgid "Next track"
+#~ msgstr "Další skladba"
+
+#~ msgid "Synchronize to your device"
+#~ msgstr "Seřídit s vaším zařízením"
+
+#~ msgid "Right click to configure"
+#~ msgstr "Klepnutí pravým tlačítkem myši pro nastavení"
+
+#~ msgid "USB disks"
+#~ msgstr "Disky USB"
+
+#~ msgid "Please unlock your device"
+#~ msgstr "Prosím, odemkněte své zařízení"
+
+#~ msgid "This will remove some files on your device!"
+#~ msgstr "Toto odstraní některé soubory z vašeho zařízení!"
+
+#~ msgid "Cancel synchronization"
+#~ msgstr "Zrušit seřizování"
+
+#~ msgid "Synced albums"
+#~ msgstr "Seřízená alba"
+
+#~ msgid "Unknown error while syncing, try to reboot your device"
+#~ msgstr ""
+#~ "Při seřizování nastala neznámá chyba. pokuste se své zařízení zavést znovu"
+
+#~ msgid "Empty"
+#~ msgstr "Prázdný"
+
+#~ msgid "Equalizer preset:"
+#~ msgstr "Přednastavení pro ekvalizér:"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Česká republika"
+
+#~ msgid "Playback type"
+#~ msgstr "Druh přehrávání"
+
+#~ msgid "Playback behaviour"
+#~ msgstr "Chování přehrávání"
+
+#~ msgid "Show albums from artist"
+#~ msgstr "Ukázat alba podle umělce"
+
+#~ msgid "Preserve the cover’s aspect ratio"
+#~ msgstr "Zachovat poměr stran obalu"
+
+#~ msgid "_Update music"
+#~ msgstr "_Aktualizovat hudbu"
+
+#~ msgid "_Fullscreen"
+#~ msgstr "_Na celou obrazovku"
+
+#~ msgid "_Equalizer"
+#~ msgstr "_Ekvalizér"
+
+#~ msgid "Volume"
+#~ msgstr "Hlasitost"
+
+#~ msgid "Last.fm login"
+#~ msgstr "Přihlášení k Last.fm"
+
+#~ msgid "Last.fm loved track status"
+#~ msgstr "Stav skladby milovaný na Last.fm"
+
+#~ msgid ""
+#~ "<small>You need to enable \"Custom Search API\"  for your project.</small>"
+#~ msgstr ""
+#~ "<small>Pro svůj projekt musíte povolit \"Vlastní vyhledávací API\".</"
+#~ "small>"
+
+#~ msgid "Show list of genres"
+#~ msgstr "Ukázat seznam žánrů"
+
+#~ msgid "Photo"
+#~ msgstr "Fotografie"
+
+#~ msgid ""
+#~ "    - Scrobbler disabled\n"
+#~ "    - Auto cover download disabled\n"
+#~ "    - Artist information disabled"
+#~ msgstr ""
+#~ "    - Odesílání informací o přehrávaných skladbách zakázáno\n"
+#~ "    - Automatické stahování obalů zakázáno\n"
+#~ "    - Zprávy o umělcích zakázány"
+
+#~ msgid "Network access disabled"
+#~ msgstr "Přístup k síti zakázán"
+
+#~ msgid "Synchronize %s"
+#~ msgstr "Seřídit %s"
+
+#~ msgid "No favorite radios"
+#~ msgstr "Žádná oblíbená rádia"
+
+#~ msgid "Audio output preview on track hover"
+#~ msgstr "Ukázka výstupu zvuku při přejetí nad skladbou"
+
+#~ msgid ""
+#~ "PulseAudio only. Example: alsa_output.pci-0000_00_14.2.analog-stereo. "
+#~ "Command to get outputs: $ pacmd list-sinks|grep 'name:'"
+#~ msgstr ""
+#~ "Pouze PulseAudio. Příklad: alsa_output.pci-0000_00_14.2.analog-stereo. "
+#~ "Příkaz pro získání výstupů: $ pacmd list-sinks|grep 'name:'"
+
+#~ msgid "Preview tracks on"
+#~ msgstr "Předvést skladby při"
+
+#~ msgid "No audio device"
+#~ msgstr "Žádné zvukové zařízení"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show genres"
+#~ msgstr "Ukázat žánry"
+
+#~ msgid "_Quit"
+#~ msgstr "_Ukončit"
+
+#~ msgid "Unsplit view"
+#~ msgstr "Zrušit rozdělení pohledu"
+
+#~ msgid "Show genres"
+#~ msgstr "Ukázat žánry"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide volume control"
+#~ msgstr "Ukázat/Skrýt ovládání hlasitosti"
+
+#~ msgid "Add to playlist"
+#~ msgstr "Přidat do seznamu skladeb"
+
+#~ msgid "Ex: The Beatles sorted as Beatles. Reset of database required."
+#~ msgstr ""
+#~ "Např.: The Beatles tříděny jako Beatles. Je potřeba vrácení databáze do "
+#~ "výchozího stavu."
+
+#~ msgid "Restart current track on previous"
+#~ msgstr "Spustit nynější skladbu znovu na předchozí"
+
+#~ msgid "Low quality, missing API key…"
+#~ msgstr "Nízká jakost. Chybí klíč API..."
+
+#~ msgid "Remove from \"Not in party\""
+#~ msgstr "Odstranit z Není na večírku"
+
+#~ msgid "Add to \"Not in party\""
+#~ msgstr "Přidat do Není na večírku"
+
+#~ msgid "Not in party"
+#~ msgstr "Není na večírku"
+
+#~ msgid "No free space available on device"
+#~ msgstr "Na zařízení není žádné volné místo"
+
+#~ msgid "Mini player size"
+#~ msgstr "Velikost malého přehrávače"
+
+#~ msgid "Mini player position"
+#~ msgstr "Poloha malého přehrávače"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Mini Player"
+#~ msgstr "Malý přehrávač"
+
+#~ msgid "Delete"
+#~ msgstr "Smazat"
+
+#~ msgid "Remove \"%s\"?"
+#~ msgstr "Odstranit \"%s\"?"
+
+#~ msgid "Remove these tracks?"
+#~ msgstr "Odstranit tyto skladby?"
+
+#~ msgid "Flattr"
+#~ msgstr "Flattr"
+
+#~ msgid "Settings"
+#~ msgstr "Nastavení"
+
+#~ msgid ""
+#~ "Party mode\n"
+#~ "Right click to filter"
+#~ msgstr ""
+#~ "Večírkový režim\n"
+#~ "Klepnutí pravým tlačítkem pro filtrování"
+
+#~ msgid "Populars"
+#~ msgstr "Oblíbené"
+
+#~ msgid "Recently added"
+#~ msgstr "Nedávno přidáno"
+
+#~ msgid "Create a new playlist based on search"
+#~ msgstr "Vytvořit nový seznam skladeb založený na hledání"
+
+#~ msgid "Sync all albums(MTP)"
+#~ msgstr "Seřídit všechna alba (MTP)"
+
+#, fuzzy
+#~ msgid "Enable network access"
+#~ msgstr "Povolit přístup k síti:"
+
+#~ msgid "Encode to MP3(MTP)"
+#~ msgstr "Zakódovat jako MP3 (MTP)"
+
+#~ msgid "Quality of MP3 encoding"
+#~ msgstr "Jakost kódování MP3"
+
+#~ msgid "Normalize MP3(MTP)"
+#~ msgstr "Normalizovat MP3 (MTP)"
+
+#~ msgid "Convert to MP3"
+#~ msgstr "Převést do MP3"
+
+#~ msgid "Normalize MP3"
+#~ msgstr "Normalizovat MP3"
+
+#~ msgid "You need to install gstreamer-plugins-ugly"
+#~ msgstr "Potřebujete nainstalovat gstreamer-plugins-ugly"
+
+#~ msgid "Long press to show options"
+#~ msgstr "Dlouze stiskněte pro ukázání možností"
+
+#~ msgid "Show navigation list"
+#~ msgstr "Ukázat pohybový seznam"
+
+#~ msgid "Lollypop is detecting an empty folder."
+#~ msgstr "Lollypop zjistil prázdnou složku."
+
+#~ msgid "Check your music settings."
+#~ msgstr "Prověřte nastavení pro vaši hudbu."
+
+#~ msgid "Modify"
+#~ msgstr "Upravit"
+
+#~ msgid "External tracks"
+#~ msgstr "Vnější skladby"
+
+#~ msgid "Never played albums"
+#~ msgstr "Nikdy nehraná alba"
+
+#~ msgid ""
+#~ "Reload information\n"
+#~ "Long press to activate auto reload"
+#~ msgstr ""
+#~ "Nahrát údaje znovu\n"
+#~ "Dlouhé stisknutí pro zapnutí automatického nahrávání"
+
+#~ msgid "Advanced artist information disabled"
+#~ msgstr "Rozšířené údaje o umělci zakázány"
+
+#~ msgid "WebKit support disabled"
+#~ msgstr "Podpora WebKit je vypnuta"
+
+#~ msgid "No lyrics found, please install gir1.2-webkit2-4.0"
+#~ msgstr ""
+#~ "Nenalezen žádný text písně. Nainstalujte, prosím, gir1.2-webkit2-4.0"
+
+#~ msgid "No information for this artist"
+#~ msgstr "Źádné údaje k tomuto umělci"
+
+#~ msgid "musician;band"
+#~ msgstr "hudebník;skupina"
+
+#~ msgid "Mix songs"
+#~ msgstr "Zamíchat skladby"
+
+#~ msgid "Mix duration"
+#~ msgstr "Zamíchat dobu trvání"
+
+#~ msgid "Mix duration in seconds"
+#~ msgstr "Doba trvání zamíchání v sekundách"
+
+#~ msgid "Mix tracks"
+#~ msgstr "Zamíchat skladby"
+
+#~ msgctxt "artist context"
+#~ msgid "Add albums"
+#~ msgstr "Přidat alba"
+
+#~ msgid "Save into collection"
+#~ msgstr "Uložit do sbírky"
+
+#~ msgid "Next tracks"
+#~ msgstr "Další skladby"
+
+#~ msgid "Append"
+#~ msgstr "Připojit"
+
+#~ msgid ""
+#~ "<b>Welcome to Lollypop!</b>\n"
+#~ "Here you can enable network access, allowing Lollypop to fetch music "
+#~ "information from the Web."
+#~ msgstr ""
+#~ "<b>Vítejte v Lollypopu!</b>\n"
+#~ "Zde můžete povolit přístup k síti, čímž Lollypopu dovolíte natahování "
+#~ "údajů o hudbě z internetu."
+
+#~ msgid "Enable network access:"
+#~ msgstr "Povolit přístup k síti:"
+
+#~ msgid "<span size='xx-large'><b>Import music</b></span>"
+#~ msgstr "<span size='xx-large'><b>Zavést hudbu</b></span>"
+
+#~ msgid "_Network access"
+#~ msgstr "_Přístup k síti"
+
+#~ msgid "Lollypop: You need to install yelp."
+#~ msgstr "Lollypop: Je potřeba nainstalovat yelp."
+
+#~ msgid "_Help"
+#~ msgstr "_Nápověda"

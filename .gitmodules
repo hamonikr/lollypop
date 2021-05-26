@@ -1,0 +1,6 @@
+#[submodule "subprojects/help"]
+#	path = subprojects/help
+#	url = https://gitlab.gnome.org/gnumdk/lollypop-help
+[submodule "subprojects/po"]
+	path = subprojects/po
+	url = https://gitlab.gnome.org/gnumdk/lollypop-po

@@ -1,0 +1,47 @@
+Source: lollypop
+Section: gnome
+Priority: optional
+Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Uploaders: Andreas Rönnquist <gusnan@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               python3,
+               dh-python,
+               meson,
+               libglib2.0-dev,
+               libgirepository1.0-dev,
+               libgtk-3-dev,
+               gir1.2-gstreamer-1.0,
+               gir1.2-secret-1,
+               gir1.2-totemplparser-1.0,
+               python3,
+               python3-bs4,
+               python-gi-dev,
+               python3-pil,
+               python3-pylast,
+               appstream-util,
+               libsoup2.4-dev
+Standards-Version: 4.5.0
+Homepage: https://wiki.gnome.org/Apps/Lollypop
+Vcs-Browser: https://salsa.debian.org/python-team/applications/lollypop
+Vcs-Git: https://salsa.debian.org/python-team/applications/lollypop.git
+
+Package: lollypop
+Architecture: all
+Depends: ${python3:Depends},
+         ${misc:Depends},
+         gir1.2-gstreamer-1.0,
+         gir1.2-gst-plugins-base-1.0,
+         gir1.2-secret-1,
+         gir1.2-totemplparser-1.0,
+         gir1.2-soup-2.4,
+         python3,
+         python3-bs4,
+         python3-gi,
+         python3-pil,
+         python3-pylast,
+         gir1.2-handy-1
+Suggests: gstreamer1.0-libav
+Description: modern music player
+ A Music player for GNOME featuring intuitive browsing of your music
+ collection. Supports downloading of lyrics and cover art, syncing music
+ with MTP devices, and has a kiosk (party) mode view.

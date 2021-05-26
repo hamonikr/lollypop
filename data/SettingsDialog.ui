@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <requires lib="libhandy" version="0.0"/>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="lower">100</property>
+    <property name="upper">9000</property>
+    <property name="step-increment">50</property>
+    <property name="page-increment">100</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment2">
+    <property name="lower">170</property>
+    <property name="upper">300</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">edit-clear-all-symbolic</property>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">list-add-symbolic</property>
+  </object>
+  <object class="HdyPreferencesWindow" id="settings_dialog">
+    <property name="can-focus">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center-on-parent</property>
+    <property name="default-width">600</property>
+    <property name="default-height">650</property>
+    <property name="skip-taskbar-hint">True</property>
+    <property name="skip-pager-hint">True</property>
+    <child>
+      <object class="HdyPreferencesPage">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="icon-name">applications-system-symbolic</property>
+        <property name="title" translatable="yes">General</property>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Appearance</property>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="tooltip-text" translatable="yes">Whether the application should use a dark theme</property>
+                <property name="title" translatable="yes">Dark Mode</property>
+                <property name="activatable-widget">dark-ui_boolean</property>
+                <property name="subtitle" translatable="yes">Whether the application should use a dark theme</property>
+                <child>
+                  <object class="GtkSwitch" id="dark-ui_boolean">
+                    <property name="name">dark-ui</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="title" translatable="yes">Single column mode</property>
+                <property name="activatable-widget">force-single-column_boolean</property>
+                <property name="subtitle" translatable="yes">Only show a single column for tracks</property>
+                <child>
+                  <object class="GtkSwitch" id="force-single-column_boolean">
+                    <property name="name">force-single-column</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Show artist artwork</property>
+                <property name="activatable-widget">artist-artwork_boolean</property>
+                <child>
+                  <object class="GtkSwitch" id="artist-artwork_boolean">
+                    <property name="name">artist-artwork</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">High quality artwork</property>
+                <property name="activatable-widget">hd-artwork_boolean</property>
+                <child>
+                  <object class="GtkSwitch" id="hd-artwork_boolean">
+                    <property name="name">hd-artwork</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Artwork size</property>
+                <child>
+                  <object class="GtkSpinButton" id="cover-size_range">
+                    <property name="name">cover-size</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <property name="width-chars">4</property>
+                    <property name="adjustment">adjustment2</property>
+                    <signal name="value-changed" handler="_on_range_changed" swapped="no"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="cache_clean_button">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="tooltip-text" translatable="yes">Clean cache</property>
+                    <property name="valign">center</property>
+                    <property name="image">image1</property>
+                    <signal name="clicked" handler="_on_clean_artwork_cache_clicked" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Behaviour</property>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Continue playback when closed</property>
+                <property name="activatable-widget">background-mode_boolean</property>
+                <property name="subtitle" translatable="yes">Play music in background</property>
+                <child>
+                  <object class="GtkSwitch" id="background-mode_boolean">
+                    <property name="name">background-mode</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Restore state on startup</property>
+                <property name="activatable-widget">save-state_boolean</property>
+                <property name="subtitle" translatable="yes">Restore current playback and view</property>
+                <child>
+                  <object class="GtkSwitch" id="save-state_boolean">
+                    <property name="name">save-state</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Save changes to file</property>
+                <property name="activatable-widget">save-to-tags_boolean</property>
+                <property name="subtitle" translatable="yes">Save artwork and rating to files</property>
+                <child>
+                  <object class="GtkSwitch" id="save-to-tags_boolean">
+                    <property name="name">save-to-tags</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Order albums by</property>
+                <property name="subtitle" translatable="yes">Albums will be sorted by this field</property>
+                <child>
+                  <object class="GtkComboBoxText" id="orderby_combo">
+                    <property name="name">orderby</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="valign">center</property>
+                    <items>
+                      <item id="artist_year" translatable="yes">Artist - year</item>
+                      <item id="artist_title" translatable="yes">Artist - title</item>
+                      <item id="title" translatable="yes">Title</item>
+                      <item id="year" translatable="yes">Year</item>
+                      <item id="popularity" translatable="yes">Popularity</item>
+                    </items>
+                    <signal name="changed" handler="_on_combo_changed" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Playback</property>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Enable transitions</property>
+                <property name="activatable-widget">transitions_boolean</property>
+                <property name="subtitle" translatable="yes">Add a transition on track change</property>
+                <child>
+                  <object class="GtkSwitch" id="transitions_boolean">
+                    <property name="name">transitions</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Duration</property>
+                <property name="activatable-widget">transitions-duration_range</property>
+                <property name="subtitle" translatable="yes">Transition duration in milliseconds</property>
+                <child>
+                  <object class="GtkSpinButton" id="transitions-duration_range">
+                    <property name="name">transitions-duration</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <property name="width-chars">4</property>
+                    <property name="adjustment">adjustment1</property>
+                    <signal name="value-changed" handler="_on_range_changed" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">ReplayGain</property>
+                <property name="activatable-widget">transitions-duration_range</property>
+                <property name="subtitle" translatable="yes">Apply audio correction on the fly</property>
+                <child>
+                  <object class="GtkComboBoxText" id="replay-gain_combo">
+                    <property name="name">replay-gain</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="valign">center</property>
+                    <items>
+                      <item id="none" translatable="yes">Disabled</item>
+                      <item id="track" translatable="yes">Track</item>
+                      <item id="album" translatable="yes">Album</item>
+                    </items>
+                    <signal name="changed" handler="_on_combo_changed" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="HdyPreferencesPage">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="icon-name">emblem-music-symbolic</property>
+        <property name="title" translatable="yes">Music</property>
+        <child>
+          <object class="HdyPreferencesGroup" id="music_group">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Collection</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="margin-top">5</property>
+                <child>
+                  <object class="GtkButton" id="reset_button">
+                    <property name="label" translatable="yes">Reset collection</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="halign">start</property>
+                    <property name="hexpand">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="_on_reset_button_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="add_button">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="halign">center</property>
+                    <property name="margin-end">15</property>
+                    <property name="image">image2</property>
+                    <signal name="clicked" handler="_on_add_button_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Import settings</property>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Auto update music</property>
+                <property name="activatable-widget">auto-update_boolean</property>
+                <property name="subtitle" translatable="yes">Update music if files added to collection</property>
+                <child>
+                  <object class="GtkSwitch" id="auto-update_boolean">
+                    <property name="name">auto-update</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">You need to reset collection</property>
+                <property name="title" translatable="yes">Show compilations</property>
+                <property name="activatable-widget">show-compilations_boolean</property>
+                <property name="subtitle" translatable="yes">A compilation is an album without any "Album artist tag"
+and with different artists</property>
+                <child>
+                  <object class="GtkSwitch" id="show-compilations_boolean">
+                    <property name="name">show-compilations</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Import playlists</property>
+                <property name="activatable-widget">import-playlists_boolean</property>
+                <property name="subtitle" translatable="yes">Search for playlists in your collection</property>
+                <child>
+                  <object class="GtkSwitch" id="import-playlists_boolean">
+                    <property name="name">import-playlists</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">You need to reset collection</property>
+                <property name="title" translatable="yes">Import advanced tags</property>
+                <property name="activatable-widget">import-advanced-artist-tags_boolean</property>
+                <property name="subtitle" translatable="yes">Performers, composers, …</property>
+                <child>
+                  <object class="GtkSwitch" id="import-advanced-artist-tags_boolean">
+                    <property name="name">import-advanced-artist-tags</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Statistics</property>
+            <child>
+              <object class="HdyActionRow" id="stat_artists">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="icon-name">system-users-symbolic</property>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow" id="stat_albums">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="icon-name">media-optical-cd-audio-symbolic</property>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow" id="stat_tracks">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="icon-name">folder-music-symbolic</property>
+              </object>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup" id="device_group">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="description" translatable="yes">Remove devices managed by Lollypop</property>
+            <property name="title" translatable="yes">Devices</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="HdyPreferencesPage">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="icon-name">web-browser-symbolic</property>
+        <property name="title" translatable="yes">Web</property>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Status</property>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Allow network access</property>
+                <property name="activatable-widget">network-access_boolean</property>
+                <child>
+                  <object class="GtkSwitch" id="network-access_boolean">
+                    <property name="name">network-access</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow" id="data">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Background data</property>
+                <property name="activatable-widget">DATA_button</property>
+                <property name="subtitle" translatable="yes">Search artwork in background</property>
+                <child>
+                  <object class="GtkSwitch" id="DATA_button">
+                    <property name="name">DATA</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup" id="playback">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Song playback</property>
+            <child>
+              <object class="HdyExpanderRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="activatable">False</property>
+                <property name="title">YouTube</property>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="title" translatable="yes">Enabled</property>
+                    <property name="activatable-widget">YOUTUBE_button</property>
+                    <child>
+                      <object class="GtkSwitch" id="YOUTUBE_button">
+                        <property name="name">YOUTUBE</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                        <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="title" translatable="yes">Use a recent version of youtube-dl</property>
+                    <property name="activatable-widget">recent-youtube-dl_boolean</property>
+                    <child>
+                      <object class="GtkSwitch" id="recent-youtube-dl_boolean">
+                        <property name="name">YOUTUBE</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="title" translatable="yes">Google API-key</property>
+                    <child>
+                      <!-- n-columns=3 n-rows=3 -->
+                      <object class="GtkGrid">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="row-spacing">5</property>
+                        <child>
+                          <object class="GtkEntry" id="cs-api-key_entry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="hexpand">True</property>
+                            <property name="placeholder-text">AIzaSyAfXimyn-JsnPzAhhIuxYwgyMrj21Ee7e0</property>
+                            <signal name="changed" handler="_on_google_api_key_changed" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="lastfm_button1">
+                            <property name="label" translatable="yes">Connect</property>
+                            <property name="name">GOOGLE</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                            <property name="hexpand">True</property>
+                            <signal name="clicked" handler="_on_connect_button_clicked" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="title" translatable="yes">Use an Invidious server</property>
+                    <child>
+                      <!-- n-columns=3 n-rows=3 -->
+                      <object class="GtkGrid">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="orientation">vertical</property>
+                        <property name="row-spacing">5</property>
+                        <child>
+                          <object class="GtkEntry" id="invidious-server_entry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="hexpand">True</property>
+                            <property name="placeholder-text" translatable="yes">No server set</property>
+                            <signal name="changed" handler="_on_invidious_entry_changed" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLinkButton">
+                            <property name="label" translatable="yes">What is Invidious ?</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="halign">end</property>
+                            <property name="relief">none</property>
+                            <property name="uri">https://github.com/omarroth/invidious</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup" id="search">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Search (artwork, songs, ...)</property>
+            <child>
+              <object class="HdyExpanderRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="activatable">False</property>
+                <property name="title">Last.FM</property>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="title" translatable="yes">Enabled</property>
+                    <child>
+                      <object class="GtkSwitch" id="LASTFM_button">
+                        <property name="name">LASTFM</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                        <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <child>
+                      <!-- n-columns=3 n-rows=3 -->
+                      <object class="GtkGrid">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="row-spacing">5</property>
+                        <child>
+                          <object class="GtkButton" id="lastfm_button">
+                            <property name="label" translatable="yes">Connect</property>
+                            <property name="name">LASTFM</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                            <property name="hexpand">True</property>
+                            <signal name="clicked" handler="_on_connect_button_clicked" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyExpanderRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="activatable">False</property>
+                <property name="title">Libre.fm</property>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="title" translatable="yes">Enabled</property>
+                    <child>
+                      <object class="GtkSwitch" id="LIBREFM_button">
+                        <property name="name">LIBREFM</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                        <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <child>
+                      <!-- n-columns=3 n-rows=3 -->
+                      <object class="GtkGrid">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="row-spacing">5</property>
+                        <child>
+                          <object class="GtkButton" id="librefm_button">
+                            <property name="label" translatable="yes">Connect</property>
+                            <property name="name">LIBREFM</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                            <property name="hexpand">True</property>
+                            <signal name="clicked" handler="_on_connect_button_clicked" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyExpanderRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="activatable">False</property>
+                <property name="title">MusicBrainz</property>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="title" translatable="yes">Enabled</property>
+                    <child>
+                      <object class="GtkSwitch" id="MUSICBRAINZ_button">
+                        <property name="name">MUSICBRAINZ</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                        <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="HdyActionRow">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="title" translatable="yes">ListenBrainz API-Key</property>
+                    <child>
+                      <!-- n-columns=3 n-rows=3 -->
+                      <object class="GtkGrid">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="row-spacing">5</property>
+                        <child>
+                          <object class="GtkEntry" id="listenbrainz-user-token_entry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="hexpand">True</property>
+                            <property name="placeholder-text">00000000-0000-0000-0000-000000000000</property>
+                            <signal name="changed" handler="_on_musicbrainz_api_key_changed" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="musicbrainz_button">
+                            <property name="label" translatable="yes">Connect</property>
+                            <property name="name">MUSICBRAINZ</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                            <property name="hexpand">True</property>
+                            <signal name="clicked" handler="_on_connect_button_clicked" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Deezer</property>
+                <property name="activatable-widget">DEEZER_button</property>
+                <child>
+                  <object class="GtkSwitch" id="DEEZER_button">
+                    <property name="name">DEEZER</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Jamendo</property>
+                <property name="activatable-widget">JAMENDO_button</property>
+                <child>
+                  <object class="GtkSwitch" id="JAMENDO_button">
+                    <property name="name">JAMENDO</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">AudioDB</property>
+                <property name="activatable-widget">AUDIODB_button</property>
+                <child>
+                  <object class="GtkSwitch" id="AUDIODB_button">
+                    <property name="name">AUDIODB</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Spotify</property>
+                <property name="activatable-widget">SPOTIFY_button</property>
+                <child>
+                  <object class="GtkSwitch" id="SPOTIFY_button">
+                    <property name="name">SPOTIFY</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">FANART.TV</property>
+                <property name="activatable-widget">FANARTTV_button</property>
+                <child>
+                  <object class="GtkSwitch" id="FANARTTV_button">
+                    <property name="name">FANARTTV</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">iTunes</property>
+                <property name="activatable-widget">ITUNES_button</property>
+                <child>
+                  <object class="GtkSwitch" id="ITUNES_button">
+                    <property name="name">ITUNES</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Google</property>
+                <property name="activatable-widget">GOOGLE_button</property>
+                <child>
+                  <object class="GtkSwitch" id="GOOGLE_button">
+                    <property name="name">GOOGLE</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Startpage</property>
+                <property name="activatable-widget">STARTPAGE_button</property>
+                <child>
+                  <object class="GtkSwitch" id="STARTPAGE_button">
+                    <property name="name">STARTPAGE</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">DuckDuckGo</property>
+                <property name="activatable-widget">DUCKDUCKGO_button</property>
+                <child>
+                  <object class="GtkSwitch" id="DUCKDUCKGO_button">
+                    <property name="name">DUCKDUCKGO</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Wikipedia</property>
+                <property name="activatable-widget">WIKIPEDIA_button</property>
+                <child>
+                  <object class="GtkSwitch" id="WIKIPEDIA_button">
+                    <property name="name">WIKIPEDIA</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup" id="lyrics">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">Lyrics</property>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Wikia</property>
+                <property name="activatable-widget">WIKIA_button</property>
+                <child>
+                  <object class="GtkSwitch" id="WIKIA_button">
+                    <property name="name">WIKIA</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Genius</property>
+                <property name="activatable-widget">GENIUS_button</property>
+                <child>
+                  <object class="GtkSwitch" id="GENIUS_button">
+                    <property name="name">GENIUS</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Metro Lyrics</property>
+                <property name="activatable-widget">METROLYRICS_button</property>
+                <child>
+                  <object class="GtkSwitch" id="METROLYRICS_button">
+                    <property name="name">METROLYRICS</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Bing</property>
+                <property name="activatable-widget">BING_button</property>
+                <child>
+                  <object class="GtkSwitch" id="BING_button">
+                    <property name="name">BING</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

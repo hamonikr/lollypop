@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="lower">10</property>
+    <property name="upper">3000</property>
+    <property name="value">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">user-trash-symbolic</property>
+  </object>
+  <object class="GtkGrid" id="widget">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="margin_top">5</property>
+    <property name="margin_bottom">5</property>
+    <property name="column_spacing">5</property>
+    <child>
+      <object class="GtkComboBoxText" id="type_combobox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <items>
+          <item id="genre" translatable="yes">Genre</item>
+          <item id="artist" translatable="yes">Artist</item>
+          <item id="album" translatable="yes">Album</item>
+          <item id="rating" translatable="yes">Rating</item>
+          <item id="popularity" translatable="yes">Popularity</item>
+          <item id="year" translatable="yes">Year</item>
+          <item id="bpm" translatable="yes">BPM</item>
+        </items>
+        <signal name="changed" handler="_on_type_combobox_changed" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left_attach">0</property>
+        <property name="top_attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkComboBoxText" id="operand_combobox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="top_attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkStack" id="stack">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="hexpand">True</property>
+        <property name="transition_type">crossfade</property>
+        <child>
+          <object class="GtkEntry" id="entry">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="name">text</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="rating_widget">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <child>
+              <object class="GtkEventBox" id="eventbox1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <signal name="button-release-event" handler="_on_button_release_event" swapped="no"/>
+                <signal name="enter-notify-event" handler="_on_enter_notify_event" swapped="no"/>
+                <signal name="leave-notify-event" handler="_on_leave_notify_event" swapped="no"/>
+                <child>
+                  <object class="GtkImage" id="star0">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0.20000000000000001</property>
+                    <property name="icon_name">starred-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEventBox" id="eventbox2">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <signal name="button-release-event" handler="_on_button_release_event" swapped="no"/>
+                <signal name="enter-notify-event" handler="_on_enter_notify_event" swapped="no"/>
+                <signal name="leave-notify-event" handler="_on_leave_notify_event" swapped="no"/>
+                <child>
+                  <object class="GtkImage" id="star4">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0.20000000000000001</property>
+                    <property name="icon_name">starred-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">5</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEventBox" id="eventbox3">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <signal name="button-release-event" handler="_on_button_release_event" swapped="no"/>
+                <signal name="enter-notify-event" handler="_on_enter_notify_event" swapped="no"/>
+                <signal name="leave-notify-event" handler="_on_leave_notify_event" swapped="no"/>
+                <child>
+                  <object class="GtkImage" id="star3">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0.20000000000000001</property>
+                    <property name="icon_name">starred-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEventBox" id="eventbox4">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <signal name="button-release-event" handler="_on_button_release_event" swapped="no"/>
+                <signal name="enter-notify-event" handler="_on_enter_notify_event" swapped="no"/>
+                <signal name="leave-notify-event" handler="_on_leave_notify_event" swapped="no"/>
+                <child>
+                  <object class="GtkImage" id="star2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0.20000000000000001</property>
+                    <property name="icon_name">starred-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEventBox" id="eventbox5">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <signal name="button-release-event" handler="_on_button_release_event" swapped="no"/>
+                <signal name="enter-notify-event" handler="_on_enter_notify_event" swapped="no"/>
+                <signal name="leave-notify-event" handler="_on_leave_notify_event" swapped="no"/>
+                <child>
+                  <object class="GtkImage" id="star1">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0.20000000000000001</property>
+                    <property name="icon_name">starred-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEventBox" id="eventbox6">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <signal name="button-release-event" handler="_on_button_release_event" swapped="no"/>
+                <signal name="enter-notify-event" handler="_on_enter_notify_event" swapped="no"/>
+                <signal name="leave-notify-event" handler="_on_leave_notify_event" swapped="no"/>
+                <child>
+                  <object class="GtkImage" id="empty_star1">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0</property>
+                    <property name="icon_name">starred-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">rating</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="spin_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="adjustment">adjustment1</property>
+          </object>
+          <packing>
+            <property name="name">int</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="left_attach">2</property>
+        <property name="top_attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+        <property name="image">image1</property>
+        <signal name="clicked" handler="_on_destroy_button_clicked" swapped="no"/>
+        <style>
+          <class name="menu-button"/>
+        </style>
+      </object>
+      <packing>
+        <property name="left_attach">3</property>
+        <property name="top_attach">0</property>
+      </packing>
+    </child>
+  </object>
+</interface>

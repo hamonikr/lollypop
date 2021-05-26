@@ -1,0 +1,2605 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Марко М. Костић (Marko M. Kostić) <marko.m.kostic@gmail.com>, 2015
+# Марко М. Костић (Marko M. Kostić) <marko.m.kostic@gmail.com>, 2015-2017
+msgid ""
+msgstr ""
+"Project-Id-Version: lollypop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-06 14:55+0100\n"
+"PO-Revision-Date: 2018-09-29 00:33+0000\n"
+"Last-Translator: Slobodan Terzić <githzerai06@gmail.com>\n"
+"Language-Team: Serbian (latin) <https://hosted.weblate.org/projects/gnumdk/"
+"lollypop/sr_Latn/>\n"
+"Language: sr@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.2-dev\n"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:36
+msgid "Window size"
+msgstr "Veličina prozora"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:37
+msgid "Window size (width and height)."
+msgstr "Veličina prozora (širina i visina)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:41
+msgid "Window position"
+msgstr "Položaj prozora"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:42
+msgid "Window position (x and y)."
+msgstr "Položaj prozora (X i Y položaj)."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:46
+#: ../data/org.gnome.Lollypop.gschema.xml:51
+#: ../data/org.gnome.Lollypop.gschema.xml:56
+#: ../data/org.gnome.Lollypop.gschema.xml:71
+#: ../data/org.gnome.Lollypop.gschema.xml:116
+#: ../data/org.gnome.Lollypop.gschema.xml:261
+#: ../data/org.gnome.Lollypop.gschema.xml:274
+#: ../data/org.gnome.Lollypop.gschema.xml:284
+#: ../data/org.gnome.Lollypop.gschema.xml:304
+#: ../data/org.gnome.Lollypop.gschema.xml:309
+#: ../data/org.gnome.Lollypop.gschema.xml:314
+#: ../data/org.gnome.Lollypop.gschema.xml:364
+msgid "INTERNAL"
+msgstr "INTERNO"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:61
+msgid "Allow using a cover per track"
+msgstr "Dozvoli upotrebu omota po numeri"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:66
+msgid "Access network"
+msgstr "Pristupi mreži"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:76
+msgid ""
+"Threshold used to decide if the previous track should be played or the "
+"currently running one should be restarted"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:81
+msgid "Save artwork/popularity in tags"
+msgstr "Čuvaj crtež/popularnost unutar oznaka"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:86
+msgid "Window maximized"
+msgstr "Uvećan prozor"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:87
+msgid "Window maximized state."
+msgstr "Stanje prozora kada je uvećan."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:91
+msgid "Enabled genres in party mode"
+msgstr "Omogućeni žanrovi pesama u režimu rada za žurke"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:92
+msgid "ID for genres."
+msgstr "IB za žanrove."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:96 ../lollypop/menu_search.py:40
+msgid "Search on the Web"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:101
+msgid "Shown suggestions"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:106
+msgid "Play featured tracks"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:111
+msgid "Allow syncing to USB disks"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:121
+msgid ""
+"If set, Lollypop will use this server instead of YouTube. See https://github."
+"com/omarroth/invidious"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:126
+msgid "If true, Lollypop will not use system youtube-dl"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:131
+msgid "Do not use original date if set"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:136
+msgid "Import playlists from collections"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:141
+msgid "Music URI"
+msgstr "Muzički URI"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:142
+msgid "When empty, use XDG_MUSIC_DIR"
+msgstr "Kada je prazna, koristi XDG_MUSIC_DIR promenljivu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:146
+msgid "Use Libre.fm instead of Last.fm"
+msgstr "Koristi Libre.fm umesto Last.fm-a"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:151
+msgid "ListenBrainz user token"
+msgstr "Korisnički žeton za ListenBrainz"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:156
+msgid "Google Custom Search API key"
+msgstr "API ključ Guglove prilagođene pretrage"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:161
+msgid "Favorite tag editor"
+msgstr "Omiljeni uređivač oznaka na pesmama"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:166
+msgid "Favorite cover filename without extension"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:167
+#: ../data/org.gnome.Lollypop.gschema.xml:252
+msgid "Restart needed"
+msgstr "Potrebno je ponovo pokrenuti program"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:171
+msgid "Database version"
+msgstr "Izdanje baze podataka"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:172
+msgid ""
+"Resetting this value will reset the database, popular albums will be restored"
+msgstr ""
+"Ponovno postavljanje ove vrednosti će vratiti bazu na početno stanje, "
+"Popularni albumi će biti vraćeni"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:176
+msgid "Albums cover size"
+msgstr "Veličina omota albuma"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:181
+msgid "Encoding quality"
+msgstr "Kvalitet kodiranja"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:186 ../data/SettingsDialog.ui:375
+msgid "Auto update music"
+msgstr "Automatski ažuriraj muziku"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:191
+msgid "Show tracks in artist view"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:196 ../data/SettingsDialog.ui:88
+msgid "Show artist artwork"
+msgstr "Prikaži portret izvođača"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:201
+msgid "Use dark GTK theme"
+msgstr "Koristi tamnu GTK temu"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:206
+msgid "Disable scrobbling usage"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:211
+msgid "Handle compilations"
+msgstr "Barataj sa kompilacijama"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:216
+msgid "Handle performers, compositors, ..."
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:221
+msgid "Show compilations in albums view"
+msgstr "Prikaži kompilacije u delu sa albumima"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:226 ../data/SettingsDialog.ui:158
+msgid "Continue playback when closed"
+msgstr "Nastavi sa puštanjem pesama nakon zatvaranja programa"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:231
+msgid "Append albums by default"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:236
+msgid "Smart sort for artist"
+msgstr "Pametno ređanje po izvođaču"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:237
+msgid "Ex: The Beatles sorted as Beatles. Reset of database required"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:241
+msgid "Show sort tag as artist. Reset of database may be required"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:242
+msgid "Ex: Beatles, The"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:246
+msgid "Restore previous state"
+msgstr "Povrati prethodno stanje programa"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:251
+msgid "Disable MPRIS"
+msgstr "Isključi MPRIS kontrole"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:256
+msgid "Notifications behaviour"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:265
+msgid "Items count in views"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:269
+msgid "Show track number from tags"
+msgstr "Kao broj pesme koristi broj iz oznake pesme"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:279
+msgid "Enable PNG artwork cache"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:289
+msgid "Force single column mode"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:294
+msgid "Volume rate"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:295
+msgid "0.0-1.0"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:299
+msgid "Equalizer enabled"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:319
+msgid "Show labels in sidebar"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:324
+msgid "Smooth track transitions"
+msgstr "Glatki prelaz između numera"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:329
+msgid "Smooth track transitions only in party mode"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:334
+msgid "Transition duration in ms"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:339
+msgid "Fade effect on playback status change"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:344
+msgid "Fade duration in ms"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:349
+msgid "Fade effect only in party mode"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:354 ../data/ToolbarEnd.ui:19
+msgid "Shuffle tracks"
+msgstr "Mešaj pesme"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:359
+msgid "Ignore internal symlinks"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:369
+msgid "ReplayGain state"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:374
+msgid "ReplayGain value in dB"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:375
+msgid "Between -15 and 15"
+msgstr "Između -15 i 15"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:379
+msgid "Applies signal compression/limiting to raw audio data"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:380
+msgid ""
+"It performs strict hard limiting with soft-knee characteristics, using a "
+"threshold of -6 dB"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:384
+msgid "Possibilities for powermanagement options"
+msgstr "Mogućnosti za opcije uravljanja napajanjem"
+
+#: ../data/org.gnome.Lollypop.gschema.xml:385
+msgid "This option inhibits screensaver and suspend during Lollypop playback."
+msgstr "Ova opcija sprečava čuvar ekrana i suspenziju dok Lollypop svira."
+
+#: ../data/org.gnome.Lollypop.gschema.xml:389
+msgid "Repeat"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.gschema.xml:394 ../data/SettingsDialog.ui:212
+msgid "Order albums by"
+msgstr "Poređaj albume po"
+
+#: ../data/AboutDialog.ui.in:13
+msgid "A music player for GNOME."
+msgstr "Puštač muzike za Gnom."
+
+#: ../data/AboutDialog.ui.in:15
+msgid "Visit Lollypop website"
+msgstr "Matična veb stranica Lolipopa"
+
+#. Replace me with your names
+#: ../data/AboutDialog.ui.in:28
+msgctxt "Add your names here, do not remove previous names!"
+msgid "translator1, translator2, ..."
+msgstr ""
+
+#: ../data/AboutDialog.ui.in:29
+msgid ""
+"\n"
+"Reda Lazri:\n"
+"    Lollypop icon\n"
+"Geary Development Team:\n"
+"    tag-list-symbolic icon\n"
+"GNOME Project:\n"
+"    unplayed-albums-symbolic\n"
+"    artists-list-symbolic icons\n"
+"Martins D. Okoi:\n"
+"    Description in appdata\n"
+"    "
+msgstr ""
+
+#: ../data/AboutDialog.ui.in:67
+msgid "Donations:"
+msgstr "Donacije:"
+
+#: ../data/AboutDialog.ui.in:74
+msgid "Liberapay"
+msgstr "Liberapay"
+
+#: ../data/AboutDialog.ui.in:84 ../lollypop/container_notification.py:107
+msgid "Patreon"
+msgstr ""
+
+#: ../data/AboutDialog.ui.in:94 ../lollypop/container_notification.py:107
+msgid "PayPal"
+msgstr "Pejpal"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:8
+#: ../data/org.gnome.Lollypop.desktop.in:3
+msgid "Lollypop"
+msgstr "Lollypop"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:9
+#: ../data/org.gnome.Lollypop.desktop.in:5
+msgid "Play and organize your music collection"
+msgstr "Puštajte i organizujte vašu muzičku zbirku"
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:11
+msgid ""
+"Lollypop is a lightweight modern music player designed to work excellently "
+"on the GNOME desktop environment. It also features a party mode which will "
+"auto-select party-related playlists; allows access the player from your "
+"couch thanks to it fullscreen mode; fetches lyrics, artwork and biography "
+"online; and provides native support for ReplayGain."
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:13
+msgid "Multiple Audio Formats –"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:14
+msgid "Metadata –"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:15
+msgid "Synchronization –"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.appdata.xml.in:16
+msgid "Audio Scrobbling –"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.desktop.in:4
+msgid "Music Player"
+msgstr "Muzički plejer"
+
+#: ../data/org.gnome.Lollypop.desktop.in:13
+msgid "Music;Player;Lollipop;"
+msgstr ""
+
+#: ../data/org.gnome.Lollypop.desktop.in:23
+msgid "Play/Pause"
+msgstr "Pusti/zaustavi"
+
+#: ../data/org.gnome.Lollypop.desktop.in:27 ../lollypop/assistant_flatpak.py:40
+#: ../lollypop/assistant_google.py:42 ../lollypop/assistant_google.py:54
+#: ../lollypop/assistant_google.py:71 ../lollypop/assistant_lastfm.py:45
+#: ../lollypop/assistant_lastfm.py:58 ../lollypop/assistant_musicbrainz.py:38
+#: ../lollypop/assistant_musicbrainz.py:50 ../lollypop/notification.py:37
+msgid "Next"
+msgstr "Sledeća"
+
+#: ../data/org.gnome.Lollypop.desktop.in:31 ../lollypop/notification.py:33
+msgid "Previous"
+msgstr "Prethodna"
+
+#: ../data/Appmenu.ui:45
+msgid "Update music"
+msgstr ""
+
+#: ../data/Appmenu.ui:63
+msgid "Mini player"
+msgstr ""
+
+#: ../data/Appmenu.ui:81
+msgid "Fullscreen"
+msgstr ""
+
+#: ../data/Appmenu.ui:108
+msgid "_Preferences"
+msgstr "P_ostavke"
+
+#: ../data/Appmenu.ui:122
+msgid "_Keyboard Shortcuts"
+msgstr "_Prečice na tastaturi"
+
+#: ../data/Appmenu.ui:136
+msgid "_About Lollypop"
+msgstr ""
+
+#: ../data/Appmenu.ui:149
+msgid "Quit"
+msgstr ""
+
+#: ../data/Appmenu.ui:219
+msgid "Equalizer"
+msgstr ""
+
+#: ../data/ArtistBannerWidget.ui:92
+msgid "Play albums"
+msgstr "Pusti albume"
+
+#: ../data/ArtistBannerWidget.ui:110
+msgctxt "artist context"
+msgid "Add to current playlist"
+msgstr "Dodaj u trenutnu plejlistu"
+
+#: ../data/ArtworkSearch.ui:69
+msgid "Select a local file"
+msgstr "Izaberi lokalnu datoteku"
+
+#: ../data/DeviceWidget.ui:67
+msgid "Convert to:"
+msgstr "Prekodiraj u:"
+
+#: ../data/DeviceWidget.ui:79
+msgid "Normalize"
+msgstr "Normalizuj"
+
+#: ../data/DeviceWidget.ui:100
+msgid "Do not convert"
+msgstr "Ne prekodiraj"
+
+#: ../data/DeviceWidget.ui:117
+msgid "MP3"
+msgstr "MP3"
+
+#: ../data/DeviceWidget.ui:134
+msgid "Ogg Vorbis"
+msgstr "Ogg Vorbis"
+
+#: ../data/DeviceWidget.ui:151
+msgid "AAC"
+msgstr "AAC"
+
+#: ../data/DeviceWidget.ui:168
+msgid "FLAC"
+msgstr "FLAC"
+
+#: ../data/DeviceWidget.ui:204
+msgid "Synchronized:"
+msgstr ""
+
+#: ../data/DeviceWidget.ui:217 ../lollypop/shown.py:36
+#: ../lollypop/view_albums_line.py:279
+msgid "Albums"
+msgstr "Albumi"
+
+#: ../data/DeviceWidget.ui:233 ../lollypop/menu_artist.py:67
+#: ../lollypop/menu_objects.py:51 ../lollypop/menu_objects.py:117
+#: ../lollypop/menu_selectionlist.py:93 ../lollypop/shown.py:30
+#: ../lollypop/widgets_banner_playlists.py:42
+msgid "Playlists"
+msgstr "Liste pesama"
+
+#: ../data/DeviceWidget.ui:284 ../lollypop/widgets_device.py:137
+#: ../lollypop/widgets_device.py:338
+msgid "Synchronize"
+msgstr "Sinhronizuj"
+
+#: ../data/PlaylistBannerWidget.ui:71 ../lollypop/view_tracks_album.py:312
+#: ../lollypop/widgets_player_buttons.py:188
+msgid "Play"
+msgstr "Pusti"
+
+#: ../data/PlaylistBannerWidget.ui:89
+msgid "Play playlist randomized"
+msgstr ""
+
+#: ../data/PlaylistPopover.ui:23 ../data/RadioMenu.ui:50
+msgid "Name:"
+msgstr "Naziv:"
+
+#: ../data/PlaylistPopover.ui:59 ../data/RadioMenu.ui:106
+#: ../data/SmartPlaylistView.ui:153 ../lollypop/menu_playlist.py:116
+msgid "Save"
+msgstr "Sačuvaj"
+
+#: ../data/RadioMenu.ui:61
+msgid "Address:"
+msgstr "Adresa:"
+
+#: ../data/SettingsDialog.ui:41
+msgid "General"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:46
+msgid "Appearance"
+msgstr "Izgled"
+
+#: ../data/SettingsDialog.ui:51 ../data/SettingsDialog.ui:54
+msgid "Whether the application should use a dark theme"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:52
+msgid "Dark Mode"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:70
+msgid "Single column mode"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:72
+msgid "Only show a single column for tracks"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:105
+msgid "High quality artwork"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:122
+msgid "Artwork size"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:139 ../lollypop/menu_actions.py:77
+msgid "Clean cache"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:153
+msgid "Behaviour"
+msgstr "Ponašanje programa"
+
+#: ../data/SettingsDialog.ui:160
+msgid "Play music in background"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:176
+msgid "Restore state on startup"
+msgstr "Povrati prethodno stanje programa prilikom pokretanja programa"
+
+#: ../data/SettingsDialog.ui:178
+msgid "Restore current playback and view"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:194
+msgid "Save changes to file"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:196
+msgid "Save artwork and rating to files"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:213
+msgid "Albums will be sorted by this field"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:222
+msgid "Artist - year"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:223
+msgid "Artist - title"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:224
+msgid "Title"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:225 ../data/SmartPlaylistWidget.ui:33
+msgid "Year"
+msgstr "godini"
+
+#: ../data/SettingsDialog.ui:226 ../data/SmartPlaylistWidget.ui:32
+msgid "Popularity"
+msgstr "popularnosti"
+
+#: ../data/SettingsDialog.ui:242 ../lollypop/menu_artist.py:59
+#: ../lollypop/menu_decade.py:39 ../lollypop/menu_genre.py:41
+#: ../lollypop/menu_objects.py:43 ../lollypop/menu_objects.py:109
+msgid "Playback"
+msgstr "Puštanje"
+
+#: ../data/SettingsDialog.ui:247
+msgid "Enable transitions"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:249
+msgid "Add a transition on track change"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:265
+msgid "Duration"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:267
+msgid "Transition duration in milliseconds"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:283
+msgid "ReplayGain"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:285
+msgid "Apply audio correction on the fly"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:294 ../lollypop/menu_search.py:41
+msgid "Disabled"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:295
+msgid "Track"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:296 ../data/SmartPlaylistWidget.ui:30
+msgid "Album"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:315
+msgid "Music"
+msgstr "Muzika"
+
+#: ../data/SettingsDialog.ui:320
+msgid "Collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:331 ../lollypop/dialog_settings.py:245
+msgid "Reset collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:370
+msgid "Import settings"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:377
+msgid "Update music if files added to collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:393 ../data/SettingsDialog.ui:431
+msgid "You need to reset collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:394
+msgid "Show compilations"
+msgstr "Prikazuj kompilacije"
+
+#: ../data/SettingsDialog.ui:396
+msgid ""
+"A compilation is an album without any \"Album artist tag\"\n"
+"and with different artists"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:413
+msgid "Import playlists"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:415
+msgid "Search for playlists in your collection"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:432
+msgid "Import advanced tags"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:434
+msgid "Performers, composers, …"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:452
+msgid "Statistics"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:483
+msgid "Remove devices managed by Lollypop"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:484 ../lollypop/menu_artist.py:66
+#: ../lollypop/menu_genre.py:53 ../lollypop/menu_objects.py:53
+#: ../lollypop/menu_objects.py:90 ../lollypop/menu_playlist.py:68
+msgid "Devices"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:497 ../lollypop/shown.py:34
+#: ../lollypop/toolbar_end.py:249
+msgid "Web"
+msgstr "Veb"
+
+#: ../data/SettingsDialog.ui:502
+msgid "Status"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:507
+msgid "Allow network access"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:524
+msgid "Background data"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:526
+msgid "Search artwork in background"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:547
+msgid "Song playback"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:558 ../data/SettingsDialog.ui:746
+#: ../data/SettingsDialog.ui:828 ../data/SettingsDialog.ui:910
+msgid "Enabled"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:575
+msgid "Use a recent version of youtube-dl"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:591
+msgid "Google API-key"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:616 ../data/SettingsDialog.ui:773
+#: ../data/SettingsDialog.ui:855 ../data/SettingsDialog.ui:952
+#: ../lollypop/dialog_settings.py:189
+msgid "Connect"
+msgstr "Poveži se"
+
+#: ../data/SettingsDialog.ui:660
+msgid "Use an Invidious server"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:676
+msgid "No server set"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:686
+msgid "What is Invidious ?"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:735
+msgid "Search (artwork, songs, ...)"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:926
+msgid "ListenBrainz API-Key"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:998 ../lollypop/menu_playback.py:144
+#: ../lollypop/menu_search.py:56
+msgid "Deezer"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1015 ../lollypop/menu_search.py:72
+msgid "Jamendo"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1031
+msgid "AudioDB"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1048 ../lollypop/menu_playback.py:164
+#: ../lollypop/menu_search.py:68
+msgid "Spotify"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1065
+msgid "FANART.TV"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1082
+msgid "iTunes"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1099
+msgid "Google"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1116
+msgid "Startpage"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1133
+msgid "DuckDuckGo"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1150
+msgid "Wikipedia"
+msgstr "Vikipedija"
+
+#: ../data/SettingsDialog.ui:1172 ../lollypop/shown.py:35
+msgid "Lyrics"
+msgstr "Tekst pesme"
+
+#: ../data/SettingsDialog.ui:1177
+msgid "Wikia"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1194
+msgid "Genius"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1211
+msgid "Metro Lyrics"
+msgstr ""
+
+#: ../data/SettingsDialog.ui:1228
+msgid "Bing"
+msgstr ""
+
+#: ../data/Shortcuts.ui:13
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Opšte"
+
+#: ../data/Shortcuts.ui:17
+msgctxt "shortcut window"
+msgid "Settings"
+msgstr "Podešavanja"
+
+#: ../data/Shortcuts.ui:24
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Pretraga"
+
+#: ../data/Shortcuts.ui:31
+msgctxt "shortcut window"
+msgid "Party mode"
+msgstr "Režim rada za žurke"
+
+#: ../data/Shortcuts.ui:38
+msgctxt "shortcut window"
+msgid "Show/Hide filter"
+msgstr "Prikaži ili sakrij filter"
+
+#: ../data/Shortcuts.ui:45
+msgctxt "shortcut window"
+msgid "Lock playback"
+msgstr "Zaključaj puštanje pesama"
+
+#: ../data/Shortcuts.ui:52
+msgctxt "shortcut window"
+msgid "Show equalizer"
+msgstr ""
+
+#: ../data/Shortcuts.ui:59
+msgctxt "shortcut window"
+msgid "Show lyrics"
+msgstr "Prikaži stihove"
+
+#: ../data/Shortcuts.ui:66
+msgctxt "shortcut window"
+msgid "Volume up"
+msgstr ""
+
+#: ../data/Shortcuts.ui:73
+msgctxt "shortcut window"
+msgid "Volume down"
+msgstr ""
+
+#: ../data/Shortcuts.ui:80
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr "Preko celog ekrana"
+
+#: ../data/Shortcuts.ui:87
+msgctxt "shortcut window"
+msgid "Mini player"
+msgstr ""
+
+#: ../data/Shortcuts.ui:96
+msgctxt "shortcut window"
+msgid "Playback"
+msgstr "Puštanje muzike"
+
+#: ../data/Shortcuts.ui:100
+msgctxt "shortcut window"
+msgid "Play"
+msgstr "Pusti"
+
+#: ../data/Shortcuts.ui:107
+msgctxt "shortcut window"
+msgid "Pause"
+msgstr "Pauziraj"
+
+#: ../data/Shortcuts.ui:114
+msgctxt "shortcut window"
+msgid "Stop"
+msgstr "Prethodna pesma"
+
+#: ../data/Shortcuts.ui:121
+msgctxt "shortcut window"
+msgid "Next track"
+msgstr "Sledeća pesma"
+
+#: ../data/Shortcuts.ui:128
+msgctxt "shortcut window"
+msgid "Previous track"
+msgstr "Preskoči trenutni album"
+
+#: ../data/Shortcuts.ui:135
+msgctxt "shortcut window"
+msgid "Skip current album"
+msgstr "Preskoči trenutni album"
+
+#: ../data/Shortcuts.ui:142
+msgctxt "shortcut window"
+msgid "Love current track"
+msgstr "Zavoli trenutnu pesmu"
+
+#: ../data/Shortcuts.ui:149
+msgctxt "shortcut window"
+msgid "Repeat track"
+msgstr "Ponovi pesmu"
+
+#: ../data/Shortcuts.ui:156
+msgctxt "shortcut window"
+msgid "Skip backward in track"
+msgstr "Premotaj nazad pesmu"
+
+#: ../data/Shortcuts.ui:163
+msgctxt "shortcut window"
+msgid "Skip forward in track"
+msgstr "Premotaj napred pesmu"
+
+#: ../data/Shortcuts.ui:170
+msgctxt "shortcut window"
+msgid "Enable/disable scrobbling"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:94
+msgid "Limit to"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:121
+msgid "tracks selected by"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:136
+msgid "random"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:137
+msgid "album"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:138
+msgid "artist"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:139
+msgid "year DESC"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:140
+msgid "year ASC"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:141
+msgid "duration DESC"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:142
+msgid "duration ASC"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:184
+msgid "Match music for "
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:210
+msgid "all"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:211
+msgid "one"
+msgstr ""
+
+#: ../data/SmartPlaylistView.ui:226
+msgid "of the following rules :"
+msgstr ""
+
+#: ../data/SmartPlaylistWidget.ui:28
+msgid "Genre"
+msgstr ""
+
+#: ../data/SmartPlaylistWidget.ui:29 ../lollypop/menu_objects.py:48
+#: ../lollypop/menu_objects.py:114
+msgid "Artist"
+msgstr "Izvođač"
+
+#: ../data/SmartPlaylistWidget.ui:31
+msgid "Rating"
+msgstr ""
+
+#: ../data/SmartPlaylistWidget.ui:34
+msgid "BPM"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:7
+msgid "Party mode"
+msgstr "Režim za žurke"
+
+#: ../data/ToolbarEnd.ui:9
+msgid "Enable party mode"
+msgstr "Uključi režim za žurke"
+
+#: ../data/ToolbarEnd.ui:13
+msgid "Configure"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:17
+msgid "Shuffle"
+msgstr "Mešanje pesama"
+
+#: ../data/ToolbarEnd.ui:24
+msgid "Repetition"
+msgstr "Ponavljanje"
+
+#: ../data/ToolbarEnd.ui:26
+msgid "Continuous playback"
+msgstr "Stalno puštanje pesaama"
+
+#: ../data/ToolbarEnd.ui:31
+msgid "Automatic playback (similar)"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:36
+msgid "Automatic playback (random)"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:41
+msgid "Repeat track"
+msgstr "Ponovi pesmu"
+
+#: ../data/ToolbarEnd.ui:46
+msgid "Do not repeat"
+msgstr "Ne ponavljaj"
+
+#: ../data/ToolbarEnd.ui:52
+msgid "Scrobbling"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:54
+msgid "Enable scrobbling"
+msgstr ""
+
+#: ../data/ToolbarEnd.ui:96
+msgid "Playback options"
+msgstr ""
+
+#: ../data/TuneinPopover.ui:26
+msgid "Go back"
+msgstr "Idi nazad"
+
+#: ../data/TuneinPopover.ui:58
+msgid "Go home"
+msgstr "Idi na početnu"
+
+#: ../lollypop/artwork_album.py:515 ../lollypop/widgets_rating.py:211
+msgid "You need to install kid3-cli"
+msgstr "Potrebno je da instalirate kid3-cli"
+
+#: ../lollypop/assistant_flatpak.py:31
+msgid "Authorization needed"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:33
+msgid ""
+"\n"
+"In order to be able to access your collection,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:44
+msgid "Update folders"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:46
+msgid ""
+"\n"
+"- <b>Open</b> Lollypop <b>preferences</b>\n"
+"- Go to the <b>Music</b> tab\n"
+"- <b>Remove</b> all folders from collection\n"
+"- Then, <b>add</b> them again"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:53 ../lollypop/assistant_google.py:52
+#: ../lollypop/assistant_google.py:69 ../lollypop/assistant_google.py:84
+#: ../lollypop/assistant_lastfm.py:56 ../lollypop/assistant_lastfm.py:68
+#: ../lollypop/assistant_musicbrainz.py:48
+#: ../lollypop/assistant_musicbrainz.py:60
+msgid "Back"
+msgstr ""
+
+#: ../lollypop/assistant_flatpak.py:55
+msgid "Preferences"
+msgstr "Postavke"
+
+#: ../lollypop/assistant_google.py:29
+msgid "What is Google API-key?"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:31
+msgid ""
+"\n"
+"In order to use the YoutTube playback,\n"
+"you need to create an API-Key for the\n"
+"\n"
+"<b>\"YouTube Data API v3\"</b>\n"
+"\n"
+"which is used to play songs."
+msgstr ""
+
+#: ../lollypop/assistant_google.py:40 ../lollypop/assistant_lastfm.py:43
+#: ../lollypop/assistant_musicbrainz.py:36 ../lollypop/dialog_apps.py:70
+#: ../lollypop/menu_playlist.py:117 ../lollypop/widgets_device.py:144
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: ../lollypop/assistant_google.py:46
+msgid "Connect to the console"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:48
+msgid ""
+"\n"
+"<b>Open and log</b> in to the <b>Google Developer Console</b>"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:50
+msgid "Access Google Developer Console"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:58
+msgid "Activate the API"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:60
+msgid ""
+"\n"
+"<b>Add a new project</b> in the console.\n"
+"\n"
+"After that, <b>add a new API</b> and search\n"
+"for the <b>\"YouTube Data API v3\"</b>.\n"
+"\n"
+"<b>Activate that API</b> for your project"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:75
+msgid "Copy the key"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:77
+msgid ""
+"\n"
+"Open <b>\"Credentials\"</b> in the sidebar and\n"
+"<b>Create Credentials</b> for an<b>API-Key</b>.\n"
+"\n"
+"<b>Copy the API-Key to Lollypop</b>"
+msgstr ""
+
+#: ../lollypop/assistant_google.py:86 ../lollypop/assistant_lastfm.py:70
+#: ../lollypop/assistant_musicbrainz.py:62 ../lollypop/assistant.py:151
+msgid "Finish"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:36
+#, python-format
+msgid "Scrobbling to %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:38
+#, python-format
+msgid ""
+"\n"
+"In order to send your activity to <b>%s</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:49
+#, python-format
+msgid "Connect to %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:51
+#, python-format
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>%s</b>.\n"
+"Then, allow Lollypop."
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:54
+#, python-format
+msgid "Access %s"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:62
+msgid "Just play a track"
+msgstr ""
+
+#: ../lollypop/assistant_lastfm.py:64
+msgid ""
+"\n"
+"<b>Click \"Finish\"</b> once Lollypop has been allowed."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:29
+msgid "Scrobbling to ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:31
+msgid ""
+"\n"
+"In order to send your activity to <b>ListenBrainz</b>,\n"
+"you need to allow <b>Lollypop</b>."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:42
+msgid "Connect to ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:44
+msgid ""
+"\n"
+"<b>Open and login</b> to <b>ListenBrainz</b>."
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:46
+msgid "Access ListenBrainz"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:54
+msgid "Copy key"
+msgstr ""
+
+#: ../lollypop/assistant_musicbrainz.py:56
+msgid ""
+"\n"
+"<b>Finish</b> the activation by copying <b>API-Key</b> in Lollypop."
+msgstr ""
+
+#: ../lollypop/assistant.py:149
+msgid "Can't contact this service"
+msgstr ""
+
+#: ../lollypop/collection_scanner.py:334
+msgid "Resetting database"
+msgstr ""
+
+#: ../lollypop/collection_scanner.py:505
+msgid "Scan disabled, missing collection"
+msgstr ""
+
+#: ../lollypop/collection_scanner.py:800 ../lollypop/database_tracks.py:356
+#: ../lollypop/tagreader.py:87 ../lollypop/tagreader.py:103
+#: ../lollypop/tagreader.py:119 ../lollypop/tagreader.py:190
+#: ../lollypop/tagreader.py:238 ../lollypop/tagreader.py:260
+#: ../lollypop/tagreader.py:276 ../lollypop/tagreader.py:280
+#: ../lollypop/tagreader.py:290 ../lollypop/tagreader.py:298
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: ../lollypop/container_notification.py:96
+msgid "Automatically download albums and artists artwork?"
+msgstr ""
+
+#: ../lollypop/container_notification.py:97
+msgid "Yes"
+msgstr ""
+
+#: ../lollypop/container_notification.py:106
+msgid "Please consider a donation to the project"
+msgstr "Molimo razmislite o donaciji projektu"
+
+#: ../lollypop/database_artists.py:122
+msgid "Many artists"
+msgstr "Mnogi izvođači"
+
+#: ../lollypop/database_upgrade.py:775
+msgid "Please wait while Lollypop is updating albums"
+msgstr ""
+
+#: ../lollypop/database_upgrade.py:794
+msgid "Please wait while Lollypop is updating tracks"
+msgstr ""
+
+#: ../lollypop/dialog_apps.py:73
+msgid "Select"
+msgstr ""
+
+#: ../lollypop/dialog_apps.py:81
+msgid "Select an application"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:85
+#, python-format
+msgid "Artists count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:87
+#, python-format
+msgid "Albums count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:89
+#, python-format
+msgid "Tracks count: %s"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:206 ../lollypop/dialog_settings.py:341
+msgid "Disconnect"
+msgstr ""
+
+#: ../lollypop/dialog_settings.py:251
+msgid "Are you sure?"
+msgstr ""
+
+#: ../lollypop/fullscreen.py:355
+msgid "You are using a broken cursor theme!"
+msgstr ""
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "band"
+msgstr ""
+
+#: ../lollypop/helper_web_wikipedia.py:117
+msgid "singer"
+msgstr ""
+
+#: ../lollypop/inhibitor.py:101
+msgid "Playing music"
+msgstr "Puštam muziku"
+
+#: ../lollypop/menu_actions.py:58
+msgid "Save in collection"
+msgstr ""
+
+#: ../lollypop/menu_actions.py:68
+msgid "Remove from collection"
+msgstr ""
+
+#: ../lollypop/menu_actions.py:87
+msgid "Buy this album"
+msgstr ""
+
+#: ../lollypop/menu_actions.py:99
+msgid "Open with…"
+msgstr ""
+
+#: ../lollypop/menu_artist.py:48
+msgid "Show tracks"
+msgstr ""
+
+#: ../lollypop/menu_artist.py:56
+msgid "Play featured"
+msgstr ""
+
+#: ../lollypop/menu_artist.py:62 ../lollypop/menu_genre.py:44
+#: ../lollypop/menu_objects.py:55 ../lollypop/menu_objects.py:118
+#: ../lollypop/menu_playlist.py:66
+msgid "Add to"
+msgstr ""
+
+#: ../lollypop/menu_artist.py:111
+msgid "Available albums"
+msgstr ""
+
+#: ../lollypop/menu_artwork.py:67 ../lollypop/menu_artwork.py:114
+msgid "Change Artwork"
+msgstr ""
+
+#: ../lollypop/menu_current_albums.py:34 ../lollypop/menu_current_albums.py:43
+#: ../lollypop/shown.py:40 ../lollypop/widgets_banner_current_albums.py:65
+msgid "Playing albums"
+msgstr "Pušteni albumi"
+
+#: ../lollypop/menu_current_albums.py:42
+msgid "Create a new playlist"
+msgstr "Napravi novu plejlistu"
+
+#: ../lollypop/menu_objects.py:66
+msgid "Show album"
+msgstr ""
+
+#: ../lollypop/menu_objects.py:70 ../lollypop/menu_objects.py:119
+#: ../lollypop/menu_similars.py:167
+msgid "Others"
+msgstr ""
+
+#: ../lollypop/menu_objects.py:141
+msgid "%Y-%m-%d"
+msgstr ""
+
+#: ../lollypop/menu_objects.py:171
+msgid "YouTube page address"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:57 ../lollypop/menu_playback.py:290
+#: ../lollypop/menu_playback.py:534
+msgid "Play a radio"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:72
+msgid "Add to playback"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:79 ../lollypop/widgets_row_album.py:110
+msgid "Remove from playback"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:114
+msgid "Related tracks"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:123 ../lollypop/playlists.py:107
+#: ../lollypop/playlists.py:371 ../lollypop/shown.py:70
+msgid "Loved tracks"
+msgstr "Omiljene pesme"
+
+#: ../lollypop/menu_playback.py:132 ../lollypop/shown.py:68
+msgid "Popular tracks"
+msgstr "Popularne pesme"
+
+#: ../lollypop/menu_playback.py:136
+msgid "From collection"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:154 ../lollypop/menu_search.py:60
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../lollypop/menu_playback.py:168 ../lollypop/menu_suggestions.py:74
+msgid "From the Web"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:210
+msgid "Play this playlist"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:217
+msgid "Add this playlist"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:281
+msgid "Play this artist"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:353
+msgid "Play this genre"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:434
+msgid "Play this decade"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:517 ../lollypop/widgets_row_album.py:118
+msgid "Play this album"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:529 ../lollypop/menu_playback.py:615
+msgid "Ignored"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:672
+msgid "Add to queue"
+msgstr "Dodaj u redosled"
+
+#: ../lollypop/menu_playback.py:678
+msgid "Remove from queue"
+msgstr "Izbaci iz redosleda"
+
+#: ../lollypop/menu_playback.py:689
+msgid "Do not stop after"
+msgstr ""
+
+#: ../lollypop/menu_playback.py:694
+msgid "Stop after"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:43 ../lollypop/menu_playlist.py:113
+msgid "Save playlist"
+msgstr "Sačuvaj plejlistu"
+
+#: ../lollypop/menu_playlist.py:50
+msgid "Sync from Last.FM"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:57
+msgid "Manage smart playlist"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:61
+msgid "Remove playlist"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:64
+msgid "Playlist"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:70
+msgid "Edit"
+msgstr "Uredi"
+
+#: ../lollypop/menu_playlist.py:100
+msgid "Remove this playlist?"
+msgstr ""
+
+#: ../lollypop/menu_playlist.py:101
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#: ../lollypop/menu_playlists.py:47
+msgid "New playlist"
+msgstr "Nova lista pesama"
+
+#: ../lollypop/menu_search.py:33 ../lollypop/shown.py:39
+msgid "Search"
+msgstr "Pretraga"
+
+#: ../lollypop/menu_search.py:64
+msgid "MusicBrainz"
+msgstr ""
+
+#: ../lollypop/menu_selectionlist.py:50
+msgid "Default on startup"
+msgstr "Osnovno pri pokretanju"
+
+#: ../lollypop/menu_selectionlist.py:53
+msgid "Startup"
+msgstr "Pokretanje"
+
+#: ../lollypop/menu_selectionlist.py:96
+msgid "Sidebar"
+msgstr ""
+
+#: ../lollypop/menu_selectionlist.py:111
+msgid "Show text"
+msgstr ""
+
+#: ../lollypop/menu_selectionlist.py:112
+msgid "Options"
+msgstr ""
+
+#: ../lollypop/menu_selectionlist.py:137
+msgid "Sections"
+msgstr ""
+
+#: ../lollypop/menu_similars.py:140 ../lollypop/view_lyrics.py:132
+msgid "Loading…"
+msgstr "Učitavam…"
+
+#: ../lollypop/menu_similars.py:175
+msgid "Similar artists"
+msgstr "Slični izvođači"
+
+#: ../lollypop/menu_similars.py:279
+msgid "No results"
+msgstr ""
+
+#: ../lollypop/menu_suggestions.py:35 ../lollypop/shown.py:24
+msgid "Suggestions"
+msgstr ""
+
+#: ../lollypop/menu_suggestions.py:47 ../lollypop/view_suggestions.py:129
+msgid "New releases on Spotify"
+msgstr ""
+
+#: ../lollypop/menu_suggestions.py:59 ../lollypop/view_suggestions.py:127
+msgid "Suggestions from Spotify"
+msgstr ""
+
+#: ../lollypop/menu_suggestions.py:71 ../lollypop/view_suggestions.py:131
+msgid "Top albums on Deezer"
+msgstr ""
+
+#: ../lollypop/menu_sync.py:33
+msgid "All devices"
+msgstr ""
+
+#: ../lollypop/player_albums.py:58 ../lollypop/player_albums.py:142
+#: ../lollypop/player_albums.py:169 ../lollypop/player_albums.py:185
+msgid "No album available"
+msgstr ""
+
+#: ../lollypop/player_bin.py:426
+msgid "Can't find this track on YouTube"
+msgstr ""
+
+#: ../lollypop/playlists.py:94 ../lollypop/playlists.py:97
+msgid "New playlist "
+msgstr "Nova lista pesama "
+
+#: ../lollypop/shown.py:25
+msgid "Popular albums"
+msgstr "Popularni albumi"
+
+#: ../lollypop/shown.py:26
+msgid "Random albums"
+msgstr "Nasumični albumi"
+
+#: ../lollypop/shown.py:27
+msgid "Loved albums"
+msgstr "Voljeni albumi"
+
+#: ../lollypop/shown.py:28
+msgid "Recently added albums"
+msgstr "Skoro dodati albumi"
+
+#: ../lollypop/shown.py:29
+msgid "Seldomly played albums"
+msgstr ""
+
+#: ../lollypop/shown.py:31
+msgid "Years"
+msgstr "Godine"
+
+#: ../lollypop/shown.py:32
+msgid "Genres"
+msgstr ""
+
+#: ../lollypop/shown.py:33
+msgid "Genres (list)"
+msgstr ""
+
+#: ../lollypop/shown.py:37 ../lollypop/view_artists_line.py:165
+msgid "Artists"
+msgstr ""
+
+#: ../lollypop/shown.py:38
+msgid "Artists (list)"
+msgstr ""
+
+#: ../lollypop/shown.py:41
+msgid "Information"
+msgstr ""
+
+#: ../lollypop/shown.py:42
+msgid "Compilations"
+msgstr "Kompilacije"
+
+#: ../lollypop/shown.py:69
+msgid "Random tracks"
+msgstr "Nasumične pesme"
+
+#: ../lollypop/shown.py:71
+msgid "Recently played tracks"
+msgstr ""
+
+#: ../lollypop/shown.py:72
+msgid "Seldomly played tracks"
+msgstr ""
+
+#: ../lollypop/shown.py:73
+msgid "Skipped tracks"
+msgstr ""
+
+#: ../lollypop/shown.py:74
+msgid "All tracks"
+msgstr ""
+
+#: ../lollypop/toolbar_end.py:246
+msgid "All genres"
+msgstr "Svi žanrovi"
+
+#: ../lollypop/utils.py:77
+#, python-format
+msgid "%s h  %s m"
+msgstr "%s s %s m"
+
+#: ../lollypop/utils.py:79
+#, python-format
+msgid "%s h"
+msgstr "%s s"
+
+#: ../lollypop/utils.py:81
+#, python-format
+msgid "%s m"
+msgstr "%s m"
+
+#: ../lollypop/utils.py:309
+msgid "The the"
+msgstr "Član član"
+
+#: ../lollypop/view_albums_box.py:55
+msgid "Missing youtube-dl command"
+msgstr ""
+
+#: ../lollypop/view_albums_box.py:60 ../lollypop/view_lyrics.py:169
+msgid "Network unavailable or disabled in settings"
+msgstr ""
+
+#: ../lollypop/view_albums_box.py:193
+msgid "New albums available"
+msgstr ""
+
+#: ../lollypop/view_albums_box.py:194 ../lollypop/view_artists_rounded.py:155
+msgid "Refresh"
+msgstr "Osveži"
+
+#: ../lollypop/view_albums_line.py:164
+msgid "Others compilations"
+msgstr ""
+
+#: ../lollypop/view_albums_line.py:199
+msgid "Appears on"
+msgstr ""
+
+#: ../lollypop/view_albums_line.py:230
+msgid "Popular albums at the moment"
+msgstr ""
+
+#: ../lollypop/view_artists_line.py:133
+msgid "Why not listen to?"
+msgstr ""
+
+#: ../lollypop/view_artists_rounded.py:154
+msgid "New artists available"
+msgstr ""
+
+#: ../lollypop/view_information.py:152
+msgid "Loading information"
+msgstr "Učitavam podatke"
+
+#: ../lollypop/view_information.py:262 ../lollypop/view_information.py:294
+#, python-format
+msgid "No information for %s"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:105 ../lollypop/widgets_banner_lyrics.py:136
+msgid "No track playing"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:269
+msgid "You need to install python3-textblob module"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:274
+msgid "Can't translate this lyrics"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:304
+msgid "Disabled in network settings"
+msgstr ""
+
+#: ../lollypop/view_lyrics.py:307
+msgid "No lyrics found "
+msgstr "Nisu nađeni stihovi "
+
+#: ../lollypop/view.py:48
+msgid "No items to show"
+msgstr ""
+
+#: ../lollypop/view_search.py:151 ../lollypop/view_search.py:161
+#: ../lollypop/view_search.py:185
+msgid "Search for artists, albums and tracks"
+msgstr ""
+
+#: ../lollypop/view_search.py:305
+msgid "No results for this search"
+msgstr ""
+
+#: ../lollypop/view_suggestions.py:145
+msgid "Welcome to Lollypop"
+msgstr ""
+
+#: ../lollypop/view_tracks_album.py:69
+msgid "All tracks skipped"
+msgstr ""
+
+#: ../lollypop/view_tracks_album.py:327
+#, python-format
+msgid "Disc %s"
+msgstr "Disk %s"
+
+#: ../lollypop/view_tracks_queue.py:36
+msgid "Currently in queue"
+msgstr ""
+
+#: ../lollypop/view_tracks_search.py:103
+msgid "Tracks"
+msgstr ""
+
+#: ../lollypop/widgets_artwork_album.py:64
+msgid "Local"
+msgstr ""
+
+#: ../lollypop/widgets_artwork.py:139
+msgid "Select artwork"
+msgstr "Izaberi portret"
+
+#: ../lollypop/widgets_artwork.py:179
+msgid "Remove"
+msgstr "Ukloni"
+
+#: ../lollypop/widgets_banner_album.py:245
+#, python-format
+msgid "Released on %s"
+msgstr ""
+
+#: ../lollypop/widgets_banner_artist.py:298
+#, fuzzy
+msgid "Add to current playlist"
+msgstr "Dodaj u listu pesama"
+
+#: ../lollypop/widgets_banner_artist.py:305
+#, fuzzy
+msgid "Remove from current playlist"
+msgstr "Dodaj u listu pesama"
+
+#: ../lollypop/widgets_banner_current_albums.py:42
+msgid "Clear albums"
+msgstr "Očisti albume"
+
+#: ../lollypop/widgets_banner_current_albums.py:60
+msgid "Go to current track"
+msgstr "Idi na trenutnu numeru"
+
+#: ../lollypop/widgets_banner_today.py:71
+msgid "<b>Album of the day</b>\n"
+msgstr ""
+
+#: ../lollypop/widgets_device.py:119
+msgid "No synchronized albums"
+msgstr ""
+
+#: ../lollypop/widgets_device.py:130
+msgid "No synchronized playlists"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:23
+msgid "Default"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:25 ../lollypop/widgets_equalizer.py:162
+#: ../lollypop/widgets_equalizer.py:194
+msgid "Custom"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:28
+msgid "Acoustic"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:30
+msgid "Bass"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:33
+msgid "Bass and Treble"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:35
+msgid "Classical"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:37
+msgid "Club"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:39
+msgid "Dance"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:41
+msgid "Disco"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:43
+msgid "Drum'n'Bass"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:45
+msgid "Heavy Metal"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:47
+msgid "Jazz"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:49
+msgid "Latin"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:51
+msgid "Metal"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:53
+msgid "New Age"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:55
+msgid "Party"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:57
+msgid "Pop"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:59
+msgid "Reggae"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:61
+msgid "Rock"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:63
+msgid "Techno"
+msgstr ""
+
+#: ../lollypop/widgets_equalizer.py:65
+msgid "Vocal"
+msgstr ""
+
+#: ../lollypop/widgets_loved.py:108
+msgid "Like"
+msgstr ""
+
+#: ../lollypop/widgets_loved.py:113
+msgid "Allow playback"
+msgstr ""
+
+#: ../lollypop/widgets_player_buttons.py:184
+msgid "Pause"
+msgstr "Pauziraj"
+
+#: ../lollypop/widgets_playlist_smart.py:165
+msgid "is equal to"
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:166
+msgid "is not equal to"
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:168
+msgid "contains "
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:169
+msgid "does not contain"
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:171
+msgid "is greater than"
+msgstr ""
+
+#: ../lollypop/widgets_playlist_smart.py:172
+msgid "is less than"
+msgstr ""
+
+#: ../lollypop/widgets_rating.py:51
+#, python-format
+msgid "Song played %s times"
+msgstr "Pesma je puštana %s  puta"
+
+#: ../lollypop/widgets_row_album.py:96
+msgid "Compilation"
+msgstr "Kompilacija"
+
+#: ../lollypop/widgets_row_album.py:112 ../lollypop/widgets_row_track.py:107
+msgid "Remove from playlist"
+msgstr ""
+
+#~ msgid "Favorite cover file"
+#~ msgstr "Datoteka sa omiljenim omotom albuma"
+
+#~ msgid "JPG cover quality"
+#~ msgstr "Kvalitet JPG omota"
+
+#~ msgid "0-100"
+#~ msgstr "0-100"
+
+#~ msgid "Disable use of client side window decorations (headerbar)"
+#~ msgstr ""
+#~ "Onemogući korišćenje klijentskih prozorskih dekoracija (zaglavlje "
+#~ "programa)"
+
+#~ msgid "Name"
+#~ msgstr "nazivu"
+
+#~ msgid "Radios"
+#~ msgstr "Radio stanice"
+
+#~ msgid "Use dark theme variant"
+#~ msgstr "Koristi tamnu temu"
+
+#~ msgid "Save changes to files"
+#~ msgstr "Sačuvaj izmene u datotekama"
+
+#~ msgid "Smooth transitions"
+#~ msgstr "Glatki prelazi"
+
+#~ msgid "Only in party mode"
+#~ msgstr "Samo u režimu za žurke"
+
+#~ msgid "Reset database"
+#~ msgstr "Resetuj bazu podataka"
+
+#~ msgid "User token"
+#~ msgstr "Korisnički žeton"
+
+#~ msgid "ListenBrainz"
+#~ msgstr "ListenBrainz"
+
+#~ msgid "API key"
+#~ msgstr "API ključ"
+
+#~ msgid "Configure Lollypop appearance"
+#~ msgstr "Podesi izgled Lolipopa"
+
+#~ msgid "Configure Lollypop behaviour"
+#~ msgstr "Podesi ponašanje Lolipopa"
+
+#~ msgid "Select music folders"
+#~ msgstr "Izaberi direktorijume sa muzikom"
+
+#, python-format
+#~ msgid "%d artist"
+#~ msgid_plural "%d artists"
+#~ msgstr[0] "%d izvođač"
+#~ msgstr[1] "%d izvođača"
+#~ msgstr[2] "%d izvođača"
+
+#, python-format
+#~ msgid "%d album"
+#~ msgid_plural "%d albums"
+#~ msgstr[0] "%d album"
+#~ msgstr[1] "%d albuma"
+#~ msgstr[2] "%d albuma"
+
+#, python-format
+#~ msgid "%d track"
+#~ msgid_plural "%d tracks"
+#~ msgstr[0] "%d numera"
+#~ msgstr[1] "%d numere"
+#~ msgstr[2] "%d numera"
+
+#~ msgctxt "Translation credits here, put your name here!"
+#~ msgid "Cédric Bellegarde <cedric.bellegarde@adishatz.org>"
+#~ msgstr "Marko M. Kostić <marko.m.kostic@gmail.com>"
+
+#~ msgid "New radio"
+#~ msgstr "Nova radio stanica"
+
+#~ msgid "Can't connect to TuneIn…"
+#~ msgstr "Ne mogu da se povežem na TuneIn…"
+
+#~ msgid "Please wait…"
+#~ msgstr "Sačekajte…"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
+
+#~ msgid "No result…"
+#~ msgstr "Nema rezultata…"
+
+#~ msgid "org.gnome.Lollypop"
+#~ msgstr "org.gnome.Lollypop"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show albums from artist"
+#~ msgstr "Prikaži izvođačeve albume"
+
+#~ msgid "Last.fm authentication disabled"
+#~ msgstr "Prijava na Last.fm je onemogućena"
+
+#~ msgid "Login:"
+#~ msgstr "Korisničko ime:"
+
+#~ msgid "Password:"
+#~ msgstr "Lozinka:"
+
+#~ msgid "Libre.fm"
+#~ msgstr "Libre.fm"
+
+#~ msgid "You need to install pylast and gi secret"
+#~ msgstr ""
+#~ "Potrebno je da instalirate pakete koji sadrže „pylast“ i „gi secret“"
+
+#~ msgid "Modify information"
+#~ msgstr "Izmeni podatke"
+
+#~ msgid "Only mix songs in party mode"
+#~ msgstr "Preklapaj pesme samo u režimu za žurke"
+
+#~ msgid "Smoothing duration"
+#~ msgstr "Trajanje uglađvanja"
+
+#~ msgid "Transition duration in seconds"
+#~ msgstr "Trajanje prelaaza u seundama"
+
+#~ msgid "Replay gain value in dB"
+#~ msgstr "Vrednost pojačanja u decibelima"
+
+#~ msgid "New tracks available"
+#~ msgstr "Dostupne su nove numere"
+
+#~ msgid "Unplayed albums"
+#~ msgstr "Neslušani albumi"
+
+#~ msgid "Clear queue"
+#~ msgstr "Očisti redosled"
+
+#~ msgid "Queue"
+#~ msgstr "Redosled"
+
+#~ msgid "Reset artwork?"
+#~ msgstr "Resetuj omot?"
+
+#, python-format
+#~ msgid "by %s"
+#~ msgstr "izvodi %s"
+
+#, python-format
+#~ msgid "by %s, from %s"
+#~ msgstr "izvodi %s, sa albuma %s"
+
+#~ msgid "Search in TuneIn"
+#~ msgstr "Pretraži TuneIn"
+
+#~ msgid "Translate"
+#~ msgstr "Prevođenje"
+
+#~ msgid "Shuffle mode"
+#~ msgstr "Režim mešanja pesama"
+
+#~ msgid "No shuffle"
+#~ msgstr "Bez mešanja pesama"
+
+#~ msgid "Shuffle albums"
+#~ msgstr "Mešaj albume"
+
+#~ msgid "Recently played"
+#~ msgstr "Skoro slušano"
+
+#~ msgid "Unplayed"
+#~ msgstr "Nepuštano"
+
+#~ msgid "Lollypop is a modern music player for GNOME."
+#~ msgstr "Lollypop je savremeni muzički plejer za Gnom."
+
+#~ msgid "Features:"
+#~ msgstr "Mogućnosti:"
+
+#~ msgid "Play many audio formats: MP3, MP4, OGG, and FLAC"
+#~ msgstr "Pušta mnoge muzičke formate: MP3, MP4. OGG i FLAC"
+
+#~ msgid ""
+#~ "Intuitive browsing: Walk through your collection by genre/artist and "
+#~ "album artwork"
+#~ msgstr ""
+#~ "Intuitivno pregledanje: krećite se kroz zbirku prema žanru/izvođaču i "
+#~ "omotu albuma"
+
+#~ msgid "Search in your collection by artist, album and title"
+#~ msgstr "Pretražujte zbirku po izvođaču, albumu ili naaslovu"
+
+#~ msgid "Artist bio, lyrics: Get artist and track information from the web"
+#~ msgstr ""
+#~ "Biografija umetnika: dobavite informacije o izvođaču i numeri sa weba"
+
+#~ msgid "Party mode: No awkward silences, let Lollypop choose music for you"
+#~ msgstr ""
+#~ "Režim za žurke: nema neprijatne tišine, ne Lollypop bira muziku za vas"
+
+#~ msgid "ReplayGain (RG): Automatically select the best audio level"
+#~ msgstr "Ponovljivo pojačanje: automatski postavlja poželjan nivo zvuka"
+
+#~ msgid "MTP devices: Sync your music with Android phones and any MTP devices"
+#~ msgstr ""
+#~ "MTP uređaji: sinhronizacija sa Android telefonima i bilo kojim MTP "
+#~ "uređajem"
+
+#~ msgid "Fullscreen view: Visual access from your couch"
+#~ msgstr "Celoekranski režim: vizuelni pristup sa vašeg kauča"
+
+#~ msgid "Radios support"
+#~ msgstr "Radio podrška"
+
+#~ msgid "Last.fm, Libre.fm and ListenBrainz support"
+#~ msgstr "Podrška za Last.fm, Libre.fm i ListenBrainz"
+
+#~ msgid "Auto install codecs"
+#~ msgstr "Automatsko instaliranje kodeka"
+
+#~ msgid "HiDPI support"
+#~ msgstr "Podrška za HiDPI"
+
+#~ msgid "TuneIn support"
+#~ msgstr "Podrška za Tuneln"
+
+#~ msgid "Never played"
+#~ msgstr "Nikada slušano"
+
+#~ msgid ""
+#~ "Cover art downloader: Automatic artwork downloader from Last.fm, Itunes "
+#~ "and Spotify"
+#~ msgstr ""
+#~ "Preuzimač omota albuma: automatski dobavljač omota sa Last.fm. Itunes i "
+#~ "Sotify"
+
+#~ msgid "_About"
+#~ msgstr "O p_rogramu"
+
+#~ msgid "Disable all notifications"
+#~ msgstr "Onemogući obaveštenja"
+
+#~ msgid "Disable notifications upon change of song"
+#~ msgstr "Onemogući obaveštenja o promeni numere"
+
+#~ msgid "Show lyrics"
+#~ msgstr "Prikaži stihove"
+
+#~ msgid "Add to others"
+#~ msgstr "Dodaj u drugo"
+
+#~ msgid "Remove from \"%s\""
+#~ msgstr "Izbaci iz/sa \"%s\""
+
+#~ msgid "Add to \"%s\""
+#~ msgstr "Dodaj u/na \"%s\""
+
+#~ msgid "Modify playlist"
+#~ msgstr "izmeni plejlistu"
+
+#~ msgid "Modify radio"
+#~ msgstr "Izmeni stanicu"
+
+#~ msgid "Change artwork"
+#~ msgstr "Promeni omot"
+
+#~ msgid "Split playlists view"
+#~ msgstr "Podeljeni pregled spiskova"
+
+#~ msgid "Show sidebar"
+#~ msgstr "Prikaži straničnik"
+
+#~ msgid "_Sidebar"
+#~ msgstr "_Straničnik"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide navigation list"
+#~ msgstr "Prikaži ili sakrij navigacioni spisak"
+
+#~ msgid "All artists"
+#~ msgstr "Svi izvođači"
+
+#~ msgid "All albums"
+#~ msgstr "Svi albumi"
+
+#~ msgid "Playing playlists"
+#~ msgstr "Pušteni spiskovi pesama"
+
+#~ msgid "No logo found…"
+#~ msgstr "Nisam pronašao logo…"
+
+#~ msgid "Select a logo  for this radio"
+#~ msgstr "Izaberi logotip za ovu stanicu"
+
+#~ msgid "Turn on background data"
+#~ msgstr "Uključi podatke u pozaddini"
+
+#~ msgid "Next track"
+#~ msgstr "Sledeća pesma"
+
+#~ msgid "Synchronize to your device"
+#~ msgstr "Uskladi na moj uređaj"
+
+#~ msgid "Right click to configure"
+#~ msgstr "Podesite desnim klikom"
+
+#~ msgid "USB disks"
+#~ msgstr "USB diskovi"
+
+#~ msgid "Please unlock your device"
+#~ msgstr "Otključajte vaš uređaj"
+
+#~ msgid "This will remove some files on your device!"
+#~ msgstr "Ovo će ukloniti neke datoteke na vašem uređaju!"
+
+#~ msgid "Cancel synchronization"
+#~ msgstr "Otkaži usklađivanje"
+
+#~ msgid "Synced albums"
+#~ msgstr "Usklađeni albumi"
+
+#~ msgid "Unknown error while syncing, try to reboot your device"
+#~ msgstr ""
+#~ "Dogodila se nepoznata greška prilikom usklađivanja pesama sa uređajem. "
+#~ "Probajte da ugasite i upalite uređaj pa onda da uskladite pesme."
+
+#~ msgid "Playback type"
+#~ msgstr "Vrsta reprodukcije"
+
+#~ msgid "Playback behaviour"
+#~ msgstr "Ponašanje puštanja"
+
+#~ msgid "Show albums from artist"
+#~ msgstr "Prikaži albume izvođača"
+
+#~ msgid "Preserve the cover’s aspect ratio"
+#~ msgstr "Zadrži odnos strana slike omota"
+
+#~ msgid "_Update music"
+#~ msgstr "Až_uriraj muziku"
+
+#~ msgid "_Fullscreen"
+#~ msgstr "Pre_ko celog ekrana"
+
+#~ msgid "Volume"
+#~ msgstr "Glasnoća"
+
+#~ msgid "Last.fm login"
+#~ msgstr "Last.fm prijava"
+
+#~ msgid "Show list of genres"
+#~ msgstr "Prikaži spisak žanrova"
+
+#~ msgid "Photo"
+#~ msgstr "Slika"
+
+#~ msgid "Network access disabled"
+#~ msgstr "Pristup mreži onemogućen"
+
+#~ msgid "Synchronize %s"
+#~ msgstr "Uskladi %s"
+
+#~ msgid "No favorite radios"
+#~ msgstr "Nema omiljenih stanica za prikaz"
+
+#~ msgid "REMOVE ME LATER"
+#~ msgstr "UKLONI ME KASNIJE"
+
+#~ msgid "Audio output preview on track hover"
+#~ msgstr "Pusti zvuk kada se lebdi mišem nad pesmom"
+
+#~ msgid ""
+#~ "PulseAudio only. Example: alsa_output.pci-0000_00_14.2.analog-stereo. "
+#~ "Command to get outputs: $ pacmd list-sinks|grep 'name:'"
+#~ msgstr ""
+#~ "Samo za Puls-audio. Na primer: alsa_output.pci-0000_00_14.2.analog-"
+#~ "stereo. Naredba za dobijanje izlaza: $ pacmd list-sinks|grep 'name:'"
+
+#~ msgid "Preview tracks on"
+#~ msgstr "Pretpregled numere na uređaju"
+
+#~ msgid "No audio device"
+#~ msgstr "Nema zvučnog uređaja"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show genres"
+#~ msgstr "Prikaži žanrove"
+
+#~ msgid "Open"
+#~ msgstr "Otvori"
+
+#~ msgid "_Quit"
+#~ msgstr "_Izlaz"
+
+#~ msgid "Unsplit view"
+#~ msgstr "Nepodeljeni pregled"
+
+#~ msgid "Show genres"
+#~ msgstr "Prikaži žanrove"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show/Hide volume control"
+#~ msgstr "Prikaži ili sakrij upravljanje glasnoćom."
+
+#~ msgid "Shown"
+#~ msgstr "Prikazan"
+
+#~ msgid "Add to playlist"
+#~ msgstr "Dodaj u listu pesama"
+
+#~ msgid "No information on this artist"
+#~ msgstr "Nema podataka o ovom izvođaču"
+
+#~ msgid "Ex: The Beatles sorted as Beatles. Reset of database required."
+#~ msgstr "Npr: The Beatles poređano kao Beatles. Zahteva resetovanje baze."
+
+#~ msgid "Allow user to donate to the project"
+#~ msgstr "Dozvoli korisnicima da doniraju projektu"
+
+#~ msgid "Restart current track on previous"
+#~ msgstr "Ponovo pusti prethodnu numeru klikom na nazad"
+
+#~ msgid "Low quality, missing API key…"
+#~ msgstr "Nizak kvalitet, nedostaje API ključ…"
+
+#~ msgid "Remove from \"Not in party\""
+#~ msgstr "Ukloni iz „nije u žurci“"
+
+#~ msgid "Add to \"Not in party\""
+#~ msgstr "Dodaj u „nije u žurci“"
+
+#~ msgid "Not in party"
+#~ msgstr "Nije u žurci"
+
+#~ msgid "No free space available on device"
+#~ msgstr "Nema dovoljno slobodnog prostora na uređaju"
+
+#~ msgid "Reworked playlist management"
+#~ msgstr "Ponovno osmišljeno upravljanje plejlistom"
+
+#~ msgid "Mini player size"
+#~ msgstr "Veličina mini puštača"
+
+#~ msgid "Mini player position"
+#~ msgstr "Položaj mini puštača"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Mini Player"
+#~ msgstr "Mini puštač"
+
+#~ msgid "Delete"
+#~ msgstr "Ukloni"
+
+#~ msgid "Remove \"%s\"?"
+#~ msgstr "Ukloniti \"%s\"?"
+
+#~ msgid "Remove these tracks?"
+#~ msgstr "Ukloniti ove pesme?"
+
+#~ msgid "Flattr"
+#~ msgstr "Flater"
+
+#~ msgid "Settings"
+#~ msgstr "Podešavanja"
+
+#~ msgid ""
+#~ "Party mode\n"
+#~ "Right click to filter"
+#~ msgstr ""
+#~ "Režim za žurke\n"
+#~ "Desni klik za filtriranje"
+
+#~ msgid "Populars"
+#~ msgstr "Popularno"
+
+#~ msgid "Recently added"
+#~ msgstr "Skoro dodato"
+
+#~ msgid "Create a new playlist based on search"
+#~ msgstr "Napravi novu listu pesama na osnovu rezultata iz pretrage"
+
+#~ msgid "Sync all albums(MTP)"
+#~ msgstr "Uskladi sve albume (MTP)"
+
+#, fuzzy
+#~ msgid "Enable network access"
+#~ msgstr "Mrež_ni pristup"
+
+#~ msgid "Normalize MP3(MTP)"
+#~ msgstr "Unormali MP3(MTP)"
+
+#~ msgid "Convert to MP3"
+#~ msgstr "Pretvori u MP3"
+
+#~ msgid "Normalize MP3"
+#~ msgstr "Unormali MP3"
+
+#~ msgid "You need to install gstreamer-plugins-ugly"
+#~ msgstr "Potrebno je da instalirate paket „gstreamer-plugins-ugly“"
+
+#~ msgid "Long press to show options"
+#~ msgstr "Stisni za više opcija"
+
+#~ msgid "Show navigation list"
+#~ msgstr "Prikaži navigacioni spisak"
+
+#~ msgid "Lollypop is detecting an empty folder."
+#~ msgstr "Lolipop je pronašao praznu fasciklu."
+
+#~ msgid "Check your music settings."
+#~ msgstr "Proverite vaša podešavanja za muziku."
+
+#~ msgid "Modify"
+#~ msgstr "Izmeni"
+
+#~ msgid "External tracks"
+#~ msgstr "Spoljne numere"
+
+#~ msgid ""
+#~ "Reload information\n"
+#~ "Long press to activate auto reload"
+#~ msgstr ""
+#~ "Ponovo učitaj podatke\n"
+#~ "Duže pritisnite da biste pokrenuli automatsko ponovno učitavanje"
+
+#~ msgid "WebKit support disabled"
+#~ msgstr "Vebkit podrška onemogućena"
+
+#~ msgid "No lyrics found, please install gir1.2-webkit2-4.0"
+#~ msgstr "Tekstovi pesama nisu pronađeni, instalirajte gir1.2-webkit2-4.0"
+
+#~ msgid "No information for this artist"
+#~ msgstr "Nema podataka o ovom izvođaču"
+
+#~ msgid "musician;band"
+#~ msgstr "izvođač;bend"
+
+#~ msgid "Mix songs"
+#~ msgstr "Preklapaj pesme"
+
+#~ msgid "Mix duration"
+#~ msgstr "Trajanje preklapanja"
+
+#~ msgid "Mix duration in seconds"
+#~ msgstr "Trajanje preklapanja u sekundama"
+
+#~ msgid "Mix tracks"
+#~ msgstr "Mešaj numere"
+
+#~ msgctxt "artist context"
+#~ msgid "Add albums"
+#~ msgstr "Dodaj albume"
+
+#~ msgid "Save into collection"
+#~ msgstr "Sačuvaj u kolekciju"
+
+#~ msgid "Next tracks"
+#~ msgstr "Sledeće pesme"
+
+#~ msgid "Append"
+#~ msgstr "Dodaj"
+
+#~ msgid "Lollypop: You need to install yelp."
+#~ msgstr "Lolipop: potrebno je da instalirate „Pomoć“ (yelp paket)."
+
+#~ msgid "_Help"
+#~ msgstr "Po_moć"

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+pep8 --ignore=E741,E402,E121,E123,E126,E226,E24,E704,W504 lollypop/*.py
+ret="$?"
+
+if (( ret != 0 ))
+then
+	exit 1
+fi
+
+flake8 --ignore=E741,E402,E121,E123,E126,E226,E24,E704 lollypop/*.py
+ret="$?"
+
+if (( ret != 0 ))
+then
+	exit 1
+fi
+
+exit 0

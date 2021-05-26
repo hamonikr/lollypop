@@ -1,0 +1,330 @@
+lollypop (1.4.19-hamonikr1) jin; urgency=medium
+
+  * New upstream version 1.4.19
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 26 May 2021 18:05:34 +0900
+
+lollypop (1.2.35-1) unstable; urgency=medium
+
+  * New upstream version 1.2.35
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 17 Apr 2020 10:27:02 +0200
+
+lollypop (1.2.34-1) unstable; urgency=medium
+
+  * New upstream version 1.2.34
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 10 Apr 2020 16:40:02 +0200
+
+lollypop (1.2.33-1) unstable; urgency=medium
+
+  * New upstream version 1.2.33
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sat, 04 Apr 2020 16:19:07 +0200
+
+lollypop (1.2.32-1) unstable; urgency=medium
+
+  * New upstream version 1.2.32
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 27 Mar 2020 23:05:54 +0100
+
+lollypop (1.2.31-1) unstable; urgency=medium
+
+  * New upstream version 1.2.31
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 27 Mar 2020 16:25:16 +0100
+
+lollypop (1.2.30-1) unstable; urgency=medium
+
+  * New upstream version 1.2.30
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 27 Mar 2020 12:36:28 +0100
+
+lollypop (1.2.29-1) unstable; urgency=medium
+
+  * New upstream version 1.2.29
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 20 Mar 2020 23:27:28 +0100
+
+lollypop (1.2.27-1) unstable; urgency=medium
+
+  * New upstream version 1.2.27
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 20 Mar 2020 17:35:45 +0100
+
+lollypop (1.2.26-1) unstable; urgency=medium
+
+  * New upstream version 1.2.26
+  * Add patch to not get version from git revision
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Thu, 19 Mar 2020 22:10:00 +0100
+
+lollypop (1.2.25-1) unstable; urgency=medium
+
+  * New upstream version 1.2.25
+  * Remove patch 0001-Patch-out-git-version-in-Debian-package.patch
+    - no need due to upstream changes
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Wed, 11 Mar 2020 17:47:58 +0100
+
+lollypop (1.2.24-1) unstable; urgency=medium
+
+  * New upstream version 1.2.24
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Tue, 10 Mar 2020 19:39:46 +0100
+
+lollypop (1.2.23-1) unstable; urgency=medium
+
+  * New upstream version 1.2.23
+  * Add patch to remove git revision from version (It doesn't work
+    with a Debian packaging Git repository, and reports the version wrong)
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Tue, 25 Feb 2020 14:31:20 +0100
+
+lollypop (1.2.22-1) unstable; urgency=medium
+
+  * New upstream version 1.2.22
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Thu, 13 Feb 2020 16:40:43 +0100
+
+lollypop (1.2.21-1) unstable; urgency=medium
+
+  * New upstream version 1.2.21
+  * Upgrade to Standards Version 4.5.0 (No changes required)
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Wed, 12 Feb 2020 03:15:38 +0100
+
+lollypop (1.2.20-1) unstable; urgency=medium
+
+  * Update watch file for new file location
+  * New upstream version 1.2.20
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Wed, 22 Jan 2020 17:25:36 +0100
+
+lollypop (1.2.19-2) unstable; urgency=medium
+
+  * Suggest gstreamer1.0-libav instead of depend on it (Closes: #947719)
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sun, 29 Dec 2019 17:58:15 +0100
+
+lollypop (1.2.19-1) unstable; urgency=medium
+
+  * New upstream version 1.2.19
+  * debian/gbp.conf: Make sure we merge to debian/master branch
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sat, 28 Dec 2019 17:32:23 +0100
+
+lollypop (1.2.18-1) unstable; urgency=medium
+
+  * New upstream version 1.2.18
+  * Remove patch applied upstream:
+    0001-Scanner-cans-emit-artist-updated-but-artist-may-have.patch
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 27 Dec 2019 00:25:55 +0100
+
+lollypop (1.2.16-1) unstable; urgency=medium
+
+  * New upstream version 1.2.16
+  * Add patch cherry-picked from upstream fixing crash when updating
+    song tags externally
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 29 Nov 2019 14:01:01 +0100
+
+lollypop (1.2.15-1) unstable; urgency=medium
+
+  * New upstream version 1.2.15
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sun, 24 Nov 2019 14:03:39 +0100
+
+lollypop (1.2.13-1) unstable; urgency=medium
+
+  * New upstream version 1.2.13
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sun, 17 Nov 2019 17:28:52 +0100
+
+lollypop (1.2.12-1) unstable; urgency=medium
+
+  * New upstream version 1.2.12
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Mon, 11 Nov 2019 15:23:54 +0100
+
+lollypop (1.2.7-1) unstable; urgency=medium
+
+  * New upstream version 1.2.7
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 08 Nov 2019 12:57:59 +0100
+
+lollypop (1.2.5-1) unstable; urgency=medium
+
+  * New upstream version 1.2.5
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sat, 02 Nov 2019 20:24:39 +0100
+
+lollypop (1.2.4-1) unstable; urgency=medium
+
+  * New upstream version 1.2.4
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 01 Nov 2019 20:25:30 +0100
+
+lollypop (1.2.3-1) unstable; urgency=medium
+
+  * New upstream version 1.2.3
+  * Add dependency on gir1.2-soup-2.4 (Closes: #943848)
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Wed, 30 Oct 2019 20:01:58 +0100
+
+lollypop (1.2.2-1) unstable; urgency=medium
+
+  * New upstream version 1.2.2
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 25 Oct 2019 23:39:06 +0200
+
+lollypop (1.2.1-1) unstable; urgency=medium
+
+  * Add dependency on gstreamer1.0-libav
+  * New upstream version 1.2.1
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Tue, 22 Oct 2019 23:31:01 +0200
+
+lollypop (1.2.0.1-1) unstable; urgency=medium
+
+  * New upstream version 1.2.0.1
+  * Remove patches
+    0001-Check-genre-is-not-None,
+    0002-No-more-args-for-DecadesBoxView-and-GenresBoxView
+    - both applied upstream
+  * Add dependency on gir1.2-gst-plugins-base-1.0
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Tue, 22 Oct 2019 19:55:05 +0200
+
+lollypop (1.2.0-2) unstable; urgency=medium
+
+  * Add patch to fix crash when updating tags when updating collection
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Mon, 21 Oct 2019 22:23:39 +0200
+
+lollypop (1.2.0-1) unstable; urgency=medium
+
+  * New upstream version 1.2.0
+  * debian/patches/0001-Check-genre-is-not-None.patch
+    - Add patch to check that genre is not None
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Mon, 21 Oct 2019 14:23:26 +0200
+
+lollypop (1.1.99.9-1) experimental; urgency=medium
+
+  * New upstream version 1.1.99.9
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sat, 19 Oct 2019 00:10:35 +0200
+
+lollypop (1.1.99.8-1) experimental; urgency=medium
+
+  * New upstream version 1.1.99.8
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Tue, 15 Oct 2019 21:16:03 +0200
+
+lollypop (1.1.99.7-1) experimental; urgency=medium
+
+  * New upstream version 1.1.99.7
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sun, 13 Oct 2019 21:50:10 +0200
+
+lollypop (1.1.99.6-1) experimental; urgency=medium
+
+  * New upstream version 1.1.99.6
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Wed, 09 Oct 2019 18:06:49 +0200
+
+lollypop (1.1.99.5-1) experimental; urgency=medium
+
+  * New upstream version 1.1.99.5
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Mon, 07 Oct 2019 19:02:17 +0200
+
+lollypop (1.1.99.4-1) experimental; urgency=medium
+
+  * New upstream version 1.1.99.4
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Mon, 07 Oct 2019 12:22:03 +0200
+
+lollypop (1.1.99.2-1) experimental; urgency=medium
+
+  * New upstream version 1.1.99.2
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 04 Oct 2019 01:01:07 +0200
+
+lollypop (1.1.99.1-1) experimental; urgency=medium
+
+  * New upstream version 1.1.99.1
+  * Update Standards-Version to 4.4.1 (No changes required)
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Thu, 03 Oct 2019 18:40:02 +0200
+
+lollypop (1.1.98-1) experimental; urgency=medium
+
+  * New upstream version 1.1.98
+  * Add build-dep on libsoup2.4-dev
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sun, 29 Sep 2019 19:08:42 +0200
+
+lollypop (1.1.97.4-1) experimental; urgency=medium
+
+  * New upstream version 1.1.97.4
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sat, 28 Sep 2019 18:39:03 +0200
+
+lollypop (1.1.97.3-1) experimental; urgency=medium
+
+  * New upstream version 1.1.97.3
+  * Remove path use_no_network_in_appstream_testing - applied upstream
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 27 Sep 2019 16:30:59 +0200
+
+lollypop (1.1.4.16-4) unstable; urgency=medium
+
+  * Fix python-gi-dev dependency
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sat, 21 Sep 2019 14:42:11 +0200
+
+lollypop (1.1.4.16-3) unstable; urgency=medium
+
+  * Remove patch 0002-Remove-dependencies-not-needed-since-there-s-nothing.patch
+  * Restore build dependencies (Closes: #939783)
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Thu, 19 Sep 2019 15:52:14 +0200
+
+lollypop (1.1.4.16-2) unstable; urgency=medium
+
+  * Fix dependencies (Closes: #939750)
+  * Add patch to remove dependencies in meson.build (Closes: #939783)
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sun, 08 Sep 2019 21:11:48 +0200
+
+lollypop (1.1.4.16-1) unstable; urgency=medium
+
+  * New upstream version 1.1.4.16
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Wed, 04 Sep 2019 12:46:20 +0200
+
+lollypop (1.1.4.15-2) unstable; urgency=medium
+
+  * Add Architecture: All
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Tue, 03 Sep 2019 21:25:18 +0200
+
+lollypop (1.1.4.15-1) unstable; urgency=medium
+
+  [ Andreas Rönnquist ]
+  * New upstream version 1.1.4.15
+  * Remove patch fix_crash_after_scan.patch, applied upstream
+
+  [ Adrian Heine ]
+  * Remove yelp-tools from deps
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Sun, 01 Sep 2019 17:37:52 +0200
+
+lollypop (1.1.4.11-1) unstable; urgency=medium
+
+  * Initial release (Closes: #847937)
+
+ -- Andreas Rönnquist <gusnan@debian.org>  Fri, 02 Aug 2019 16:50:31 +0200

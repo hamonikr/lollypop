@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/Lollypop">
+    <file compressed="true">application.css</file>
+     <file compressed="true" preprocess="xml-stripblanks">Appmenu.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">ArtistBannerWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">ArtworkSearch.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">DeviceWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">EqualizerWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">FullScreen.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">InformationBannerWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">LovedWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">PlaylistBannerWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">PlaylistPopover.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">RadioMenu.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">RatingWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">SearchBannerWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">SettingsDialog.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">Shortcuts.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">SmartPlaylistView.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">SmartPlaylistWidget.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">ToolbarEnd.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">TuneinPopover.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">AboutDialog.ui</file>
+  </gresource>
+</gresources>

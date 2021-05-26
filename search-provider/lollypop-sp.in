@@ -1,0 +1,262 @@
+#!/usr/bin/env python3
+# Copyright (c) 2014-2016 Cedric Bellegarde <cedric.bellegarde@adishatz.org>
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+import sys
+# Make sure we'll find the pygobject module, even in JHBuild
+# Make sure we'll find the lollypop modules, even in JHBuild
+sys.path.insert(1, '@PYTHON_DIR@')
+
+import gi
+gi.require_version('Secret', '1')
+gi.require_version('TotemPlParser', '1.0')
+gi.require_version('GdkPixbuf', '2.0')
+gi.require_version('GstPbutils', '1.0')
+gi.require_version('Gtk', '3.0')
+gi.require_version('Gdk', '3.0')
+gi.require_version('Gst', '1.0')
+from gi.repository import Gio, Gst, GLib
+
+from lollypop.artwork_album import AlbumArtwork
+from lollypop.settings import Settings
+from lollypop.database import Database
+from lollypop.sqlcursor import SqlCursor
+from lollypop.objects_album import Album
+from lollypop.objects_track import Track
+from lollypop.database_albums import AlbumsDatabase
+from lollypop.database_artists import ArtistsDatabase
+from lollypop.database_tracks import TracksDatabase
+from lollypop.define import ArtSize, StorageType
+from lollypop.utils import noaccents
+
+
+class TaskHelper:
+    def add_header(self, name, value):
+        pass
+
+    def run(self, command, *args, **kwargs):
+        pass
+
+    def load_uri_content(self, uri, cancellable, callback, *args):
+        pass
+
+    def load_uri_content_sync(self, uri, cancellable=None):
+        pass
+
+    def send_message(self, message, cancellable, callback, *args):
+        pass
+
+
+class Server:
+    def __init__(self, con, path):
+        method_outargs = {}
+        method_inargs = {}
+        for interface in Gio.DBusNodeInfo.new_for_xml(self.__doc__).interfaces:
+
+            for method in interface.methods:
+                method_outargs[method.name] = '(' + ''.join(
+                              [arg.signature for arg in method.out_args]) + ')'
+                method_inargs[method.name] = tuple(
+                                       arg.signature for arg in method.in_args)
+
+            con.register_object(object_path=path,
+                                interface_info=interface,
+                                method_call_closure=self.on_method_call)
+
+        self.method_inargs = method_inargs
+        self.method_outargs = method_outargs
+
+    def on_method_call(self,
+                       connection,
+                       sender,
+                       object_path,
+                       interface_name,
+                       method_name,
+                       parameters,
+                       invocation):
+
+        args = list(parameters.unpack())
+        for i, sig in enumerate(self.method_inargs[method_name]):
+            if sig == 'h':
+                msg = invocation.get_message()
+                fd_list = msg.get_unix_fd_list()
+                args[i] = fd_list.get(args[i])
+
+        try:
+            result = getattr(self, method_name)(*args)
+
+            # out_args is atleast (signature1).
+            # We therefore always wrap the result as a tuple.
+            # Refer to https://bugzilla.gnome.org/show_bug.cgi?id=765603
+            result = (result,)
+
+            out_args = self.method_outargs[method_name]
+            if out_args != '()':
+                variant = GLib.Variant(out_args, result)
+                invocation.return_value(variant)
+            else:
+                invocation.return_value(None)
+        except Exception as e:
+            pass
+
+
+class SearchLollypopService(Server, Gio.Application):
+    '''
+    <!DOCTYPE node PUBLIC
+    '-//freedesktop//DTD D-BUS Object Introspection 1.0//EN'
+    'http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd'>
+    <node>
+    <interface name="org.gnome.Shell.SearchProvider2">
+
+    <method name="GetInitialResultSet">
+      <arg type="as" name="terms" direction="in" />
+      <arg type="as" name="results" direction="out" />
+    </method>
+
+    <method name="GetSubsearchResultSet">
+      <arg type="as" name="previous_results" direction="in" />
+      <arg type="as" name="terms" direction="in" />
+      <arg type="as" name="results" direction="out" />
+    </method>
+
+    <method name="GetResultMetas">
+      <arg type="as" name="identifiers" direction="in" />
+      <arg type="aa{sv}" name="metas" direction="out" />
+    </method>
+
+    <method name="ActivateResult">
+      <arg type="s" name="identifier" direction="in" />
+      <arg type="as" name="terms" direction="in" />
+      <arg type="u" name="timestamp" direction="in" />
+    </method>
+
+    <method name="LaunchSearch">
+      <arg type="as" name="terms" direction="in" />
+      <arg type="u" name="timestamp" direction="in" />
+    </method>
+
+    </interface>
+    </node>
+    '''
+    __LOLLYPOP_BUS = 'org.gnome.Lollypop.SearchProvider'
+    __SEARCH_BUS = 'org.gnome.Shell.SearchProvider2'
+    __PATH_BUS = '/org/gnome/LollypopSearchProvider'
+
+    def __init__(self):
+        Gio.Application.__init__(
+                            self,
+                            application_id='org.gnome.Lollypop.SearchProvider',
+                            flags=Gio.ApplicationFlags.IS_SERVICE)
+        self.cursors = {}
+        self.task_helper = TaskHelper()
+        self.settings = Settings.new()
+        self.db = Database()
+        self.albums = AlbumsDatabase(self.db)
+        self.artists = ArtistsDatabase(self.db)
+        self.tracks = TracksDatabase(self.db)
+        self.art = AlbumArtwork()
+        self.__bus = Gio.bus_get_sync(Gio.BusType.SESSION, None)
+        Gio.bus_own_name_on_connection(self.__bus,
+                                       self.__SEARCH_BUS,
+                                       Gio.BusNameOwnerFlags.NONE,
+                                       None,
+                                       None)
+        Server.__init__(self, self.__bus, self.__PATH_BUS)
+
+    def ActivateResult(self, search_id, array, utime):
+        try:
+            argv = ["lollypop", "--play-ids", search_id]
+            (pid, stdin, stdout, stderr) = GLib.spawn_async(
+                    argv, flags=GLib.SpawnFlags.SEARCH_PATH,
+                    standard_input=False,
+                    standard_output=False,
+                    standard_error=False)
+            GLib.spawn_close_pid(pid)
+        except Exception as e:
+            print("SearchLollypopService::ActivateResult():", e)
+
+    def GetInitialResultSet(self, terms):
+        return self.__search(terms)
+
+    def GetResultMetas(self, ids):
+        results = []
+        try:
+            for search_id in ids:
+                if search_id[0:2] == "a:":
+                    album = Album(int(search_id[2:]))
+                    name = " ".join(album.artists) or " "
+                    description = album.name
+                    surface = self.art.get(
+                        album, ArtSize.BIG, ArtSize.BIG, 1)
+                    gicon = self.art.get_cache_path(
+                        album, ArtSize.BIG, ArtSize.BIG)
+                else:
+                    track = Track(int(search_id[2:]))
+                    name = "♫ " + track.name
+                    description = " ".join(track.artists) or " "
+                    surface = self.art.get(
+                        track.album, ArtSize.BIG, ArtSize.BIG, 1)
+                    gicon = self.art.get_cache_path(
+                        track.album, ArtSize.BIG, ArtSize.BIG)
+                if surface is not None:
+                    del surface
+                if gicon is None:
+                    gicon=""
+                d = { 'id': GLib.Variant('s', search_id),
+                      'description': GLib.Variant('s', GLib.markup_escape_text(description)),
+                      'name': GLib.Variant('s', name),
+                      'gicon': GLib.Variant('s', gicon) }
+                results.append(d)
+        except Exception as e:
+            print("SearchLollypopService::GetResultMetas():", e)
+            return []
+        return results
+
+    def GetSubsearchResultSet(self, previous_results, new_terms):
+        return self.__search(new_terms)
+
+    def LaunchSearch(self, terms, utime):
+        results = self.__search(terms)
+        argv = ["lollypop", "--play-ids", ";".join(results), None]
+        (pid, stdin, stdout, stderr) = GLib.spawn_async(
+                    argv, flags=GLib.SpawnFlags.SEARCH_PATH,
+                    standard_input=False,
+                    standard_output=False,
+                    standard_error=False)
+        GLib.spawn_close_pid(pid)
+
+    def __search(self, terms):
+        ids = []
+        search = noaccents(" ".join(terms))
+        try:
+            # Search for artists
+            for (artist_id, artist_name) in self.artists.search(search, StorageType.COLLECTION|StorageType.SAVED):
+                for album_id in self.albums.get_ids([], [artist_id], StorageType.COLLECTION|StorageType.SAVED):
+                    ids.append("a:"+str(album_id))
+            # Search for albums
+            for (album_id, album_name) in self.albums.search(search, StorageType.COLLECTION|StorageType.SAVED):
+                ids.append("a:"+str(album_id))
+            # Search for tracks
+            for (track_id, track_name) in self.tracks.search(search, StorageType.COLLECTION|StorageType.SAVED):
+                ids.append("t:"+str(track_id))
+        except Exception as e:
+            print("SearchLollypopService::__search():", e)
+        return ids
+
+def main():
+    Gst.init(None)
+    service = SearchLollypopService()
+    service.hold()
+    service.run()
+
+if __name__ == '__main__':
+    main()
