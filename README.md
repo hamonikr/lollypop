@@ -4,6 +4,8 @@
 
 ![lollypop](./imgs/app2.png)
 
+![lollypop](./imgs/app3.png)
+
 이 프로젝트는 최신 lollypop 소스를 하모니카에서 사용할 수 있도록 패키징해서 제공합니다.
 
  * upstream : https://gitlab.gnome.org/World/lollypop
