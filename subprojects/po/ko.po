@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-06 14:55+0100\n"
-"PO-Revision-Date: 2020-06-14 11:41+0000\n"
-"Last-Translator: MarongHappy <daemul72@gmail.com>\n"
+"PO-Revision-Date: 2021-05-27 04:38+0000\n"
+"Last-Translator: Kevin Kim <chaeya@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gnumdk/lollypop/"
 "ko/>\n"
 "Language: ko\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:36
 msgid "Window size"
@@ -62,7 +62,7 @@ msgstr "접속 네트워크"
 msgid ""
 "Threshold used to decide if the previous track should be played or the "
 "currently running one should be restarted"
-msgstr ""
+msgstr "이전 트랙을 재생해야하는지 또는 현재 실행중인 트랙을 다시 시작해야하는지 결정하는 데 사용되는 임계값"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:81
 msgid "Save artwork/popularity in tags"
@@ -114,11 +114,11 @@ msgstr "True인 경우, 롤리팝은 시스템 youtube-dl을 사용하지 않습
 
 #: ../data/org.gnome.Lollypop.gschema.xml:131
 msgid "Do not use original date if set"
-msgstr ""
+msgstr "설정된 경우 원래 날짜를 사용하지 않음"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:136
 msgid "Import playlists from collections"
-msgstr "모음집에서 재생목록 가져오기"
+msgstr "컬랙션에서 재생목록 가져오기"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:141
 msgid "Music URI"
@@ -146,7 +146,7 @@ msgstr "즐겨찾기 태그 편집기"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:166
 msgid "Favorite cover filename without extension"
-msgstr ""
+msgstr "확장자가 없는 인기있는 앨범 표지 파일 이름"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:167
 #: ../data/org.gnome.Lollypop.gschema.xml:252
@@ -188,7 +188,7 @@ msgstr "어두운 GTK 테마 사용"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:206
 msgid "Disable scrobbling usage"
-msgstr "스크로빙 사용 비활성화"
+msgstr "활동정보 보내기(Scrobbling) 사용 비활성화"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:211
 msgid "Handle compilations"
@@ -196,7 +196,7 @@ msgstr "핸들 컴필레이션"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:216
 msgid "Handle performers, compositors, ..."
-msgstr ""
+msgstr "연주자, 작곡가, ..."
 
 #: ../data/org.gnome.Lollypop.gschema.xml:221
 msgid "Show compilations in albums view"
@@ -249,7 +249,7 @@ msgstr "태그에서 곡 번호 표시"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:279
 msgid "Enable PNG artwork cache"
-msgstr ""
+msgstr "PNG 아트워크 캐시 활성화"
 
 #: ../data/org.gnome.Lollypop.gschema.xml:289
 msgid "Force single column mode"
@@ -355,7 +355,7 @@ msgstr "롤리팝 웹사이트 방문"
 #: ../data/AboutDialog.ui.in:28
 msgctxt "Add your names here, do not remove previous names!"
 msgid "translator1, translator2, ..."
-msgstr ""
+msgstr "하모니카 개발팀, ..."
 
 #: ../data/AboutDialog.ui.in:29
 msgid ""
@@ -407,7 +407,7 @@ msgstr "롤리팝"
 #: ../data/org.gnome.Lollypop.appdata.xml.in:9
 #: ../data/org.gnome.Lollypop.desktop.in:5
 msgid "Play and organize your music collection"
-msgstr "음악 모음집 재생하기 및 정리하기"
+msgstr "음악 컬랙션 재생하기 및 정리하기"
 
 #: ../data/org.gnome.Lollypop.appdata.xml.in:11
 msgid ""
@@ -436,7 +436,7 @@ msgstr "동기화 –"
 
 #: ../data/org.gnome.Lollypop.appdata.xml.in:16
 msgid "Audio Scrobbling –"
-msgstr "오디오 스크로빙 –"
+msgstr "오디오 정보 보내기 –"
 
 #: ../data/org.gnome.Lollypop.desktop.in:4
 msgid "Music Player"
@@ -444,7 +444,7 @@ msgstr "음악 재생기"
 
 #: ../data/org.gnome.Lollypop.desktop.in:13
 msgid "Music;Player;Lollipop;"
-msgstr ""
+msgstr "뮤직;음악;플레이어;롤리팝;Music;Player;Lollipop;"
 
 #: ../data/org.gnome.Lollypop.desktop.in:23
 msgid "Play/Pause"
@@ -580,39 +580,39 @@ msgstr "주소:"
 
 #: ../data/SettingsDialog.ui:41
 msgid "General"
-msgstr ""
+msgstr "일반"
 
 #: ../data/SettingsDialog.ui:46
 msgid "Appearance"
-msgstr "모양새"
+msgstr "인터페이스"
 
 #: ../data/SettingsDialog.ui:51 ../data/SettingsDialog.ui:54
 msgid "Whether the application should use a dark theme"
-msgstr ""
+msgstr "어두운 테마 사용 여부"
 
 #: ../data/SettingsDialog.ui:52
 msgid "Dark Mode"
-msgstr ""
+msgstr "다크 모드"
 
 #: ../data/SettingsDialog.ui:70
 msgid "Single column mode"
-msgstr ""
+msgstr "단일 컬럼 모드"
 
 #: ../data/SettingsDialog.ui:72
 msgid "Only show a single column for tracks"
-msgstr ""
+msgstr "트랙에 대해 단일 열만 표시"
 
 #: ../data/SettingsDialog.ui:105
 msgid "High quality artwork"
-msgstr ""
+msgstr "고 해상도 이미지"
 
 #: ../data/SettingsDialog.ui:122
 msgid "Artwork size"
-msgstr ""
+msgstr "이미지 크기"
 
 #: ../data/SettingsDialog.ui:139 ../lollypop/menu_actions.py:77
 msgid "Clean cache"
-msgstr "캐시 정리"
+msgstr "캐시 비우기"
 
 #: ../data/SettingsDialog.ui:153
 msgid "Behaviour"
@@ -620,7 +620,7 @@ msgstr "동작"
 
 #: ../data/SettingsDialog.ui:160
 msgid "Play music in background"
-msgstr ""
+msgstr "백그라운드 재생"
 
 #: ../data/SettingsDialog.ui:176
 msgid "Restore state on startup"
@@ -628,35 +628,35 @@ msgstr "시작 시 상태 복원"
 
 #: ../data/SettingsDialog.ui:178
 msgid "Restore current playback and view"
-msgstr ""
+msgstr "현재 재생 및 보기 복원"
 
 #: ../data/SettingsDialog.ui:194
 msgid "Save changes to file"
-msgstr ""
+msgstr "변경사항 파일에 저장"
 
 #: ../data/SettingsDialog.ui:196
 msgid "Save artwork and rating to files"
-msgstr ""
+msgstr "표지 이미지와 평점을 파일에 저장"
 
 #: ../data/SettingsDialog.ui:213
 msgid "Albums will be sorted by this field"
-msgstr ""
+msgstr "이 필드를 기준으로 앨범 정렬"
 
 #: ../data/SettingsDialog.ui:222
 msgid "Artist - year"
-msgstr ""
+msgstr "아티스트 - 년도"
 
 #: ../data/SettingsDialog.ui:223
 msgid "Artist - title"
-msgstr ""
+msgstr "아티스트 - 제목"
 
 #: ../data/SettingsDialog.ui:224
 msgid "Title"
-msgstr ""
+msgstr "제목"
 
 #: ../data/SettingsDialog.ui:225 ../data/SmartPlaylistWidget.ui:33
 msgid "Year"
-msgstr "연도"
+msgstr "년도"
 
 #: ../data/SettingsDialog.ui:226 ../data/SmartPlaylistWidget.ui:32
 msgid "Popularity"
@@ -670,27 +670,27 @@ msgstr "재생"
 
 #: ../data/SettingsDialog.ui:247
 msgid "Enable transitions"
-msgstr ""
+msgstr "전환 효과 활성화"
 
 #: ../data/SettingsDialog.ui:249
 msgid "Add a transition on track change"
-msgstr ""
+msgstr "트랙이 변경될 때 전환 효과 추가"
 
 #: ../data/SettingsDialog.ui:265
 msgid "Duration"
-msgstr ""
+msgstr "전환 시간"
 
 #: ../data/SettingsDialog.ui:267
 msgid "Transition duration in milliseconds"
-msgstr ""
+msgstr "전환 시간을 천분의 1초 단위로 설정(millisecond)"
 
 #: ../data/SettingsDialog.ui:283
 msgid "ReplayGain"
-msgstr "부드러운 전환"
+msgstr "오디오 자동 조정(ReplayGain)"
 
 #: ../data/SettingsDialog.ui:285
 msgid "Apply audio correction on the fly"
-msgstr ""
+msgstr "재생 중 오디오 수정 적용"
 
 #: ../data/SettingsDialog.ui:294 ../lollypop/menu_search.py:41
 msgid "Disabled"
@@ -710,33 +710,35 @@ msgstr "음악"
 
 #: ../data/SettingsDialog.ui:320
 msgid "Collection"
-msgstr ""
+msgstr "컬랙션"
 
 #: ../data/SettingsDialog.ui:331 ../lollypop/dialog_settings.py:245
 msgid "Reset collection"
-msgstr ""
+msgstr "컬랙션 초기화"
 
 #: ../data/SettingsDialog.ui:370
 msgid "Import settings"
-msgstr ""
+msgstr "설정 가져오기"
 
 #: ../data/SettingsDialog.ui:377
 msgid "Update music if files added to collection"
-msgstr ""
+msgstr "파일이 컬랙션에 추가되면 업데이트"
 
 #: ../data/SettingsDialog.ui:393 ../data/SettingsDialog.ui:431
 msgid "You need to reset collection"
-msgstr ""
+msgstr "컬랙션 초기화가 필요합니다"
 
 #: ../data/SettingsDialog.ui:394
 msgid "Show compilations"
-msgstr "컴필레이션 표시"
+msgstr "작곡가 표시"
 
 #: ../data/SettingsDialog.ui:396
 msgid ""
 "A compilation is an album without any \"Album artist tag\"\n"
 "and with different artists"
 msgstr ""
+"다른 아티스트와 아티스트 태그가 없는 \n"
+"컴필레이션 앨범입니다"
 
 #: ../data/SettingsDialog.ui:413
 msgid "Import playlists"
@@ -744,23 +746,23 @@ msgstr "재생목록 가져오기"
 
 #: ../data/SettingsDialog.ui:415
 msgid "Search for playlists in your collection"
-msgstr ""
+msgstr "컬랙션에서 재생목록 검색"
 
 #: ../data/SettingsDialog.ui:432
 msgid "Import advanced tags"
-msgstr ""
+msgstr "다른 버전 태그 가져오기"
 
 #: ../data/SettingsDialog.ui:434
 msgid "Performers, composers, …"
-msgstr ""
+msgstr "연주자, 작곡가,…"
 
 #: ../data/SettingsDialog.ui:452
 msgid "Statistics"
-msgstr ""
+msgstr "통계"
 
 #: ../data/SettingsDialog.ui:483
 msgid "Remove devices managed by Lollypop"
-msgstr ""
+msgstr "롤리팝이 관리하는 장치 제거"
 
 #: ../data/SettingsDialog.ui:484 ../lollypop/menu_artist.py:66
 #: ../lollypop/menu_genre.py:53 ../lollypop/menu_objects.py:53
@@ -775,7 +777,7 @@ msgstr "웹"
 
 #: ../data/SettingsDialog.ui:502
 msgid "Status"
-msgstr ""
+msgstr "상태"
 
 #: ../data/SettingsDialog.ui:507
 msgid "Allow network access"
@@ -783,7 +785,7 @@ msgstr "네트워크 접속 허용"
 
 #: ../data/SettingsDialog.ui:524
 msgid "Background data"
-msgstr ""
+msgstr "백그라운드 데이터"
 
 #: ../data/SettingsDialog.ui:526
 msgid "Search artwork in background"
@@ -791,16 +793,16 @@ msgstr "백그라운드에서 아트워크 검색"
 
 #: ../data/SettingsDialog.ui:547
 msgid "Song playback"
-msgstr ""
+msgstr "음악 재생"
 
 #: ../data/SettingsDialog.ui:558 ../data/SettingsDialog.ui:746
 #: ../data/SettingsDialog.ui:828 ../data/SettingsDialog.ui:910
 msgid "Enabled"
-msgstr ""
+msgstr "활성화"
 
 #: ../data/SettingsDialog.ui:575
 msgid "Use a recent version of youtube-dl"
-msgstr ""
+msgstr "최신 버전의 youtube-dl 을 사용하세요"
 
 #: ../data/SettingsDialog.ui:591
 msgid "Google API-key"
@@ -822,11 +824,11 @@ msgstr "서버 지정 없음"
 
 #: ../data/SettingsDialog.ui:686
 msgid "What is Invidious ?"
-msgstr ""
+msgstr "Invidious 란 무엇입니까?"
 
 #: ../data/SettingsDialog.ui:735
 msgid "Search (artwork, songs, ...)"
-msgstr ""
+msgstr "검색 (앨범, 노래 등)"
 
 #: ../data/SettingsDialog.ui:926
 msgid "ListenBrainz API-Key"
@@ -1012,7 +1014,7 @@ msgstr "곡에서 앞으로 건너뛰기"
 #: ../data/Shortcuts.ui:170
 msgctxt "shortcut window"
 msgid "Enable/disable scrobbling"
-msgstr "스크로빙 활성화/비활성화"
+msgstr "음악정보 보내기(Scrobbling) 활성화/비활성화"
 
 #: ../data/SmartPlaylistView.ui:94
 msgid "Limit to"
@@ -1077,7 +1079,7 @@ msgstr "아티스트"
 
 #: ../data/SmartPlaylistWidget.ui:31
 msgid "Rating"
-msgstr "별점"
+msgstr "평점"
 
 #: ../data/SmartPlaylistWidget.ui:34
 msgid "BPM"
@@ -1125,11 +1127,11 @@ msgstr "반복하지 않기"
 
 #: ../data/ToolbarEnd.ui:52
 msgid "Scrobbling"
-msgstr "스크로빙"
+msgstr "음악정보 보내기(Scrobbling)"
 
 #: ../data/ToolbarEnd.ui:54
 msgid "Enable scrobbling"
-msgstr "스크로빙 활성화"
+msgstr "음악정보 보내기(Scrobbling) 활성화"
 
 #: ../data/ToolbarEnd.ui:96
 msgid "Playback options"
@@ -1149,7 +1151,7 @@ msgstr "kid3-cli를 설치해야합니다"
 
 #: ../lollypop/assistant_flatpak.py:31
 msgid "Authorization needed"
-msgstr ""
+msgstr "승인이 필요합니다"
 
 #: ../lollypop/assistant_flatpak.py:33
 msgid ""
@@ -1157,10 +1159,13 @@ msgid ""
 "In order to be able to access your collection,\n"
 "you need to allow <b>Lollypop</b>."
 msgstr ""
+"\n"
+"컬렉션에 접근하려면 <b>Lollypop</b> 을\n"
+"허용해야 합니다."
 
 #: ../lollypop/assistant_flatpak.py:44
 msgid "Update folders"
-msgstr ""
+msgstr "폴더 업데이트"
 
 #: ../lollypop/assistant_flatpak.py:46
 msgid ""
@@ -1170,6 +1175,11 @@ msgid ""
 "- <b>Remove</b> all folders from collection\n"
 "- Then, <b>add</b> them again"
 msgstr ""
+"\n"
+"- 롤리팝 <b>기본설정</b>을 열고\n"
+"- <b>음악</b> 탭으로 이동해서\n"
+"- 컬랙션의 모든 폴더를 <b>제거</b>한 다음\n"
+"- 다시 항목을 <b>추가</b>합니다"
 
 #: ../lollypop/assistant_flatpak.py:53 ../lollypop/assistant_google.py:52
 #: ../lollypop/assistant_google.py:69 ../lollypop/assistant_google.py:84
@@ -1177,7 +1187,7 @@ msgstr ""
 #: ../lollypop/assistant_musicbrainz.py:48
 #: ../lollypop/assistant_musicbrainz.py:60
 msgid "Back"
-msgstr ""
+msgstr "뒤로"
 
 #: ../lollypop/assistant_flatpak.py:55
 msgid "Preferences"
@@ -1185,7 +1195,7 @@ msgstr "기본설정"
 
 #: ../lollypop/assistant_google.py:29
 msgid "What is Google API-key?"
-msgstr ""
+msgstr "Google API 키란 무엇입니까?"
 
 #: ../lollypop/assistant_google.py:31
 msgid ""
@@ -1197,6 +1207,13 @@ msgid ""
 "\n"
 "which is used to play songs."
 msgstr ""
+"\n"
+"Youtube 재생을 사용하려면\n"
+"API 키를 생성해야합니다.\n"
+"\n"
+"<b> \"YouTube 데이터 API v3\"</ b>는\n"
+"\n"
+"음악을 재생하는 데 사용됩니다."
 
 #: ../lollypop/assistant_google.py:40 ../lollypop/assistant_lastfm.py:43
 #: ../lollypop/assistant_musicbrainz.py:36 ../lollypop/dialog_apps.py:70
@@ -1206,21 +1223,23 @@ msgstr "취소"
 
 #: ../lollypop/assistant_google.py:46
 msgid "Connect to the console"
-msgstr ""
+msgstr "콘솔 연결"
 
 #: ../lollypop/assistant_google.py:48
 msgid ""
 "\n"
 "<b>Open and log</b> in to the <b>Google Developer Console</b>"
 msgstr ""
+"\n"
+"<b>Google 개발자 콘솔</b>을 열고 로그인합니다"
 
 #: ../lollypop/assistant_google.py:50
 msgid "Access Google Developer Console"
-msgstr ""
+msgstr "구글 개발자 콘솔 접근"
 
 #: ../lollypop/assistant_google.py:58
 msgid "Activate the API"
-msgstr ""
+msgstr "API 활성화"
 
 #: ../lollypop/assistant_google.py:60
 msgid ""
@@ -1232,10 +1251,17 @@ msgid ""
 "\n"
 "<b>Activate that API</b> for your project"
 msgstr ""
+"\n"
+"콘솔에서 <b>새 프로젝트를 추가</b>합니다.\n"
+"\n"
+"그런 다음 <b>\"YouTube Data API v3\"</b> 용 \n"
+"<b>새 API를 추가</b>하고\n"
+"\n"
+"프로젝트에 <b>해당 API를활성화</b>합니다"
 
 #: ../lollypop/assistant_google.py:75
 msgid "Copy the key"
-msgstr ""
+msgstr "키 복사"
 
 #: ../lollypop/assistant_google.py:77
 msgid ""
@@ -1245,16 +1271,21 @@ msgid ""
 "\n"
 "<b>Copy the API-Key to Lollypop</b>"
 msgstr ""
+"\n"
+"사이드 바에서 <b> \"Credentials\"</b>을 열고\n"
+"<b>API 키</b>에 대한 <b>자격 증명<b>을 만듭니다.\n"
+"\n"
+"<b>Lollypop에 API 키를 복사합니다</b>"
 
 #: ../lollypop/assistant_google.py:86 ../lollypop/assistant_lastfm.py:70
 #: ../lollypop/assistant_musicbrainz.py:62 ../lollypop/assistant.py:151
 msgid "Finish"
-msgstr ""
+msgstr "완료"
 
 #: ../lollypop/assistant_lastfm.py:36
 #, python-format
 msgid "Scrobbling to %s"
-msgstr ""
+msgstr "%s 로 음악정보 보내기(Scrobbling)"
 
 #: ../lollypop/assistant_lastfm.py:38
 #, python-format
@@ -1263,11 +1294,14 @@ msgid ""
 "In order to send your activity to <b>%s</b>,\n"
 "you need to allow <b>Lollypop</b>."
 msgstr ""
+"\n"
+"활동을 <b>%s</b> 로 보내려면,\n"
+"<b>Lollypop</b>을 허용해야 합니다."
 
 #: ../lollypop/assistant_lastfm.py:49
 #, python-format
 msgid "Connect to %s"
-msgstr ""
+msgstr "%s 에 연결"
 
 #: ../lollypop/assistant_lastfm.py:51
 #, python-format
@@ -1276,25 +1310,30 @@ msgid ""
 "<b>Open and login</b> to <b>%s</b>.\n"
 "Then, allow Lollypop."
 msgstr ""
+"\n"
+"<b>%s</b> 을(를) 열고 로그인 후.\n"
+"롤리팝을 허용하세요."
 
 #: ../lollypop/assistant_lastfm.py:54
 #, python-format
 msgid "Access %s"
-msgstr ""
+msgstr "%s 접근"
 
 #: ../lollypop/assistant_lastfm.py:62
 msgid "Just play a track"
-msgstr ""
+msgstr "트랙 재생"
 
 #: ../lollypop/assistant_lastfm.py:64
 msgid ""
 "\n"
 "<b>Click \"Finish\"</b> once Lollypop has been allowed."
 msgstr ""
+"\n"
+"롤리팝이 허용되면 <b>\"완료\"</b>를 클릭하세요."
 
 #: ../lollypop/assistant_musicbrainz.py:29
 msgid "Scrobbling to ListenBrainz"
-msgstr ""
+msgstr "ListenBrainz 에 음악정보 보내기(Scrobbling)"
 
 #: ../lollypop/assistant_musicbrainz.py:31
 msgid ""
@@ -1319,7 +1358,7 @@ msgstr ""
 
 #: ../lollypop/assistant_musicbrainz.py:54
 msgid "Copy key"
-msgstr ""
+msgstr "키 복사"
 
 #: ../lollypop/assistant_musicbrainz.py:56
 msgid ""
@@ -1329,15 +1368,15 @@ msgstr ""
 
 #: ../lollypop/assistant.py:149
 msgid "Can't contact this service"
-msgstr ""
+msgstr "이서비스에 접속할 수 없습니다"
 
 #: ../lollypop/collection_scanner.py:334
 msgid "Resetting database"
-msgstr ""
+msgstr "데이터베이스 초기화"
 
 #: ../lollypop/collection_scanner.py:505
 msgid "Scan disabled, missing collection"
-msgstr "스캔 비활성화, 누락된 모음집"
+msgstr "스캔 비활성화, 누락된 컬랙션"
 
 #: ../lollypop/collection_scanner.py:800 ../lollypop/database_tracks.py:356
 #: ../lollypop/tagreader.py:87 ../lollypop/tagreader.py:103
@@ -1421,11 +1460,11 @@ msgstr "재생중인 음악"
 
 #: ../lollypop/menu_actions.py:58
 msgid "Save in collection"
-msgstr "모음집에 저장"
+msgstr "컬랙션에 저장"
 
 #: ../lollypop/menu_actions.py:68
 msgid "Remove from collection"
-msgstr "모음집에서 제거"
+msgstr "컬랙션에서 제거"
 
 #: ../lollypop/menu_actions.py:87
 msgid "Buy this album"
@@ -1720,7 +1759,7 @@ msgstr "아티스트 (목록)"
 
 #: ../lollypop/shown.py:41
 msgid "Information"
-msgstr ""
+msgstr "정보"
 
 #: ../lollypop/shown.py:42
 msgid "Compilations"
@@ -1779,11 +1818,11 @@ msgstr "네트워크를 사용할 수 없거나 설정에서 비활성화"
 
 #: ../lollypop/view_albums_box.py:193
 msgid "New albums available"
-msgstr ""
+msgstr "새 앨범이 있습니다"
 
 #: ../lollypop/view_albums_box.py:194 ../lollypop/view_artists_rounded.py:155
 msgid "Refresh"
-msgstr ""
+msgstr "새로고침"
 
 #: ../lollypop/view_albums_line.py:164
 msgid "Others compilations"
@@ -1803,7 +1842,7 @@ msgstr "들어보시겠습니까?"
 
 #: ../lollypop/view_artists_rounded.py:154
 msgid "New artists available"
-msgstr ""
+msgstr "새 아티스트가 있습니다."
 
 #: ../lollypop/view_information.py:152
 msgid "Loading information"
@@ -2020,7 +2059,7 @@ msgstr "다음과 동일하지 않음"
 
 #: ../lollypop/widgets_playlist_smart.py:168
 msgid "contains "
-msgstr "다음 포함함 "
+msgstr "다음 포함 "
 
 #: ../lollypop/widgets_playlist_smart.py:169
 msgid "does not contain"
@@ -2037,7 +2076,7 @@ msgstr "다음보다 더 적음"
 #: ../lollypop/widgets_rating.py:51
 #, python-format
 msgid "Song played %s times"
-msgstr "노래 %s번 재생됨"
+msgstr "%s번 재생됨"
 
 #: ../lollypop/widgets_row_album.py:96
 msgid "Compilation"

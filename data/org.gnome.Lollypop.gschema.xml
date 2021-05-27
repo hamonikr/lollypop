@@ -42,7 +42,7 @@
             <description>Window position (x and y).</description>
         </key>
         <key type="ai" name="shown-album-lists">
-            <default>[-2, -3, -4, -5, -8, -9, -10, -11, -13, -16, -101, -102, -103]</default>
+            <default>[-2, -3, -4, -5, -8, -10, -11, -13, -16, -101, -102, -103, -104, -6, -99]</default>
             <summary>INTERNAL</summary>
             <description></description>
         </key>

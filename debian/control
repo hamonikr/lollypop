@@ -41,6 +41,7 @@ Depends: ${python3:Depends},
          python3-pylast,
          gir1.2-handy-1
 Suggests: gstreamer1.0-libav
+Recommends: youtube-dl
 Description: modern music player
  A Music player for GNOME featuring intuitive browsing of your music
  collection. Supports downloading of lyrics and cover art, syncing music

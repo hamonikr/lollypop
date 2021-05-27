@@ -1,3 +1,14 @@
+lollypop (1.4.19-hamonikr2) jin; urgency=medium
+
+  * Update new Korean translation
+  * Update lollypop/container_notification.py
+   - Disable donation notification
+  * Add youtube-dl as recommend pkg
+  * Update data/org.gnome.Lollypop.gschema.xml
+   - Change default shown-album-lists
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 27 May 2021 13:24:36 +0900
+
 lollypop (1.4.19-hamonikr1) jin; urgency=medium
 
   * New upstream version 1.4.19
