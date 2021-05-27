@@ -1,8 +1,13 @@
 # Lollypop music player for HamoniKR
 
+![lollypop](./imgs/app1.png)
+
+![lollypop](./imgs/app2.png)
+
 이 프로젝트는 최신 lollypop 소스를 하모니카에서 사용할 수 있도록 패키징해서 제공합니다.
 
  * upstream : https://gitlab.gnome.org/World/lollypop
+ * 한국어 번역 : https://hosted.weblate.org/projects/gnumdk/lollypop/ko/
 
 ## How to build on HamoniKR (>= 4.0)
 
@@ -17,7 +22,6 @@ sudo apt-get install meson libglib2.0-dev yelp-tools libgirepository1.0-dev libg
 
 dpkg-buildpackage
 ```
-
 
 # Lollypop music player
 
