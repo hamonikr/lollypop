@@ -1,15 +1,31 @@
 # Lollypop music player for HamoniKR
 
+이 프로젝트는 최신 lollypop 소스를 하모니카에서 사용할 수 있도록 패키징해서 제공하는 프로젝트 입니다.
+
+ * upstream : https://gitlab.gnome.org/World/lollypop
+ * 한국어 번역 : https://hosted.weblate.org/projects/gnumdk/lollypop/ko/
+
+## 프로그램 설치 
+
+### 하모니카 사용자 (하모니카 4.0 이상)
+```
+sudo apt update
+sudo apt install lollypop
+```
+
+### Ubuntu, LinuxMint (>=Ubuntu 20.04)
+```
+wget -qO- https://pkg.hamonikr.org/add-hamonikr.apt | sudo -E bash -
+sudo apt install lollypop
+```
+
+## Screenshot
+
 ![lollypop](./imgs/app1.png)
 
 ![lollypop](./imgs/app2.png)
 
 ![lollypop](./imgs/app3.png)
-
-이 프로젝트는 최신 lollypop 소스를 하모니카에서 사용할 수 있도록 패키징해서 제공합니다.
-
- * upstream : https://gitlab.gnome.org/World/lollypop
- * 한국어 번역 : https://hosted.weblate.org/projects/gnumdk/lollypop/ko/
 
 ## How to build on HamoniKR (>= 4.0)
 
