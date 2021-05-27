@@ -1,3 +1,10 @@
+lollypop (1.4.19-hamonikr3) jin; urgency=medium
+
+  * Update subprojects/po/ko.po
+   - update translation
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 27 May 2021 17:44:32 +0900
+
 lollypop (1.4.19-hamonikr2) jin; urgency=medium
 
   * Update new Korean translation

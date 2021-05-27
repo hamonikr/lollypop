@@ -1507,7 +1507,7 @@ msgstr "새 재생목록 만들기"
 
 #: ../lollypop/menu_objects.py:66
 msgid "Show album"
-msgstr ""
+msgstr "앨범 보기"
 
 #: ../lollypop/menu_objects.py:70 ../lollypop/menu_objects.py:119
 #: ../lollypop/menu_similars.py:167
@@ -1566,7 +1566,7 @@ msgstr "이 재생목록 재생하기"
 
 #: ../lollypop/menu_playback.py:217
 msgid "Add this playlist"
-msgstr ""
+msgstr "이 재생목록 추가하기"
 
 #: ../lollypop/menu_playback.py:281
 msgid "Play this artist"
@@ -1586,7 +1586,7 @@ msgstr "이 앨범 재생하기"
 
 #: ../lollypop/menu_playback.py:529 ../lollypop/menu_playback.py:615
 msgid "Ignored"
-msgstr ""
+msgstr "제외하기"
 
 #: ../lollypop/menu_playback.py:672
 msgid "Add to queue"
