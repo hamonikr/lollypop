@@ -29,10 +29,15 @@ sudo apt install lollypop
 
 ## How to build on HamoniKR (>= 4.0)
 
- 1) `gir1.2-handy-1` 패키지가 기본으로 제공되지 않기 때문에 아래와 같이 PPA 추가 후 설치
+ 1) `gir1.2-handy-1` 패키지가 기본으로 제공되지 않기 때문에 아래와 같이 PPA 추가 후 라이브러리도 추가로 빌드 필요
 ```
 sudo add-apt-repository ppa:apandada1/libhandy-1
 sudo apt update
+
+apt source gir1.2-handy-1
+cd gir1.2-handy-1
+dpkg-buildpackage
+
 ``` 
  2) 필요 패키지 설치 및 데비안 패키지 생성
 ```
@@ -40,6 +45,8 @@ sudo apt-get install meson libglib2.0-dev yelp-tools libgirepository1.0-dev libg
 
 dpkg-buildpackage
 ```
+
+3) 저장소에 프로그램 패키지와 `gir1.2-handy-1`패키지를 함께 배포해야 함.
 
 # Lollypop music player
 
