@@ -1,3 +1,9 @@
+lollypop (1.4.19-hamonikr5) stable; urgency=medium
+
+  * Release on ubuntu 22.04
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 11 Sep 2023 13:22:44 +0900
+
 lollypop (1.4.19-hamonikr4) taebaek; urgency=medium
 
   * Release for HamoniKR 6.0
