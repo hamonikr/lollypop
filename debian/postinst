@@ -1,0 +1,15 @@
+#!/bin/bash
+set -e
+
+# Download yt-dlp with error handling
+if ! wget -O /usr/local/bin/yt-dlp https://github.com/yt-dlp/yt-dlp/releases/download/2024.07.01/yt-dlp; then
+    echo "Warning: Failed to download yt-dlp. Continuing without yt-dlp."
+else
+    # Make yt-dlp executable
+    chmod +x /usr/local/bin/yt-dlp
+
+    # Create symbolic link
+    ln -sf /usr/local/bin/yt-dlp /usr/local/bin/youtube-dl
+fi
+
+exit 0
