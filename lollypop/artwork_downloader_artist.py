@@ -112,7 +112,8 @@ class ArtistArtworkDownloader(ArtworkDownloader):
                         uri = item[key]
                         if uri is not None:
                             uris.append(uri)
-        except:
+        except Exception as e:
+            Logger.error(e)
             Logger.error("AudioDB: %s", uri)
         return uris
 
@@ -138,7 +139,8 @@ class ArtistArtworkDownloader(ArtworkDownloader):
                 for item in decode["data"]:
                     uri = item["picture_xl"]
                     uris.append(uri)
-        except:
+        except Exception as e:
+            Logger.error(e)
             Logger.error("Deezer: %s", uri)
         return uris
 
@@ -164,7 +166,8 @@ class ArtistArtworkDownloader(ArtworkDownloader):
                 decode = json.loads(data.decode("utf-8"))
                 for item in decode["artistbackground"]:
                     uris.append(item["url"])
-        except:
+        except Exception as e:
+            Logger.error(e)
             Logger.error("FanartTV: %s", uri)
         return uris
 
@@ -193,9 +196,11 @@ class ArtistArtworkDownloader(ArtworkDownloader):
             if status:
                 decode = json.loads(data.decode("utf-8"))
                 for item in decode["artists"]["items"]:
-                    image_uri = item["images"][0]["url"]
-                    uris.append(image_uri)
-        except:
+                    if item["images"]:
+                        image_uri = item["images"][0]["url"]
+                        uris.append(image_uri)
+        except Exception as e:
+            Logger.error(e)
             Logger.error("Spotify: %s", uri)
         return uris
 

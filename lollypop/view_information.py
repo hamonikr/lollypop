@@ -125,7 +125,6 @@ class InformationView(View, SignalsHelper):
         self.__listbox.set_halign(Gtk.Align.CENTER)
         self.__label = Gtk.Label.new()
         self.__label.show()
-        self.__label.set_justify(Gtk.Justification.FILL)
         self.__label.set_line_wrap(True)
         self.__label.set_line_wrap_mode(Pango.WrapMode.WORD)
         self.__label.set_valign(Gtk.Align.START)

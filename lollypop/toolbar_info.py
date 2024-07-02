@@ -46,12 +46,13 @@ class ToolbarInfo(Gtk.Bin, ArtworkPlayerWidget, GesturesHelper):
         self.__label = LabelPlayerWidget()
         self.__artwork = ArtworkPlayerWidget(ArtBehaviour.CROP_SQUARE |
                                              ArtBehaviour.CACHE)
-        self.__artwork.set_property("has-tooltip", True)
         self.__artwork.set_margin_top(1)
         horizontal_box.pack_start(self.__artwork, False, False, 0)
         horizontal_box.pack_start(self.__label, False, False, 0)
         self.set_margin_start(MARGIN_SMALL)
         self.connect("realize", self.__on_realize)
+        self.set_property("has-tooltip", True)
+        self.connect("query-tooltip", self.__on_query_tooltip)
 
     def show_children(self):
         """
@@ -137,7 +138,7 @@ class ToolbarInfo(Gtk.Bin, ArtworkPlayerWidget, GesturesHelper):
         if App().window.folded or not self.__artwork.get_visible():
             return
         track = App().player.current_track
-        if track.id >= 0:
+        if track.id is not None and track.id >= 0:
             from lollypop.menu_objects import TrackMenu, TrackMenuExt
             from lollypop.widgets_menu import MenuBuilder
             menu = TrackMenu(track, ViewType.TOOLBAR)
@@ -159,15 +160,14 @@ class ToolbarInfo(Gtk.Bin, ArtworkPlayerWidget, GesturesHelper):
             @param keyboard as bool
             @param tooltip as Gtk.Tooltip
         """
-        layout_title = self._title_label.get_layout()
-        layout_artist = self._artist_label.get_layout()
-        if layout_title.is_ellipsized() or layout_artist.is_ellipsized():
-            artist = GLib.markup_escape_text(self._artist_label.get_text())
-            title = GLib.markup_escape_text(self._title_label.get_text())
-            tooltip.set_markup("<b>%s</b> - %s" % (artist, title))
-        else:
-            return False
-        return True
+        track = App().player.current_track
+        if track.id is not None and track.id >= 0:
+            artist = GLib.markup_escape_text(",".join(track.artists))
+            title = GLib.markup_escape_text(track.title)
+            album = GLib.markup_escape_text(track.album.name)
+            tooltip.set_markup("<b>%s</b> - %s\n%s" % (title, artist, album))
+            return True
+        return False
 
     def __on_realize(self, toolbar):
         """

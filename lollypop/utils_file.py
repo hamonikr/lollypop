@@ -28,7 +28,7 @@ def get_file_type(uri):
              "au", "awb", "dct", "dss", "dvf", "flac", "gsm", "iklax", "ivs",
              "m4a", "m4b", "m4p", "mmf", "mp3", "mpc", "msv", "nmf", "nsf",
              "ogg", "opus", "ra", "raw", "rf64", "sln", "tta", "voc", "vox",
-             "wav", "wma", "wv", "webm", "8svx", "cda"]
+             "wav", "wma", "wv", "webm", "8svx", "cda", "dff", "dsf"]
     other = ["7z", "arj", "deb", "pkg", "rar", "rpm", "tar.gz", "z", "zip",
              "pdf", "doc", "docx", "xls", "xlsx", "ppt", "pptx", "db", "txt",
              "mov", "avi", "html", "ini", "cue", "nfo", "lrc"]
@@ -67,7 +67,8 @@ def is_audio(info):
              "audio/x-pn-windows-acm", "application/x-matroska",
              "audio/x-matroska", "audio/x-wavpack", "video/mp4",
              "audio/x-mod", "audio/x-mo3", "audio/x-xm", "audio/x-s3m",
-             "audio/x-it", "audio/aiff", "audio/x-aiff"]
+             "audio/x-it", "audio/aiff", "audio/x-aiff", "audio/x-dff",
+             "audio/x-dsf"]
     if info is not None:
         if info.get_content_type() in audio:
             return True
@@ -155,7 +156,7 @@ def create_dir(path):
 def install_youtube_dl():
     try:
         path = GLib.get_user_data_dir() + "/lollypop/python"
-        argv = ["pip3", "install", "-t", path, "-U", "youtube-dl"]
+        argv = ["pip3", "install", "-t", path, "-U", "yt-dlp"]
         GLib.spawn_sync(None, argv, [], GLib.SpawnFlags.SEARCH_PATH, None)
     except Exception as e:
         Logger.error("install_youtube_dl: %s" % e)
@@ -168,13 +169,13 @@ def get_youtube_dl():
     """
     if App().settings.get_value("recent-youtube-dl"):
         python_path = GLib.get_user_data_dir() + "/lollypop/python"
-        path = "%s/bin/youtube-dl" % python_path
+        path = "%s/bin/yt-dlp" % python_path
         env = ["PYTHONPATH=%s" % python_path]
         f = Gio.File.new_for_path(path)
         if f.query_exists():
             return (path, env)
-    if GLib.find_program_in_path("youtube-dl"):
-        return ("youtube-dl", [])
+    if GLib.find_program_in_path("yt-dlp"):
+        return ("yt-dlp", [])
     else:
         return (None, [])
 

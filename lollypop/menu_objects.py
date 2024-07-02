@@ -14,6 +14,7 @@ from gi.repository import Gio, Gtk, GLib
 
 from gettext import gettext as _
 
+from lollypop.objects_album import Album
 from lollypop.define import StorageType, MARGIN_SMALL, App
 from lollypop.define import ViewType, Type
 from lollypop.menu_playlists import PlaylistsMenu
@@ -62,7 +63,7 @@ class AlbumMenu(Gio.Menu):
                 "activate",
                 lambda x, y:
                 App().window.container.show_view(
-                   [Type.ALBUM], album, storage_type))
+                   [Type.ALBUM], Album(album.id), storage_type))
             menu_item = Gio.MenuItem.new(_("Show album"),
                                          "app.show_album_action")
             menu_item.set_attribute_value("close", GLib.Variant("b", True))

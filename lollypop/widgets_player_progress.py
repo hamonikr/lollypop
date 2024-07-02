@@ -23,11 +23,12 @@ class ProgressPlayerWidget(Gtk.Box, SignalsHelper):
     """
 
     @signals
-    def __init__(self):
+    def __init__(self, fullscreen=False):
         """
             Init box
         """
         Gtk.Box.__init__(self)
+        self.__fullscreen = fullscreen
         self.set_valign(Gtk.Align.CENTER)
         # Prevent updating progress while seeking
         self.__seeking_position = False
@@ -85,7 +86,9 @@ class ProgressPlayerWidget(Gtk.Box, SignalsHelper):
                 self.__progress.set_value(value)
                 time_string = ms_to_string(value)
                 self.__time_label.set_markup(
-                    "<span font_features='tnum'>%s</span>" % time_string)
+                    "<span font_features='tnum'%s>%s</span>" % (
+                        " color='white'" if self.__fullscreen else "",
+                        time_string))
         return True
 
 #######################
@@ -104,14 +107,18 @@ class ProgressPlayerWidget(Gtk.Box, SignalsHelper):
             return
 
         self.__progress.set_value(0.0)
-        self.__time_label.set_markup("<span font_features='tnum'>0:00</span>")
+        self.__time_label.set_markup(
+            "<span font_features='tnum'%s>0:00</span>" %
+            " color='white'" if self.__fullscreen else "")
         if App().player.current_track.is_web:
             style_context.add_class("youtube-scale")
         self.__progress.set_range(0.0,
                                   App().player.current_track.duration)
         time_string = ms_to_string(App().player.current_track.duration)
         self.__total_time_label.set_markup(
-            "<span font_features='tnum'>%s</span>" % time_string)
+            "<span font_features='tnum'%s>%s</span>" % (
+                " color='white'" if self.__fullscreen else "",
+                time_string))
 
     def _on_duration_changed(self, player, track_id):
         """
@@ -124,7 +131,9 @@ class ProgressPlayerWidget(Gtk.Box, SignalsHelper):
             self.__progress.set_range(0.0, duration)
             time_string = ms_to_string(duration)
             self.__total_time_label.set_markup(
-                "<span font_features='tnum'>%s</span>" % time_string)
+                "<span font_features='tnum'%s>%s</span>" % (
+                    " color='white'" if self.__fullscreen else "",
+                    time_string))
 
     def _on_status_changed(self, player):
         """
@@ -160,7 +169,9 @@ class ProgressPlayerWidget(Gtk.Box, SignalsHelper):
         value = min(value, scale.get_adjustment().get_upper())
         time_string = ms_to_string(value)
         self.__time_label.set_markup(
-            "<span font_features='tnum'>%s</span>" % time_string)
+            "<span font_features='tnum'%s>%s</span>" % (
+                " color='white'" if self.__fullscreen else "",
+                time_string))
 
     def __on_multi_pressed(self, gesture, n_press, x, y):
         """

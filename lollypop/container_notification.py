@@ -23,7 +23,7 @@ class NotificationContainer:
         Notification management for main view
     """
 
-    __DONATION = 0 << 0
+    __DONATION = 1 << 0
     __BACKGROUND_DATA = 1 << 1
 
     def __init__(self):

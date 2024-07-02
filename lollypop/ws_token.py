@@ -140,10 +140,11 @@ class TokenWebService:
             credentials = "%s:%s" % (SPOTIFY_CLIENT_ID, SPOTIFY_SECRET)
             encoded = b64encode(credentials.encode("utf-8"))
             credentials = encoded.decode("utf-8")
-            data = {"grant_type": "client_credentials"}
-            msg = Soup.form_request_new_from_hash("POST", uri, data)
-            msg.request_headers.append("Authorization",
-                                       "Basic %s" % credentials)
+            data = Soup.form_encode_hash({"grant_type": "client_credentials"})
+            msg = Soup.Message.new_from_encoded_form("POST", uri, data)
+            request_headers = msg.get_property("request-headers")
+            request_headers.append("Authorization",
+                                   "Basic %s" % credentials)
             data = App().task_helper.send_message_sync(msg, cancellable)
             if data is not None:
                 decode = json.loads(data.decode("utf-8"))

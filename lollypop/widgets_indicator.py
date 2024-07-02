@@ -33,8 +33,7 @@ class IndicatorWidget(Gtk.EventBox):
         self.__timeout_id = None
         self.__stack = None
         self.connect("destroy", self.__on_destroy)
-        # min-width = 24px, borders = 2px, padding = 8px
-        self.set_size_request(34, -1)
+        self.set_size_request(16, -1)
         self.__stack = Gtk.Stack()
         self.__stack.set_transition_duration(500)
         self.__stack.set_transition_type(Gtk.StackTransitionType.CROSSFADE)

@@ -2,5 +2,5 @@ beautifulsoup4
 Pillow
 PyGObject
 pycairo
-pylast
 textblob
+yt-dlp

@@ -1040,6 +1040,7 @@ class AlbumsDatabase:
         if orderby == OrderBy.ARTIST_YEAR:
             order = " ORDER BY artists.sortname\
                      COLLATE NOCASE COLLATE LOCALIZED,\
+                     albums.year,\
                      albums.timestamp,\
                      albums.name\
                      COLLATE NOCASE COLLATE LOCALIZED"
@@ -1052,11 +1053,13 @@ class AlbumsDatabase:
             order = " ORDER BY albums.name\
                      COLLATE NOCASE COLLATE LOCALIZED"
         elif orderby == OrderBy.YEAR_DESC:
-            order = " ORDER BY albums.timestamp DESC,\
+            order = " ORDER BY albums.year DESC,\
+                     albums.timestamp DESC,\
                      albums.name\
                      COLLATE NOCASE COLLATE LOCALIZED"
         elif orderby == OrderBy.YEAR_ASC:
-            order = " ORDER BY albums.timestamp ASC,\
+            order = " ORDER BY albums.year ASC,\
+                     albums.timestamp ASC,\
                      albums.name\
                      COLLATE NOCASE COLLATE LOCALIZED"
         else:
@@ -1195,12 +1198,13 @@ class AlbumsDatabase:
         """
         genre_ids = remove_static(genre_ids)
         artist_ids = remove_static(artist_ids)
+        request = "SELECT SUM(duration) FROM ("
         with SqlCursor(self.__db) as sql:
             if genre_ids and artist_ids:
                 filters = (album_id,)
                 filters += tuple(genre_ids)
                 filters += tuple(artist_ids)
-                request = "SELECT SUM(duration)\
+                request += "SELECT duration\
                            FROM tracks, track_genres, track_artists\
                            WHERE tracks.album_id=?\
                            AND track_genres.track_id = tracks.rowid\
@@ -1215,7 +1219,7 @@ class AlbumsDatabase:
             elif artist_ids:
                 filters = (album_id,)
                 filters += tuple(artist_ids)
-                request = "SELECT SUM(duration)\
+                request += "SELECT duration\
                            FROM tracks, track_artists\
                            WHERE tracks.album_id=?\
                            AND track_artists.track_id = tracks.rowid AND"
@@ -1225,7 +1229,7 @@ class AlbumsDatabase:
             elif genre_ids:
                 filters = (album_id,)
                 filters += tuple(genre_ids)
-                request = "SELECT SUM(duration)\
+                request += "SELECT duration\
                            FROM tracks, track_genres\
                            WHERE tracks.album_id=?\
                            AND track_genres.track_id = tracks.rowid AND"
@@ -1234,12 +1238,13 @@ class AlbumsDatabase:
                                            len(genre_ids))
             else:
                 filters = (album_id,)
-                request = "SELECT SUM(duration)\
+                request += "SELECT duration\
                            FROM tracks\
                            WHERE tracks.album_id=?"
             if disc_number is not None:
                 filters += (disc_number,)
                 request += " AND discnumber=?"
+            request += " GROUP BY tracks.id)"
             result = sql.execute(request, filters)
             v = result.fetchone()
             if v and v[0] is not None:

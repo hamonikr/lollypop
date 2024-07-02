@@ -337,7 +337,7 @@ class MtpSync(GObject.Object):
         else:
             artists = ", ".join(track.album.artists).lower()
             string = escape("%s_%s" % (artists, album_name))
-        return GLib.uri_escape_string(string[:100], None, True)
+        return string[:100]
 
     def __get_uris_to_copy(self, tracks):
         """
@@ -349,7 +349,10 @@ class MtpSync(GObject.Object):
         for track in tracks:
             f = Gio.File.new_for_uri(track.uri)
             album_device_uri = "%s/%s" % (self.__uri,
-                                          self.__get_album_name(track))
+                                            GLib.uri_escape_string(
+                                                self.__get_album_name(track),
+                                                None,
+                                                True))
             album_local_uri = f.get_parent().get_uri()
             src_uri = "%s/%s" % (album_local_uri,
                                  GLib.uri_escape_string(f.get_basename(),

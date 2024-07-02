@@ -274,12 +274,18 @@ class AlbumBannerWidget(BannerWidget, SignalsHelper):
                 self.__widget.attach(self.__top_box, 1, 1, 1, 1)
                 self.__widget.attach(self.__labels_box, 1, 0, 2, 1)
                 self.__set_album_year(False)
+                self.__year_label.set_halign(Gtk.Align.START)
+                self.__widget.set_margin_start(MARGIN_SMALL)
+                self.__widget.set_margin_end(MARGIN_SMALL)
         elif self.__widget.get_child_at(1, 0) == self.__labels_box:
             self.__widget.remove(self.__labels_box)
             self.__widget.remove(self.__top_box)
             self.__widget.attach(self.__top_box, 2, 0, 1, 1)
             self.__widget.attach(self.__labels_box, 1, 0, 1, 2)
             self.__set_album_year(True)
+            self.__year_label.set_halign(Gtk.Align.END)
+            self.__widget.set_margin_start(MARGIN)
+            self.__widget.set_margin_end(MARGIN)
 
     def __update_add_button(self):
         """

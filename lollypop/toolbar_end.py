@@ -10,7 +10,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, Gio, GLib
+from gi.repository import Gtk, Gio, GLib, Handy
 
 from gettext import gettext as _
 
@@ -293,10 +293,21 @@ class ToolbarEnd(Gtk.Bin):
             @param action as Gio.SimpleAction
             @param value as bool
         """
-        if not App().gtk_application_prefer_dark_theme and\
-                not App().settings.get_value("dark-ui"):
+        manager = Handy.StyleManager.get_default()
+        if manager.get_system_supports_color_schemes():
+            if value:
+                manager.set_color_scheme(Handy.ColorScheme.PREFER_DARK)
+            else:
+                manager.set_color_scheme(Handy.ColorScheme.PREFER_LIGHT)
+        else:
             settings = Gtk.Settings.get_default()
-            settings.set_property("gtk-application-prefer-dark-theme", value)
+            dark = App().settings.get_value("dark-ui")
+            if value:
+                settings.set_property(
+                    "gtk-application-prefer-dark-theme", True)
+            else:
+                settings.set_property(
+                    "gtk-application-prefer-dark-theme", dark)
         App().player.set_party(value.get_boolean())
         action.set_state(value)
         self.__shuffle_action.set_enabled(not value)

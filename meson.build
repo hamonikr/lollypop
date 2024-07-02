@@ -1,5 +1,5 @@
 project('lollypop',
-  version: '1.4.19',
+  version: '1.4.40',
   meson_version: '>= 0.46.0'
 )
 revision = run_command('bin/revision.sh').stdout().strip()
@@ -7,8 +7,8 @@ if revision == ''
   revision=meson.project_version()
 endif
 
-if get_option('devel').enabled()
-  appid='None'
+if get_option('profile') == 'development'
+  appid='org.gnome.Lollypop.Devel'
 else
   appid='org.gnome.Lollypop'
 endif
@@ -28,7 +28,7 @@ endif
 # Dependencies
 dependency('gobject-introspection-1.0', version: '>= 1.35.0')
 dependency('gtk+-3.0', version: '>= 3.22')
-dependency('libsoup-2.4')
+dependency('libsoup-3.0')
 dependency('glib-2.0')
 dependency('pygobject-3.0', version: '>= 3.29.1')
 

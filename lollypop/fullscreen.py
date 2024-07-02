@@ -53,12 +53,10 @@ class FullScreen(Gtk.Window, SignalsHelper):
         self.__signal1_id = self.__signal2_id = None
         self.__background_id = None
         self.set_decorated(False)
-        art_size = ArtSize.FULLSCREEN
-        font_size = 30
         builder = Gtk.Builder()
         builder.add_from_resource("/org/gnome/Lollypop/FullScreen.ui")
         builder.connect_signals(self)
-        self.__progress_widget = ProgressPlayerWidget()
+        self.__progress_widget = ProgressPlayerWidget(True)
         self.__progress_widget.show()
         self.__progress_widget.set_property("halign", Gtk.Align.CENTER)
         self.__progress_widget.set_size_request(500, -1)
@@ -71,10 +69,11 @@ class FullScreen(Gtk.Window, SignalsHelper):
             ArtBehaviour.CACHE | ArtBehaviour.CROP_SQUARE)
         self.__artwork_widget.show()
         self.__artwork_widget.set_vexpand(True)
-        self.__artwork_widget.set_art_size(art_size, art_size)
+        self.__artwork_widget.set_art_size(ArtSize.FULLSCREEN,
+                                           ArtSize.FULLSCREEN)
         self.__artwork_widget.set_property("valign", Gtk.Align.CENTER)
         self.__artwork_widget.set_property("halign", Gtk.Align.CENTER)
-        self.__label_widget = LabelPlayerWidget(True, font_size)
+        self.__label_widget = LabelPlayerWidget(True, 30)
         self.__label_widget.show()
         self.__label_widget.set_hexpand(True)
         self.__label_widget.set_vexpand(True)
@@ -176,7 +175,7 @@ class FullScreen(Gtk.Window, SignalsHelper):
         monitor = screen.get_monitor_at_window(App().main_window.get_window())
         self.fullscreen_on_monitor(screen, monitor)
         # Disable screensaver (idle)
-        App().inhibitor.manual_inhibit(
+        App().inhibitor.override_inhibit(
                 Gtk.ApplicationInhibitFlags.IDLE |
                 Gtk.ApplicationInhibitFlags.SUSPEND)
 
@@ -188,7 +187,7 @@ class FullScreen(Gtk.Window, SignalsHelper):
         if self.__timeout_id is not None:
             GLib.source_remove(self.__timeout_id)
             self.__timeout_id = None
-        App().inhibitor.manual_uninhibit()
+        App().inhibitor.unoverride_inhibit()
 
     @property
     def miniplayer(self):
@@ -419,4 +418,7 @@ class FullScreen(Gtk.Window, SignalsHelper):
                 allocation.height == self.__allocation.height:
             return
         self.__allocation = allocation
+        size = allocation.width * ArtSize.FULLSCREEN / 1920
+        self.__artwork_widget.set_art_size(size, size)
+        self.__artwork_widget.update(True)
         self.__update_background()

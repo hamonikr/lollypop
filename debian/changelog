@@ -1,3 +1,9 @@
+lollypop (1.4.40) noble; urgency=medium
+
+  * Release on ubuntu 24.04
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 02 Jul 2024 14:25:37 +0900
+
 lollypop (1.4.19-hamonikr5) stable; urgency=medium
 
   * Release on ubuntu 22.04

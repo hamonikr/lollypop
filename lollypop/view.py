@@ -20,6 +20,13 @@ from lollypop.helper_signals import SignalsHelper, signals_map
 from lollypop.helper_filtering import FilteringHelper
 
 
+class Reveal:
+    NONE = 0
+    TRUE = 1
+    FALSE = 2
+
+REVEAL_DELTA=300
+
 class View(Gtk.Grid, AdaptiveHelper, FilteringHelper, SignalsHelper):
     """
         Generic view
@@ -106,6 +113,9 @@ class View(Gtk.Grid, AdaptiveHelper, FilteringHelper, SignalsHelper):
                 self.add(self.__banner)
             self.add(self.__stack)
         if banner is not None:
+            if self.view_type & ViewType.SCROLLED:
+                self.scrolled.get_vscrollbar().set_margin_top(
+                    self.__banner.height)
             banner.connect("height-changed", self.__on_banner_height_changed)
 
     def populate(self):
@@ -237,17 +247,14 @@ class View(Gtk.Grid, AdaptiveHelper, FilteringHelper, SignalsHelper):
         """
         if self.__banner is not None:
             reveal = self.__should_reveal_header(adj)
-            self.__banner.set_reveal_child(reveal)
-            if reveal:
+            if reveal == Reveal.TRUE:
+                self.__banner.set_reveal_child(True)
                 main_widget = self.__stack.get_child_by_name("main")
                 if main_widget is not None:
                     main_widget.set_margin_top(self.__banner.height +
                                                MARGIN_SMALL)
-                if self.view_type & ViewType.SCROLLED:
-                    self.scrolled.get_vscrollbar().set_margin_top(
-                        self.__banner.height)
-            elif self.view_type & ViewType.SCROLLED:
-                self.scrolled.get_vscrollbar().set_margin_top(0)
+            elif reveal == Reveal.FALSE:
+                self.__banner.set_reveal_child(False)
 
     def _on_map(self, widget):
         """
@@ -307,8 +314,15 @@ class View(Gtk.Grid, AdaptiveHelper, FilteringHelper, SignalsHelper):
             @return int
         """
         value = adj.get_value()
-        reveal = self.scrolled_value > value
-        self.scrolled_value = value
+        if (self.scrolled_value > value + REVEAL_DELTA):
+            reveal = Reveal.TRUE
+            self.scrolled_value = value
+        elif (self.scrolled_value < value - REVEAL_DELTA):
+            reveal = Reveal.FALSE
+            self.scrolled_value = value
+        else:
+            reveal = Reveal.NONE
+
         return reveal
 
     def __on_banner_height_changed(self, banner, height):

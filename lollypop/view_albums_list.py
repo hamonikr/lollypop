@@ -86,7 +86,7 @@ class AlbumsListView(LazyLoadingView, SignalsHelper, GesturesHelper):
             @param index as int
         """
         row.connect("activated", self._on_row_activated)
-        row.connect("destroy", self._on_row_destroy)
+        row.connect("album-removed", self._on_album_removed)
         row.connect("track-removed", self._on_track_removed)
         row.show()
         self._box.insert(row, index)
@@ -172,7 +172,7 @@ class AlbumsListView(LazyLoadingView, SignalsHelper, GesturesHelper):
             return None
         row = AlbumRow(album, self.__height, self.view_type)
         row.connect("activated", self._on_row_activated)
-        row.connect("destroy", self._on_row_destroy)
+        row.connect("album-removed", self._on_album_removed)
         row.connect("track-removed", self._on_track_removed)
         row.show()
         self._box.add(row)
@@ -240,7 +240,7 @@ class AlbumsListView(LazyLoadingView, SignalsHelper, GesturesHelper):
     def _on_row_activated(self, row, track):
         pass
 
-    def _on_row_destroy(self, row):
+    def _on_album_removed(self, row):
         pass
 
     def _on_track_removed(self, row, track):

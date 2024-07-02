@@ -354,7 +354,7 @@ class ArtistPlaybackMenu(PlaybackMenu):
         """
         action.set_state(state)
         album_ids = App().albums.get_ids([], [self.__artist_id],
-                                         self.__storage_type, False)
+                                         self.__storage_type, True)
         for album_id in album_ids:
             album = Album(album_id)
             if state:

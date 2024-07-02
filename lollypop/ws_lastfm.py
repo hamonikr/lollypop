@@ -19,7 +19,7 @@ from pickle import load, dump
 from lollypop.helper_passwords import PasswordsHelper
 from lollypop.logger import Logger
 from lollypop.utils import get_network_available
-from lollypop.define import LOLLYPOP_DATA_PATH, App
+from lollypop.define import LOLLYPOP_DATA_PATH, App, Type
 from lollypop.define import LASTFM_API_KEY, LASTFM_API_SECRET
 
 
@@ -154,13 +154,13 @@ class LastFMWebService:
             args.append(("sk", token))
             api_sig = self.__get_sig_for_args(args)
             args.append(("api_sig", api_sig))
-            post_data = {}
+            hash = {}
             for (name, value) in args:
-                post_data[name] = value
-            msg = Soup.form_request_new_from_hash("POST",
-                                                  self.__uri,
-                                                  post_data)
-            msg.request_headers.append("Accept-Charset", "utf-8")
+                hash[name] = value
+            form = Soup.form_encode_hash(hash)
+            msg = Soup.Message.new_from_encoded_form("POST", self.__uri, form)
+            request_headers = msg.get_property("request-headers")
+            request_headers.append("Accept-Charset", "utf-8")
             data = App().task_helper.send_message_sync(msg, self.__cancellable)
             if data is not None:
                 Logger.debug("%s: %s", self.__uri, data)
@@ -206,7 +206,10 @@ class LastFMWebService:
                     return
                 args = self.__get_args_for_method("track.scrobble")
                 args.append(("artist", track.artists[0]))
-                args.append(("albumArtist", track.album.artists[0]))
+                if track.album.artist_ids[0] == Type.COMPILATIONS:
+                    args.append(("albumArtist", track.artists[0]))
+                else:
+                    args.append(("albumArtist", track.album.artists[0]))
                 args.append(("track", track.name))
                 args.append(("album", track.album.name))
                 if track.mbid and track.mbid.find(":") == -1:
@@ -215,13 +218,14 @@ class LastFMWebService:
                 args.append(("sk", token))
                 api_sig = self.__get_sig_for_args(args)
                 args.append(("api_sig", api_sig))
-                post_data = {}
+                hash = {}
                 for (name, value) in args:
-                    post_data[name] = value
-                msg = Soup.form_request_new_from_hash("POST",
-                                                      self.__uri,
-                                                      post_data)
-                msg.request_headers.append("Accept-Charset", "utf-8")
+                    hash[name] = value
+                form = Soup.form_encode_hash(hash)
+                msg = Soup.Message.new_from_encoded_form(
+                    "POST", self.__uri, form)
+                request_headers = msg.get_property("request-headers")
+                request_headers.append("Accept-Charset", "utf-8")
                 data = App().task_helper.send_message_sync(msg,
                                                            self.__cancellable)
                 if data is not None:
@@ -243,7 +247,10 @@ class LastFMWebService:
                 return
             args = self.__get_args_for_method("track.updateNowPlaying")
             args.append(("artist", track.artists[0]))
-            args.append(("albumArtist", track.album.artists[0]))
+            if track.album.artist_ids[0] == Type.COMPILATIONS:
+                args.append(("albumArtist", track.artists[0]))
+            else:
+                args.append(("albumArtist", track.album.artists[0]))
             args.append(("track", track.name))
             args.append(("album", track.album.name))
             if track.mbid and track.mbid.find(":") == -1:
@@ -252,16 +259,16 @@ class LastFMWebService:
             args.append(("sk", token))
             api_sig = self.__get_sig_for_args(args)
             args.append(("api_sig", api_sig))
-            post_data = {}
+            hash = {}
             for (name, value) in args:
-                post_data[name] = value
-            msg = Soup.form_request_new_from_hash("POST",
-                                                  self.__uri,
-                                                  post_data)
-            msg.request_headers.append("Accept-Charset", "utf-8")
+                hash[name] = value
+            form = Soup.form_encode_hash(hash)
+            msg = Soup.Message.new_from_encoded_form("POST", self.__uri, form)
+            request_headers = msg.get_property("request-headers")
+            request_headers.append("Accept-Charset", "utf-8")
             data = App().task_helper.send_message_sync(msg, self.__cancellable)
             if data is not None:
-                Logger.debug("%s: %s -> %s", self.__uri, data, post_data)
+                Logger.debug("%s: %s -> %s", self.__uri, data, hash)
         except Exception as e:
             Logger.error("LastFMWebService::__playing_now(): %s" % e)
 

@@ -621,7 +621,7 @@ class Playlists(GObject.GObject):
             stream = f.replace(None, False,
                                Gio.FileCreateFlags.REPLACE_DESTINATION, None)
             stream.write("#EXTM3U\n".encode("utf-8"))
-            playlist_dir_uri = playlist_uri.replace(f.get_basename(), "")
+            playlist_dir_uri = "/".join(playlist_uri.split("/")[:-1]) + "/"
             for uri in uris:
                 if uri.startswith("web://"):
                     continue

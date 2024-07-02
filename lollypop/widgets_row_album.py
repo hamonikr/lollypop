@@ -29,6 +29,7 @@ class AlbumRow(Gtk.ListBoxRow):
         "activated": (GObject.SignalFlags.RUN_FIRST,
                       None, (GObject.TYPE_PYOBJECT,)),
         "populated": (GObject.SignalFlags.RUN_FIRST, None, ()),
+        "album-removed": (GObject.SignalFlags.RUN_FIRST, None, ()),
         "track-removed": (GObject.SignalFlags.RUN_FIRST, None,
                           (GObject.TYPE_PYOBJECT,)),
     }
@@ -361,11 +362,12 @@ class AlbumRow(Gtk.ListBoxRow):
 
     def __on_remove_clicked(self, button):
         """
-            Remove album from playback/playlist
+            Remove album from list
             @param button as Gtk.Button
         """
         if not self.get_state_flags() & Gtk.StateFlags.PRELIGHT:
             return True
+        self.emit("album-removed")
         self.destroy()
 
     def __on_play_clicked(self, button):

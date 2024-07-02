@@ -17,6 +17,7 @@ from lollypop.objects_track import Track
 from lollypop.widgets_row_track import TrackRow
 from lollypop.view_albums_list import AlbumsListView
 from lollypop.view_tracks_queue import QueueTracksView
+from lollypop.logger import Logger
 from lollypop.define import App, ViewType, Size, MARGIN
 from lollypop.helper_signals import SignalsHelper, signals_map
 from lollypop.widgets_banner_current_albums import CurrentAlbumsBannerWidget
@@ -172,17 +173,20 @@ class CurrentAlbumsView(AlbumsListView, SignalsHelper):
         """
         App().player.load(track)
 
-    def _on_row_destroy(self, row):
+    def _on_album_removed(self, row):
         """
             Remove album from playback
             @param row as AlbumRow
         """
-        if row.album.id in App().player.album_ids:
-            if App().player.current_track in row.album.tracks:
-                App().player.skip_album()
-            App().player.remove_album(row.album)
-        else:
-            App().player.add_album(row.album)
+        try:
+            if row.album.id in App().player.album_ids:
+                if App().player.current_track in row.album.tracks:
+                    App().player.skip_album()
+                App().player.remove_album(row.album)
+            else:
+                App().player.add_album(row.album)
+        except Exception as e:
+            Logger.error("CurrentAlbumsView::_on_album_removed()", e)
 
     def _on_track_removed(self, row, track):
         """

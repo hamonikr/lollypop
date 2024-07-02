@@ -18,6 +18,7 @@ from random import choice
 from lollypop.utils import set_cursor_type, on_query_tooltip, popup_widget
 from lollypop.utils_artist import add_artist_to_playback, play_artists
 from lollypop.define import App, ArtSize, ArtBehaviour, ViewType
+from lollypop.define import MARGIN_MEDIUM, MARGIN, MARGIN_SMALL
 from lollypop.widgets_banner import BannerWidget
 from lollypop.helper_signals import SignalsHelper, signals_map
 
@@ -58,6 +59,12 @@ class ArtistBannerWidget(BannerWidget, SignalsHelper):
             "realize", set_cursor_type)
         self.__labels.connect("realize", set_cursor_type)
         self.__widget = builder.get_object("widget")
+        self.__widget.set_margin_start(MARGIN)
+        self.__widget.set_margin_end(MARGIN)
+        self.__widget.set_margin_top(MARGIN_SMALL)
+        self.__widget.set_margin_bottom(MARGIN_SMALL)
+        self.__widget.set_row_spacing(MARGIN_SMALL)
+        self.__widget.set_column_spacing(MARGIN_MEDIUM)
         artists = []
         for artist_id in self.__artist_ids:
             artists.append(App().artists.get_name(artist_id))
@@ -240,13 +247,6 @@ class ArtistBannerWidget(BannerWidget, SignalsHelper):
                                         self._on_artwork)
         else:
             self._artwork.get_style_context().add_class("default-banner")
-        if self.width < ArtSize.BANNER * 3:
-            if self.__widget.get_child_at(1, 0) == self.__labels:
-                self.__widget.remove(self.__labels)
-                self.__widget.attach(self.__labels, 2, 2, 3, 1)
-        elif self.__widget.get_child_at(2, 2) == self.__labels:
-            self.__widget.remove(self.__labels)
-            self.__widget.attach(self.__labels, 1, 0, 1, 3)
 
     def __set_badge_artwork(self, art_size):
         """
@@ -280,9 +280,13 @@ class ArtistBannerWidget(BannerWidget, SignalsHelper):
         if App().window.folded:
             art_size = ArtSize.MEDIUM
             cls = "text-large"
+            self.__widget.set_margin_start(MARGIN_SMALL)
+            self.__widget.set_margin_end(MARGIN_SMALL)
         else:
             art_size = ArtSize.BANNER
             cls = "text-x-large"
+            self.__widget.set_margin_start(MARGIN)
+            self.__widget.set_margin_end(MARGIN)
         self.__title_label.get_style_context().add_class(cls)
         self.__set_badge_artwork(art_size)
 

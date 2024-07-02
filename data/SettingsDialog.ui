@@ -45,7 +45,7 @@
             <property name="can-focus">False</property>
             <property name="title" translatable="yes">Appearance</property>
             <child>
-              <object class="HdyActionRow">
+              <object class="HdyActionRow" id="dark_row">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="tooltip-text" translatable="yes">Whether the application should use a dark theme</property>
@@ -258,6 +258,23 @@
                 </child>
               </object>
             </child>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="title" translatable="yes">Transitions only in party mode</property>
+                <property name="activatable-widget">transitions-party-only_boolean</property>
+                <child>
+                  <object class="GtkSwitch" id="transitions-party-only_boolean">
+                    <property name="name">transitions-party-only</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_boolean_state_set" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+            </child>"
             <child>
               <object class="HdyActionRow">
                 <property name="visible">True</property>
@@ -574,7 +591,7 @@ and with different artists</property>
                   <object class="HdyActionRow">
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
-                    <property name="title" translatable="yes">Use a recent version of youtube-dl</property>
+                    <property name="title" translatable="yes">Use a recent version of yt-dlp</property>
                     <property name="activatable-widget">recent-youtube-dl_boolean</property>
                     <child>
                       <object class="GtkSwitch" id="recent-youtube-dl_boolean">
@@ -1022,6 +1039,7 @@ and with different artists</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="valign">center</property>
+                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
                   </object>
                 </child>
               </object>
@@ -1172,23 +1190,6 @@ and with different artists</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="title" translatable="yes">Lyrics</property>
-            <child>
-              <object class="HdyActionRow">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="title" translatable="yes">Wikia</property>
-                <property name="activatable-widget">WIKIA_button</property>
-                <child>
-                  <object class="GtkSwitch" id="WIKIA_button">
-                    <property name="name">WIKIA</property>
-                    <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                    <property name="valign">center</property>
-                    <signal name="state-set" handler="_on_acl_state_set" swapped="no"/>
-                  </object>
-                </child>
-              </object>
-            </child>
             <child>
               <object class="HdyActionRow">
                 <property name="visible">True</property>

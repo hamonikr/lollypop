@@ -84,14 +84,15 @@ class Application(Gtk.Application, ApplicationActions, ApplicationCmdline):
         (self.__proxy_host, self.__proxy_port) = init_proxy_from_gnome()
         GLib.setenv("PULSE_PROP_media.role", "music", True)
         GLib.setenv("PULSE_PROP_application.icon_name",
-                    "org.gnome.Lollypop", True)
+                    app_id, True)
         # Flatpak hacks
         if GLib.file_test("/app", GLib.FileTest.EXISTS):
             # Set /tmp for GLib, /tmp not accessible in flatpak
             tmp = GLib.environ_getenv(GLib.get_environ(), "XDG_RUNTIME_DIR")
-            GLib.setenv("TMPDIR", "%s/app/org.gnome.Lollypop" % tmp, True)
+            GLib.setenv("TMPDIR", "%s/app/%s" % (tmp, app_id), True)
         self.cursors = {}
         self.shown_sidebar_tooltip = False
+        self.system_supports_color_schemes = False
         self.__window = None
         self.__fs_window = None
         settings = Gio.Settings.new("org.gnome.desktop.interface")
@@ -164,11 +165,16 @@ class Application(Gtk.Application, ApplicationActions, ApplicationCmdline):
             MPRIS(self)
 
         settings = Gtk.Settings.get_default()
-        self.__gtk_dark = settings.get_property(
-            "gtk-application-prefer-dark-theme")
-        if not self.__gtk_dark:
-            dark = self.settings.get_value("dark-ui")
-            settings.set_property("gtk-application-prefer-dark-theme", dark)
+        # Fallback setting
+        dark = self.settings.get_value("dark-ui")
+        if dark:
+            settings.set_property(
+                "gtk-application-prefer-dark-theme", dark)
+        else:
+            manager = Handy.StyleManager.get_default()
+            if manager.get_system_supports_color_schemes():
+                self.system_supports_color_schemes = True
+                manager.set_color_scheme(Handy.ColorScheme.PREFER_LIGHT)
         ApplicationActions.__init__(self)
         monitor = Gio.NetworkMonitor.get_default()
         if monitor.get_network_available() and\
@@ -301,14 +307,6 @@ class Application(Gtk.Application, ApplicationActions, ApplicationCmdline):
             @return str
         """
         return self.__data_dir
-
-    @property
-    def gtk_application_prefer_dark_theme(self):
-        """
-            Return default gtk value
-            @return bool
-        """
-        return self.__gtk_dark
 
 #######################
 # PRIVATE             #

@@ -178,15 +178,15 @@ def init_proxy_from_gnome():
             socks = Gio.Settings.new("org.gnome.system.proxy.socks")
             host = socks.get_value("host").get_string()
             port = socks.get_value("port").get_int32()
-            proxy = "socks4://%s:%s" % (host, port)
-            from os import environ
-            environ["all_proxy"] = proxy
-            environ["ALL_PROXY"] = proxy
             if host != "" and port != 0:
                 import socket
                 import socks
+                from os import environ
                 socks.set_default_proxy(socks.SOCKS4, host, port)
                 socket.socket = socks.socksocket
+                proxy = "socks4://%s:%s" % (host, port)
+                environ["all_proxy"] = proxy
+                environ["ALL_PROXY"] = proxy
     except Exception as e:
         Logger.warning("set_proxy_from_gnome(): %s", e)
     return (None, None)
@@ -253,31 +253,35 @@ def escape(str, ignore=["_", "-", " ", "."]):
                     c.isdigit() or c in ignore]).rstrip()
 
 
-def get_lollypop_album_id(name, artists, year=None):
+def get_lollypop_album_id(name, artists, year=None, mbid=None):
     """
         Calculate Lollypop album id
         @param name as str
         @param artists as [str]
         @param year as int/None
+        @param mbid as str/None
     """
-    if year is None:
-        name = "%s_%s" % (sql_escape(" ".join(artists)), sql_escape(name))
-    else:
-        name = "%s_%s_%s" % (
-            sql_escape(" ".join(artists)), sql_escape(name), year)
+    name = "%s_%s" % (sql_escape(" ".join(artists)), sql_escape(name))
+    if year is not None:
+        name += "_%s" % year
+    if mbid is not None:
+        name += "_%s" % mbid
     return md5(name.encode("utf-8")).hexdigest()
 
 
-def get_lollypop_track_id(name, artists, album_name):
+def get_lollypop_track_id(name, artists, album_name, mbid=None):
     """
         Calculate Lollypop track id
         @param name as str
         @param artists as [str]
         @param year as str
         @param album_name as str
+        @param mbid as str/None
     """
     name = "%s_%s_%s" % (sql_escape(" ".join(artists)), sql_escape(name),
                          sql_escape(album_name))
+    if mbid is not None:
+        name += "_%s" % mbid
     return md5(name.encode("utf-8")).hexdigest()
 
 

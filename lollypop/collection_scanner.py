@@ -132,7 +132,8 @@ class CollectionScanner(GObject.GObject, TagReader):
 
         item.lp_album_id = get_lollypop_album_id(item.album_name,
                                                  item.album_artists,
-                                                 item.year)
+                                                 item.year,
+                                                 item.mb_album_id)
         Logger.debug("CollectionScanner::save_track(): Add album: "
                      "%s, %s" % (item.album_name, item.album_artist_ids))
         (item.new_album, item.album_id) = self.add_album(
@@ -179,7 +180,8 @@ class CollectionScanner(GObject.GObject, TagReader):
 
         item.lp_track_id = get_lollypop_track_id(item.track_name,
                                                  item.artists,
-                                                 item.album_name)
+                                                 item.album_name,
+                                                 item.mb_track_id)
 
         # Add track to db
         Logger.debug("CollectionScanner::save_track(): Add track")
@@ -232,7 +234,8 @@ class CollectionScanner(GObject.GObject, TagReader):
         # Update lp_album_id
         lp_album_id = get_lollypop_album_id(item.album_name,
                                             item.album_artists,
-                                            item.year)
+                                            item.year,
+                                            item.mb_album_id)
         if lp_album_id != item.lp_album_id:
             App().album_art.move(item.lp_album_id, lp_album_id)
             App().albums.set_lp_album_id(item.album_id, lp_album_id)
@@ -505,6 +508,8 @@ class CollectionScanner(GObject.GObject, TagReader):
                 self.__flatpak_migration()
                 App().notify.send("Lollypop",
                                   _("Scan disabled, missing collection"))
+                App().settings.set_value("flatpak-access-migration",
+                                         GLib.Variant("b", True))
                 return
             if scan_type == ScanType.NEW_FILES:
                 db_uris = App().tracks.get_uris(uris)
@@ -559,8 +564,6 @@ class CollectionScanner(GObject.GObject, TagReader):
         except Exception as e:
             Logger.warning("CollectionScanner::__scan(): %s", e)
         SqlCursor.remove(App().db)
-        App().settings.set_value("flatpak-access-migration",
-                                 GLib.Variant("b", True))
 
     def __scan_to_handle(self, uri):
         """
@@ -781,7 +784,8 @@ class CollectionScanner(GObject.GObject, TagReader):
         if album_mtime == 0:
             album_mtime = track_mtime
         bpm = self.get_bpm(tags)
-        compilation = self.get_compilation(tags)
+        compilation = not self.__disable_compilations and\
+            self.get_compilation(tags)
         (original_year, original_timestamp) = self.get_original_year(tags)
         (year, timestamp) = self.get_year(tags)
         if year is None:
@@ -802,6 +806,11 @@ class CollectionScanner(GObject.GObject, TagReader):
             artists += ";%s" % remixers if remixers != "" else ""
         if artists == "":
             artists = _("Unknown")
+        # Reset album tags if we found a compilation
+        if compilation:
+            album_artists = ""
+            mb_album_artist_id = ""
+            aa_sortnames = ""
         return (title, artists, genres, a_sortnames, aa_sortnames,
                 album_artists, album_name, discname, album_loved, album_mtime,
                 album_synced, album_rate, album_pop, discnumber, year,

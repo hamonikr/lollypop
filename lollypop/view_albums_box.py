@@ -52,7 +52,7 @@ class AlbumsBoxView(FlowBoxView, SignalsHelper):
             if genre_ids[0] == Type.WEB:
                 (youtube_dl, env) = get_youtube_dl()
                 if youtube_dl is None:
-                    self._empty_message = _("Missing youtube-dl command")
+                    self._empty_message = _("Missing yt-dlp command")
                     self.show_placeholder(True)
                     self.__populate_wanted = False
                 elif not get_network_available("YOUTUBE"):

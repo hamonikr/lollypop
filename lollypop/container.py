@@ -56,6 +56,8 @@ class Container(Gtk.Overlay, NotificationContainer,
         """
             Setup container
         """
+        self._main_stack = Gtk.Stack()
+        self._main_stack.show()
         self.__widget = Handy.Leaflet()
         self.__widget.show()
         self.__widget.connect("notify::folded", self.__on_folded)
@@ -81,7 +83,8 @@ class Container(Gtk.Overlay, NotificationContainer,
         self.__widget.add(self.__sub_widget)
         self.__widget.set_visible_child(self.__sub_widget)
         self.__sub_widget.set_visible_child(self.__grid_view)
-        self.add(self.__widget)
+        self._main_stack.add_named(self.__widget, "main")
+        self.add(self._main_stack)
         FilterContainer.__init__(self)
 
     def stop(self):

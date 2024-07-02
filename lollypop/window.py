@@ -36,7 +36,6 @@ class Window(Handy.ApplicationWindow, SignalsHelper):
                                          icon_name="org.gnome.Lollypop")
         self.__miniplayer = None
         self.__configure_timeout_id = None
-        self.set_auto_startup_notification(False)
         self.connect("realize", self.__on_realize)
         # Does not work with a Gtk.Gesture in GTK3
         self.connect("button-release-event", self.__on_button_release_event)
@@ -107,8 +106,9 @@ class Window(Handy.ApplicationWindow, SignalsHelper):
                 App().lookup_action("miniplayer").change_state(
                     GLib.Variant("b", False))
             else:
-                self.__miniplayer.destroy()
-                self.__miniplayer = None
+                if not self.folded:
+                    self.__miniplayer.destroy()
+                    self.__miniplayer = None
                 self.__container.show()
                 show_buttons(True)
         if self.__miniplayer is not None:
@@ -201,10 +201,6 @@ class Window(Handy.ApplicationWindow, SignalsHelper):
         """
         self.__setup_size_and_position()
         if App().settings.get_value("auto-update") or App().tracks.is_empty():
-            App().scanner.update(ScanType.FULL)
-        # FIXME: remove this later
-        elif GLib.file_test("/app", GLib.FileTest.EXISTS) and\
-                not App().settings.get_value("flatpak-access-migration"):
             App().scanner.update(ScanType.FULL)
 
     def __on_button_release_event(self, window, event):

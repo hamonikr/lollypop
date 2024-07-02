@@ -136,7 +136,7 @@ NetworkAccessACL = {
     "MUSICBRAINZ": 1 << 9,
     "ITUNES": 1 << 10,
     "DEEZER": 1 << 11,
-    "WIKIA": 1 << 12,
+    # "WIKIA": 1 << 12,
     "GENIUS": 1 << 13,
     "AUDIODB": 1 << 14,
     "FANARTTV": 1 << 15,

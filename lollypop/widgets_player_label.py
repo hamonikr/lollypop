@@ -50,26 +50,31 @@ class LabelPlayerWidget(Gtk.Label, SignalsHelper):
         artist_text = GLib.markup_escape_text(artists)
         title_text = GLib.markup_escape_text(title)
         if self.__font_size is None:
-            markup = "<b>%s</b>" % artist_text
-            markup += "\n<span size='small' alpha='50000'>%s</span>" %\
-                title_text
+            markup = "<b>%s</b>" % title_text
+            markup += "\n<span size='small' alpha='50000'%s>%s</span>" % (
+                " color='white'" if self.__fullscreen else "",
+                artist_text)
         else:
-            markup = "<span font='%s' size='x-large' ><b>%s</b></span>" % (
-                                                           self.__font_size,
-                                                           artist_text)
-            markup += "\n<span font='%s' size='x-large'>%s</span>"\
-                % (self.__font_size, title_text)
+            markup = "<span font='%s' size='x-large'%s><b>%s</b></span>" % (
+                self.__font_size,
+                " color='white'" if self.__fullscreen else "",
+                title_text)
+            markup += "\n<span font='%s' size='x-large'%s>%s</span>"\
+                % (
+                    self.__font_size,
+                    " color='white'" if self.__fullscreen else "",
+                    artist_text)
         if self.__fullscreen:
             album_text = "%s" % GLib.markup_escape_text(
                 App().player.current_track.album.name)
             if App().player.current_track.year:
                 album_text += " (%s)" % App().player.current_track.year
             if self.__font_size is None:
-                markup += "\n<span size='x-small' alpha='40000'>%s</span>" %\
-                    album_text
+                markup += "\n<span size='x-small' alpha='40000' \
+                    color='white'>%s</span>" % album_text
             else:
-                markup += "\n<span font='%s' alpha='40000'>%s</span>" %\
-                    (self.__font_size, album_text)
+                markup += "\n<span font='%s' alpha='40000' \
+                    color='white'>%s</span>" % (self.__font_size, album_text)
         self.set_markup(markup)
 
 #######################

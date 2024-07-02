@@ -12,7 +12,7 @@
 
 from gi.repository import Gio, GLib, Gtk
 
-from lollypop.define import App, ScanType, Type
+from lollypop.define import App, ScanType, Type, LovedFlags
 
 
 class ApplicationActions:
@@ -339,15 +339,14 @@ class ApplicationActions:
         elif string == "loved":
             track = App().player.current_track
             if track.id is not None and track.id >= 0:
-                if track.loved < 1:
-                    loved = track.loved + 1
+                loved = track.loved
+                if loved & LovedFlags.LOVED:
+                    loved &= ~ LovedFlags.LOVED
                 else:
-                    loved = Type.NONE
+                    loved |= LovedFlags.LOVED
                 track.set_loved(loved)
-                if track.loved == 1:
+                if loved & LovedFlags.LOVED:
                     heart = "❤"
-                elif track.loved == -1:
-                    heart = "⏭"
                 else:
                     heart = "♡"
                 App().notify.send("Lollypop", "%s - %s: %s" %

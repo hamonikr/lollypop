@@ -8,6 +8,7 @@
             <item>
               <attribute name="label" translatable="yes">Enable party mode</attribute>
               <attribute name="action">app.party</attribute>
+              <attribute name="close">True</attribute>
             </item>
             <submenu id="party_submenu">
                 <attribute name="label" translatable="yes">Configure</attribute>
@@ -18,6 +19,7 @@
             <item>
               <attribute name="label" translatable="yes">Shuffle tracks</attribute>
               <attribute name="action">app.shuffle</attribute>
+              <attribute name="close">True</attribute>
             </item>
         </section>
         <section>
@@ -26,26 +28,31 @@
               <attribute name="label" translatable="yes">Continuous playback</attribute>
               <attribute name="action">app.repeat</attribute>
               <attribute name="target">all</attribute>
+              <attribute name="close">True</attribute>
             </item>
             <item>
               <attribute name="label" translatable="yes">Automatic playback (similar)</attribute>
               <attribute name="action">app.repeat</attribute>
               <attribute name="target">auto_similar</attribute>
+              <attribute name="close">True</attribute>
             </item>
             <item>
               <attribute name="label" translatable="yes">Automatic playback (random)</attribute>
               <attribute name="action">app.repeat</attribute>
               <attribute name="target">auto_random</attribute>
+              <attribute name="close">True</attribute>
             </item>
             <item>
               <attribute name="label" translatable="yes">Repeat track</attribute>
               <attribute name="action">app.repeat</attribute>
               <attribute name="target">track</attribute>
+              <attribute name="close">True</attribute>
             </item>
             <item>
               <attribute name="label" translatable="yes">Do not repeat</attribute>
               <attribute name="action">app.repeat</attribute>
               <attribute name="target">none</attribute>
+              <attribute name="close">True</attribute>
             </item>
  	</section>
         <section>
@@ -53,6 +60,7 @@
             <item>
               <attribute name="label" translatable="yes">Enable scrobbling</attribute>
               <attribute name="action">app.scrobbling</attribute>
+              <attribute name="close">True</attribute>
             </item>
         </section>
     </menu>

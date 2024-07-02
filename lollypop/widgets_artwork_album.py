@@ -115,12 +115,6 @@ class AlbumArtworkSearchWidget(ArtworkSearchWidget, SignalsHelper):
         ArtworkSearchWidget._search_for_artwork(self)
         self._loaders = 3
         search = ArtworkSearchWidget._get_current_search(self)
-        App().task_helper.run(App().album_art.search_artwork_from_google,
-                              search,
-                              self._cancellable)
-        App().task_helper.run(App().album_art.search_artwork_from_startpage,
-                              search,
-                              self._cancellable)
         if search.strip() == "":
             is_compilation = self.__album.artist_ids and\
                 self.__album.artist_ids[0] == Type.COMPILATIONS
@@ -134,6 +128,14 @@ class AlbumArtworkSearchWidget(ArtworkSearchWidget, SignalsHelper):
                     self.__album.name,
                     self._cancellable)
         else:
+            App().task_helper.run(
+                    App().album_art.search_artwork_from_google,
+                    search,
+                    self._cancellable)
+            App().task_helper.run(
+                    App().album_art.search_artwork_from_startpage,
+                    search,
+                    self._cancellable)
             App().task_helper.run(
                     App().album_art.search,
                     "",

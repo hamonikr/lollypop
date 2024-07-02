@@ -113,6 +113,8 @@ class ApplicationCmdline:
             self.register(None)
             if self.get_is_remote():
                 Gdk.notify_startup_complete()
+            options.insert_value("current_directory",
+                                 GLib.Variant("s", GLib.get_current_dir()))
         except Exception as e:
             Logger.error("Application::__on_handle_local_options(): %s", e)
         return -1
@@ -121,11 +123,16 @@ class ApplicationCmdline:
         """
             Handle command line
             @param app as Gio.Application
-            @param options as Gio.ApplicationCommandLine
+            @param app_cmd_line as Gio.ApplicationCommandLine
         """
         try:
             args = app_cmd_line.get_arguments()
             options = app_cmd_line.get_options_dict()
+            if options.contains("current_directory"):
+                current_directory = options.lookup_value(
+                    "current_directory").get_string()
+            else:
+                current_directory = GLib.get_current_dir()
             if options.contains("debug"):
                 self.__debug = True
             if options.contains("set-rating"):
@@ -180,7 +187,7 @@ class ApplicationCmdline:
                         # Try ./filename
                         if not f.query_exists():
                             uri = GLib.filename_to_uri(
-                                "%s/%s" % (GLib.get_current_dir(), uri))
+                                "%s/%s" % (current_directory, uri))
                             f = Gio.File.new_for_uri(uri)
                     file_type = get_file_type(uri)
                     if file_type == FileType.PLS:

@@ -11,7 +11,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 import gi
-gi.require_version("Soup", "2.4")
+gi.require_version("Soup", "3.0")
 from gi.repository import GLib, Soup
 
 from threading import Thread
@@ -92,7 +92,8 @@ class TaskHelper:
                 for header in headers:
                     headers.append(header[0],
                                    header[1])
-            session.send_async(msg, cancellable,
+            session.send_and_read_async(
+                               msg, 0, cancellable,
                                self.__on_load_uri_content, msg, headers,
                                callback, cancellable, uri, *args)
         except Exception as e:
@@ -135,24 +136,21 @@ class TaskHelper:
                 request_headers = msg.get_property("request-headers")
                 for header in headers:
                     request_headers.append(header[0], header[1])
-            session.send_message(msg)
-            response_headers = msg.get_property("response-headers")
-            wait = self.__handle_ratelimit(response_headers, uri)
-            if wait is None:
-                if uri in self.__retries.keys():
-                    del self.__retries[uri]
-                body = msg.get_property("response-body")
-                bytes = body.flatten().get_data()
-                return (True, bytes)
+            bytes = session.send_and_read(msg, cancellable).get_data()
+            if bytes is None:
+                response_headers = msg.get_property("response-headers")
+                wait = self.__handle_ratelimit(response_headers, uri)
+                if wait is not None:
+                    retries = self.__get_retries_for_uri(uri)
+                    if retries < 5:
+                        parsed = urlparse(uri)
+                        self.__ratelimit[parsed.netloc] = wait
+                        return self.load_uri_content_sync_with_headers(
+                            uri, headers, cancellable)
+                    else:
+                        del self.__retries[uri]
             else:
-                retries = self.__get_retries_for_uri(uri)
-                if retries < 5:
-                    parsed = urlparse(uri)
-                    self.__ratelimit[parsed.netloc] = wait
-                    return self.load_uri_content_sync_with_headers(
-                        uri, headers, cancellable)
-                else:
-                    del self.__retries[uri]
+                return (True, bytes)
         except Exception as e:
             Logger.warning(
                 "TaskHelper::load_uri_content_sync_with_headers(): %s" % e)
@@ -177,7 +175,9 @@ class TaskHelper:
                 return
 
             session = Soup.Session.new()
-            session.send_async(message,
+            session.send_and_read_async(
+                               message,
+                               0,
                                cancellable,
                                self.__on_message_send_async,
                                message,
@@ -196,7 +196,7 @@ class TaskHelper:
             @return bytes
         """
         try:
-            uri = message.get_uri().to_string(False)
+            uri = message.get_uri().to_string()
             delay = self.__get_delay_for_uri(uri)
             if delay > 0:
                 sleep(delay)
@@ -204,25 +204,20 @@ class TaskHelper:
                     return None
 
             session = Soup.Session.new()
-            stream = session.send(message, cancellable)
-            response_headers = message.get_property("response-headers")
-            wait = self.__handle_ratelimit(response_headers, uri)
-            if wait is None:
-                bytes = bytearray(0)
-                buf = stream.read_bytes(1024, cancellable).get_data()
-                while buf:
-                    bytes += buf
-                    buf = stream.read_bytes(1024, cancellable).get_data()
-                stream.close()
-                return bytes
+            bytes = session.send_and_read(message, cancellable).get_data()
+            if bytes is None:
+                response_headers = message.get_property("response-headers")
+                wait = self.__handle_ratelimit(response_headers, uri)
+                if wait is not None:
+                    retries = self.__get_retries_for_uri(uri)
+                    if retries < 5:
+                        parsed = urlparse(uri)
+                        self.__ratelimit[parsed.netloc] = wait
+                        return self.send_message_sync(message, cancellable)
+                    else:
+                        del self.__retries[uri]
             else:
-                retries = self.__get_retries_for_uri(uri)
-                if retries < 5:
-                    parsed = urlparse(uri)
-                    self.__ratelimit[parsed.netloc] = wait
-                    return self.send_message_sync(message, cancellable)
-                else:
-                    del self.__retries[uri]
+                return bytes
         except Exception as e:
             Logger.warning("TaskHelper::send_message_sync(): %s" % e)
         return None
@@ -270,11 +265,11 @@ class TaskHelper:
         reset_keys = ["X-RateLimit-Reset", "X-Rate-Limit-Reset",
                       "X-RateLimit-Reset-In", "X-RateLimit-Reset-At"]
         for key in remaining_keys:
-            remaining = response.get(key)
+            remaining = response.get_one(key)
             if remaining is not None:
                 break
         for key in reset_keys:
-            reset = response.get(key)
+            reset = response.get_one(key)
             if reset is not None:
                 break
         if remaining is None or reset is None:
@@ -306,33 +301,6 @@ class TaskHelper:
         except Exception as e:
             Logger.warning("TaskHelper::__run(): %s: %s -> %s" %
                            (e, command, kwd))
-
-    def __on_read_bytes_async(self, stream, result, content,
-                              cancellable, callback, uri, *args):
-        """
-            Read data from stream, when finished, pass to callback
-            @param stream as Gio.InputStream
-            @param result as Gio.AsyncResult
-            @param cancellable as Gio.Cancellable
-            @param content as bytes
-            @param callback as function
-            @param uri as str
-        """
-        try:
-            content_result = stream.read_bytes_finish(result)
-            content_bytes = content_result.get_data()
-            if content_bytes:
-                content += content_bytes
-                stream.read_bytes_async(4096, GLib.PRIORITY_LOW,
-                                        cancellable,
-                                        self.__on_read_bytes_async,
-                                        content, cancellable, callback,
-                                        uri, *args)
-            else:
-                callback(uri, True, bytes(content), *args)
-        except Exception as e:
-            Logger.warning("TaskHelper::__on_read_bytes_async(): %s" % e)
-            callback(uri, False, b"", *args)
 
     def __on_request_send_async(self, source, result, callback,
                                 cancellable, uri, *args):
@@ -370,13 +338,8 @@ class TaskHelper:
             response_headers = message.get_property("response-headers")
             wait = self.__handle_ratelimit(response_headers, uri)
             if wait is None:
-                stream = source.send_finish(result)
-                # We use a bytearray here as seems that bytes += is really slow
-                stream.read_bytes_async(4096, GLib.PRIORITY_LOW,
-                                        cancellable,
-                                        self.__on_read_bytes_async,
-                                        bytearray(0), cancellable, callback,
-                                        uri, *args)
+                bytes = source.send_and_read_finish(result).get_data()
+                callback(uri, True, bytes, *args)
             else:
                 parsed = urlparse(uri)
                 self.__ratelimit[parsed.netloc] = wait
@@ -406,13 +369,8 @@ class TaskHelper:
             response_headers = msg.get_property("response-headers")
             wait = self.__handle_ratelimit(response_headers, uri)
             if wait is None:
-                stream = source.send_finish(result)
-                # We use a bytearray here as seems that bytes += is really slow
-                stream.read_bytes_async(4096, GLib.PRIORITY_LOW,
-                                        cancellable,
-                                        self.__on_read_bytes_async,
-                                        bytearray(0), cancellable, callback,
-                                        uri, *args)
+                bytes = source.send_and_read_finish(result).get_data()
+                callback(uri, True, bytes, *args)
             else:
                 parsed = urlparse(uri)
                 self.__ratelimit[parsed.netloc] = wait

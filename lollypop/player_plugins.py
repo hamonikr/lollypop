@@ -67,6 +67,18 @@ class PluginsPlayer:
                 rglimiter.props.enabled = App().settings.get_value(
                     "replay-gain-limiter")
 
+            # Internal volume manager
+            self.volume = Gst.ElementFactory.make("volume", None)
+            self.volume.props.volume = 1.0
+            audiobin.add(self.volume)
+            if replay_gain:
+                audioconvert_rg.link(self.volume)
+            else:
+                audioconvert_in.link(self.volume)
+
+            audiosink = Gst.ElementFactory.make("autoaudiosink", None)
+            audiobin.add(audiosink)
+
             # Equalizer
             self.__equalizer = None
             if App().settings.get_value("equalizer-enabled"):
@@ -93,25 +105,11 @@ class PluginsPlayer:
                     last_band_freq = freq
                     band.set_property("bandwidth", bandwidth)
                 audiobin.add(self.__equalizer)
-                if replay_gain:
-                    audioconvert_rg.link(self.__equalizer)
-                else:
-                    audioconvert_in.link(self.__equalizer)
-
-            # Internal volume manager
-            self.volume = Gst.ElementFactory.make("volume", None)
-            self.volume.props.volume = 1.0
-            audiobin.add(self.volume)
-            if self.__equalizer is not None:
-                self.__equalizer.link(self.volume)
-            elif replay_gain:
-                audioconvert_rg.link(self.volume)
+                self.volume.link(self.__equalizer)
+                self.__equalizer.link(audiosink)
             else:
-                audioconvert_in.link(self.volume)
+                self.volume.link(audiosink)
 
-            audiosink = Gst.ElementFactory.make("autoaudiosink", None)
-            audiobin.add(audiosink)
-            self.volume.link(audiosink)
             audiobin.add_pad(Gst.GhostPad.new(
                 "sink",
                 audioconvert_in.get_static_pad("sink")))

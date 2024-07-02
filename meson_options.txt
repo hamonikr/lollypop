@@ -1,2 +1,1 @@
-option('flatpak', type : 'feature', value : 'disabled', description : 'Build for Flatpak')
-option('devel', type : 'feature', value : 'disabled', description : 'Allow multiple instances')
+option('profile', type : 'string', value : 'stable', description : 'Target profile')

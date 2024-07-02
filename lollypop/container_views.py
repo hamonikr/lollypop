@@ -10,7 +10,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk
+from gi.repository import Gtk, GLib
 
 from lollypop.define import App, Type, ViewType, StorageType
 from lollypop.utils import emit_signal, get_default_storage_type
@@ -47,14 +47,14 @@ class ViewsContainer:
         """
         def on_hidden(widget, hide, view):
             if hide:
-                self._stack.set_transition_type(
+                self._main_stack.set_transition_type(
                     Gtk.StackTransitionType.SLIDE_UP)
-                self.go_back()
-                self._stack.set_transition_type(
+                self._main_stack.set_visible_child_name("main")
+                menu = self._main_stack.get_child_by_name("menu")
+                GLib.timeout_add(500, self._main_stack.remove, menu)
+                self._main_stack.set_transition_type(
                     Gtk.StackTransitionType.CROSSFADE)
                 App().enable_special_shortcuts(True)
-                if App().lookup_action("reload").get_state():
-                    self.reload_view()
             if self.can_go_back:
                 emit_signal(self, "can-go-back-changed", True)
 
@@ -62,10 +62,12 @@ class ViewsContainer:
         view = MenuView(widget)
         view.show()
         widget.connect("hidden", on_hidden, view)
-        self._stack.add(view)
-        self._stack.set_transition_type(Gtk.StackTransitionType.SLIDE_DOWN)
-        self._stack.set_visible_child(view)
-        self._stack.set_transition_type(Gtk.StackTransitionType.CROSSFADE)
+        self._main_stack.add_named(view, "menu")
+        self._main_stack.set_transition_type(
+            Gtk.StackTransitionType.SLIDE_DOWN)
+        self._main_stack.set_visible_child(view)
+        self._main_stack.set_transition_type(
+            Gtk.StackTransitionType.CROSSFADE)
         emit_signal(self, "can-go-back-changed", False)
         App().enable_special_shortcuts(False)
         self.dismiss_notification()

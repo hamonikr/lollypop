@@ -58,7 +58,8 @@ class TrackRow(Gtk.ListBoxRow):
         Gtk.ListBoxRow.__init__(self)
         self.__view_type = view_type
         self._track = track
-        self.set_property("margin", MARGIN_SMALL)
+        self.set_property("margin-top", MARGIN_SMALL)
+        self.set_property("margin-bottom", MARGIN_SMALL)
         self._grid = Gtk.Grid()
         self._grid.set_property("valign", Gtk.Align.CENTER)
         self._grid.set_column_spacing(5)

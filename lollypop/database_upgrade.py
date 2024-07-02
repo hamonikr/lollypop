@@ -782,7 +782,7 @@ class DatabaseAlbumsUpgrade(DatabaseUpgrade):
                     GLib.idle_add(progress.set_fraction, i / count)
                 name = albums.get_name(album_id)
                 artists = ";".join(albums.get_artists(album_id))
-                lp_album_id = get_lollypop_album_id(name, artists)
+                lp_album_id = get_lollypop_album_id(name, artists, None)
                 albums.set_lp_album_id(album_id, lp_album_id)
                 i += 1
 

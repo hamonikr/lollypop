@@ -276,7 +276,10 @@ class TagReader:
             if not compilation:
                 compilation = self.__get_extended(tags, ["COMPILATION"])
             if compilation:
-                return compilation == 1
+                return int(compilation) == 1
+            artists = self.get_album_artists(tags)
+            if artists.lower() == "various artists":
+                return True
         except Exception as e:
             Logger.error("TagReader::get_compilation(): %s" % e)
         return False
@@ -368,7 +371,7 @@ class TagReader:
             return (None, None)
 
         if tags is None:
-            return None
+            return (None, None)
         values = get_id3()
         if values[0] is None:
             values = get_ogg()

@@ -11,7 +11,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Soup, GObject, Gio
+from gi.repository import Soup, GLib, GObject, Gio
 
 import json
 from pickle import load, dump
@@ -128,17 +128,7 @@ class ListenBrainzWebService(GObject.GObject):
                     "listen_type": "single",
                     "payload": payload
                 }
-                body = json.dumps(post_data).encode("utf-8")
-                msg = Soup.Message.new("POST", self.__uri)
-                msg.set_request("application/json",
-                                Soup.MemoryUse.STATIC,
-                                body)
-                msg.request_headers.append("Accept-Charset", "utf-8")
-                msg.request_headers.append("Authorization",
-                                           "Token %s" % self.user_token)
-                msg.request_headers.append("Content-Type", "application/json")
-                data = App().task_helper.send_message_sync(msg,
-                                                           self.__cancellable)
+                data = self.__post_request(post_data)
                 if data is not None:
                     Logger.debug("%s: %s", self.__uri, data)
                 else:
@@ -157,20 +147,20 @@ class ListenBrainzWebService(GObject.GObject):
                 "listen_type": "playing_now",
                 "payload": payload
             }
-            body = json.dumps(post_data).encode("utf-8")
-            msg = Soup.Message.new("POST", self.__uri)
-            msg.set_request("application/json",
-                            Soup.MemoryUse.STATIC,
-                            body)
-            msg.request_headers.append("Accept-Charset", "utf-8")
-            msg.request_headers.append("Authorization",
-                                       "Token %s" % self.user_token)
-            data = App().task_helper.send_message_sync(msg,
-                                                       self.__cancellable)
+            data = self.__post_request(post_data)
             if data is not None:
                 Logger.debug("%s: %s", self.__uri, data)
         except Exception as e:
             Logger.error("ListenBrainzWebService::__playing_now(): %s" % e)
+
+    def __post_request(self, data):
+        msg = Soup.Message.new("POST", self.__uri)
+        body = GLib.Bytes.new(json.dumps(data).encode("utf-8"))
+        msg.set_request_body_from_bytes("application/json", body)
+        request_headers = msg.get_property("request-headers")
+        request_headers.append("Accept-Charset", "utf-8")
+        request_headers.append("Authorization", "Token %s" % self.user_token)
+        return App().task_helper.send_message_sync(msg, self.__cancellable)
 
     def __get_payload(self, track):
         """
@@ -188,13 +178,15 @@ class ListenBrainzWebService(GObject.GObject):
                 "track_name": track.title,
                 "release_name": track.album_name,
                 "additional_info": {
-                    "listening_from": "Lollypop",
+                    "media_player": "Lollypop",
+                    "media_player_version": App().version,
                     "artist_mbids": [
                         mbid for mbid in track.mb_artist_ids if mbid
                     ],
                     "release_mbid": track.album.mb_album_id,
                     "recording_mbid": track.mb_track_id,
-                    "tracknumber": track.number
+                    "tracknumber": track.number,
+                    "duration_ms": track.duration
                 }
             }
         }

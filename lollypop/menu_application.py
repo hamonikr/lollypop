@@ -55,17 +55,7 @@ class ApplicationMenu(Gtk.Bin, SignalsHelper):
             Popdown popover if exists
             @param button as Gtk.Button
         """
-        popover = self.get_ancestor(Gtk.Popover)
-        if popover is not None:
-            popover.popdown()
-        else:
-            emit_signal(self, "hidden", True)
-
-    def _emit_hidden(self, button):
-        """
-            Emit hidden signal
-        """
-        emit_signal(self, "hidden", False)
+        emit_signal(self, "hidden", True)
 
     def _on_volume_value_changed(self, scale):
         """

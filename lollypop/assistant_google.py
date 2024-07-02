@@ -26,15 +26,14 @@ class GoogleAssistant(Assistant):
         """
         rules = [
             {
-              "title": _("What is Google API-key?"),
+              "title": _("What is the Google API key?"),
               "icon_name": "media-playback-start-symbolic",
               "markup": _("""
-In order to use the YoutTube playback,
-you need to create an API-Key for the
+In order to enable YouTube playback,
+you need to create a key for the
 
 <b>"YouTube Data API v3"</b>
-
-which is used to play songs."""),
+"""),
               "uri_label": "",
               "uri": None,
               "right_button_label": _("Cancel"),
@@ -76,9 +75,11 @@ for the <b>"YouTube Data API v3"</b>.
               "icon_name": "dialog-password-symbolic",
               "markup": _("""
 Open <b>"Credentials"</b> in the sidebar and
-<b>Create Credentials</b> for an<b>API-Key</b>.
+create credentials for an API key.
 
-<b>Copy the API-Key to Lollypop</b>"""),
+Then click 'Finish' within this wizard.
+Copy the API key to Lollypop.
+"""),
               "uri_label": "",
               "uri": None,
               "right_button_label": _("Back"),
