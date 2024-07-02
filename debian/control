@@ -19,7 +19,9 @@ Build-Depends: debhelper-compat (= 12),
                python3-pil,
                python3-pylast,
                appstream-util,
-               libsoup2.4-dev
+               libsoup2.4-dev,
+               libsoup-3.0-dev,
+               cmake
 Standards-Version: 4.5.0
 Homepage: https://wiki.gnome.org/Apps/Lollypop
 Vcs-Browser: https://salsa.debian.org/python-team/applications/lollypop
