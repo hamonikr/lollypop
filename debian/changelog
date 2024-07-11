@@ -1,3 +1,9 @@
+lollypop (1.4.40+hamonikr2) stable; urgency=medium
+
+  * Release for bookworm arm64
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 12 Jul 2024 03:09:21 +0900
+
 lollypop (1.4.40+hamonikr1) stable; urgency=medium
 
   * Add yt-dlp
